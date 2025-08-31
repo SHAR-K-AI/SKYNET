@@ -7,18 +7,29 @@ export default function DinoGameFooter() {
 
     return (
         <footer className="relative">
-            <div className="w-full max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl relative mx-auto z-0">
+            <div className="w-full max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl relative mx-auto z-0 -mb-4">
                 <DinoGame />
             </div>
-            <div className="w-full py-8 footer-pixel-light dark:footer-pixel-dark z-10">
-                <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
-                    <div className="text-gray-700 dark:text-gray-300 text-sm mb-4 md:mb-0">
+
+            <div className="w-full py-8 footer-pixel-light z-10">
+                <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+
+                    <div className="text-sm mb-4 md:mb-0
+                                    text-gray-700 dark:text-gray-300
+                                    bg-white/20 dark:bg-black/40
+                                    backdrop-blur-md rounded-xl px-4 py-2
+                                    shadow-md drop-shadow-lg">
                         &copy; {currentYear} YourCompany
                     </div>
 
-                    <div className="text-gray-700 dark:text-gray-300 text-sm text-center md:text-right">
+                    <div className="text-sm text-center md:text-right
+                                    text-gray-700 dark:text-gray-300
+                                    bg-white/20 dark:bg-black/40
+                                    backdrop-blur-md rounded-xl px-4 py-2
+                                    shadow-md drop-shadow-lg">
                         Політика конфіденційності | Умови використання
                     </div>
+
                 </div>
             </div>
         </footer>
