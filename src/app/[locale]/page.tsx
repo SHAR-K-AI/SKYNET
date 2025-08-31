@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import CardGrid, { CardData } from '../../components/CardGrid';
-// import { useTranslations } from 'next-intl';
+import { useTranslations } from 'next-intl';
 
 export default function Home() {
     const [cards, setCards] = useState<CardData[]>([]);
@@ -16,11 +16,11 @@ export default function Home() {
         fetchData();
     }, []);
 
-    // const t = useTranslations('HomePage');
-    // return <h1>{t('title')}</h1>;
+    const t = useTranslations('HomePage');
 
     return (
         <div className="min-h-screen ">
+            <h1>{t('title')}</h1>
             <CardGrid cards={cards} />
         </div>
     );

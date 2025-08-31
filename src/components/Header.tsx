@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 import ThemeToggleButton from './ThemeToggleButton';
 import AnimatedTitle from '@/components/AnimatedTitle';
 import { useTranslations, useLocale } from 'next-intl';
@@ -17,12 +17,13 @@ export default function Header() {
 
     const toggleMenu = () => setIsOpen(!isOpen);
 
-    const itemVariants = {
+    // 👇 Типізований варіант
+    const itemVariants: Variants = {
         hidden: { opacity: 0, x: -50 },
         visible: (i: number) => ({
             opacity: 1,
             x: 0,
-            transition: { delay: i * 0.1, type: 'spring', stiffness: 100 }
+            transition: { delay: i * 0.1, type: "spring" as const, stiffness: 100 }
         }),
         exit: { opacity: 0, x: -50, transition: { duration: 0.2 } }
     };
@@ -102,14 +103,15 @@ export default function Header() {
                                                         style={{ color: colors[idx % colors.length] }}
                                                         className="inline-block"
                                                     >
-              {letter}
-            </span>
+                                                        {letter}
+                                                    </span>
                                                 ))}
                                             </a>
                                         </motion.li>
                                     );
                                 })}
-                            </ul>                        </motion.nav>
+                            </ul>
+                        </motion.nav>
                     </>
                 )}
             </AnimatePresence>
