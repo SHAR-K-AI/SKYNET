@@ -1,0 +1,38 @@
+.moon {
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle at 30% 30%, #fdfdfd, #cfd8dc);
+    border-radius: 50%;
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    animation: moonGlow 6s infinite ease-in-out alternate;
+}
+
+.moon::before,
+.moon::after,
+.moon span:nth-child(1),
+.moon span:nth-child(2),
+.moon span:nth-child(3),
+.moon span:nth-child(4) {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(200,200,200,0.4);
+}
+
+.moon::before {
+    width: 18px;
+    height: 18px;
+    top: 10px;
+    left: 12px;
+}
+
+.moon::after {
+    width: 14px;
+    height: 14px;
+    top: 50px;
+    left: 40px;
+}

@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import "./styles/stars.css";
+@import "./styles/comet.css";
+@import "./styles/moon.css";
+@import "./styles/sky.css";
+@import "./styles/sun.css";
+@import "./styles/clouds.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+    --background: white;
+    --foreground: black;
+}
+
+[data-theme='dark'] {
+    --background: black;
+    --foreground: white;
+
+}
+
+body {
+    min-height: 100vh;
+    transition: background 1.5s ease, color 1.5s ease;
+
+}
+

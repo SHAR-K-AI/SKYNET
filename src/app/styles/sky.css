@@ -1,0 +1,8 @@
+.sky-bg {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #87ceeb, #f0f9ff);
+    color: #222;
+}

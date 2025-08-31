@@ -1,0 +1,105 @@
+.cloud {
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0.95;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.cloud.small {
+    width: 80px;
+    height: 40px;
+    top: 20%;
+    left: -120px;
+    animation: floatWave 40s linear infinite;
+}
+
+.cloud.small::before,
+.cloud.small::after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.cloud.small::before {
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    left: 10px;
+}
+
+.cloud.small::after {
+    width: 50px;
+    height: 50px;
+    top: -10px;
+    left: 40px;
+}
+
+.cloud.big {
+    width: 140px;
+    height: 60px;
+    top: 50%;
+    left: -200px;
+    animation: floatWave 60s linear infinite;
+}
+
+.cloud.big::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: -30px;
+    left: 20px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.cloud.big::after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: -20px;
+    left: 60px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.cloud.tiny {
+    width: 50px;
+    height: 25px;
+    top: 70%;
+    left: -80px;
+    animation: floatWave 30s linear infinite;
+}
+
+.cloud.tiny::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -10px;
+    left: 8px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.cloud.tiny::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -5px;
+    left: 25px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+@keyframes floatWave {
+    0%   { transform: translateX(0) translateY(0); }
+    25%  { transform: translateX(30vw) translateY(-15px); }
+    50%  { transform: translateX(60vw) translateY(0); }
+    75%  { transform: translateX(90vw) translateY(15px); }
+    100% { transform: translateX(120vw) translateY(0); }
+}

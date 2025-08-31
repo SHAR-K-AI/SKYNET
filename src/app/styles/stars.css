@@ -1,0 +1,24 @@
+.starry-bg {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    background: radial-gradient(circle at center, #0b0c10, #000);
+    color: white;
+}
+
+.starry-bg span {
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: blink 4s infinite ease-in-out;
+}
+
+@keyframes blink {
+    0%,100% { opacity: 0.2; transform: scale(0.8); }
+    50% { opacity: 1; transform: scale(1.2); }
+}

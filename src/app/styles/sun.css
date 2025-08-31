@@ -1,0 +1,33 @@
+.sun {
+    position: absolute;
+    top: 6%;
+    left: 15%;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, #fff78a, #ffcc00);
+    border-radius: 50%;
+    box-shadow: 0 0 40px rgba(255, 204, 0, 0.7);
+    animation: pulse 4s infinite ease-in-out;
+}
+
+.sun::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -30px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 223, 0, 0.3) 30%, transparent 70%);
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
