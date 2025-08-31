@@ -1,21 +1,21 @@
 import React from 'react';
-import Card from './Card';
+import Card, { LocalizedText } from './Card';
 
 export interface CardData {
-    title: string;
-    description: string;
+    title: LocalizedText;
+    description: LocalizedText;
+    content: LocalizedText;
     imageUrl: string;
     link: string;
-    content: string;
 }
 
 interface CardGridProps {
     cards: CardData[];
 }
 
-const CardGrid: React.FC<CardGridProps> = ({cards}) => {
+const CardGrid: React.FC<CardGridProps> = ({ cards }) => {
     return (
-        <section className="p-6">
+        <section className="md:p-6">
             <h2 className="text-2xl sm:text-3xl font-bold mb-8">
                 Додаткові ресурси та програми
             </h2>

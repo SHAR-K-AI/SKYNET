@@ -23,7 +23,7 @@ export default function CreatePage() {
     };
 
     return (
-        <div style={{ maxWidth: 600, margin: '0 auto', padding: 20 }}>
+        <div style={{ maxWidth: 900, margin: '0 auto', padding: 20 }}>
             <RecordForm onSubmit={handleSubmit} />
         </div>
     );

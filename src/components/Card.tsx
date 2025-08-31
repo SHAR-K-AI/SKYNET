@@ -4,18 +4,25 @@ import { Dialog, Transition } from '@headlessui/react';
 import Image from 'next/image';
 import React, { Fragment, useState, useMemo, useCallback } from 'react';
 import { ClipboardIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { useLocale } from 'next-intl';
 
-interface CardProps {
-    title: string;
-    description: string;
+export interface LocalizedText {
+    ua: string;
+    en: string;
+}
+
+export interface CardProps {
+    title: LocalizedText;
+    description: LocalizedText;
+    content: LocalizedText;
     imageUrl: string;
     link: string;
-    content: string;
 }
 
 const Card: React.FC<CardProps> = ({ title, description, imageUrl, content, link }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [copied, setCopied] = useState(false);
+    const locale = useLocale() as keyof LocalizedText; // "ua" | "en"
 
     const domain = useMemo(() => {
         try {
@@ -62,10 +69,10 @@ const Card: React.FC<CardProps> = ({ title, description, imageUrl, content, link
                    shadow-lg dark:shadow-[0_4px_20px_rgba(255,255,255,0.15)] hover:shadow-2xl transition duration-300"
             >
                 <div className="relative w-full h-32 mb-4 rounded-md overflow-hidden">
-                    <Image src={imageUrl} alt={title} fill style={{ objectFit: 'contain' }} />
+                    <Image src={imageUrl} alt={title[locale]} fill style={{ objectFit: 'contain' }} />
                 </div>
-                <h3 className="font-bold text-lg mb-2">{title}</h3>
-                <p className="text-sm mb-2">{description}</p>
+                <h3 className="font-bold text-lg mb-2">{title[locale]}</h3>
+                <p className="text-sm mb-2">{description[locale]}</p>
 
                 <CopyLinkButton />
 
@@ -105,13 +112,13 @@ const Card: React.FC<CardProps> = ({ title, description, imageUrl, content, link
                            shadow-lg dark:shadow-[0_8px_30px_rgba(255,255,255,0.15)]
                            max-h-[80vh] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400/60 dark:scrollbar-thumb-gray-600/60 scrollbar-track-transparent scrollbar-thumb-rounded-full"
                             >
-                                <Dialog.Title className="font-bold text-xl mb-2">{title}</Dialog.Title>
+                                <Dialog.Title className="font-bold text-xl mb-2">{title[locale]}</Dialog.Title>
 
                                 <div className="relative w-full h-48 mb-4 rounded-md overflow-hidden">
-                                    <Image src={imageUrl} alt={title} fill style={{ objectFit: 'contain' }} />
+                                    <Image src={imageUrl} alt={title[locale]} fill style={{ objectFit: 'contain' }} />
                                 </div>
 
-                                <p className="text-sm mb-4">{content}</p>
+                                <p className="text-sm mb-4">{content[locale]}</p>
 
                                 <CopyLinkButton />
 

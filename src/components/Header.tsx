@@ -7,25 +7,26 @@ import AnimatedTitle from '@/components/AnimatedTitle';
 import { useTranslations, useLocale } from 'next-intl';
 import LocaleSwitcher from "@/components/LocaleSwitcher";
 
-const menuItems = ['home', 'about', 'contact'];
+const menuItems = [
+    'home', 'about', 'contact', 'questions',
+    'cloud-map', 'links', 'arcade-calculator'
+];
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
-
     const locale = useLocale();
-    const t = useTranslations('HomePage');
+    const t = useTranslations('Menu');
 
     const toggleMenu = () => setIsOpen(!isOpen);
 
-    // 👇 Типізований варіант
     const itemVariants: Variants = {
         hidden: { opacity: 0, x: -50 },
         visible: (i: number) => ({
             opacity: 1,
             x: 0,
-            transition: { delay: i * 0.1, type: "spring" as const, stiffness: 100 }
+            transition: { delay: i * 0.05, type: 'spring', stiffness: 100 },
         }),
-        exit: { opacity: 0, x: -50, transition: { duration: 0.2 } }
+        exit: { opacity: 0, x: -50, transition: { duration: 0.2 } },
     };
 
     return (
@@ -56,7 +57,7 @@ export default function Header() {
                 <AnimatedTitle />
             </div>
 
-            <div className="flex items-center space-x-4 ml-4">
+            <div className="flex items-center md:flex-row flex-col gap-4 space-x-4 ml-4">
                 <LocaleSwitcher />
                 <ThemeToggleButton />
             </div>

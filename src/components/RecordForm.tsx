@@ -1,13 +1,19 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
+
+export interface LocalizedField {
+    ua: string;
+    en: string;
+}
 
 export interface FormData {
-    title: string;
+    title: LocalizedField;
     link: string;
     imageUrl: string;
-    description: string;
-    content: string;
+    description: LocalizedField;
+    content: LocalizedField;
 }
 
 interface RecordFormProps {
@@ -16,20 +22,36 @@ interface RecordFormProps {
 }
 
 export default function RecordForm({ initialData, onSubmit }: RecordFormProps) {
+    const t = useTranslations('RecordForm');
+
     const [form, setForm] = useState<FormData>({
-        title: '',
+        title: { ua: '', en: '' },
         link: '',
         imageUrl: '',
-        description: '',
-        content: '',
+        description: { ua: '', en: '' },
+        content: { ua: '', en: '' },
     });
 
     useEffect(() => {
         if (initialData) setForm({ ...initialData });
     }, [initialData]);
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        setForm({ ...form, [e.target.name]: e.target.value });
+    const handleChange = (
+        e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+        field?: keyof LocalizedField,
+        key?: keyof FormData
+    ) => {
+        if (key && field) {
+            setForm({
+                ...form,
+                [key]: {
+                    ...form[key] as LocalizedField,
+                    [field]: e.target.value,
+                },
+            });
+        } else {
+            setForm({ ...form, [e.target.name]: e.target.value });
+        }
     };
 
     const handleSubmit = (e: React.FormEvent) => {
@@ -40,57 +62,80 @@ export default function RecordForm({ initialData, onSubmit }: RecordFormProps) {
     return (
         <form
             onSubmit={handleSubmit}
-            className="flex flex-col gap-4 p-6 bg-white/50 dark:bg-gray-900/50 backdrop-blur-md rounded-xl shadow-lg dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] max-w-lg mx-auto"
+            className="flex flex-col gap-4 p-6 bg-white/50 dark:bg-gray-900/50 backdrop-blur-md rounded-xl shadow-lg dark:shadow-[0_4px_20px_rgba(255,255,255,0.05)] max-w-4xl mx-auto"
         >
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2">Додати запис</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+                {t('addRecord')}
+            </h2>
 
-            <input
-                name="title"
-                placeholder="Назва"
-                value={form.title}
-                onChange={handleChange}
-                required
-                className="p-3 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
-            />
+            <div className="flex gap-4">
+                <div className="flex-1 flex flex-col gap-3">
+                    <input
+                        placeholder={t('titleUA')}
+                        value={form.title.ua}
+                        onChange={(e) => handleChange(e, 'ua', 'title')}
+                        required
+                        className="p-3 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800"
+                    />
+                    <textarea
+                        placeholder={t('descriptionUA')}
+                        value={form.description.ua}
+                        onChange={(e) => handleChange(e, 'ua', 'description')}
+                        className="p-3 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800"
+                    />
+                    <textarea
+                        placeholder={t('contentUA')}
+                        value={form.content.ua}
+                        onChange={(e) => handleChange(e, 'ua', 'content')}
+                        className="p-3 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800"
+                    />
+                </div>
+
+                <div className="flex-1 flex flex-col gap-3">
+                    <input
+                        placeholder={t('titleEN')}
+                        value={form.title.en}
+                        onChange={(e) => handleChange(e, 'en', 'title')}
+                        required
+                        className="p-3 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800"
+                    />
+                    <textarea
+                        placeholder={t('descriptionEN')}
+                        value={form.description.en}
+                        onChange={(e) => handleChange(e, 'en', 'description')}
+                        className="p-3 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800"
+                    />
+                    <textarea
+                        placeholder={t('contentEN')}
+                        value={form.content.en}
+                        onChange={(e) => handleChange(e, 'en', 'content')}
+                        className="p-3 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800"
+                    />
+                </div>
+            </div>
 
             <input
                 name="link"
-                placeholder="Посилання"
+                placeholder={t('link')}
                 value={form.link}
                 onChange={handleChange}
                 required
-                className="p-3 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+                className="p-3 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 w-full"
             />
 
             <input
                 name="imageUrl"
-                placeholder="URL картинки"
+                placeholder={t('imageUrl')}
                 value={form.imageUrl}
                 onChange={handleChange}
-                className="p-3 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
-            />
-
-            <textarea
-                name="description"
-                placeholder="Короткий опис"
-                value={form.description}
-                onChange={handleChange}
-                className="p-3 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
-            />
-
-            <textarea
-                name="content"
-                placeholder="Повний опис"
-                value={form.content}
-                onChange={handleChange}
-                className="p-3 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+                className="p-3 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 w-full"
             />
 
             <button
                 type="submit"
-                className="mt-2 py-3 px-6 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-500 dark:hover:bg-indigo-400 transition shadow-md hover:shadow-lg"
+                className="mt-4 py-3 px-6 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-500"
             >
-                Зберегти
+                {t('save')}
             </button>
         </form>
     );

@@ -16,11 +16,8 @@ export default function Home() {
         fetchData();
     }, []);
 
-    const t = useTranslations('HomePage');
-
     return (
         <div className="min-h-screen ">
-            <h1>{t('title')}</h1>
             <CardGrid cards={cards} />
         </div>
     );

@@ -1,0 +1,23 @@
+{
+  "RecordForm": {
+    "addRecord": "Додати запис",
+    "titleUA": "Назва (UA)",
+    "titleEN": "Назва (EN)",
+    "link": "Посилання",
+    "imageUrl": "URL картинки",
+    "descriptionUA": "Короткий опис (UA)",
+    "descriptionEN": "Короткий опис (EN)",
+    "contentUA": "Повний опис (UA)",
+    "contentEN": "Повний опис (EN)",
+    "save": "Зберегти"
+  },
+  "Menu": {
+    "home": "Головна",
+    "about": "Про нас",
+    "contact": "Контакти",
+    "questions": "Розгорнуті питання",
+    "cloud-map": "Карта Google Cloud",
+    "links": "Корисні посилання",
+    "arcade-calculator": "Калькулятор Аркади"
+  }
+}

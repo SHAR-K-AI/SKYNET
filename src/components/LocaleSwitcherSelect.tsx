@@ -1,55 +1,43 @@
 'use client';
 
 import clsx from 'clsx';
-import {useParams} from 'next/navigation';
-import {Locale} from 'next-intl';
-import {ChangeEvent, ReactNode, useTransition} from 'react';
-import {usePathname, useRouter} from '@/i18n/navigation';
+import { Locale } from 'next-intl';
+import { ChangeEvent, ReactNode, useTransition } from 'react';
+import { usePathname, useRouter } from '@/i18n/navigation';
+import { ChevronDownIcon } from '@heroicons/react/24/solid';
 
 type Props = {
     children: ReactNode;
     defaultValue: string;
 };
 
-export default function LocaleSwitcherSelect({
-                                                 children,
-                                                 defaultValue,
-                                             }: Props) {
+export default function LocaleSwitcherSelect({ children, defaultValue }: Props) {
     const router = useRouter();
     const [isPending, startTransition] = useTransition();
     const pathname = usePathname();
-    const params = useParams();
 
     function onSelectChange(event: ChangeEvent<HTMLSelectElement>) {
         const nextLocale = event.target.value as Locale;
         startTransition(() => {
-            console.log(pathname, params)
-            router.replace(
-                // @ts-expect-error -- TypeScript will validate that only known `params`
-                // are used in combination with a given `pathname`. Since the two will
-                // always match for the current route, we can skip runtime checks.
-                {pathname, params},
-                {locale: nextLocale}
-            );
+            router.replace(pathname,  { locale: nextLocale });
+
         });
     }
 
     return (
-        <label
-            className={clsx(
-                'relative text-gray-400',
-                isPending && 'transition-opacity [&:disabled]:opacity-30'
-            )}
-        >
+        <label className="relative inline-block">
             <select
-                className="inline-flex appearance-none bg-transparent py-3 pl-2 pr-6"
+                className={clsx(
+                    'appearance-none bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 font-bold uppercase py-2 px-4 pr-10 rounded-lg shadow-md transition-all duration-200 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 disabled:opacity-50 cursor-pointer',
+                    isPending && 'opacity-50 cursor-not-allowed'
+                )}
                 defaultValue={defaultValue}
                 disabled={isPending}
                 onChange={onSelectChange}
             >
                 {children}
             </select>
-            <span className="pointer-events-none absolute right-2 top-[8px]">⌄</span>
+            <ChevronDownIcon className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500 dark:text-gray-300" />
         </label>
     );
 }

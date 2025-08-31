@@ -860,6 +860,11 @@ postcss@^8.4.41:
     picocolors "^1.1.1"
     source-map-js "^1.2.1"
 
+react-chrome-dino-ts@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/react-chrome-dino-ts/-/react-chrome-dino-ts-0.1.2.tgz#4a247be70991ebb32568bd915edee6463b3c02c2"
+  integrity sha512-UT7zEkeLFykgwgl2r/5FHzZgs0Bp8c/ZpB+4TZxMPdgakrXGbR7CZl/wYZ5uTJKDwqf7JcEE/5sVZsKaWXuSBA==
+
 react-dom@19.1.0:
   version "19.1.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-19.1.0.tgz#133558deca37fa1d682708df8904b25186793623"
@@ -993,3 +998,8 @@ yallist@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-5.0.0.tgz#00e2de443639ed0d78fd87de0d27469fbcffb533"
   integrity sha512-YgvUTfwqyc7UXVMrB+SImsVYSmTS8X/tSrtdNZMImM+n7+QTriRXyXim0mBrTXNeqzVF0KWGgHPeiyViFFrNDw==
+
+yarn@^1.22.22:
+  version "1.22.22"
+  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.22.22.tgz#ac34549e6aa8e7ead463a7407e1c7390f61a6610"
+  integrity sha512-prL3kGtyG7o9Z9Sv8IPfBNrWTDmXB4Qbes8A9rEzt6wkJV8mUvoirjU0Mp3GGAU06Y0XQyA3/2/RQFVuK7MTfg==

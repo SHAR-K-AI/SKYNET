@@ -1,5 +1,23 @@
 {
-  "HomePage": {
-    "title": "Hello world!"
+  "RecordForm": {
+    "addRecord": "Add Record",
+    "titleUA": "Title (UA)",
+    "titleEN": "Title (EN)",
+    "link": "Link",
+    "imageUrl": "Image URL",
+    "descriptionUA": "Short Description (UA)",
+    "descriptionEN": "Short Description (EN)",
+    "contentUA": "Full Description (UA)",
+    "contentEN": "Full Description (EN)",
+    "save": "Save"
+  },
+  "Menu": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "questions": "Expanded Questions",
+    "cloud-map": "Google Cloud Map",
+    "links": "Useful Links",
+    "arcade-calculator": "Arcade Calculator"
   }
 }

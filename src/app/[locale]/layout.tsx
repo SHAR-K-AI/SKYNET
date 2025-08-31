@@ -5,6 +5,7 @@ import { ThemeProvider } from "next-themes";
 import Header from "@/components/Header";
 import ThemeBackground from "@/components/ThemeBackground";
 import { NextIntlClientProvider } from "next-intl";
+import Footer from "@/components/Footer";
 
 const roboto = Roboto({
     variable: "--font-roboto",
@@ -29,7 +30,7 @@ export default async function LocaleLayout({
     children: React.ReactNode;
     params: Promise<{ locale: string }>;
 }) {
-    const { locale } = await params; // ✅ тепер не буде конфлікту
+    const { locale } = await params;
 
     return (
         <html lang={locale} className="scroll-smooth">
@@ -40,9 +41,7 @@ export default async function LocaleLayout({
                 <div className="min-h-screen flex flex-col transition-colors">
                     <Header />
                     <main className="flex-1 p-8 transition-colors">{children}</main>
-                    <footer className="p-4 text-center text-gray-500">
-                        © 2025 SkyNet. All rights reserved.
-                    </footer>
+                    <Footer/>
                 </div>
             </NextIntlClientProvider>
         </ThemeProvider>

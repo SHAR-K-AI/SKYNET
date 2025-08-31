@@ -5,6 +5,7 @@
 @import "./styles/sky.css";
 @import "./styles/sun.css";
 @import "./styles/clouds.css";
+@import "react-chrome-dino-ts/index.css";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -23,5 +24,21 @@ body {
     min-height: 100vh;
     transition: background 1.5s ease, color 1.5s ease;
 
+}
+
+.instructions {
+    display: none !important;
+}
+
+.footer-pixel-light {
+    background-image: url('https://png.klev.club/uploads/posts/2024-03/png-klev-club-p-zemlya-mainkraft-png-6.png');
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+.footer-pixel-dark {
+    background-image: url('https://png.klev.club/uploads/posts/2024-03/png-klev-club-p-zemlya-mainkraft-png-6.png');
+    background-repeat: repeat;
+    background-size: contain;
 }
 
