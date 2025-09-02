@@ -66,7 +66,7 @@ const Card: React.FC<CardProps> = ({ title, description, imageUrl, content, link
             <div
                 onClick={() => setIsOpen(true)}
                 className="relative cursor-pointer bg-white/50 dark:bg-gray-800/40 backdrop-blur-md text-gray-900 dark:text-gray-100 rounded-xl p-4
-                   shadow-lg dark:shadow-[0_4px_20px_rgba(255,255,255,0.15)] hover:shadow-2xl transition duration-300"
+                   shadow-lg dark:shadow-[0_4px_15px_rgba(255,255,255,0.15)] hover:shadow-2xl transition duration-300"
             >
                 <div className="relative w-full h-32 mb-4 rounded-md overflow-hidden">
                     <Image src={imageUrl} alt={title[locale]} fill style={{ objectFit: 'contain' }} />
