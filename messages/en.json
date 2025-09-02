@@ -19,5 +19,14 @@
     "cloud-map": "Google Cloud Map",
     "links": "Useful Links",
     "arcade-calculator": "Arcade Calculator"
+  },
+  "FAQ": {
+    "Title": "FAQ",
+    "Description": "This page is inspired by an article on Medium. It contains questions from the original article as well as new questions and answers that may be helpful for your learning and practice. Whether you are just starting or seeking to deepen your knowledge, this resource will guide you in asking the right questions and finding useful answers.",
+    "SearchPlaceholder": "Search questions...",
+    "All": "All",
+    "Loading": "Loading...",
+    "NothingFound": "Nothing found.",
+    "OriginalArticle": "Original article:"
   }
 }

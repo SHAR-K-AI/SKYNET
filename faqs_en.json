@@ -1,0 +1,182 @@
+[
+  {
+    "id": "b413eb2f-4a8f-4d54-942e-0e8cbc7b93f3",
+    "level": "Beginner",
+    "question": "What are Google Cloud Platform?",
+    "answer": "GCP is a suite of cloud computing services provided by Google. It offers a wide range of services, including infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS), which can be used to build, deploy, and scale applications in a cloud environment. GCP leverages Google’s global network of data centres, allowing users to access resources like virtual machines, storage, databases, and analytics tools with high performance, scalability, security, and global availability."
+  },
+  {
+    "id": "c527f3d2-9a6e-4f1b-9f12-2a6b8e4d7c91",
+    "level": "Beginner",
+    "question": "What are Google Cloud Regions and Zones?",
+    "answer": "GCP resources are organized into regions and zones. A region is a specific geographical location where Google hosts cloud services, and each region consists of multiple zones. Zones are individual data centres where GCP resources like virtual machines and storage are hosted."
+  },
+  {
+    "id": "d1a9f3b2-8c6f-4b5e-ae9c-1f7d3a2c5e6f",
+    "level": "Beginner",
+    "question": "What is Google Compute Engine?",
+    "answer": "Google Compute Engine (GCE) is an Infrastructure as a Service (IaaS) offering that provides scalable, virtual machines (VMs) running on Google’s global infrastructure. It allows users to create and manage VMs with customizable configurations, including the choice of CPU, memory, storage, and networking options. Compute Engine supports a variety of operating systems (Linux, Windows), offers both preemptible and regular VMs, and integrates with other GCP services such as Cloud Storage and BigQuery. It is ideal for running compute-intensive workloads, web applications, databases, and other cloud-native applications. GCE also provides advanced features like load balancing, auto-scaling, and security via firewalls and identity management, making it a flexible solution for deploying applications in the cloud."
+  },
+  {
+    "id": "e2b8f4c3-9d7e-4c6f-bf8d-2g8h4b3d7f9a",
+    "level": "Beginner",
+    "question": "What is Google Cloud Storage?",
+    "answer": "Google Cloud Storage is a scalable, secure, and durable object storage service provided by GCP. It is designed to store unstructured data such as images, videos, backups, and large datasets with high availability. Cloud Storage offers different storage classes — Standard, Nearline, Coldline, and Archive — each optimized for varying access frequency and cost requirements. The service integrates with other GCP products and provides automatic redundancy across multiple regions or within a single region to ensure data durability. It also includes advanced features such as versioning, lifecycle management, and encryption, making it suitable for a wide range of use cases, from web hosting and content delivery to big data analytics and disaster recovery."
+  },
+  {
+    "id": "f3c9g5d4-0e8f-5g7h-cf9d-3h9i5c4e8g0b",
+    "level": "Beginner",
+    "question": "Explain the difference between Google Cloud Storage and Persistent Disks.",
+    "answer": "The key difference between Google Cloud Storage and Persistent Disks lies in their storage architecture and use cases. Google Cloud Storage is an object-based storage service, optimized for storing and retrieving large amounts of unstructured data like images, videos, and backups. It is commonly accessed via HTTP APIs and can be globally distributed for high availability and durability, making it ideal for web applications, content storage, and archival purposes. On the other hand, Persistent Disks are block storage devices used primarily in conjunction with virtual machines in Google Compute Engine and Google Kubernetes Engine. Persistent Disks provide high-performance, durable storage that can be attached to VMs as primary or secondary storage, making them suitable for structured data like databases and application file systems. Unlike Cloud Storage, Persistent Disks allow low-latency, block-level read and write operations, and are more tightly integrated with compute services for scenarios where high IOPS and low latency are critical."
+  },
+  {
+    "id": "a4f2c6d3-1b9f-45e7-8d12-9e2f1b5a7c8d",
+    "level": "Beginner",
+    "question": "What is Google App Engine?",
+    "answer": "Google App Engine is a fully managed Platform as a Service (PaaS) provided by Google Cloud that allows developers to build, deploy, and scale web and mobile applications without having to manage the underlying infrastructure. It supports multiple programming languages such as Python, Java, Node.js, PHP, Go, and more. App Engine automatically handles tasks such as load balancing, scaling, and monitoring, allowing applications to scale seamlessly with traffic demands. Developers can focus on writing code while App Engine manages server configuration, security, and capacity management. It also integrates well with other Google Cloud services, making it an ideal platform for building modern, scalable applications."
+  },
+  {
+    "id": "b5g3h7e4-2c0g-56f8-9e23-0f3g2c6b8d9e",
+    "level": "Beginner",
+    "question": "What is Google Cloud IAM (Identity and Access Management)?",
+    "answer": "Google Cloud Identity and Access Management (IAM) is a framework within GCP that allows administrators to control who has access to resources and what actions they can perform. IAM enables fine-grained access control by assigning roles and permissions to users, groups, and service accounts, ensuring that the right people have the right level of access to specific cloud resources. With IAM, administrators can apply the principle of least privilege, granting only the necessary permissions to users or services to perform their tasks. It supports predefined roles, custom roles, and resource-level permissions across GCP services, providing a scalable and secure way to manage access for organizations. IAM also integrates with other Google Cloud security services, allowing for comprehensive identity management and auditing."
+  },
+  {
+    "id": "c6h4i8f5-3d1h-67g9-af34-1g4h3d7c9e0f",
+    "level": "Beginner",
+    "question": "How does Google Cloud VPC work?",
+    "answer": "A Virtual Private Cloud (VPC) is a networking service that allows users to create and manage isolated virtual networks within Google Cloud. A VPC enables users to define their own IP address ranges, subnets, routes, and firewall rules, providing full control over network configurations. It allows seamless communication between resources, such as VMs or containers, across different zones or regions. VPCs can be expanded to span multiple regions and can connect on-premises networks through Cloud Interconnect or VPN, supporting hybrid cloud architectures. It also supports advanced features like VPC Peering, Shared VPC, and Private Google Access, which allow organizations to securely manage network traffic, connect separate environments, and control access to Google services without exposing resources to the public internet."
+  },
+  {
+    "id": "d7i5j9g6-4e2i-78h0-bg45-2h5i4e8d0f1g",
+    "level": "Beginner",
+    "question": "What is Google Kubernetes Engine (GKE)?",
+    "answer": "Google Kubernetes Engine (GKE) is a managed service provided by Google Cloud for deploying, managing, and scaling containerized applications using Kubernetes, the leading open-source container orchestration platform. GKE automates many of the complex tasks associated with Kubernetes, such as cluster provisioning, scaling, and upgrades, allowing developers to focus on application development rather than infrastructure management. GKE supports seamless integration with other Google Cloud services, provides automatic scaling, built-in logging and monitoring, and advanced security features like Google Cloud IAM and VPC-native networking. It is ideal for organizations looking to run microservices architectures or manage large-scale containerized workloads while leveraging Google’s robust cloud infrastructure. GKE also supports hybrid and multi-cloud environments through Anthos, allowing flexibility across different cloud providers and on-premises data centres."
+  },
+  {
+    "id": "e8j6k0h7-5f3j-89i1-ch56-3i6j5f9e1g2h",
+    "level": "Beginner",
+    "question": "What is Google BigQuery?",
+    "answer": "Google BigQuery is a fully managed, serverless data warehouse and analytics platform provided by Google Cloud that allows users to perform fast SQL queries on large datasets. Designed for high-performance data analysis, BigQuery can handle terabytes to petabytes of data, making it ideal for big data analytics, business intelligence, and machine learning use cases. Its architecture enables automatic scaling, so users don’t have to manage infrastructure or worry about provisioning resources. BigQuery integrates seamlessly with other Google Cloud services like Dataflow, Dataproc, and AI Platform, allowing advanced data processing and model training directly within the platform. It also supports features like BigQuery ML, which lets users build and operationalize machine learning models using SQL, and BigQuery GIS, which provides spatial analysis capabilities. With built-in security, encryption, and the ability to query data in real time from Cloud Storage, BigQuery is a powerful tool for modern data analysis at scale."
+  },
+  {
+    "id": "f9k7l1i8-6g4k-90j2-di67-4j7k6g0f2h3i",
+    "level": "Beginner",
+    "question": "What is Google Cloud Pub/Sub?",
+    "answer": "Google Cloud Pub/Sub is a fully managed messaging service provided by Google Cloud that enables real-time, asynchronous communication between independent applications or services. It follows a publish-subscribe model, where messages are sent by publishers and received by subscribers without the two needing to interact directly. Pub/Sub decouples the producers of messages from the consumers, allowing for scalable, event-driven architectures. It is designed for low-latency, high-throughput messaging, making it ideal for scenarios such as logging, data streaming, and integrating microservices. Pub/Sub automatically scales to handle any volume of messages, ensures message delivery with at least-once semantics, and integrates easily with other GCP services like Dataflow, BigQuery, and Cloud Functions to build powerful, event-driven pipelines."
+  },
+  {
+    "id": "g0l8m2j9-7h5l-01k3-ej78-5k8l7h1g3i4j",
+    "level": "Beginner",
+    "question": "What is Google Cloud Functions?",
+    "answer": "Google Cloud Functions is a serverless, event-driven computing service provided by Google Cloud that allows developers to run lightweight code snippets (functions) in response to specific events or triggers without managing any infrastructure. These functions can be triggered by various sources, such as HTTP requests, changes in Cloud Storage, messages in Cloud Pub/Sub, or other Google Cloud services. Since it’s serverless, Cloud Functions automatically scales to handle incoming requests, ensuring that developers only pay for the actual compute time used. This makes it ideal for building microservices, real-time data processing, webhooks, and other small, task-oriented applications. Cloud Functions seamlessly integrates with the Google Cloud ecosystem, enabling fast, scalable, and cost-effective solutions for event-driven workloads."
+  },
+  {
+    "id": "h1m9n3k0-8i6m-12l4-fk89-6l9m8i2h4j5k",
+    "level": "Beginner",
+    "question": "Explain the concept of Preemptible VMs in GCP.",
+    "answer": "Preemptible VMs in Google Cloud are short-lived, cost-effective virtual machines designed for workloads that can tolerate interruptions. These VMs are offered at a significantly lower price compared to regular VMs, but they can be terminated by Google at any time if the cloud infrastructure needs to reclaim the resources. Preemptible VMs are ideal for batch processing, big data jobs, and fault-tolerant workloads that can be easily restarted. Each instance has a maximum lifetime of 24 hours, and users are given a short warning before the VM is preempted. By leveraging Preemptible VMs, organizations can significantly reduce their computing costs while handling tasks that can withstand occasional interruptions. They integrate seamlessly with Google Compute Engine and support auto-scaling and containerized workloads, making them an attractive option for cost-conscious projects."
+  },
+  {
+    "id": "i2n0o4l1-9j7n-23m5-gl90-7m0n9j3i5k6l",
+    "level": "Beginner",
+    "question": "What is Google Cloud Datastore?",
+    "answer": "Google Cloud Datastore is a fully managed, scalable NoSQL document database provided by Google Cloud, designed for building web and mobile applications that require structured data and automatic scaling. It supports both ACID transactions and SQL-like queries, making it suitable for applications that need strong consistency and flexible data models. Datastore handles replication and high availability automatically, allowing developers to focus on their application logic without worrying about database management. It integrates well with other Google Cloud services, providing seamless data storage for applications running on Google App Engine, Compute Engine, or Kubernetes Engine. Datastore is ideal for scenarios that require high availability, such as e-commerce, social networks, and gaming applications, where flexible schema and scalability are key."
+  },
+  {
+    "id": "j3o1p5m2-0k8o-34n6-hm01-8n1o0k4j6l7m",
+    "level": "Beginner",
+    "question": "What is Google Cloud SQL?",
+    "answer": "Google Cloud SQL is a fully managed relational database service offered by Google Cloud, supporting popular database engines such as MySQL, PostgreSQL, and SQL Server. It allows users to deploy, manage, and scale databases in the cloud without needing to handle infrastructure tasks like backups, replication, patch management, or updates. Cloud SQL provides high availability through automated failover and replication, along with integrated security features like encryption at rest and in transit, and built-in IAM controls. It seamlessly integrates with other Google Cloud services such as BigQuery, App Engine, and Compute Engine, making it ideal for a wide range of applications, including web hosting, content management, and transactional workloads. With automatic scaling and performance optimization, Cloud SQL offers a reliable and secure way to run relational databases in the cloud."
+  },
+  {
+    "id": "k4p2q6n3-1l9p-45o7-in12-9o2p1l5k7m8n",
+    "level": "Beginner",
+    "question": "How does Google Cloud Load Balancing work?",
+    "answer": "Google Cloud Load Balancing is a fully managed service that distributes incoming traffic across multiple backend instances, ensuring high availability, reliability, and performance for applications. It supports various types of load balancing, including HTTP(S), TCP/SSL, and UDP, across both global and regional scales. By automatically routing traffic to the closest available backend based on factors such as traffic load, availability, and geographic proximity, Cloud Load Balancing helps minimize latency and prevent overloading any single server. It integrates with Google Cloud services like Compute Engine, GKE, and Cloud CDN for seamless traffic distribution. Additionally, Cloud Load Balancing is capable of handling massive amounts of traffic, providing autoscaling to meet sudden spikes in demand, and includes health checks to ensure only healthy instances serve traffic, improving overall service reliability."
+  },
+  {
+    "id": "l5q3r7o4-2m0q-56p8-jo23-0p3q2m6l8n9o",
+    "level": "Beginner",
+    "question": "What is Google Cloud Spanner?",
+    "answer": "Google Cloud Spanner is a fully managed, scalable, globally distributed relational database service provided by Google Cloud. It combines the best features of traditional relational databases, such as strong consistency and transactions, with the horizontal scalability typically found in NoSQL databases. Cloud Spanner is designed to handle large-scale applications with high availability and low latency, across regions or globally, making it ideal for mission-critical workloads that require both consistency and scalability. It supports standard SQL queries and integrates well with Google Cloud services, providing seamless scaling, automatic replication, and failover across regions. With its unique combination of relational and distributed database capabilities, Cloud Spanner is used in industries like finance, gaming, and global e-commerce, where data consistency and global reach are essential."
+  },
+    {
+      "id": "m6r4s8p5-3n1r-67q9-kp34-1q4r3n7m9o0p",
+      "level": "Beginner",
+      "question": "What is Google Cloud Marketplace?",
+      "answer": "Google Cloud Marketplace is an online store that allows users to discover, purchase, and deploy pre-configured software solutions, applications, and services directly within Google Cloud. It offers a wide range of products from Google and third-party vendors, including virtual machine images, containers, databases, development stacks, and APIs, covering categories like security, machine learning, analytics, and DevOps. The Marketplace simplifies the deployment process by enabling one-click installation of these solutions, which are optimized for integration with Google Cloud services such as Compute Engine, Kubernetes Engine, and Cloud Storage. This helps organizations accelerate time to market, reduce complexity, and scale quickly by leveraging enterprise-grade solutions without needing to manage the underlying infrastructure."
+    },
+    {
+      "id": "n7s5t9q6-4o2s-78r0-lq45-2r5s4o8n0p1q",
+      "level": "Beginner",
+      "question": "What is Google Cloud Memorystore?",
+      "answer": "Google Cloud Memorystore is a fully managed in-memory data store service provided by Google Cloud, supporting both Redis and Memcached. It is designed for applications that require low-latency access to data, such as caching, session management, and real-time analytics. Memorystore automatically handles provisioning, scaling, replication, patching, and failover, allowing developers to focus on building applications rather than managing infrastructure. It ensures high availability and can scale to meet varying workload demands, making it ideal for use cases like speeding up database queries, processing large volumes of data quickly, or reducing the load on backend services. With built-in integration with other Google Cloud services and strong security features like encryption and VPC networking, Memorystore offers a reliable and scalable solution for managing in-memory data."
+    },
+    {
+      "id": "o8t6u0r7-5p3t-89s1-mr56-3s6t5p9o1q2r",
+      "level": "Beginner",
+      "question": "What is Google Cloud Bigtable?",
+      "answer": "Google Cloud Bigtable is a fully managed, scalable NoSQL database service provided by Google Cloud, designed for large-scale, low-latency workloads. It is ideal for applications that require high throughput and real-time data access, such as time-series data, IoT data, financial analytics, and user personalization. Bigtable is optimized for handling massive amounts of structured data across rows and columns, providing horizontal scaling and automatic sharding to maintain performance as data grows. It integrates with other Google Cloud services like BigQuery and Dataflow for advanced analytics and real-time data processing. Bigtable offers seamless replication for high availability and reliability, making it an excellent choice for applications that need to handle petabyte-scale data with low latency."
+    },
+  {
+    "id": "p9u7v1s8-6q4u-90t2-ns67-4t7u6q0p2r3s",
+    "level": "Beginner",
+    "question": "What is Google Cloud Endpoints?",
+    "answer": "Google Cloud Endpoints is a fully managed API management service that enables developers to create, deploy, secure, and monitor APIs on Google Cloud. Built on OpenAPI and gRPC standards, Cloud Endpoints provides a scalable way to manage and expose backend services as APIs, making it easier to integrate different applications and services. It offers key features such as authentication, rate limiting, and API keys for securing APIs, along with detailed logging and monitoring through Google Cloud Monitoring and Cloud Logging for tracking API performance and usage. By simplifying API management, Cloud Endpoints allows developers to focus on building functionality while ensuring that APIs are secure, reliable, and scalable, making it ideal for microservices, mobile applications, and multi-tier architectures."
+  },
+  {
+    "id": "q0v8w2t9-7r5v-01u3-ot78-5u8v7r1q3s4t",
+    "level": "Beginner",
+    "question": "What is Google Cloud Dataflow?",
+    "answer": "Google Cloud Dataflow is a fully managed service for stream and batch data processing provided by Google Cloud. Built on the Apache Beam programming model, Dataflow allows developers to build unified pipelines for processing data in real-time or in batches, without the need to manage the underlying infrastructure. It automatically handles resource provisioning, scaling, and optimization to ensure efficient execution of data pipelines. Dataflow is ideal for use cases such as ETL (Extract, Transform, Load) processes, real-time analytics, and data integration workflows. It integrates seamlessly with other Google Cloud services like BigQuery, Pub/Sub, and Cloud Storage to enable end-to-end data processing and analytics solutions. With its ability to process large volumes of data quickly and its flexibility to handle both stream and batch workloads, Dataflow is a powerful tool for organizations looking to derive insights from their data."
+  },
+  {
+    "id": "r1w9x3u0-8s6w-12v4-pu89-6v9w8s2r4t5u",
+    "level": "Beginner",
+    "question": "How does Google Cloud Monitoring work?",
+    "answer": "Google Cloud Monitoring, formerly known as Stackdriver, is a fully managed service that provides real-time visibility into the performance, availability, and health of applications and infrastructure running on Google Cloud, as well as on-premises and hybrid cloud environments. It collects and analyzes metrics, logs, and traces from various Google Cloud services, including Compute Engine, Kubernetes Engine, BigQuery, and more. Cloud Monitoring enables users to set up custom dashboards, create alerts, and configure automated notifications to respond to performance issues, outages, or anomalies in real-time. It integrates seamlessly with Google Cloud Logging and Cloud Trace, allowing developers and operations teams to troubleshoot and optimize application performance. With built-in support for uptime checks and service-level objectives (SLOs), Cloud Monitoring helps ensure that services meet desired performance and availability targets."
+  },
+  {
+    "id": "s2x1y4v8-9t7x-23w5-qr90-7w0x9t3s5u6v",
+    "level": "Beginner",
+    "question": "What is Google Cloud AutoML?",
+    "answer": "Google Cloud AutoML is a suite of machine learning tools that enables developers with limited machine learning expertise to build high-quality custom models for tasks like image recognition, natural language processing, and structured data analysis. It automates the complex processes of model training, optimization, and deployment by providing a simple, intuitive interface. With AutoML, users can upload labelled datasets, and the service automatically selects the best model architecture, tunes hyperparameters, and evaluates performance. It integrates with other Google Cloud services such as Cloud Storage and BigQuery, making it easy to manage data and integrate AI capabilities into applications. AutoML is ideal for businesses that need machine learning models without the need for deep expertise, allowing them to leverage the power of AI for tasks like image classification, sentiment analysis, and entity extraction."
+  },
+  {
+    "id": "t3y2z5w9-0u8y-34x6-rs01-8x1y0u4t6v7w",
+    "level": "Beginner",
+    "question": "What is Google Cloud Run?",
+    "answer": "Google Cloud Run is a fully managed, serverless platform that allows you to run containerized applications without managing the underlying infrastructure. It automatically handles scaling, deployment, and load balancing, enabling applications to scale up or down based on demand, from zero to thousands of instances. Cloud Run supports any programming language or library that can be packaged in a container, making it flexible for a wide range of use cases. It is ideal for running microservices, APIs, web applications, or background jobs, and it integrates seamlessly with other Google Cloud services like Cloud SQL, Pub/Sub, and Cloud Monitoring. Cloud Run also provides built-in security features like HTTPS, traffic splitting, and identity and access management (IAM), making it an efficient solution for building and deploying stateless, containerized applications quickly and easily."
+  },
+  {
+    "id": "u4z3a6x0-1v9z-45y7-st12-9y2z1v5u7w8x",
+    "level": "Beginner",
+    "question": "Explain the difference between Google App Engine and Google Cloud Functions.",
+    "answer": "The main difference between Google App Engine and Google Cloud Functions is their architecture and use cases. App Engine is a Platform as a Service (PaaS) for building and running scalable web applications, and managing long-running apps with built-in services and continuous availability. Cloud Functions, on the other hand, is a serverless, event-driven service for running lightweight, stateless functions in response to specific triggers like HTTP requests or events. While App Engine is ideal for full-fledged applications, Cloud Functions are best suited for handling isolated, on-demand tasks triggered by events."
+  },
+  {
+    "id": "v5a4b7y1-2z0a-56b8-qt23-0a3b2z6v8w9x",
+    "level": "Beginner",
+    "question": "What is Google Cloud Interconnect?",
+    "answer": "Google Cloud Interconnect is a networking service that provides high-speed, dedicated connections between your on-premises infrastructure and Google Cloud. It offers two main options: Dedicated Interconnect, which provides direct physical connections to Google’s network, and Partner Interconnect, which allows you to connect through Google’s network via a third-party service provider. Cloud Interconnect ensures lower latency, higher reliability, and greater bandwidth compared to traditional VPNs, making it ideal for hybrid cloud architectures, data-intensive applications, and workloads requiring secure and fast data transfer. It also integrates with Google Cloud’s Virtual Private Cloud (VPC), enabling seamless and efficient communication between on-premise systems and cloud resources."
+  },
+  {
+    "id": "w6b5c8z2-3a1b-67c9-ru34-1b4c3a7w9x0y",
+    "level": "Beginner",
+    "question": "What is Google Cloud Armor?",
+    "answer": "Google Cloud Armor is a security service provided by Google Cloud that helps protect applications and services from distributed denial-of-service (DDoS) attacks, web-based threats, and other malicious traffic. It acts as a web application firewall (WAF), allowing users to create and apply security policies that filter incoming traffic based on IP addresses, geographic location, or specific request patterns. Cloud Armor integrates with Google’s global load balancers to provide protection at the edge of Google’s network, ensuring that malicious traffic is blocked before it reaches your infrastructure. It also offers customizable rules for mitigating OWASP Top 10 vulnerabilities, rate limiting, and threat detection, making it ideal for organizations that need to secure their web applications and APIs against a wide range of cyber threats."
+  },
+  {
+    "id": "x7c6d9a3-4b2c-78d0-sv45-2c5d4b8x0y1z",
+    "level": "Beginner",
+    "question": "What is Google Cloud Vision API?",
+    "answer": "Google Cloud Vision API is a machine learning service provided by Google Cloud that enables developers to analyze and extract meaningful information from images. Using advanced image recognition models, the Vision API can perform tasks like object detection, facial recognition, optical character recognition (OCR) for text extraction, and identifying landmarks or logos. It can also classify images into predefined categories, detect explicit content, and analyze attributes such as image colour and composition. The API is designed to integrate easily into applications, allowing businesses to add powerful image analysis capabilities without the need for building complex machine learning models. It’s widely used in industries such as retail, healthcare, and content moderation to automate processes that involve visual data."
+  },
+  {
+    "id": "y8d9e0f1-5g2h-89i0-jk12-3l4m5n6o7p8q",
+    "level": "Beginner",
+    "question": "What is Google Cloud Speech-to-Text API?",
+    "answer": "Google Cloud Speech-to-Text API is a machine learning service provided by Google Cloud that enables developers to convert spoken language into written text. It supports real-time transcription as well as batch processing of pre-recorded audio, handling a wide range of languages and dialects. The API is capable of recognizing speech from various audio formats and can accurately transcribe noisy environments or multiple speakers using advanced models like automatic speech recognition (ASR) and enhanced speech models. It also offers features such as speaker diarisation (distinguishing between different speakers) and word-level timestamps, making it ideal for use cases like voice commands, transcription services, customer service automation, and voice-enabled applications. The API is widely used in industries such as healthcare, media, and customer support for automating speech-based tasks."
+  }
+]

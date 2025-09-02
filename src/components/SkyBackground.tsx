@@ -1,10 +1,12 @@
-"use client";
+'use client';
 
-import React, { useMemo } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function SkyBackground() {
-    const clouds = useMemo(() => {
-        return Array.from({ length: 10 }, (_, i) => {
+    const [clouds, setClouds] = useState<{id:number,type:string,top:number,duration:number,delay:number}[]>([]);
+
+    useEffect(() => {
+        const generated = Array.from({ length: 10 }, (_, i) => {
             const types = ["small", "big", "tiny"];
             const type = types[Math.floor(Math.random() * types.length)];
             const top = 10 + Math.random() * 70;
@@ -14,6 +16,7 @@ export default function SkyBackground() {
             const delay = Math.random() * 20;
             return { id: i, type, top, duration, delay };
         });
+        setClouds(generated);
     }, []);
 
     return (

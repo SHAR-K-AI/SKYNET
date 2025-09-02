@@ -17,7 +17,7 @@ const CardGrid: React.FC<CardGridProps> = ({ cards }) => {
     return (
         <section className="md:p-6">
             <h2 className="text-2xl sm:text-3xl font-bold mb-8">
-                Додаткові ресурси та програми
+                Ресурси та програми
             </h2>
 
             <div

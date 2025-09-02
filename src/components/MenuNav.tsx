@@ -1,4 +1,5 @@
-import { motion, Variants } from "framer-motion";
+import {motion, Variants} from "framer-motion";
+import SoundWrapper from "@/components/SoundWrapper";
 
 const menuItems = [
     'home', 'about', 'contact', 'questions',
@@ -6,13 +7,13 @@ const menuItems = [
 ];
 
 const itemVariants: Variants = {
-    hidden: { opacity: 0, x: -50 },
+    hidden: {opacity: 0, x: -50},
     visible: (i: number) => ({
         opacity: 1,
         x: 0,
-        transition: { delay: i * 0.05, type: 'spring', stiffness: 100 },
+        transition: {delay: i * 0.05, type: 'spring', stiffness: 100},
     }),
-    exit: { opacity: 0, x: -50, transition: { duration: 0.2 } },
+    exit: {opacity: 0, x: -50, transition: {duration: 0.2}},
 };
 
 function formatLabel(str: string) {
@@ -22,16 +23,16 @@ function formatLabel(str: string) {
         .join(' ');
 }
 
-export default function MenuNav({ locale, t, toggleMenu }: { locale: string, t: any, toggleMenu: () => void }) {
+export default function MenuNav({locale, t, toggleMenu}: { locale: string, t: any, toggleMenu: () => void }) {
     const colors = ['#4285F4', '#EA4335', '#FBBC05', '#34A853'];
 
     return (
         <motion.nav
             className="fixed top-0 left-0 w-72 h-full bg-white dark:bg-gray-900 shadow-xl z-50 p-6 flex flex-col justify-center"
-            initial={{ x: -300 }}
-            animate={{ x: 0 }}
-            exit={{ x: -300 }}
-            transition={{ type: 'spring', stiffness: 80 }}
+            initial={{x: -300}}
+            animate={{x: 0}}
+            exit={{x: -300}}
+            transition={{type: 'spring', stiffness: 80}}
         >
             <ul className="flex flex-col gap-6 text-xl font-bold">
                 {menuItems.map((key: string, i: number) => {
@@ -47,25 +48,29 @@ export default function MenuNav({ locale, t, toggleMenu }: { locale: string, t: 
                             animate="visible"
                             exit="exit"
                         >
-                            <a
-                                href={`/${locale}/${key === 'home' ? '' : key}`}
-                                onClick={toggleMenu}
-                                className="inline-block transform transition-transform duration-300 hover:scale-110"
-                            >
-                                {words.map((word: string, wordIdx: number) => (
-                                    <span key={wordIdx} className="inline-block mr-1">
+                            <SoundWrapper playOn="click">
+                                <a
+                                    href={`/${locale}/${key === 'home' ? '' : key}`}
+                                    onClick={toggleMenu}
+                                    className="group inline-block transform transition-transform duration-300 hover:scale-110"
+                                >
+                                    {words.map((word: string, wordIdx: number) => (
+                                        <span key={wordIdx} className="inline-block mr-1">
                                         {word.split('').map((letter: string, idx: number) => (
                                             <span
                                                 key={idx}
-                                                style={{ color: colors[idx % colors.length] }}
-                                                className="inline-block"
+                                                className="inline-block transition-colors duration-300 text-gray-900 dark:text-gray-100 group-hover:[color:var(--hover-color)]"
+                                                style={{
+                                                    ["--hover-color" as any]: colors[idx % colors.length],
+                                                }}
                                             >
                                                 {letter}
                                             </span>
                                         ))}
                                     </span>
-                                ))}
-                            </a>
+                                    ))}
+                                </a>
+                            </SoundWrapper>
                         </motion.li>
                     );
                 })}

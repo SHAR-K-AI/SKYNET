@@ -1,8 +1,10 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import { useTheme } from 'next-themes';
-import StarryBackground from "@/components/StarryBackground";
-import SkyBackground from "@/components/SkyBackground";
+
+const SkyBackground = dynamic(() => import('@/components/SkyBackground'), { ssr: false });
+const StarryBackground = dynamic(() => import('@/components/StarryBackground'), { ssr: false });
 
 export default function ThemeBackground() {
     const { theme } = useTheme();
