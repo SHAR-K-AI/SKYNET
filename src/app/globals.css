@@ -31,7 +31,7 @@ body {
 }
 
 .footer-pixel-light {
-    background-image: url('/footer.png');
+    background-image: url('/images/footer.png');
     background-repeat: repeat;
     background-size: contain;
 }
@@ -39,7 +39,7 @@ body {
 .dark .footer-pixel-light {
     background-image:
             linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-            url('/footer-dark.png');
+            url('/images/footer-dark.png');
     background-repeat: repeat;
     background-size: contain;
 }

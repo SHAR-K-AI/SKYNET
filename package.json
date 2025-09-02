@@ -10,6 +10,7 @@
   "dependencies": {
     "@headlessui/react": "^2.2.7",
     "@heroicons/react": "^2.2.0",
+    "classnames": "^2.5.1",
     "framer-motion": "^12.23.12",
     "next": "15.5.2",
     "next-intl": "^4.3.5",

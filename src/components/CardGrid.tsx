@@ -23,8 +23,9 @@ const CardGrid: React.FC<CardGridProps> = ({ cards }) => {
             <div
                 className="
                     grid
-                    gap-12
+                    gap-6
                     grid-cols-1
+                    xl:grid-cols-[repeat(auto-fit,minmax(300px,1fr))]
                     sm:grid-cols-[repeat(auto-fit,minmax(250px,1fr))]
                 "
             >

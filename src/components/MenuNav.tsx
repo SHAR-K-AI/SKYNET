@@ -1,5 +1,8 @@
+import Image from "next/image";
 import {motion, Variants} from "framer-motion";
 import SoundWrapper from "@/components/SoundWrapper";
+import HeaderActions from "@/components/HeaderActions";
+import {useTheme} from "next-themes";
 
 const menuItems = [
     'home', 'about', 'contact', 'questions',
@@ -25,15 +28,21 @@ function formatLabel(str: string) {
 
 export default function MenuNav({locale, t, toggleMenu}: { locale: string, t: any, toggleMenu: () => void }) {
     const colors = ['#4285F4', '#EA4335', '#FBBC05', '#34A853'];
+    const { theme } = useTheme();
+
+    const src = theme === "dark"
+        ? "/images/dark.gif"
+        : "/images/light.gif";
 
     return (
         <motion.nav
-            className="fixed top-0 left-0 w-72 h-full bg-white dark:bg-gray-900 shadow-xl z-50 p-6 flex flex-col justify-center"
+            className="fixed top-0 left-0 w-72 h-full bg-white dark:bg-gray-900 shadow-xl z-50 p-6 flex flex-col"
             initial={{x: -300}}
             animate={{x: 0}}
             exit={{x: -300}}
             transition={{type: 'spring', stiffness: 80}}
         >
+            <HeaderActions className="flex items-center justify-between flex-row gap-4 md:mb-32 mb-auto"/>
             <ul className="flex flex-col gap-6 text-xl font-bold">
                 {menuItems.map((key: string, i: number) => {
                     const label = t(key) || formatLabel(key);
@@ -50,8 +59,8 @@ export default function MenuNav({locale, t, toggleMenu}: { locale: string, t: an
                         >
                             <SoundWrapper playOn="click">
                                 <a
-                                    href={`/${locale}/${key === 'home' ? '' : key}`}
                                     onClick={toggleMenu}
+                                    href={`/${locale}/${key === 'home' ? '' : key}`}
                                     className="group inline-block transform transition-transform duration-300 hover:scale-110"
                                 >
                                     {words.map((word: string, wordIdx: number) => (
@@ -75,6 +84,15 @@ export default function MenuNav({locale, t, toggleMenu}: { locale: string, t: an
                     );
                 })}
             </ul>
+            <div className="mt-auto mx-auto">
+                <Image
+                    src={src}
+                    width={200}
+                    height={100}
+                    alt="Footer Image"
+                    className="object-contain"
+                />
+            </div>
         </motion.nav>
     );
 }

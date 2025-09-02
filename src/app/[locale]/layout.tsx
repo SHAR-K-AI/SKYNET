@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import ThemeBackground from "@/components/ThemeBackground";
 import { NextIntlClientProvider } from "next-intl";
 import Footer from "@/components/Footer";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const roboto = Roboto({
     variable: "--font-roboto",
@@ -41,6 +42,7 @@ export default async function LocaleLayout({
                 <div className="min-h-screen flex flex-col transition-colors">
                     <Header />
                     <main className="flex-1 p-8 transition-colors">{children}</main>
+                    <ScrollToTopButton/>
                     <Footer/>
                 </div>
             </NextIntlClientProvider>

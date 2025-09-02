@@ -71,16 +71,18 @@ export default function FAQPage() {
                 </motion.p>
 
                 <div
-                    className="mt-4 p-4 rounded-xl shadow-sm text-sm text-center text-gray-700 dark:text-gray-300 bg-gray-50 dark:bg-gray-800">
-                    <strong>{t("OriginalArticle")}</strong>{" "}
+                    className="mt-4 p-4 rounded-xl text-sm text-right text-gray-700 dark:text-gray-300 ">
+                    <strong>{t("OriginalArticle")}</strong>
+                    <br/>
                     <a
                         href="https://medium.com/google-cloud/mastering-google-cloud-platform-a-list-of-questions-to-consider-for-beginners-intermediates-and-82c02d9f2e2b"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300"
                     >
-                        Mastering Google Cloud Platform: A List of Questions to Consider for Beginners, Intermediates,
-                        and Experts
+                        Mastering Google Cloud Platform:
+                        <br/>
+                        A List of Questions to Consider for Beginners, Intermediates, and Experts
                     </a>
                 </div>
 
@@ -120,7 +122,7 @@ export default function FAQPage() {
                                 exit={{opacity: 0, y: -20, scale: 0.95}}
                                 transition={{duration: 0.4}}
                                 className=" rounded-2xl p-5 shadow-xl hover:scale-[1.02] transition-all duration-300 cursor-pointer
-                                    bg-white text-gray-900 dark:bg-gray-800 dark:text-gray-100 "
+                                    bg-white text-gray-900 dark:bg-gray-800 dark:text-gray-100"
                             >
                                 <h2 className="font-semibold text-lg">{`[${f.level}] ${f.question}`}</h2>
                                 <p className="mt-2 leading-relaxed">{f.answer}</p>

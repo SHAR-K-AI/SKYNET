@@ -2,12 +2,14 @@
 
 import LocaleSwitcher from "@/components/LocaleSwitcher";
 import ThemeToggleButton from "@/components/ThemeToggleButton";
+import classNames from "classnames";
 
-export default function HeaderActions() {
+export default function HeaderActions({className}: { className?: string }) {
     return (
-        <div className="fixed top-10 right-5 flex items-center justify-center flex-col gap-4">
-            <LocaleSwitcher />
-            <ThemeToggleButton />
+        <div
+            className={classNames(className)}>
+            <LocaleSwitcher/>
+            <ThemeToggleButton/>
         </div>
     );
 }

@@ -22,7 +22,7 @@ export default function Header() {
             <div className="flex-1 flex justify-center">
                 <AnimatedTitle />
             </div>
-            <HeaderActions />
+            <HeaderActions className="hidden fixed top-10 right-5 md:flex items-center justify-center flex-col gap-4"/>
             <AnimatePresence>
                 {isOpen && (
                     <>
