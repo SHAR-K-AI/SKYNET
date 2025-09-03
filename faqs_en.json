@@ -178,5 +178,186 @@
     "level": "Beginner",
     "question": "What is Google Cloud Speech-to-Text API?",
     "answer": "Google Cloud Speech-to-Text API is a machine learning service provided by Google Cloud that enables developers to convert spoken language into written text. It supports real-time transcription as well as batch processing of pre-recorded audio, handling a wide range of languages and dialects. The API is capable of recognizing speech from various audio formats and can accurately transcribe noisy environments or multiple speakers using advanced models like automatic speech recognition (ASR) and enhanced speech models. It also offers features such as speaker diarisation (distinguishing between different speakers) and word-level timestamps, making it ideal for use cases like voice commands, transcription services, customer service automation, and voice-enabled applications. The API is widely used in industries such as healthcare, media, and customer support for automating speech-based tasks."
+  },
+  {
+    "id": "u1v2w3x4-y5z6-a7b8-c9d0-e1f2g3h4i5j6",
+    "level": "Intermediate",
+    "question": "How do you secure data in GCP?",
+    "answer": "Security in GCP involves multiple layers of protection, including encryption, access control, and network security. Data is encrypted both at rest and in transit by default using strong encryption protocols. GCP’s IAM allows for fine-grained control of who can access specific resources, ensuring the principle of least privilege. Additional security services like VPC firewall rules, Cloud Armor for DDoS protection, and Cloud Identity for enforcing multi-factor authentication enhance data security. For more sensitive workloads, Confidential Computing protects data during processing by encrypting it in memory. GCP also offers tools like Cloud Key Management Service (KMS) for managing cryptographic keys and Cloud Audit Logs to monitor and track access to resources, ensuring compliance and auditing capabilities."
+  },
+  {
+    "id": "k7l8m9n0-o1p2-q3r4-s5t6-u7v8w9x0y1z2",
+    "level": "Intermediate",
+    "question": "What is the difference between Google Cloud SQL and Google Cloud Spanner?",
+    "answer": "The key difference between Google Cloud SQL and Google Cloud Spanner lies in their scalability and use cases. Google Cloud SQL is a fully managed relational database service that supports MySQL, PostgreSQL, and SQL Server, designed for traditional, single-region workloads with vertical scaling. It is ideal for applications that require familiar relational databases but do not need global distribution or massive scalability. In contrast, Google Cloud Spanner is a globally distributed, horizontally scalable relational database designed for mission-critical applications that require both strong consistency and high availability across regions. Spanner combines the benefits of traditional SQL databases, such as ACID transactions and structured data, with the scalability typically found in NoSQL systems. While Cloud SQL is suited for smaller, localized workloads, Cloud Spanner is designed for global, enterprise-scale applications with demanding performance and reliability requirements."
+  },
+  {
+    "id": "z3a4b5c6-d7e8-f9g0-h1i2-j3k4l5m6n7o8",
+    "level": "Intermediate",
+    "question": "What is Google Cloud Deployment Manager?",
+    "answer": "Google Cloud Deployment Manager is an infrastructure-as-code (IaC) service provided by Google Cloud that allows users to automate the creation, management, and configuration of Google Cloud resources using declarative templates. With Deployment Manager, users define their infrastructure in configuration files (YAML, Python, or Jinja2) that describe the resources they want to deploy, such as virtual machines, storage, networking components, and more. This approach ensures consistency and repeatability in deploying complex environments, as resources are automatically provisioned according to the template specifications. Deployment Manager supports version control, making it easier to update and manage infrastructure over time. It is particularly useful for automating the deployment of large-scale infrastructure, reducing manual configuration errors, and enabling infrastructure scaling and management in a more efficient, programmatic way."
+  },
+  {
+    "id": "p9q0r1s2-t3u4-v5w6-x7y8-z9a0b1c2d3e4",
+    "level": "Intermediate",
+    "question": "How does Google Cloud DNS work?",
+    "answer": "Google Cloud DNS is a scalable, reliable, and managed Domain Name System (DNS) service provided by Google Cloud. It translates domain names (like www.example.com) into IP addresses that computers use to connect with each other over the internet. Cloud DNS supports both public DNS, for domains accessible over the internet, and private DNS, for internal network use within Google Cloud’s VPC. It operates with low latency and high availability, leveraging Google’s global infrastructure. Cloud DNS is fully integrated with other Google Cloud services, allowing users to manage DNS records programmatically using APIs or through the Cloud Console. Additionally, it supports advanced features like DNSSEC for domain security, load balancing through geo-routing, and automatic updates, making it a reliable and efficient choice for managing domain names in cloud-based applications."
+  },
+  {
+    "id": "c1d2e3f4-g5h6-i7j8-k9l0-m1n2o3p4q5r6",
+    "level": "Intermediate",
+    "question": "What is Google Cloud CDN?",
+    "answer": "Google Cloud CDN (Content Delivery Network) is a globally distributed network of servers provided by Google Cloud that accelerates the delivery of web content by caching it at locations close to the end users. By caching static content like images, videos, and web assets in Google’s edge locations around the world, Cloud CDN reduces latency and improves load times for users, regardless of their geographic location. It integrates seamlessly with other Google Cloud services such as Compute Engine, Cloud Storage, and Google Kubernetes Engine, enabling easy content delivery from these sources. Cloud CDN also supports advanced features like SSL/TLS for secure content delivery, customizable caching rules, and DDoS protection, making it an ideal solution for improving the performance, scalability, and security of web applications and media-rich websites."
+  },
+  {
+    "id": "s7t8u9v0-w1x2-y3z4-a5b6-c7d8e9f0g1h2",
+    "level": "Intermediate",
+    "question": "What is Google Cloud Firestore?",
+    "answer": "Google Cloud Firestore is a fully managed, serverless NoSQL document database provided by Google Cloud, designed for building scalable web, mobile, and server applications. Firestore offers real-time synchronization, allowing data to be instantly updated across connected client devices, making it ideal for collaborative apps like chat applications, real-time dashboards, or multiplayer games. It supports flexible, hierarchical data models with documents and collections, enabling structured and semi-structured data storage. Firestore seamlessly integrates with other Google services like Firebase and Google Cloud Functions and offers strong security features through IAM and Firebase Authentication. With automatic scaling, multi-region replication, and ACID transactions, Firestore is suitable for applications requiring high availability, low latency, and the ability to handle complex, real-time workloads."
+  },
+  {
+    "id": "i3j4k5l6-m7n8-o9p0-q1r2-s3t4u5v6w7x8",
+    "level": "Intermediate",
+    "question": "What is the difference between Google Cloud Datastore and Google Cloud Firestore?",
+    "answer": "The key difference between Google Cloud Datastore and Google Cloud Firestore lies in their features and use cases. Datastore is a scalable NoSQL database ideal for traditional applications that need simple, hierarchical data storage and automatic scaling but without real-time synchronization. Firestore, the next generation of Datastore, adds features like real-time synchronization, more advanced queries, and offline support, making it ideal for modern apps like chat and collaboration tools. Firestore also supports ACID transactions across documents and integrates more seamlessly with Firebase, making it better suited for real-time, interactive applications. Both are fully managed, but Firestore offers more advanced functionality."
+  },
+  {
+    "id": "y9z0a1b2-c3d4-e5f6-g7h8-i9j0k1l2m3n4",
+    "level": "Intermediate",
+    "question": "What is Google Cloud Data Fusion?",
+    "answer": "Google Cloud Data Fusion is a fully managed, cloud-native data integration service that allows users to build and manage ETL (Extract, Transform, Load) pipelines for integrating data from various sources. With its intuitive, drag-and-drop interface, Data Fusion enables users to create complex data workflows without needing to write code, making it accessible to both technical and non-technical users. It supports real-time and batch data integration, connecting disparate data sources like databases, cloud storage, and on-premise systems. Data Fusion is built on Apache CDAP, and it integrates with other Google Cloud services like BigQuery, Dataflow, and Cloud Storage to streamline data processing and analytics workflows. Its scalability, flexibility, and support for hybrid and multi-cloud environments make it ideal for businesses looking to unify data from multiple systems for analytics, reporting, or machine learning purposes."
+  },
+  {
+    "id": "a1b2c3d4-e5f6-g7h8-i9j0-j1k2l3m4n5o6",
+    "level": "Intermediate",
+    "question": "What is Google Cloud Resource Manager?",
+    "answer": "Google Cloud Resource Manager is a service in Google Cloud that allows organizations to manage and organize their cloud resources in a hierarchical structure for better control and governance. Resources such as projects, folders, and organizations can be grouped and managed in a way that reflects the organizational structure. This hierarchical setup allows administrators to apply IAM policies, manage permissions, and enforce security controls at different levels — organization, folder, or project. It helps ensure consistency across teams and resources, supports auditability, and simplifies management in large-scale cloud environments. Cloud Resource Manager is essential for managing permissions, security, and compliance in multi-project environments."
+  },
+  {
+    "id": "p7q8r9s0-t1u2-v3w4-x5y6-z7a8b9c0d1e2",
+    "level": "Intermediate",
+    "question": "What is Google Cloud Composer?",
+    "answer": "Google Cloud Composer is a fully managed workflow orchestration service built on Apache Airflow, designed to automate and manage complex workflows and data pipelines in Google Cloud. It allows users to schedule, monitor, and manage workflows that integrate data across multiple services, both within and outside of Google Cloud. With its scalable, cloud-native architecture, Cloud Composer simplifies the creation of ETL processes, data migration tasks, and machine learning workflows. It seamlessly integrates with Google Cloud services like BigQuery, Cloud Storage, and Dataflow, as well as external systems, enabling end-to-end data management. Cloud Composer helps organizations streamline processes, ensuring reliability and consistency across data workflows while handling infrastructure tasks such as scaling, upgrades, and monitoring automatically."
+  },
+  {
+    "id": "f3g4h5i6-j7k8-l9m0-n1o2-p3q4r5s6t7u8",
+    "level": "Intermediate",
+    "question": "What is Google Cloud Operations Suite (formerly Stackdriver)?",
+    "answer": "Google Cloud Operations Suite is a comprehensive set of tools provided by Google Cloud to monitor, troubleshoot, and improve the performance and reliability of applications and infrastructure. It includes services for monitoring, logging, tracing, and error reporting, giving developers and operations teams real-time insights into the health and behaviour of cloud resources. The suite collects metrics, logs, and traces from Google Cloud services, as well as on-premise or hybrid environments, enabling centralized monitoring. It also provides customizable dashboards, alerts, and automated incident responses, helping teams quickly identify and resolve issues. With integrations for Kubernetes, Compute Engine, App Engine, and other Google Cloud services, the Operations Suite offers end-to-end visibility, ensuring optimized performance, security, and uptime for cloud-based applications."
+  },
+  {
+    "id": "v9w0x1y2-z3a4-b5c6-d7e8-f9g0h1i2j3k4",
+    "level": "Intermediate",
+    "question": "What is Google Cloud VPN?",
+    "answer": "Google Cloud VPN is a managed service that securely connects your on-premises network or other cloud environments to your Google Cloud VPC using IPsec VPN tunnels. It provides an encrypted communication link over the public internet, ensuring that data exchanged between your on-premises infrastructure and Google Cloud remains secure. Cloud VPN supports both site-to-site and point-to-site configurations, enabling you to establish secure connections between your data centres, branch offices, or individual users and Google Cloud resources. It integrates seamlessly with Google Cloud’s VPC and networking services, offering high availability, scaling, and flexible routing options for hybrid cloud architectures. Cloud VPN is ideal for organizations needing to extend their private networks securely into the cloud."
+  },
+  {
+    "id": "m1n2o3p4-q5r6-s7t8-u9v0-w1x2y3z4a5b6",
+    "level": "Intermediate",
+    "question": "What is Google Cloud NAT?",
+    "answer": "Google Cloud NAT (Network Address Translation) is a managed networking service that allows resources in a VPC to access the internet without exposing their private IP addresses. It enables outbound connections for resources like virtual machines, containers, and databases within private subnets while maintaining their privacy. Cloud NAT provides a scalable, automated solution to handle large volumes of traffic, ensuring that applications and services within a VPC can access external APIs, repositories, or updates securely. It supports high availability and dynamic scaling, eliminating the need to manage individual NAT gateways or configure additional public IP addresses. Cloud NAT is essential for secure outbound traffic in environments where inbound access to resources should remain restricted."
+  },
+  {
+    "id": "x7y8z9a0-b1c2-d3e4-f5g6-h7i8j9k0l1m2",
+    "level": "Intermediate",
+    "question": "Explain the concept of VPC Peering in GCP.",
+    "answer": "VPC Peering in Google Cloud enables direct, private connectivity between two VPC networks, allowing resources in one VPC to communicate with resources in another VPC as if they were part of the same network. This peering connection is established over Google’s internal infrastructure, ensuring low-latency, secure communication without exposing traffic to the public internet. VPC Peering is commonly used to connect VPCs within the same organization (cross-project peering) or between different organizations, facilitating better network isolation and traffic control. It supports full access to internal IP addresses across both VPCs, and routing is automatically updated, making it a scalable and secure solution for multi-project, hybrid, or multi-team architectures within Google Cloud. However, VPC Peering does not support transitive peering, meaning each VPC needs a direct peering connection to communicate."
+  },
+  {
+    "id": "p3q4r5s6-t7u8-v9w0-x1y2-z3a4b5c6d7e8",
+    "level": "Intermediate",
+    "question": "What is Google Cloud Filestore?",
+    "answer": "Google Cloud Filestore is a fully managed network-attached storage (NAS) service provided by Google Cloud that offers high-performance file storage for applications requiring shared file systems. It is ideal for use cases like media rendering, content management systems, and databases that need access to a consistent file system across multiple instances. Filestore integrates seamlessly with GCP and GKE, allowing applications to access shared file data with low latency and high throughput. With support for both standard and high-performance tiers, Filestore provides flexible options based on performance needs. It simplifies storage management by handling tasks such as scaling, backups, and patching while ensuring data durability and availability, making it easy to deploy and manage file-based workloads in the cloud."
+  },
+  {
+    "id": "u9v0w1x2-y3z4-a5b6-c7d8-e9f0g1h2i3j4",
+    "level": "Intermediate",
+    "question": "How does Google Cloud Key Management Service (KMS) work?",
+    "answer": "Google Cloud KMS is a fully managed service that allows organizations to create, manage, and securely store cryptographic keys used to protect sensitive data. KMS enables users to generate encryption keys or import existing ones, and it integrates with other Google Cloud services such as Cloud Storage, BigQuery, and Compute Engine to encrypt data at rest and in transit. The service supports key rotation, auditing, and fine-grained access control using IAM policies, ensuring that only authorized users and services can access the keys. KMS also provides detailed logging via Cloud Audit Logs, which helps with compliance and monitoring. With features like envelope encryption (where data is encrypted using data encryption keys that are themselves encrypted with a master key), KMS simplifies the management of cryptographic processes while enhancing data security in the cloud."
+  },
+  {
+    "id": "a1b2c3d4-e5f6-g7h8-i9j0-j1k2l3m4n5o7",
+    "level": "Intermediate",
+    "question": "What is Google Cloud Identity?",
+    "answer": "Google Cloud Identity is a unified identity and access management service that helps organizations manage users, apps, and devices securely across their environment. It integrates with Google Cloud services and Google Workspace to provide features such as single sign-on (SSO), multi-factor authentication (MFA), and device management. Cloud Identity allows administrators to enforce security policies, control access to resources using IAM, and manage user identities both within and outside the organization. It also supports integration with third-party applications, allowing centralized authentication and access control for cloud and on-premises systems. By providing detailed security controls, audit logs, and compliance tools, Google Cloud Identity enhances the overall security posture of organizations while streamlining identity management for both employees and external users."
+  },
+  {
+    "id": "b2c3d4e5-f6g7-h8i9-j0k1-l2m3n4o5p6q7",
+    "level": "Intermediate",
+    "question": "What is Google Cloud Healthcare API?",
+    "answer": "Google Cloud Healthcare API is a fully managed, scalable service designed to facilitate the secure exchange, management, and analysis of healthcare data in compliance with industry standards like FHIR (Fast Healthcare Interoperability Resources), HL7v2, and DICOM. It enables healthcare providers, researchers, and developers to store, access, and process medical data such as patient records, imaging data, and clinical information while maintaining compliance with regulations such as HIPAA. The API supports seamless integration with Google Cloud services, including BigQuery for analytics and AI/ML tools for advanced diagnostics and predictive modeling. With built-in security features like encryption and auditing, as well as support for data interoperability, the Google Cloud Healthcare API helps streamline healthcare operations, improve patient outcomes, and accelerate medical research by making data more accessible and actionable."
+  },
+  {
+    "id": "c3d4e5f6-g7h8-i9j0-k1l2-m3n4o5p6q7r8",
+    "level": "Intermediate",
+    "question": "How do you manage access control in GCP?",
+    "answer": "In GCP access control is managed through IAM, which provides fine-grained control over who can access specific resources and what actions they can perform. IAM enables administrators to assign roles and permissions to users, groups, or service accounts at different levels such as project, folder, or organization. By applying the principle of least privilege, GCP ensures that users are only given the minimum access they need. IAM roles can be predefined (offering common permissions for GCP services) or custom (tailored to specific needs). Additionally, administrators can use IAM policies to grant, deny, or revoke access, while audit logs track all permission changes and access requests, helping maintain security and compliance across the cloud environment."
+  },
+  {
+    "id": "d4e5f6g7-h8i9-j0k1-l2m3-n4o5p6q7r8s9",
+    "level": "Intermediate",
+    "question": "What is Google Cloud Traffic Director?",
+    "answer": "Google Cloud Traffic Director is a fully managed service mesh control plane that provides advanced traffic management, load balancing, and service discovery for microservices running on Google Cloud. It allows developers to deploy resilient and scalable applications by intelligently routing traffic across multiple services in GKE, Compute Engine, and hybrid cloud environments. Traffic Director supports global load balancing, health checks, and traffic policies, such as traffic splitting and canary deployments, to ensure high availability and smooth rollouts of new services. It also enables service mesh architectures by integrating with open-source solutions like Envoy for consistent policy enforcement and telemetry collection across services. Traffic Director simplifies complex traffic management tasks, ensuring reliable, efficient service-to-service communication at scale."
+  },
+  {
+    "id": "e1f2g3h4-i5j6-k7l8-m9n0-o1p2q3r4s5t6",
+    "level": "Intermediate",
+    "question": "What is Google Cloud Anthos?",
+    "answer": "Google Cloud Anthos is a hybrid and multi-cloud platform that enables organizations to build, deploy, and manage applications consistently across on-premises data centres, Google Cloud, and other cloud providers like AWS and Azure. Anthos leverages Kubernetes and open-source technologies to provide a unified management experience, allowing developers to run containerized workloads anywhere without being locked into a specific cloud provider. It offers features such as service mesh, policy management, and integrated security for consistent governance and observability across environments. Anthos simplifies the management of complex, distributed applications, supports modern DevOps practices like continuous integration and delivery (CI/CD), and enables businesses to modernize their applications while maintaining flexibility and control across multiple cloud environments."
+  },
+  {
+    "id": "f2g3h4i5-j6k7-l8m9-n0o1-p2q3r4s5t6u7",
+    "level": "Intermediate",
+    "question": "What is Google Cloud Tasks?",
+    "answer": "Google Cloud Tasks is a fully managed service that allows developers to asynchronously execute tasks and manage distributed workloads through a queuing system. It enables you to create, schedule, and dispatch tasks across microservices, improving the scalability and reliability of your applications. Cloud Tasks decouples the components of an application, ensuring that tasks such as background processes, API calls, or long-running jobs are processed independently from user interactions. It supports automatic retries, ensuring tasks are completed successfully, and integrates seamlessly with other Google Cloud services, including App Engine, Cloud Functions, and Compute Engine. By managing the execution of tasks outside of the main application logic, Cloud Tasks helps improve application responsiveness and reliability, making it ideal for handling workloads like message processing, transactional tasks, and deferred operations."
+  },
+  {
+    "id": "g3h4i5j6-k7l8-m9n0-o1p2-q3r4s5t6u7v8",
+    "level": "Intermediate",
+    "question": "What is Google Cloud Secret Manager?",
+    "answer": "Google Cloud Secret Manager is a fully managed service that allows you to securely store, manage, and access sensitive information such as API keys, passwords, certificates, and other secrets. It provides a central location for managing secrets with fine-grained access controls using IAM, ensuring that only authorized users or services can retrieve them. Secret Manager encrypts secrets at rest and in transit, offering strong security for sensitive data. It also supports secret versioning, allowing you to manage and roll back secrets easily if needed. The service integrates with other Google Cloud services like Cloud Functions, Compute Engine, and Kubernetes Engine, making it simple to inject secrets into applications without hardcoding them. This helps developers enhance security, streamline secret management, and maintain compliance across cloud environments."
+  },
+  {
+    "id": "h4i5j6k7-l8m9-n0o1-p2q3-r4s5t6u7v8w9",
+    "level": "Intermediate",
+    "question": "What is Google Cloud Transfer Service?",
+    "answer": "Google Cloud Transfer Service is a fully managed service designed to help organizations move large volumes of data to and from Google Cloud Storage securely and efficiently. It supports both on-premises data transfers and cloud-to-cloud transfers from other cloud providers or Google services. The service is optimized for transferring large datasets, handling tasks like data backup, archival, and migration. It offers features like scheduling, bandwidth management, and error handling to ensure that data transfers are reliable and can be performed with minimal disruption. Google Cloud Transfer Service automatically scales to accommodate massive amounts of data, making it ideal for enterprises looking to migrate data to the cloud for analytics, storage, or disaster recovery purposes. Additionally, it supports incremental data transfers, enabling organizations to sync changes after the initial bulk transfer, and ensuring data is always up to date."
+  },
+  {
+    "id": "i5j6k7l8-m9n0-o1p2-q3r4-r5s6t7u8v9w0",
+    "level": "Intermediate",
+    "question": "What is Google Cloud Apigee?",
+    "answer": "Google Cloud Apigee is a robust API management platform that enables organizations to design, secure, deploy, and monitor their APIs across cloud and on-premises environments. Apigee provides tools for full API lifecycle management, including features for rate limiting, authentication, analytics, and version control, ensuring APIs are secure, scalable, and reliable. It helps businesses expose their services through APIs while maintaining security with OAuth, API keys, and role-based access. Apigee also offers detailed performance analytics, allowing teams to monitor API usage, detect anomalies, and optimize performance. With its integration into Google Cloud and support for hybrid and multi-cloud environments, Apigee allows enterprises to manage APIs across distributed systems, enabling seamless connectivity between services, applications, and external partners."
+  },
+  {
+    "id": "j6k7l8m9-n0o1-p2q3-r4s5-t6u7v8w9x0y1",
+    "level": "Intermediate",
+    "question": "What is Google Cloud Data Labeling Service?",
+    "answer": "Google Cloud Data Labeling Service is a fully managed tool that helps users create high-quality labelled datasets for training machine learning models. It allows users to annotate data such as images, video, and text with labels, categories, or metadata. The service provides both human-assisted labelling and automated labelling capabilities, ensuring accurate and scalable data labelling. Users can define their own label taxonomy and use Google’s team of human labellers or import their own labelling teams. Data Labeling Service integrates seamlessly with other Google Cloud products, such as AI Platform and AutoML, enabling organizations to quickly prepare labelled datasets for machine learning model development and improve model accuracy through high-quality annotations. It’s particularly useful for tasks like image classification, object detection, sentiment analysis, and entity extraction."
+  },
+  {
+    "id": "k7l8m9n0-o1p2-q3r4-r5s6-t7u8v9w0x1y2",
+    "level": "Intermediate",
+    "question": "How does Google Cloud Profiler work?",
+    "answer": "Google Cloud Profiler is a continuous profiling tool that helps developers and operations teams optimize the performance of applications running in production. It works by collecting real-time data about the resource consumption of an application, such as CPU usage, memory allocation, and latency, across various components of the application. Cloud Profiler automatically analyzes the performance at a granular level, identifying inefficient code paths or performance bottlenecks. The profiling data is visualized in an easy-to-understand format, allowing developers to pinpoint areas where improvements can be made to reduce resource usage and improve application efficiency. Cloud Profiler seamlessly integrates with other Google Cloud services and supports applications running on Compute Engine, Kubernetes Engine, and App Engine. By enabling continuous performance monitoring, Cloud Profiler helps organizations optimize costs and improve the responsiveness of their applications."
+  },
+  {
+    "id": "l8m9n0o1-p2q3-r4s5-t6u7-v8w9x0y1z2a3",
+    "level": "Intermediate",
+    "question": "What is the difference between Google Cloud SQL and Google BigQuery?",
+    "answer": "The key difference between Google Cloud SQL and Google BigQuery is their purpose and use cases. Cloud SQL is a fully managed relational database for transactional workloads, supporting MySQL, PostgreSQL, and SQL Server, making it ideal for real-time applications that need structured queries and ACID compliance. In contrast, BigQuery is a serverless, highly scalable data warehouse designed for fast analytics on massive datasets, making it perfect for big data analysis and reporting. While Cloud SQL handles day-to-day transactional data, BigQuery excels at large-scale data queries and analytics."
+  },
+  {
+    "id": "m9n0o1p2-q3r4-r5s6-t7u8-v9w0x1y2z3a4",
+    "level": "Intermediate",
+    "question": "What is Google Cloud Logging?",
+    "answer": "Google Cloud Logging is a fully managed service that allows users to store, search, analyze, and monitor logs from applications and infrastructure running on Google Cloud and other environments. It collects logs from services like Compute Engine, Kubernetes Engine, Cloud Functions, and even external sources, enabling real-time visibility into system performance and behavior. Cloud Logging provides powerful querying capabilities, allowing users to filter, sort, and analyze logs to identify issues or trends. It integrates with Cloud Monitoring for setting up alerts based on log events, helping teams detect and respond to system errors or performance bottlenecks quickly. Additionally, it supports long-term log retention for auditing and compliance purposes. With its ability to handle large volumes of logs at scale, Cloud Logging is essential for monitoring, troubleshooting, and optimizing cloud-based applications."
+  },
+  {
+    "id": "n0o1p2q3-r4s5-t6u7-v8w9-x0y1z2a3b4c5",
+    "level": "Intermediate",
+    "question": "What is Google Cloud Asset Inventory?",
+    "answer": "Google Cloud Asset Inventory is a fully managed service that provides real-time visibility and historical tracking of an organization’s Google Cloud resources and their configurations. It enables users to monitor, manage, and audit their cloud assets, including resources like virtual machines, storage buckets, and network components, across multiple projects and services. Asset Inventory helps ensure security and compliance by allowing teams to query and analyze the current state and historical changes of resources through its Asset Search API. It integrates with Cloud IAM and Cloud Logging to track permissions, detect configuration drifts, and perform resource audits. With its comprehensive view of cloud assets, the service simplifies cloud governance, security audits, and resource management at scale."
   }
+
 ]

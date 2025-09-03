@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
-import { Roboto, Roboto_Mono } from "next/font/google";
+import type {Metadata} from "next";
+import {Roboto, Roboto_Mono} from "next/font/google";
 import "../globals.css";
-import { ThemeProvider } from "next-themes";
+import {ThemeProvider} from "next-themes";
 import Header from "@/components/Header";
 import ThemeBackground from "@/components/ThemeBackground";
-import { NextIntlClientProvider } from "next-intl";
+import {NextIntlClientProvider} from "next-intl";
 import Footer from "@/components/Footer";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 
@@ -31,22 +31,22 @@ export default async function LocaleLayout({
     children: React.ReactNode;
     params: Promise<{ locale: string }>;
 }) {
-    const { locale } = await params;
+    const {locale} = await params;
 
     return (
         <html lang={locale} className="scroll-smooth">
         <body className={`${roboto.variable} ${robotoMono.variable} antialiased`}>
-        <ThemeProvider attribute="class" enableSystem defaultTheme="system">
-            <NextIntlClientProvider locale={locale}>
-                <ThemeBackground />
+        <NextIntlClientProvider locale={locale}>
+            <ThemeProvider attribute="class" defaultTheme="dark">
+                <ThemeBackground/>
                 <div className="min-h-screen flex flex-col transition-colors">
-                    <Header />
+                    <Header/>
                     <main className="flex-1 p-8 transition-colors">{children}</main>
                     <ScrollToTopButton/>
                     <Footer/>
                 </div>
-            </NextIntlClientProvider>
-        </ThemeProvider>
+            </ThemeProvider>
+        </NextIntlClientProvider>
         </body>
         </html>
     );

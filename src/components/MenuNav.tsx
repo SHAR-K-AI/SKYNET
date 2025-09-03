@@ -6,7 +6,7 @@ import {useTheme} from "next-themes";
 
 const menuItems = [
     'home', 'about', 'contact', 'questions',
-    'cloud-map', 'links', 'arcade-calculator'
+    'cloud-map', 'links', 'arcade-calculator', 'blog'
 ];
 
 const itemVariants: Variants = {
