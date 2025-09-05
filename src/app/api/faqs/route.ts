@@ -10,48 +10,45 @@ interface FAQItem {
     answer: string;
 }
 
-// Шляхи до обох файлів
 const FILE_UA = path.join(process.cwd(), "faqs_ua.json");
 const FILE_EN = path.join(process.cwd(), "faqs_en.json");
 
-// Читання JSON
 function readFaqs(filePath: string): FAQItem[] {
     if (!fs.existsSync(filePath)) return [];
     const data = fs.readFileSync(filePath, "utf-8");
     return JSON.parse(data);
 }
 
-// Запис JSON
 function writeFaqs(filePath: string, faqs: FAQItem[]) {
     fs.writeFileSync(filePath, JSON.stringify(faqs, null, 2));
 }
 
-// GET /api/faqs?lang=ua|en
 export async function GET(req: NextRequest) {
     try {
         const lang = req.nextUrl.searchParams.get("lang") || "ua";
         const filePath = lang === "en" ? FILE_EN : FILE_UA;
         const faqs = readFaqs(filePath);
-        return NextResponse.json(faqs);
+
+        return NextResponse.json(faqs, {
+            headers: {
+                'Cache-Control': 'public, s-maxage=604800, stale-while-revalidate=59',
+            },
+        });
     } catch (err) {
         return NextResponse.json([], { status: 500 });
     }
 }
 
-// POST /api/faqs — створюємо у обох файлах одночасно
 export async function POST(req: NextRequest) {
     try {
         const newFaq: Omit<FAQItem, "id"> & { questionUA: string; answerUA: string; questionEN: string; answerEN: string; level: string } = await req.json();
-
         const id = randomUUID();
 
-        // Українська версія
         const faqUA: FAQItem = { id, level: newFaq.level, question: newFaq.questionUA, answer: newFaq.answerUA };
         const faqsUA = readFaqs(FILE_UA);
         faqsUA.push(faqUA);
         writeFaqs(FILE_UA, faqsUA);
 
-        // Англійська версія
         const faqEN: FAQItem = { id, level: newFaq.level, question: newFaq.questionEN, answer: newFaq.answerEN };
         const faqsEN = readFaqs(FILE_EN);
         faqsEN.push(faqEN);
@@ -63,7 +60,6 @@ export async function POST(req: NextRequest) {
     }
 }
 
-// PUT /api/faqs?lang=ua|en
 export async function PUT(req: NextRequest) {
     try {
         const lang = req.nextUrl.searchParams.get("lang") || "ua";

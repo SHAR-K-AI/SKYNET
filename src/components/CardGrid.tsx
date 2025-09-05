@@ -1,5 +1,5 @@
 import React from 'react';
-import Card, {LocalizedText} from './Card';
+import Card, { LocalizedText } from './Card';
 
 export interface CardData {
     title: LocalizedText;

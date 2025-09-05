@@ -10,6 +10,15 @@
      "fanInitiative": "This is a small fan initiative for everyone who wants to learn stress-free and enjoy the process.",
      "joinAndLearn": "Join in, learn, and have fun! 🚀"
    },
+  "AboutPage": {
+    "title": "About this fan site",
+    "intro": "This site was created to help you explore GCP, AI, and related technologies in a fun and relaxed way.",
+    "whyHere": "Why this site exists:",
+    "funProject": "A fan project to make learning enjoyable and engaging.",
+    "resources": "A curated selection of resources, guides, and tools for anyone.",
+    "community": "A place to find answers to common questions and tips.",
+    "note": "This is an unofficial site, just to make learning light and fun 😉"
+  },
   "RecordForm": {
     "addRecord": "Add Record",
     "titleUA": "Title (UA)",
@@ -40,5 +49,10 @@
     "Loading": "Loading...",
     "NothingFound": "Nothing found.",
     "OriginalArticle": "Original article:"
+  },
+  "Footer": {
+    "madeWithLove": "Made with love and coffee ☕",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use"
   }
 }

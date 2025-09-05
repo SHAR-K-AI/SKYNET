@@ -358,6 +358,65 @@
     "level": "Intermediate",
     "question": "What is Google Cloud Asset Inventory?",
     "answer": "Google Cloud Asset Inventory is a fully managed service that provides real-time visibility and historical tracking of an organization’s Google Cloud resources and their configurations. It enables users to monitor, manage, and audit their cloud assets, including resources like virtual machines, storage buckets, and network components, across multiple projects and services. Asset Inventory helps ensure security and compliance by allowing teams to query and analyze the current state and historical changes of resources through its Asset Search API. It integrates with Cloud IAM and Cloud Logging to track permissions, detect configuration drifts, and perform resource audits. With its comprehensive view of cloud assets, the service simplifies cloud governance, security audits, and resource management at scale."
+  },
+  {
+    "id": "gcp-shared-vpc-001",
+    "level": "Advanced",
+    "question": "What is the Google Cloud Shared VPC?",
+    "answer": "Shared VPC allows organizations to centrally manage and share VPC resources across multiple Google Cloud projects within the same organization. It enables network administrators to define and control a single VPC network that can be shared with other projects, allowing workloads in different projects to communicate securely and efficiently over the same private network. Shared VPC simplifies network management by centralizing policies, firewall rules, and routing while maintaining project-level isolation for other resources. This setup is especially useful for large organizations with multiple teams or departments, as it provides better security, governance, and cost control by managing networking infrastructure centrally while allowing individual teams to operate independently within their projects."
+  },
+  {
+    "id": "gcp-ci-cd-002",
+    "level": "Advanced",
+    "question": "How do you implement CI/CD in GCP?",
+    "answer": "Implementing CI/CD in GCP involves using tools like Cloud Build, Cloud Source Repositories, and Artifact Registry to automate the software development pipeline. Cloud Build enables automated building, testing, and deploying of applications whenever code is committed, ensuring continuous integration (CI). Developers can store their source code in Cloud Source Repositories or integrate with external version control systems like GitHub or Bitbucket. For continuous deployment (CD), GCP offers Cloud Deploy, which automates deployment pipelines across multiple environments. CI/CD pipelines can be integrated with Kubernetes (GKE) for containerized applications, App Engine, or Compute Engine for deploying updates. Combined with Cloud Monitoring and Cloud Logging, developers can track application performance and errors in real-time, creating a robust, scalable CI/CD system for modern cloud-native applications."
+  },
+  {
+    "id": "gcp-service-directory-003",
+    "level": "Advanced",
+    "question": "What is Google Cloud Service Directory?",
+    "answer": "Service Directory is a fully managed service that helps organizations register, manage, and discover services across their cloud, hybrid, or on-premises environments. It provides a centralized registry for services, such as APIs, databases, and microservices, enabling teams to efficiently locate and connect to services at scale. With Service Directory, users can organize services into namespaces, configure metadata, and monitor service health. It integrates with Google Cloud VPC, IAM, and other GCP services, offering secure and scalable service discovery. This is especially useful in complex, distributed architectures where having a single source of truth for service locations simplifies management and enhances reliability. It’s ideal for organizations leveraging microservices or multi-cloud strategies that need a unified directory for managing service endpoints."
+  },
+  {
+    "id": "gcp-ml-role-004",
+    "level": "Advanced",
+    "question": "What is the role of Google Cloud in machine learning?",
+    "answer": "GCP plays a significant role in machine learning (ML) by offering a comprehensive suite of tools and services that make it easier to build, train, deploy, and scale ML models. With Vertex AI, Google Cloud provides a unified platform that simplifies the end-to-end machine learning workflow, from data preparation and model training to deployment and monitoring. For users with limited ML expertise, AutoML offers automated model-building capabilities, while more experienced developers can leverage TensorFlow, TPUs (Tensor Processing Units), and BigQuery ML for custom model development and large-scale data analysis. Google Cloud also supports integration with powerful data storage and processing services, like BigQuery and Cloud Storage, for handling large datasets, and it provides strong collaboration and MLOps features for managing the lifecycle of models in production. These tools make Google Cloud an ideal platform for organizations aiming to integrate machine learning into their applications and workflows."
+  },
+  {
+    "id": "gcp-tpu-005",
+    "level": "Advanced",
+    "question": "What is Google Cloud Tensor Processing Unit (TPU)?",
+    "answer": "TPU is a custom-built machine learning accelerator designed by Google to significantly speed up the training and inference of machine learning models, particularly those built with TensorFlow. TPUs are optimized for computationally intensive deep learning tasks, enabling faster model training and inference compared to traditional CPUs or GPUs. Google Cloud offers TPUs as a service, allowing users to scale their machine learning workloads across powerful TPU hardware without managing the underlying infrastructure. TPUs are particularly suited for large-scale machine learning models in fields like natural language processing, image recognition, and AI-driven research, providing significant performance improvements while lowering the cost and time needed to train complex models. TPUs seamlessly integrate with Google Cloud’s AI and machine learning services, making them accessible for both researchers and enterprises looking to accelerate their AI development."
+  },
+  {
+    "id": "gcp-multi-region-006",
+    "level": "Advanced",
+    "question": "Explain the concept of multi-region deployments in GCP.",
+    "answer": "Multi-region deployments in GCP involve distributing applications and services across multiple geographic regions to improve availability, redundancy, and performance. By deploying resources in multiple regions, organizations can ensure that their applications remain operational even if one region experiences downtime, providing disaster recovery and fault tolerance. Multi-region deployments also allow for low-latency access by serving users from the region closest to them. GCP services such as Cloud Spanner, BigQuery, and Cloud Storage offer multi-region support, automatically replicating data across regions for increased reliability and durability. This setup is ideal for global applications that require high availability, resilience against regional failures, and fast response times for users worldwide. Additionally, GCP’s global load balancing ensures that traffic is efficiently routed to the best available region."
+  },
+  {
+    "id": "gcp-cost-optimization-007",
+    "level": "Advanced",
+    "question": "How do you optimise costs in GCP?",
+    "answer": "To optimize costs in GCP, organizations can leverage several strategies and tools. First, taking advantage of Sustained Use Discounts and Committed Use Contracts helps reduce the cost of long-running workloads by committing to consistent resource usage over time. Using Preemptible VMs for batch processing or fault-tolerant tasks can significantly lower compute costs. Auto-scaling ensures that resources dynamically adjust to demand, avoiding over-provisioning. Additionally, GCP’s Active Assist Recommender suggests opportunities for cost savings by analyzing resource utilization and identifying idle or underutilized resources. Cloud Monitoring and Billing reports help track spending, set budgets and identify areas for cost optimization. Finally, adopting serverless services like Cloud Functions or Cloud Run can further reduce costs by charging only for actual usage, avoiding the need for always-on infrastructure."
+  },
+  {
+    "id": "gcp-private-catalog-008",
+    "level": "Advanced",
+    "question": "What is Google Cloud Private Catalog?",
+    "answer": "Private Catalog is a service that allows organizations to create and manage a curated catalog of approved solutions, including virtual machine images, container configurations, software packages, and infrastructure templates, for internal use. It helps centralize governance and control over which tools, applications, or configurations can be deployed by different teams, ensuring compliance with organizational policies and standards. Private Catalog integrates seamlessly with other Google Cloud services, allowing administrators to define and distribute pre-configured resources across departments or projects, while also maintaining control over costs and security. By offering a streamlined and consistent way to manage internal resources, Private Catalog simplifies cloud management, fosters collaboration, and reduces the risk of misconfigurations or unauthorized resource usage."
+  },
+  {
+    "id": "gcp-hybrid-cloud-009",
+    "level": "Advanced",
+    "question": "How do you manage hybrid cloud deployments with GCP?",
+    "answer": "Managing hybrid cloud deployments with GCP involves integrating on-premises infrastructure with cloud-based resources to create a unified environment. Google Anthos is a key tool that allows organizations to build, deploy, and manage applications consistently across on-premises data centres, GCP, and other cloud providers like AWS or Azure. Anthos provides a Kubernetes-based platform for containerized applications, enabling developers to run workloads anywhere while maintaining centralized control. For networking, Cloud Interconnect and VPN establish secure, high-speed connections between on-premises environments and GCP. IAM and Google Cloud Operations Suite help monitor, secure, and manage resources across the hybrid environment, ensuring consistency in policies, security, and performance. By using these tools, GCP enables seamless integration, flexibility, and control over hybrid cloud architectures, allowing organizations to modernize applications while leveraging their existing infrastructure."
+  },
+  {
+    "id": "gcp-security-best-practices-010",
+    "level": "Advanced",
+    "question": "What are the best practices for securing a GCP environment?",
+    "answer": "Securing a GCP environment involves implementing multiple layers of security to protect data, applications, and infrastructure. Key best practices include using IAM to enforce the principle of least privilege, ensuring that users and services have only the permissions they need. Enable MFA and use service accounts for automated processes. Encrypt data both at rest and in transit, and leverage Cloud KMS for managing encryption keys. Set up VPC firewalls to control network access and use Cloud Armor to protect against DDoS attacks. Regularly monitor and audit the environment with Cloud Audit Logs and Cloud Security Command Center to detect vulnerabilities and suspicious activities. Additionally, implement security policies, such as organization policies and use Private Google Access for secure communication without exposing resources to the internet. Following these practices helps to ensure a robust security posture in GCP."
   }
-
 ]

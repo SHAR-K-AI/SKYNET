@@ -1,0 +1,90 @@
+[
+  {
+    "id": "8b3e12d5-6a4f-4c0a-b8b9-3fcd4a1f2b7e",
+    "title": "Google Cloud Skill Boost Arcade",
+    "link": "https://go.cloudskillsboost.google/arcade",
+    "imageUrl": "https://storage.googleapis.com/gweb-cloudblog-publish/images/GC_arcade_marketing_assets_blog_hero_image.max-2500x2500.png",
+    "description": "An interactive platform for learning cloud technologies through gamified tasks. Users can earn skill badges, certificates, and rewards.",
+    "content": "Google Cloud Skills Boost Arcade is an interactive platform by Google that combines learning cloud technologies with gamification. Users complete practical tasks and labs simulating real-world scenarios in Google Cloud.\n\nKey features:\n- Gamified tasks and quests\n- Skill badges\n- Certification\n- Rewards and collectibles\n- Hands-on experience\n- Interactive feedback\n- Motivation through progress"
+  },
+  {
+    "id": "e1a4b7d2-9c9f-4d2a-9c2e-4a5f2c0f7c1b",
+    "title": "Kaggle",
+    "link": "https://www.kaggle.com/",
+    "imageUrl": "https://www.kaggle.com/static/images/home/logged-out/hero-illo.png",
+    "description": "A platform connecting machine learning and data analytics specialists for collaboration, knowledge sharing, and competitions.",
+    "content": "Kaggle is an online platform for data analysis competitions and a community for data specialists. Users can find and publish datasets, build models, collaborate, and participate in competitions.\n\nKey features:\n- Data analysis competitions\n- Datasets\n- Kaggle Kernels\n- Learning resources\n- Progression system\n\nStatistics:\n- Founded in 2010\n- Acquired by Google in 2017\n- Over 15 million users in 194 countries"
+  },
+  {
+    "id": "7b2d4f1a-0c9e-4d3b-a7a2-1c3f5b8d6e4f",
+    "title": "Google Cloud Innovators",
+    "link": "https://cloud.google.com/innovators",
+    "imageUrl": "https://cloud.google.com/images/social-icon-google-cloud.png",
+    "description": "A community for professionals offering access to exclusive content, events, expert support, and career development opportunities.",
+    "content": "Google Cloud Innovators provides a professional community for sharing experience and access to learning materials, events, and certification programs.\n\nKey features:\n- Professional community\n- Exclusive content\n- Events and webinars\n- Expert support\n- Career development opportunities"
+  },
+  {
+    "id": "c5a1d2e3-8f7b-4b9e-b6c5-9d7f3a1b2c4d",
+    "title": "Google Developer Program",
+    "link": "https://developers.google.com/programs",
+    "imageUrl": "https://developers.google.com/static/images/social-icon.png",
+    "description": "A program for developers with access to learning resources, community, events, and Google tools.",
+    "content": "The Google Developer Program provides resources for developers, including learning materials, community access, events, and Google tools.\n\nKey features:\n- Learning resources\n- Community access\n- Events and conferences\n- Google developer tools"
+  },
+  {
+    "id": "9f2e1b3c-4a7d-4c8a-9f7d-0b2a5c1e6f8d",
+    "title": "Machine Learning | Google for Developers",
+    "link": "https://developers.google.com/machine-learning",
+    "imageUrl": "https://developers.google.com/static/images/ml-social-icon.png",
+    "description": "A resource for developers who want to learn machine learning (ML) and apply it in their projects.",
+    "content": "Machine Learning | Google for Developers offers learning materials and tools for developers working with ML and AI.\n\nKey features:\n- ML learning resources\n- Tools and APIs\n- Project examples\n- Hands-on labs"
+  },
+  {
+    "id": "2d7c6e4f-1b5a-4d3f-9a7b-3c8e5f2a1d9b",
+    "title": "Women Techmakers",
+    "link": "https://www.womentechmakers.com/",
+    "imageUrl": "https://www.womentechmakers.com/images/logo.png",
+    "description": "A program for women providing access to learning resources, community, events, and Google tools.",
+    "content": "Google's Women Techmakers Program provides resources and community support for women in technology.\n\nKey features:\n- Learning resources\n- Community and support\n- Events and conferences\n- Access to Google tools"
+  },
+  {
+    "id": "6f3b1d7a-9c8e-4b2d-8a5f-7d3c1e2b4a6d",
+    "title": "Credly",
+    "link": "https://www.credly.com/",
+    "imageUrl": "https://images.credly.com/logo.png",
+    "description": "A platform for managing digital certificates and badges.",
+    "content": "Credly allows users to showcase professional achievements through digital certificates and badges.\n\nKey features:\n- Certificate management\n- Badge publishing\n- Professional portfolio\n- Skills recognition"
+  },
+  {
+    "id": "f1e2d3c4-b5a6-4d7f-8c9a-0b1c2d3e4f5a",
+    "title": "AI for Productivity",
+    "link": "https://ai.google.com/productivity",
+    "imageUrl": "https://ai.google.com/images/logo.png",
+    "description": "Short video tutorials for improving work efficiency and automating routine processes.",
+    "content": "AI for Productivity offers short video lessons for managers, marketers, HR professionals, and other specialists.\n\nKey features:\n- Short video tutorials\n- Automation of routine tasks\n- Improve work efficiency\n- For managers and specialists"
+  },
+  {
+    "id": "a1b2c3d4-e5f6-4a7b-9c8d-0e1f2a3b4c5d",
+    "title": "Google Ukraine Blog",
+    "link": "https://blog.google.ua/",
+    "imageUrl": "https://blog.google.ua/images/logo.png",
+    "description": "Official Google blog for Ukraine with news and updates.",
+    "content": "Google Ukraine Blog publishes news, updates, and information about Google services, partnerships, and initiatives for Ukrainian users."
+  },
+  {
+    "id": "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e",
+    "title": "Google Codelabs",
+    "link": "https://codelabs.developers.google.com/",
+    "imageUrl": "https://codelabs.developers.google.com/images/logo.png",
+    "description": "A platform with interactive learning materials for developers.",
+    "content": "Google Codelabs provides interactive tutorials for developers who want to learn and apply Google technologies.\n\nKey features:\n- Interactive tutorials\n- Hands-on labs\n- Step-by-step guides\n- Project examples"
+  },
+  {
+    "id": "c3d4e5f6-a7b8-4c9d-9e0f-1a2b3c4d5e6f",
+    "title": "Google Online Courses & Tools",
+    "link": "https://learndigital.withgoogle.com/",
+    "imageUrl": "https://learndigital.withgoogle.com/images/logo.png",
+    "description": "A collection of tools and online courses for career and business development.",
+    "content": "The platform offers courses, tutorials, and digital tools for career and business development. Users can filter resources by topics, duration, and certification availability.\n\nKey features:\n- Online courses\n- Tutorials\n- Digital tools\n- Certification\n- Filter by topic and duration"
+  }
+]

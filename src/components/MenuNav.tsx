@@ -5,8 +5,13 @@ import HeaderActions from "@/components/HeaderActions";
 import {useTheme} from "next-themes";
 
 const menuItems = [
-    'home', 'about', 'contact', 'questions',
-    'cloud-map', 'links', 'arcade-calculator', 'blog'
+    'home',
+    'about',
+    'blog',
+    'questions',
+    'zodiac-roles',
+    'arcade-calculator',
+    'links',
 ];
 
 const itemVariants: Variants = {
