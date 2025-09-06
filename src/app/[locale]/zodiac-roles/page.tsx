@@ -19,34 +19,35 @@ interface Role {
 export default function RolesConstellation() {
     const canvasRef = useRef<HTMLDivElement>(null);
     const [selectedRole, setSelectedRole] = useState<Role | null>(null);
+
     const roles: Role[] = [
-        { id: 1, name: "API Developer", category: "Developer", requirements: { services: ["Cloud Functions", "Apigee"], tools: ["Postman", "Swagger"], platforms: ["GCP", "API Gateway"], languages: ["JavaScript", "Python"], }, },
-        { id: 2, name: "Citizen Developer", category: "Developer", requirements: { services: ["AppSheet", "Sheets API"], tools: ["AppSheet Editor"], platforms: ["GCP"], languages: ["JavaScript", "SQL"], }, },
-        { id: 3, name: "Cloud Digital Leader", category: "Leadership", requirements: { services: ["Cloud Billing", "IAM"], tools: ["GCP Console", "BigQuery"], platforms: ["GCP"], languages: [], }, },
-        { id: 4, name: "Cloud Engineer", category: "Cloud", requirements: { services: ["Compute Engine", "GKE", "Cloud Storage"], tools: ["Terraform", "Ansible"], platforms: ["GCP", "AWS"], languages: ["Python", "Bash"], }, },
-        { id: 5, name: "Cloud Architect", category: "Cloud", requirements: { services: ["VPC", "Cloud Load Balancing", "Cloud Storage"], tools: ["Terraform", "Cloud Deployment Manager"], platforms: ["GCP"], languages: ["Python", "Bash"], }, },
-        { id: 6, name: "Cloud Developer", category: "Developer", requirements: { services: ["Cloud Run", "Firebase", "App Engine"], tools: ["Cloud SDK", "VS Code"], platforms: ["GCP"], languages: ["JavaScript", "Python", "Go"], }, },
-        { id: 7, name: "Contact Center Engineer", category: "Cloud", requirements: { services: ["Contact Center AI", "Dialogflow"], tools: ["GCP Console", "Postman"], platforms: ["GCP"], languages: ["Python", "JavaScript"], }, },
-        { id: 8, name: "Data Analyst", category: "Data", requirements: { services: ["BigQuery", "Looker", "Sheets"], tools: ["Data Studio", "Looker Studio"], platforms: ["GCP"], languages: ["SQL", "Python"], }, },
-        { id: 9, name: "Data Engineer", category: "Data", requirements: { services: ["BigQuery", "Dataflow", "Pub/Sub"], tools: ["Airflow", "dbt"], platforms: ["GCP"], languages: ["SQL", "Python"], }, },
-        { id: 10, name: "Database Engineer", category: "Data", requirements: { services: ["Cloud SQL", "Firestore", "Bigtable"], tools: ["pgAdmin", "Cloud Console"], platforms: ["GCP"], languages: ["SQL", "Python"], }, },
-        { id: 11, name: "DevOps Engineer", category: "Cloud", requirements: { services: ["Cloud Build", "Cloud Deploy", "GKE"], tools: ["Terraform", "GitLab CI", "Jenkins"], platforms: ["GCP", "AWS"], languages: ["Bash", "Python"], }, },
-        { id: 12, name: "Google Workspace Administrator", category: "Admin", requirements: { services: ["Admin Console", "Gmail API", "Drive API"], tools: ["Google Admin", "Sheets", "Scripts"], platforms: ["GCP"], languages: ["Apps Script", "JavaScript"], }, },
-        { id: 13, name: "Hybrid and Multi-Cloud Architect", category: "Cloud", requirements: { services: ["Anthos", "BigQuery Omni", "VMs"], tools: ["Terraform", "Ansible", "Cloud Console"], platforms: ["GCP", "AWS", "Azure"], languages: ["Python", "Bash"], }, },
-        { id: 14, name: "Machine Learning Engineer", category: "AI/ML", requirements: { services: ["Vertex AI", "AI Platform", "BigQuery ML"], tools: ["TensorFlow", "PyTorch", "scikit-learn"], platforms: ["GCP"], languages: ["Python", "R"], }, },
-        { id: 15, name: "Network Engineer", category: "Cloud", requirements: { services: ["VPC", "Cloud VPN", "Cloud Router"], tools: ["Cloud Console", "Terraform"], platforms: ["GCP"], languages: ["Bash", "Python"], }, },
-        { id: 16, name: "Security Engineer", category: "Security", requirements: { services: ["Cloud Armor", "Security Command Center", "IAM"], tools: ["Cloud Security Scanner", "Terraform"], platforms: ["GCP"], languages: ["Python", "Bash"], }, },
-        { id: 17, name: "Startup Cloud Engineer", category: "Cloud", requirements: { services: ["Firebase", "App Engine", "Cloud Run"], tools: ["Cloud SDK", "Terraform"], platforms: ["GCP"], languages: ["JavaScript", "Python"], }, },
+        { id: 1, name: "API Developer", category: "Developer", requirements: { services: ["Cloud Functions", "Apigee"], tools: ["Postman", "Swagger"], platforms: ["GCP", "API Gateway"], languages: ["JavaScript", "Python"] } },
+        { id: 2, name: "Citizen Developer", category: "Developer", requirements: { services: ["AppSheet", "Sheets API"], tools: ["AppSheet Editor"], platforms: ["GCP"], languages: ["JavaScript", "SQL"] } },
+        { id: 3, name: "Cloud Digital Leader", category: "Leadership", requirements: { services: ["Cloud Billing", "IAM"], tools: ["GCP Console", "BigQuery"], platforms: ["GCP"], languages: [] } },
+        { id: 4, name: "Cloud Engineer", category: "Cloud", requirements: { services: ["Compute Engine", "GKE", "Cloud Storage"], tools: ["Terraform", "Ansible"], platforms: ["GCP", "AWS"], languages: ["Python", "Bash"] } },
+        { id: 5, name: "Cloud Architect", category: "Cloud", requirements: { services: ["VPC", "Cloud Load Balancing", "Cloud Storage"], tools: ["Terraform", "Cloud Deployment Manager"], platforms: ["GCP"], languages: ["Python", "Bash"] } },
+        { id: 6, name: "Cloud Developer", category: "Developer", requirements: { services: ["Cloud Run", "Firebase", "App Engine"], tools: ["Cloud SDK", "VS Code"], platforms: ["GCP"], languages: ["JavaScript", "Python", "Go"] } },
+        { id: 7, name: "Contact Center Engineer", category: "Cloud", requirements: { services: ["Contact Center AI", "Dialogflow"], tools: ["GCP Console", "Postman"], platforms: ["GCP"], languages: ["Python", "JavaScript"] } },
+        { id: 8, name: "Data Analyst", category: "Data", requirements: { services: ["BigQuery", "Looker", "Sheets"], tools: ["Data Studio", "Looker Studio"], platforms: ["GCP"], languages: ["SQL", "Python"] } },
+        { id: 9, name: "Data Engineer", category: "Data", requirements: { services: ["BigQuery", "Dataflow", "Pub/Sub"], tools: ["Airflow", "dbt"], platforms: ["GCP"], languages: ["SQL", "Python"] } },
+        { id: 10, name: "Database Engineer", category: "Data", requirements: { services: ["Cloud SQL", "Firestore", "Bigtable"], tools: ["pgAdmin", "Cloud Console"], platforms: ["GCP"], languages: ["SQL", "Python"] } },
+        { id: 11, name: "DevOps Engineer", category: "Cloud", requirements: { services: ["Cloud Build", "Cloud Deploy", "GKE"], tools: ["Terraform", "GitLab CI", "Jenkins"], platforms: ["GCP", "AWS"], languages: ["Bash", "Python"] } },
+        { id: 12, name: "Google Workspace Administrator", category: "Admin", requirements: { services: ["Admin Console", "Gmail API", "Drive API"], tools: ["Google Admin", "Sheets", "Scripts"], platforms: ["GCP"], languages: ["Apps Script", "JavaScript"] } },
+        { id: 13, name: "Hybrid and Multi-Cloud Architect", category: "Cloud", requirements: { services: ["Anthos", "BigQuery Omni", "VMs"], tools: ["Terraform", "Ansible", "Cloud Console"], platforms: ["GCP", "AWS", "Azure"], languages: ["Python", "Bash"] } },
+        { id: 14, name: "Machine Learning Engineer", category: "AI/ML", requirements: { services: ["Vertex AI", "AI Platform", "BigQuery ML"], tools: ["TensorFlow", "PyTorch", "scikit-learn"], platforms: ["GCP"], languages: ["Python", "R"] } },
+        { id: 15, name: "Network Engineer", category: "Cloud", requirements: { services: ["VPC", "Cloud VPN", "Cloud Router"], tools: ["Cloud Console", "Terraform"], platforms: ["GCP"], languages: ["Bash", "Python"] } },
+        { id: 16, name: "Security Engineer", category: "Security", requirements: { services: ["Cloud Armor", "Security Command Center", "IAM"], tools: ["Cloud Security Scanner", "Terraform"], platforms: ["GCP"], languages: ["Python", "Bash"] } },
+        { id: 17, name: "Startup Cloud Engineer", category: "Cloud", requirements: { services: ["Firebase", "App Engine", "Cloud Run"], tools: ["Cloud SDK", "Terraform"], platforms: ["GCP"], languages: ["JavaScript", "Python"] } },
     ];
 
     const categoryColors: Record<string, number> = {
-        Developer: 0x1f77b4,
-        Cloud: 0xff7f0e,
-        Data: 0x2ca02c,
-        Leadership: 0xd62728,
-        Admin: 0x9467bd,
-        'AI/ML': 0x8c564b,
-        Security: 0xe377c2,
+        Developer: 0x4285F4,
+        Cloud: 0x34A853,
+        Data: 0xFBBC05,
+        Leadership: 0xEA4335,
+        Admin: 0x4285F4,
+        'AI/ML': 0xFBBC05,
+        Security: 0xEA4335,
     };
 
     const categoryPositions: Record<string, THREE.Vector3> = {
@@ -73,29 +74,25 @@ export default function RolesConstellation() {
             0.1,
             1000
         );
-        camera.position.z = 70;
+        camera.position.z = 120;
 
         const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
         renderer.setSize(container.clientWidth, container.clientHeight);
         container.appendChild(renderer.domElement);
 
-        // Lights
         const ambientLight = new THREE.AmbientLight(0xffffff, 0.3);
         scene.add(ambientLight);
         const pointLight = new THREE.PointLight(0xffffff, 1, 500);
         pointLight.position.set(0, 0, 150);
         scene.add(pointLight);
 
-        // Controls
         const controls = new OrbitControls(camera, renderer.domElement);
         controls.enableDamping = true;
         controls.dampingFactor = 0.05;
         controls.minDistance = 50;
         controls.maxDistance = 300;
-        controls.enableZoom = false;
+        controls.enableZoom = true;
 
-
-        // Interactive objects
         const interactiveObjects: THREE.Object3D[] = [];
         const originalColors = new Map<string, number>();
         const originalScales = new Map<string, THREE.Vector3>();
@@ -103,13 +100,26 @@ export default function RolesConstellation() {
 
         roles.forEach((role) => {
             const basePos = categoryPositions[role.category] || new THREE.Vector3(0, 0, 0);
-            const pos = basePos.clone().add(new THREE.Vector3(
-                Math.random() * 60 - 30,
-                Math.random() * 60 - 30,
-                Math.random() * 60 - 30
-            ));
+            let pos: THREE.Vector3;
 
-            // Sphere
+            if (role.category === "Cloud") {
+                const distance = 30 + Math.random() * 50;
+                const angle1 = Math.random() * Math.PI * 2;
+                const angle2 = Math.random() * Math.PI;
+                pos = basePos.clone().add(new THREE.Vector3(
+                    Math.sin(angle2) * Math.cos(angle1) * distance,
+                    Math.sin(angle2) * Math.sin(angle1) * distance,
+                    Math.cos(angle2) * distance
+                ));
+            } else {
+                const radius = 50;
+                pos = basePos.clone().add(new THREE.Vector3(
+                    Math.random() * radius - radius / 2,
+                    Math.random() * radius - radius / 2,
+                    Math.random() * radius - radius / 2
+                ));
+            }
+
             const geometry = new THREE.SphereGeometry(1.5, 32, 32);
             const material = new THREE.MeshBasicMaterial({ color: categoryColors[role.category] || 0x00ff00 });
             const sphere = new THREE.Mesh(geometry, material);
@@ -120,12 +130,9 @@ export default function RolesConstellation() {
             originalColors.set(sphere.uuid, material.color.getHex());
             originalScales.set(sphere.uuid, sphere.scale.clone());
 
-            if (!spheres[role.category]) {
-                spheres[role.category] = [];
-            }
+            if (!spheres[role.category]) spheres[role.category] = [];
             spheres[role.category].push(sphere);
 
-            // Sprite (text)
             const canvas = document.createElement('canvas');
             const context = canvas.getContext('2d')!;
             const fontSize = 32;
@@ -149,15 +156,21 @@ export default function RolesConstellation() {
             originalScales.set(sprite.uuid, sprite.scale.clone());
         });
 
-        // Add lines connecting spheres of the same color/category
         Object.keys(spheres).forEach(category => {
             const spheresForCategory = spheres[category];
             if (spheresForCategory.length < 2) return;
 
-            for (let i = 0; i < spheresForCategory.length; i++) {
-                for (let j = i + 1; j < spheresForCategory.length; j++) {
-                    const startPoint = spheresForCategory[i].position;
-                    const endPoint = spheresForCategory[j].position;
+            spheresForCategory.forEach((sphere, i) => {
+                const connectedUUIDs = new Set<string>();
+                for (let j = 0; j < spheresForCategory.length; j++) {
+                    if (i === j) continue;
+                    const otherSphere = spheresForCategory[j];
+                    if (connectedUUIDs.has(otherSphere.uuid)) continue;
+
+                    if (category === "Cloud" && connectedUUIDs.size >= 3) break;
+
+                    const startPoint = sphere.position;
+                    const endPoint = otherSphere.position;
 
                     const material = new THREE.LineBasicMaterial({
                         color: categoryColors[category],
@@ -167,8 +180,10 @@ export default function RolesConstellation() {
                     const geometry = new THREE.BufferGeometry().setFromPoints([startPoint, endPoint]);
                     const line = new THREE.Line(geometry, material);
                     scene.add(line);
+
+                    connectedUUIDs.add(otherSphere.uuid);
                 }
-            }
+            });
         });
 
         const raycaster = new THREE.Raycaster();

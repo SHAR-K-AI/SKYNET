@@ -4,14 +4,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 export default function TermsOfUsePage() {
-    const typingVariants = {
-        hidden: { opacity: 0 },
-        visible: (i = 1) => ({
-            opacity: 1,
-            transition: { delay: i * 0.2, type: 'spring', stiffness: 50 },
-        }),
-    };
-
     return (
         <div className="min-h-screen max-w-4xl mx-auto text-gray-900 dark:text-gray-100 p-8 sm:p-12 space-y-8">
             <motion.h1
@@ -25,7 +17,6 @@ export default function TermsOfUsePage() {
 
             <motion.p
                 className="text-lg sm:text-xl leading-relaxed"
-                variants={typingVariants}
                 initial="hidden"
                 animate="visible"
                 custom={1}
@@ -35,7 +26,6 @@ export default function TermsOfUsePage() {
 
             <motion.p
                 className="text-lg sm:text-xl leading-relaxed"
-                variants={typingVariants}
                 initial="hidden"
                 animate="visible"
                 custom={2}
@@ -45,7 +35,6 @@ export default function TermsOfUsePage() {
 
             <motion.p
                 className="text-lg sm:text-xl leading-relaxed"
-                variants={typingVariants}
                 initial="hidden"
                 animate="visible"
                 custom={3}
@@ -55,7 +44,6 @@ export default function TermsOfUsePage() {
 
             <motion.p
                 className="text-lg sm:text-xl leading-relaxed"
-                variants={typingVariants}
                 initial="hidden"
                 animate="visible"
                 custom={4}

@@ -5,18 +5,6 @@ import { motion } from 'framer-motion';
 import Image from "next/image";
 
 export default function AboutPage() {
-    const typingVariants = {
-        hidden: { opacity: 0 },
-        visible: (i = 1) => ({
-            opacity: 1,
-            transition: {
-                delay: i * 0.2,
-                type: 'spring',
-                stiffness: 50,
-            },
-        }),
-    };
-
     return (
         <div className="min-h-screen max-w-4xl mx-auto text-gray-900 dark:text-gray-100 p-8 sm:p-12 space-y-8">
 
@@ -31,7 +19,6 @@ export default function AboutPage() {
 
             <motion.p
                 className="text-lg sm:text-xl leading-relaxed"
-                variants={typingVariants}
                 initial="hidden"
                 animate="visible"
                 custom={1}
@@ -39,7 +26,6 @@ export default function AboutPage() {
                 Цей неофіційний фан-сайт створено для того, щоб допомогти розібратися у <strong>GCP, AI та суміжних технологіях</strong> у веселій та невимушеній формі. Він розроблений у вигляді зоряного та хмарного неба, адже новітні технології природно асоціюються з хмарами – хмарні сервіси. Вони ніби “пливуть” у нашому цифровому небі, відкриваючи безліч нових можливостей для навчання та експериментів.
             </motion.p>
 
-            {/* Місце для картинки */}
             <motion.div
                 className="w-full h-64 bg-gray-200 dark:bg-gray-800 rounded-xl flex items-center justify-center text-gray-500 relative"
                 initial={{ opacity: 0 }}
@@ -47,17 +33,15 @@ export default function AboutPage() {
                 transition={{ delay: 1, duration: 1 }}
             >
                 <Image
-                    src="/images/about.png"
+                    src="/images/no-image.png"
                     fill
                     alt="Footer Image"
                     className="object-cover"
                 />
             </motion.div>
 
-            {/* Другий абзац з ефектом друку */}
             <motion.p
                 className="text-lg sm:text-xl leading-relaxed"
-                variants={typingVariants}
                 initial="hidden"
                 animate="visible"
                 custom={2}
@@ -74,7 +58,7 @@ export default function AboutPage() {
             >
 
                 <Image
-                    src="https://www.meme-arsenal.com/memes/3bf8ec3bb51d81a9dfa5f2e746a669ce.jpg"
+                    src="/images/no-image.png"
                     fill
                     alt="Footer Image"
                     className="object-contain"
@@ -83,7 +67,6 @@ export default function AboutPage() {
 
             <motion.p
                 className="text-lg sm:text-xl leading-relaxed"
-                variants={typingVariants}
                 initial="hidden"
                 animate="visible"
                 custom={3}
@@ -93,7 +76,6 @@ export default function AboutPage() {
 
             <motion.div
                 className="space-y-4"
-                variants={typingVariants}
                 initial="hidden"
                 animate="visible"
                 custom={4}

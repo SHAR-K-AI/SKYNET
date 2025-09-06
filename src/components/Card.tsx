@@ -37,12 +37,12 @@ const Card: React.FC<CardProps> = ({ title, description, imageUrl, content, link
     );
 
     const CopyLinkButton = () => (
-        <div className="flex items-center gap-1 p-1 rounded justify-end">
+        <div className="flex items-center gap-1 p-1 rounded justify-between">
             <a
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="truncate text-sm bg-white/40 dark:bg-gray-800/40 backdrop-blur-md hover:bg-white/60 dark:hover:bg-gray-800/60 transition cursor-pointer p-1 rounded-md"
+                className="truncate text-sm hover:scale-110 bg-white/40 dark:bg-gray-800/40 backdrop-blur-md hover:bg-white/60 dark:hover:bg-gray-800/60 transition cursor-pointer p-1 rounded-md"
                 onClick={(e) => e.stopPropagation()}
             >
                 {domain}
@@ -58,17 +58,21 @@ const Card: React.FC<CardProps> = ({ title, description, imageUrl, content, link
         <>
             <div
                 onClick={() => setIsOpen(true)}
-                className="relative cursor-pointer bg-white/50 dark:bg-gray-800/40 backdrop-blur-md text-gray-900 dark:text-gray-100 rounded-xl p-4
-                   shadow-lg dark:shadow-[0_4px_15px_rgba(255,255,255,0.15)] transition-all duration-300
-                   hover:shadow-2xl hover:scale-105 hover:rotate-1 hover:z-10"
+                className="relative cursor-pointer flex flex-col bg-white/50 dark:bg-gray-800/40 backdrop-blur-sm
+     text-gray-900 dark:text-gray-100 rounded-xl p-4
+     shadow-lg dark:shadow-[0_4px_15px_rgba(255,255,255,0.15)] transition-all duration-300
+     hover:shadow-2xl hover:scale-105 hover:rotate-1 hover:z-10 transform-gpu will-change-transform"
             >
                 <div className="relative w-full h-44 mb-4 rounded overflow-hidden transition-transform duration-300">
                     <AppImage src={imageUrl} alt={title} fill style={{ objectFit: 'contain' }} />
                 </div>
+
                 <h3 className="font-bold text-lg mb-2">{title}</h3>
                 <p className="text-sm mb-2">{description}</p>
 
-                <CopyLinkButton />
+                <div className="mt-auto pt-2">
+                    <CopyLinkButton />
+                </div>
 
                 <Transition
                     show={copied}
@@ -85,6 +89,7 @@ const Card: React.FC<CardProps> = ({ title, description, imageUrl, content, link
                     </div>
                 </Transition>
             </div>
+
 
             <Transition appear show={isOpen} as={Fragment}>
                 <Dialog as="div" className="relative z-50" onClose={() => setIsOpen(false)}>

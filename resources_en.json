@@ -1,9 +1,17 @@
 [
   {
+    "id": "f9e8d7c6-b5a4-4c3d-9e2f-1a0b9c8d7e6f",
+    "title": "Become a Google Cloud Expert",
+    "link": "https://rsvp.withgoogle.com/events/grow-your-career-with-google-cloud/about",
+    "imageUrl": "/images/gcp-ai.jpg",
+    "description": "A webinar series from Google Cloud experts to help you grow your career in cloud technologies.",
+    "content": "“Become a Google Cloud Expert” is a learning webinar series where Google Cloud experts share practical knowledge and real-world experience of working in the cloud. The program is designed to help developers, analysts, administrators, and other professionals strengthen their skills and explore the full potential of Google Cloud.\n\nEven if you didn’t join the latest cohort, you can still register and access recordings of past workshops. This allows you to learn at your own pace and revisit valuable content anytime.\n\nA unique feature of the program is its active community: participants from different cohorts have self-organized into a network where they support each other and share experiences. By registering, you gain access to this community and expand your professional network.\n\nKey features:\n- Webinar series led by Google Cloud experts\n- Access to recordings of past workshops\n- Flexible self-paced learning\n- Community of participants for support and collaboration\n- Resources and opportunities to grow your career in cloud technologies"
+  },
+  {
     "id": "8b3e12d5-6a4f-4c0a-b8b9-3fcd4a1f2b7e",
     "title": "Google Cloud Skill Boost Arcade",
     "link": "https://go.cloudskillsboost.google/arcade",
-    "imageUrl": "https://storage.googleapis.com/gweb-cloudblog-publish/images/GC_arcade_marketing_assets_blog_hero_image.max-2500x2500.png",
+    "imageUrl": "/images/arcade.jpg",
     "description": "An interactive platform for learning cloud technologies through gamified tasks. Users can earn skill badges, certificates, and rewards.",
     "content": "Google Cloud Skills Boost Arcade is an interactive platform by Google that combines learning cloud technologies with gamification. Users complete practical tasks and labs simulating real-world scenarios in Google Cloud.\n\nKey features:\n- Gamified tasks and quests\n- Skill badges\n- Certification\n- Rewards and collectibles\n- Hands-on experience\n- Interactive feedback\n- Motivation through progress"
   },
@@ -12,79 +20,119 @@
     "title": "Kaggle",
     "link": "https://www.kaggle.com/",
     "imageUrl": "https://www.kaggle.com/static/images/home/logged-out/hero-illo.png",
-    "description": "A platform connecting machine learning and data analytics specialists for collaboration, knowledge sharing, and competitions.",
-    "content": "Kaggle is an online platform for data analysis competitions and a community for data specialists. Users can find and publish datasets, build models, collaborate, and participate in competitions.\n\nKey features:\n- Data analysis competitions\n- Datasets\n- Kaggle Kernels\n- Learning resources\n- Progression system\n\nStatistics:\n- Founded in 2010\n- Acquired by Google in 2017\n- Over 15 million users in 194 countries"
+    "description": "A platform that brings together machine learning and data analytics professionals for collaboration, knowledge sharing, and competition participation.",
+    "content": "Kaggle is an online platform for data science competitions and a community for data professionals. Users can discover and publish datasets, build models, collaborate, and participate in competitions.\n\nKey features:\n- Data science competitions\n- Datasets\n- Kaggle Kernels\n- Educational resources\n- Progression system\n\nKaggle also provides tools for learning, sharing code, and visualizing data, enabling both beginners and experienced analysts to quickly develop their skills and work on real-world projects."
   },
   {
     "id": "7b2d4f1a-0c9e-4d3b-a7a2-1c3f5b8d6e4f",
     "title": "Google Cloud Innovators",
     "link": "https://cloud.google.com/innovators",
-    "imageUrl": "https://cloud.google.com/images/social-icon-google-cloud.png",
-    "description": "A community for professionals offering access to exclusive content, events, expert support, and career development opportunities.",
-    "content": "Google Cloud Innovators provides a professional community for sharing experience and access to learning materials, events, and certification programs.\n\nKey features:\n- Professional community\n- Exclusive content\n- Events and webinars\n- Expert support\n- Career development opportunities"
+    "imageUrl": "/images/innovators.jpg",
+    "description": "A community for professionals offering access to exclusive content, events, expert support, and professional development opportunities.",
+    "content": "Google Cloud Innovators provides a community of professionals for knowledge sharing, learning, and access to Google Cloud resources. Participants can attend webinars and events, take part in hackathons, use learning materials, and explore case studies from leading companies.\n\nKey features:\n- Professional community for knowledge exchange\n- Exclusive content and learning materials\n- Events, webinars, and hackathons\n- Expert and mentor support\n- Professional development and certification opportunities\n\nThe program helps participants quickly develop skills, build professional connections, and apply knowledge in real-world projects."
   },
   {
     "id": "c5a1d2e3-8f7b-4b9e-b6c5-9d7f3a1b2c4d",
     "title": "Google Developer Program",
     "link": "https://developers.google.com/programs",
-    "imageUrl": "https://developers.google.com/static/images/social-icon.png",
-    "description": "A program for developers with access to learning resources, community, events, and Google tools.",
-    "content": "The Google Developer Program provides resources for developers, including learning materials, community access, events, and Google tools.\n\nKey features:\n- Learning resources\n- Community access\n- Events and conferences\n- Google developer tools"
+    "imageUrl": "/images/dev-prog.png",
+    "description": "A program for developers offering access to learning resources, community, events, and Google tools.",
+    "content": "The Google Developer Program provides developers with resources for learning, skill development, and community engagement. Participants gain access to learning materials, documentation, Google tools, and special events that help enhance professional expertise.\n\nKey features:\n- Learning resources for mastering new technologies and platforms\n- Access to an active developer community for knowledge sharing\n- Participation in conferences, webinars, and local meetups\n- Google tools for building applications and services\n- Opportunities to join hackathons, competitions, and specialized programs\n\nThe program helps developers stay up-to-date with the latest technologies, build professional connections, receive expert support, and apply knowledge to real-world projects, fostering career growth and technological development."
   },
   {
     "id": "9f2e1b3c-4a7d-4c8a-9f7d-0b2a5c1e6f8d",
-    "title": "Machine Learning | Google for Developers",
+    "title": "Machine Learning",
     "link": "https://developers.google.com/machine-learning",
-    "imageUrl": "https://developers.google.com/static/images/ml-social-icon.png",
+    "imageUrl": "/images/ml.png",
     "description": "A resource for developers who want to learn machine learning (ML) and apply it in their projects.",
-    "content": "Machine Learning | Google for Developers offers learning materials and tools for developers working with ML and AI.\n\nKey features:\n- ML learning resources\n- Tools and APIs\n- Project examples\n- Hands-on labs"
+    "content": "Machine Learning provides developers with learning materials, tools, and examples for working with ML and AI. Participants can study both fundamental and advanced machine learning concepts, experiment with models, and integrate them into their own projects.\n\nKey features:\n- Learning resources for beginners and experienced users\n- Tools, APIs, and libraries for building and testing models\n- Real-world project examples and case studies for inspiration\n- Practical labs and interactive exercises to reinforce knowledge\n- Guidance on model optimization and working with large datasets\n\nThe program helps developers build practical ML and AI skills, work on real-world problems, and quickly apply knowledge in their own projects."
   },
   {
     "id": "2d7c6e4f-1b5a-4d3f-9a7b-3c8e5f2a1d9b",
     "title": "Women Techmakers",
     "link": "https://www.womentechmakers.com/",
-    "imageUrl": "https://www.womentechmakers.com/images/logo.png",
+    "imageUrl": "/images/women-tech.jpg",
     "description": "A program for women providing access to learning resources, community, events, and Google tools.",
-    "content": "Google's Women Techmakers Program provides resources and community support for women in technology.\n\nKey features:\n- Learning resources\n- Community and support\n- Events and conferences\n- Access to Google tools"
+    "content": "Google's Women Techmakers Program offers resources, mentorship, and community support for women in technology. The program aims to empower women by providing opportunities for learning, networking, and professional growth.\n\nKey features:\n- Learning resources including workshops, tutorials, and guides\n- Access to a global community of women in tech for collaboration and support\n- Participation in events, webinars, and conferences to expand skills and network\n- Opportunities to work with Google tools and platforms to develop projects\n- Mentorship and guidance from experienced professionals in the tech industry\n\nThe program helps women build technical skills, gain confidence, connect with peers, and contribute to innovative projects, fostering growth in their careers and the tech community."
   },
   {
     "id": "6f3b1d7a-9c8e-4b2d-8a5f-7d3c1e2b4a6d",
     "title": "Credly",
     "link": "https://www.credly.com/",
-    "imageUrl": "https://images.credly.com/logo.png",
+    "imageUrl": "/images/credly.png",
     "description": "A platform for managing digital certificates and badges.",
-    "content": "Credly allows users to showcase professional achievements through digital certificates and badges.\n\nKey features:\n- Certificate management\n- Badge publishing\n- Professional portfolio\n- Skills recognition"
+    "content": "Credly allows users to showcase their professional achievements through digital certificates and badges. Although it is not a Google platform, it can be very useful for collecting your certificates and badges in one place and effectively demonstrating your skills and expertise to potential employers or colleagues.\n\nKey features:\n- Centralized management of certificates and badges\n- Publishing and showcasing achievements in a professional portfolio\n- Recognition and validation of skills\n- Ability to share accomplishments on social media and professional platforms\n\nCredly helps structure and visualize professional progress, making achievements more visible and accessible to others."
   },
   {
     "id": "f1e2d3c4-b5a6-4d7f-8c9a-0b1c2d3e4f5a",
     "title": "AI for Productivity",
-    "link": "https://ai.google.com/productivity",
-    "imageUrl": "https://ai.google.com/images/logo.png",
-    "description": "Short video tutorials for improving work efficiency and automating routine processes.",
-    "content": "AI for Productivity offers short video lessons for managers, marketers, HR professionals, and other specialists.\n\nKey features:\n- Short video tutorials\n- Automation of routine tasks\n- Improve work efficiency\n- For managers and specialists"
+    "link": "https://google.brandlive.com/AI-for-productivity/uk",
+    "imageUrl": "/images/ai-for-productivity.jpg",
+    "description": "Short video lessons to boost work efficiency and automate routine tasks.",
+    "content": "AI for Productivity offers short educational videos for managers, marketers, HR professionals, and other specialists who want to improve work efficiency and streamline routine processes. The program helps quickly learn AI tools that can be applied in daily tasks and workflows.\n\nKey features:\n- Short and easy-to-follow video lessons for fast learning\n- Tools and tips for automating routine tasks\n- Methods to enhance work efficiency and team productivity\n- Recommendations for managers, marketers, HR professionals, and other specialists\n- Examples of practical AI applications in everyday work processes\n\nThe program enables participants to save time, increase productivity, and apply innovative approaches to solve everyday challenges."
   },
   {
     "id": "a1b2c3d4-e5f6-4a7b-9c8d-0e1f2a3b4c5d",
     "title": "Google Ukraine Blog",
-    "link": "https://blog.google.ua/",
-    "imageUrl": "https://blog.google.ua/images/logo.png",
-    "description": "Official Google blog for Ukraine with news and updates.",
-    "content": "Google Ukraine Blog publishes news, updates, and information about Google services, partnerships, and initiatives for Ukrainian users."
+    "link": "https://ukraine.googleblog.com/",
+    "imageUrl": "/images/blog.jpeg",
+    "description": "The official Google blog for Ukraine with news and updates.",
+    "content": "The Google Ukraine Blog publishes news, updates, and useful information about Google services, partnerships, initiatives, and events for Ukrainian users. The blog helps readers stay informed about the latest technology solutions, new products, and opportunities for business, education, and personal use.\n\nKey features:\n- Updates and news about Google services\n- Information on partnerships and local initiatives\n- Practical tips and guides for users and businesses\n- Announcements of events, competitions, and educational programs\n- Success stories and case studies from Ukrainian companies and startups\n\nThe blog allows Ukrainian users to access current information, find inspiration for their own projects, and effectively use Google products and services."
   },
   {
     "id": "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e",
     "title": "Google Codelabs",
     "link": "https://codelabs.developers.google.com/",
-    "imageUrl": "https://codelabs.developers.google.com/images/logo.png",
+    "imageUrl": "/images/codelabs.png",
     "description": "A platform with interactive learning materials for developers.",
-    "content": "Google Codelabs provides interactive tutorials for developers who want to learn and apply Google technologies.\n\nKey features:\n- Interactive tutorials\n- Hands-on labs\n- Step-by-step guides\n- Project examples"
+    "content": "Google Codelabs provides interactive learning materials for developers who want to learn and apply Google technologies in practice. The platform offers step-by-step guides, practical labs, and real project examples, allowing users to quickly consolidate knowledge and apply it in their own development work.\n\nKey features:\n- Interactive learning materials for fast technology adoption\n- Practical labs to reinforce skills\n- Step-by-step guides with explanations and code examples\n- Real project examples for inspiration and learning\n- Support for multiple programming languages and platforms\n\nCodelabs helps developers build practical skills, experiment with new technologies, and effectively use Google products in their projects."
   },
   {
     "id": "c3d4e5f6-a7b8-4c9d-9e0f-1a2b3c4d5e6f",
     "title": "Google Online Courses & Tools",
     "link": "https://learndigital.withgoogle.com/",
-    "imageUrl": "https://learndigital.withgoogle.com/images/logo.png",
+    "imageUrl": "/images/grow.png",
     "description": "A collection of tools and online courses for career and business development.",
-    "content": "The platform offers courses, tutorials, and digital tools for career and business development. Users can filter resources by topics, duration, and certification availability.\n\nKey features:\n- Online courses\n- Tutorials\n- Digital tools\n- Certification\n- Filter by topic and duration"
+    "content": "The Google Online Courses & Tools platform offers courses, learning guides, and digital tools for career development, skill enhancement, and business growth. Users can filter resources by topic, duration, and certification availability, making learning convenient and effective.\n\nKey features:\n- Online courses for all levels, from beginners to experts\n- Learning guides and interactive materials to reinforce knowledge\n- Digital tools to support business development and productivity\n- Opportunities to earn certificates validating skills\n- Filtering resources by topic, duration, and format\n- Personalized course recommendations based on professional goals\n\nThe platform helps users efficiently develop their skills, enhance career opportunities, and leverage modern tools to achieve professional success."
+  },
+  {
+    "id": "b1a2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+    "title": "Be Internet Awesome",
+    "link": "https://beinternetawesome.withgoogle.com/",
+    "imageUrl": "/images/bia.webp",
+    "description": "A Google program-game designed to teach children safe and responsible Internet use.",
+    "content": "Be Internet Awesome is an educational program from Google that combines the game Interland with learning materials focused on developing digital literacy in children. The program helps kids learn the fundamentals of safe online behavior through interactive challenges and levels, building skills for conscious and responsible Internet use.\n\nKey features:\n- The game Interland with multiple levels and interactive challenges\n- Learning the basics of digital literacy and online safety\n- Interactive exercises to reinforce knowledge in practice\n- Development of critical thinking and responsible online habits\n- Resources for children and parents for collaborative learning\n- Tips for safe use of social media and digital devices\n\nThe program aims to instill confidence and responsibility in children in the digital environment, helping them protect personal data and make safe decisions online."
+  },
+  {
+    "id": "d7e8f9a1-b2c3-4d5e-6f7a-8b9c0d1e2f3g",
+    "title": "Google Learning for Work",
+    "link": "https://learning.google/intl/uk_ua/work/",
+    "imageUrl": "/images/google-learning-work.png",
+    "description": "Google resources for professional development and business growth.",
+    "content": "Google Learning for Work is an educational platform offering a collection of tools, courses, and programs for professional and business development. It helps professionals acquire new skills, improve digital literacy, and implement modern solutions in work and entrepreneurship. With resources from Google, users can learn in a convenient format, apply knowledge in practice, and expand their career and business opportunities.\n\nKey features:\n- Resources for professional development and upskilling\n- Tools and advice for business growth and startups\n- Educational programs, online courses, and training sessions\n- Practical materials, examples, and tools from Google\n- Opportunities to integrate modern digital solutions into workflows\n- Designed for professionals, entrepreneurs, teams, and organizations\n\nThe platform is designed to help people effectively use Google technologies for career growth, business development, and driving innovation across industries."
+  },
+  {
+    "id": "e9f0a1b2-c3d4-5e6f-7a8b-9c0d1e2f3a4b",
+    "title": "Cybersecurity Basics for Business",
+    "link": "https://rsvp.withgoogle.com/events/cybersecurity-sme-ua/home",
+    "imageUrl": "/images/sec.png",
+    "description": "A free online program from Google for entrepreneurs and teams on cybersecurity fundamentals.",
+    "content": "Cybersecurity Basics for Business is a free educational program from Google designed to help entrepreneurs and teams gain practical knowledge and tools to protect their businesses from cyber threats. The program combines online lectures, interactive workshops, expert insights, and real-world case studies. A special focus is placed on using modern technologies, including artificial intelligence, to enhance cybersecurity.\n\nKey features:\n- Structured knowledge on cyber hygiene and protection against cyberattacks\n- Risk analysis and practical tools tailored for small and medium-sized businesses\n- Hands-on workshops on applying AI in cybersecurity\n- Access to online lectures, recordings, and additional resources\n- Certificate upon successful completion\n- Recommendations from Google and partners for business implementation\n\nThe program is periodically updated to address emerging cyber threats."
+  },
+  {
+    "id": "f1a2b3c4-d5e6-7f8a-9b0c-1d2e3f4a5b6c-en",
+    "title": "Google Career Certificates: AI Essentials",
+    "link": "https://grow.google/intl/en/google-career-certificates/",
+    "imageUrl": "/images/google-career-certificates-ai.png",
+    "description": "Free Google courses for Ukrainians: AI Essentials and Prompting Essentials with a Coursera certificate.",
+    "content": "Google Career Certificates: AI Essentials is a training program designed for anyone interested in understanding artificial intelligence without prior experience. The courses provide foundational knowledge and practical skills for applying AI in both work and everyday life.\n\nUkrainians can access the AI Essentials and Prompting Essentials courses for free thanks to Google’s collaboration with educational organizations that provide access to learning.\n\nKey features:\n- AI Essentials and Prompting Essentials courses\n- Coursera certificate\n- Free access for Ukrainians\n- Practical use of AI in work and life\n- Beginner-friendly, no prior experience required"
+  },
+  {
+    "id": "a7b8c9d0-e1f2-3a4b-5c6d-7e8f9a0b1c2d-en",
+    "title": "Experience AI",
+    "link": "https://experience-ai.org/en",
+    "imageUrl": "/images/exp-ai.png",
+    "description": "An AI education program for teachers and students aged 11–14.",
+    "content": "Experience AI is an educational program developed by the Raspberry Pi Foundation in collaboration with Google DeepMind. It provides cutting-edge resources on artificial intelligence and machine learning, supporting teachers in integrating these topics into their lessons. The program engages students aged 11–14 in exploring AI and empowers educators in a rapidly evolving technological field.\n\nKey features:\n- AI and machine learning resources\n- For teachers and students aged 11–14\n- Developed by Raspberry Pi Foundation and Google DeepMind\n- Helps integrate AI into classroom lessons\n- Supports educators in the fast-changing field of technology"
   }
 ]

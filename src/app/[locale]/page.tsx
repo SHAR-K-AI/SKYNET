@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react';
 import CardGrid, { CardData } from "@/components/CardGrid";
 import { motion, AnimatePresence } from "framer-motion";
 import SoundWrapper from "@/components/SoundWrapper";
+import AppImage from "@/components/Image";
 
 export default function MainPage() {
     const [cards, setCards] = useState<CardData[]>([]);
@@ -64,13 +65,14 @@ export default function MainPage() {
                             </motion.h1>
 
                             <motion.p
-                                className="text-lg"
+                                className="text-lg relative"
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 transition={{ delay: 0.5, duration: 1 }}
                             >
                                 {t("welcomeText")}
                             </motion.p>
+                            <AppImage src="/images/click.png" alt={"welcome"} width={150} style={{ objectFit: 'contain' }} className="m-auto" />
 
                             <motion.div
                                 className="text-left space-y-4 mt-6"

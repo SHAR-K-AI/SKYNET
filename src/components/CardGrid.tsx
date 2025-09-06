@@ -1,10 +1,10 @@
 import React from 'react';
-import Card, { LocalizedText } from './Card';
+import Card from './Card';
 
 export interface CardData {
-    title: LocalizedText;
-    description: LocalizedText;
-    content: LocalizedText;
+    title: string;
+    description: string;
+    content: string;
     imageUrl: string;
     link: string;
 }
