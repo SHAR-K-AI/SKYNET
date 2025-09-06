@@ -54,5 +54,20 @@
     "madeWithLove": "Made with love and coffee ☕",
     "privacyPolicy": "Privacy Policy",
     "termsOfUse": "Terms of Use"
+  },
+  "RolePage": {
+    "instruction": "👉 Click on a dot or name to learn more about the GCP role",
+    "category": "Category",
+    "requirements": "Requirements",
+    "services": "Services",
+    "tools": "Tools",
+    "platforms": "Platforms",
+    "languages": "Languages",
+    "none": "None",
+    "responsibilities": "Responsibilities",
+    "links": "Useful links",
+    "documentation": "Documentation",
+    "bestPractices": "Best Practices",
+    "tutorials": "Tutorials"
   }
 }

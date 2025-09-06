@@ -1,13 +1,21 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import {useEffect, useRef, useState} from 'react';
 import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
+import {useLocale, useTranslations} from "next-intl";
 
 interface Role {
     id: number;
     name: string;
     category: string;
+    description?: string;
+    responsibilities?: string[];
+    links?: {
+        documentation: string;
+        bestPractices: string;
+        tutorials: string;
+    };
     requirements: {
         services: string[];
         tools: string[];
@@ -17,28 +25,18 @@ interface Role {
 }
 
 export default function RolesConstellation() {
+    const locale = useLocale();
+    const t = useTranslations("RolePage");
     const canvasRef = useRef<HTMLDivElement>(null);
+    const [roles, setRoles] = useState<Role[]>([]);
     const [selectedRole, setSelectedRole] = useState<Role | null>(null);
 
-    const roles: Role[] = [
-        { id: 1, name: "API Developer", category: "Developer", requirements: { services: ["Cloud Functions", "Apigee"], tools: ["Postman", "Swagger"], platforms: ["GCP", "API Gateway"], languages: ["JavaScript", "Python"] } },
-        { id: 2, name: "Citizen Developer", category: "Developer", requirements: { services: ["AppSheet", "Sheets API"], tools: ["AppSheet Editor"], platforms: ["GCP"], languages: ["JavaScript", "SQL"] } },
-        { id: 3, name: "Cloud Digital Leader", category: "Leadership", requirements: { services: ["Cloud Billing", "IAM"], tools: ["GCP Console", "BigQuery"], platforms: ["GCP"], languages: [] } },
-        { id: 4, name: "Cloud Engineer", category: "Cloud", requirements: { services: ["Compute Engine", "GKE", "Cloud Storage"], tools: ["Terraform", "Ansible"], platforms: ["GCP", "AWS"], languages: ["Python", "Bash"] } },
-        { id: 5, name: "Cloud Architect", category: "Cloud", requirements: { services: ["VPC", "Cloud Load Balancing", "Cloud Storage"], tools: ["Terraform", "Cloud Deployment Manager"], platforms: ["GCP"], languages: ["Python", "Bash"] } },
-        { id: 6, name: "Cloud Developer", category: "Developer", requirements: { services: ["Cloud Run", "Firebase", "App Engine"], tools: ["Cloud SDK", "VS Code"], platforms: ["GCP"], languages: ["JavaScript", "Python", "Go"] } },
-        { id: 7, name: "Contact Center Engineer", category: "Cloud", requirements: { services: ["Contact Center AI", "Dialogflow"], tools: ["GCP Console", "Postman"], platforms: ["GCP"], languages: ["Python", "JavaScript"] } },
-        { id: 8, name: "Data Analyst", category: "Data", requirements: { services: ["BigQuery", "Looker", "Sheets"], tools: ["Data Studio", "Looker Studio"], platforms: ["GCP"], languages: ["SQL", "Python"] } },
-        { id: 9, name: "Data Engineer", category: "Data", requirements: { services: ["BigQuery", "Dataflow", "Pub/Sub"], tools: ["Airflow", "dbt"], platforms: ["GCP"], languages: ["SQL", "Python"] } },
-        { id: 10, name: "Database Engineer", category: "Data", requirements: { services: ["Cloud SQL", "Firestore", "Bigtable"], tools: ["pgAdmin", "Cloud Console"], platforms: ["GCP"], languages: ["SQL", "Python"] } },
-        { id: 11, name: "DevOps Engineer", category: "Cloud", requirements: { services: ["Cloud Build", "Cloud Deploy", "GKE"], tools: ["Terraform", "GitLab CI", "Jenkins"], platforms: ["GCP", "AWS"], languages: ["Bash", "Python"] } },
-        { id: 12, name: "Google Workspace Administrator", category: "Admin", requirements: { services: ["Admin Console", "Gmail API", "Drive API"], tools: ["Google Admin", "Sheets", "Scripts"], platforms: ["GCP"], languages: ["Apps Script", "JavaScript"] } },
-        { id: 13, name: "Hybrid and Multi-Cloud Architect", category: "Cloud", requirements: { services: ["Anthos", "BigQuery Omni", "VMs"], tools: ["Terraform", "Ansible", "Cloud Console"], platforms: ["GCP", "AWS", "Azure"], languages: ["Python", "Bash"] } },
-        { id: 14, name: "Machine Learning Engineer", category: "AI/ML", requirements: { services: ["Vertex AI", "AI Platform", "BigQuery ML"], tools: ["TensorFlow", "PyTorch", "scikit-learn"], platforms: ["GCP"], languages: ["Python", "R"] } },
-        { id: 15, name: "Network Engineer", category: "Cloud", requirements: { services: ["VPC", "Cloud VPN", "Cloud Router"], tools: ["Cloud Console", "Terraform"], platforms: ["GCP"], languages: ["Bash", "Python"] } },
-        { id: 16, name: "Security Engineer", category: "Security", requirements: { services: ["Cloud Armor", "Security Command Center", "IAM"], tools: ["Cloud Security Scanner", "Terraform"], platforms: ["GCP"], languages: ["Python", "Bash"] } },
-        { id: 17, name: "Startup Cloud Engineer", category: "Cloud", requirements: { services: ["Firebase", "App Engine", "Cloud Run"], tools: ["Cloud SDK", "Terraform"], platforms: ["GCP"], languages: ["JavaScript", "Python"] } },
-    ];
+    useEffect(() => {
+        fetch(`/api/roles?lang=${locale}`)
+            .then(res => res.json())
+            .then((data: Role[]) => setRoles(data))
+            .catch(err => console.error(err));
+    }, [locale]);
 
     const categoryColors: Record<string, number> = {
         Developer: 0x4285F4,
@@ -61,22 +59,17 @@ export default function RolesConstellation() {
     };
 
     useEffect(() => {
-        if (!canvasRef.current) return;
+        if (!canvasRef.current || roles.length === 0) return;
         const container = canvasRef.current;
 
         const scene = new THREE.Scene();
         scene.background = null;
         scene.fog = new THREE.FogExp2(0x000000, 0.002);
 
-        const camera = new THREE.PerspectiveCamera(
-            75,
-            container.clientWidth / container.clientHeight,
-            0.1,
-            1000
-        );
+        const camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
         camera.position.z = 120;
 
-        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        const renderer = new THREE.WebGLRenderer({antialias: true, alpha: true});
         renderer.setSize(container.clientWidth, container.clientHeight);
         container.appendChild(renderer.domElement);
 
@@ -121,10 +114,10 @@ export default function RolesConstellation() {
             }
 
             const geometry = new THREE.SphereGeometry(1.5, 32, 32);
-            const material = new THREE.MeshBasicMaterial({ color: categoryColors[role.category] || 0x00ff00 });
+            const material = new THREE.MeshBasicMaterial({color: categoryColors[role.category] || 0x00ff00});
             const sphere = new THREE.Mesh(geometry, material);
             sphere.position.copy(pos);
-            sphere.userData = { role, isSphere: true };
+            sphere.userData = {role, isSphere: true};
             scene.add(sphere);
             interactiveObjects.push(sphere);
             originalColors.set(sphere.uuid, material.color.getHex());
@@ -146,11 +139,11 @@ export default function RolesConstellation() {
             context.fillStyle = '#ffffff';
             context.fillText(role.name, 10, fontSize + 5);
             const texture = new THREE.CanvasTexture(canvas);
-            const spriteMaterial = new THREE.SpriteMaterial({ map: texture, transparent: true });
+            const spriteMaterial = new THREE.SpriteMaterial({map: texture, transparent: true});
             const sprite = new THREE.Sprite(spriteMaterial);
             sprite.scale.set(canvas.width / 10, canvas.height / 10, 1);
             sprite.position.copy(pos.clone().add(new THREE.Vector3(0, 3, 0)));
-            sprite.userData = { role, isSprite: true };
+            sprite.userData = {role, isSprite: true};
             scene.add(sprite);
             interactiveObjects.push(sprite);
             originalScales.set(sprite.uuid, sprite.scale.clone());
@@ -269,31 +262,71 @@ export default function RolesConstellation() {
             renderer.dispose();
             scene.clear();
         };
-    }, []);
+    }, [roles]);
 
     return (
-        <div className="relative w-full h-[430px]">
-            <div ref={canvasRef} className="absolute inset-0 w-full h-full" />
+        <div className="relative w-full h-[430px] overflow-hidden">
+            <div
+                className="absolute bottom-2 left-2 text-xs text-gray-300 bg-gray-900/70 px-2 py-1 rounded-md pointer-events-none">
+                {t("instruction")}
+            </div>
+
+            <div ref={canvasRef} className="absolute inset-0 w-full h-full"/>
+
             <div
                 className={`
-                    absolute top-10 right-10 max-w-xs p-4 text-white rounded-lg shadow-lg
-                    transition-all duration-500 ease-in-out
-                    ${selectedRole ? 'translate-x-0 opacity-100 bg-gray-900/80 pointer-events-auto' : 'translate-x-full opacity-0 bg-gray-900/0 pointer-events-none'}
-                `}
+          absolute top-10 right-10 max-w-md p-4 text-white rounded-lg shadow-lg overflow-y-auto max-h-[400px]
+          transition-all duration-500 ease-in-out 
+          ${selectedRole
+                    ? 'translate-x-0 opacity-100 pointer-events-auto bg-gray-900/80'
+                    : 'translate-x-[100%] opacity-0 pointer-events-none bg-gray-900/0'}
+        `}
             >
                 {selectedRole && (
                     <>
                         <h2 className="text-xl font-bold">{selectedRole.name}</h2>
-                        <p className="mt-2 text-sm text-gray-300">Категорія: {selectedRole.category}</p>
-                        <div className="mt-2">
-                            <h3 className="font-semibold">Вимоги:</h3>
-                            <ul className="list-disc list-inside text-sm mt-1 text-gray-300">
-                                <li>Сервіси: {selectedRole.requirements.services.join(', ')}</li>
-                                <li>Інструменти: {selectedRole.requirements.tools.join(', ')}</li>
-                                <li>Платформи: {selectedRole.requirements.platforms.join(', ')}</li>
-                                <li>Мови: {selectedRole.requirements.languages.length > 0 ? selectedRole.requirements.languages.join(', ') : 'Немає'}</li>
+                        <p className="mt-1 text-sm text-gray-400">
+                            {t("category")}: {selectedRole.category}
+                        </p>
+
+                        {selectedRole.description && (
+                            <p className="mt-3 text-sm text-gray-200">{selectedRole.description}</p>
+                        )}
+
+                        <div className="mt-4">
+                            <h3 className="font-semibold">{t("requirements")}:</h3>
+                            <ul className="list-disc list-inside text-sm mt-1 text-gray-300 space-y-1">
+                                <li>{t("services")}: {selectedRole.requirements.services.join(', ')}</li>
+                                <li>{t("tools")}: {selectedRole.requirements.tools.join(', ')}</li>
+                                <li>{t("platforms")}: {selectedRole.requirements.platforms.join(', ')}</li>
+                                <li>{t("languages")}: {selectedRole.requirements.languages.length > 0 ? selectedRole.requirements.languages.join(', ') : t("none")}</li>
                             </ul>
                         </div>
+
+                        {selectedRole.responsibilities && selectedRole.responsibilities.length > 0 && (
+                            <div className="mt-4">
+                                <h3 className="font-semibold">{t("responsibilities")}:</h3>
+                                <ul className="list-disc list-inside text-sm mt-1 text-gray-300 space-y-1">
+                                    {selectedRole.responsibilities.map((resp, i) => (
+                                        <li key={i}>{resp}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        )}
+
+                        {selectedRole.links && (
+                            <div className="mt-4">
+                                <h3 className="font-semibold">{t("links")}:</h3>
+                                <ul className="list-disc list-inside text-sm mt-1 text-blue-400 space-y-1">
+                                    <li><a href={selectedRole.links.documentation} target="_blank"
+                                           rel="noopener noreferrer">{t("documentation")}</a></li>
+                                    <li><a href={selectedRole.links.bestPractices} target="_blank"
+                                           rel="noopener noreferrer">{t("bestPractices")}</a></li>
+                                    <li><a href={selectedRole.links.tutorials} target="_blank"
+                                           rel="noopener noreferrer">{t("tutorials")}</a></li>
+                                </ul>
+                            </div>
+                        )}
                     </>
                 )}
             </div>

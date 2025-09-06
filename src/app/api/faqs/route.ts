@@ -10,7 +10,7 @@ interface FAQItem {
     answer: string;
 }
 
-const FILE_UA = path.join(process.cwd(), "faqs_ua.json");
+const FILE_UA = path.join(process.cwd(), "faqs_uk.json");
 const FILE_EN = path.join(process.cwd(), "faqs_en.json");
 
 function readFaqs(filePath: string): FAQItem[] {
@@ -25,7 +25,7 @@ function writeFaqs(filePath: string, faqs: FAQItem[]) {
 
 export async function GET(req: NextRequest) {
     try {
-        const lang = req.nextUrl.searchParams.get("lang") || "ua";
+        const lang = req.nextUrl.searchParams.get("lang") || "uk";
         const filePath = lang === "en" ? FILE_EN : FILE_UA;
         const faqs = readFaqs(filePath);
 
@@ -62,7 +62,7 @@ export async function POST(req: NextRequest) {
 
 export async function PUT(req: NextRequest) {
     try {
-        const lang = req.nextUrl.searchParams.get("lang") || "ua";
+        const lang = req.nextUrl.searchParams.get("lang") || "uk";
         const filePath = lang === "en" ? FILE_EN : FILE_UA;
         const updatedFaq: FAQItem = await req.json();
 

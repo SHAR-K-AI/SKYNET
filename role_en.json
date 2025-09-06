@@ -1,0 +1,648 @@
+[
+  {
+    "id": 1,
+    "name": "API Developer",
+    "category": "Developer",
+    "description": "An API Developer is responsible for designing, building, and maintaining APIs that allow applications and services to communicate. They work with cloud platforms, API management tools, and programming languages to ensure secure, scalable, and efficient integrations.",
+    "requirements": {
+      "services": [
+        "Cloud Functions",
+        "Apigee",
+        "Cloud Endpoints",
+        "Pub/Sub"
+      ],
+      "tools": [
+        "Postman",
+        "Swagger (OpenAPI)",
+        "Insomnia",
+        "Git"
+      ],
+      "platforms": [
+        "Google Cloud Platform (GCP)",
+        "API Gateway",
+        "Kubernetes"
+      ],
+      "languages": [
+        "JavaScript",
+        "Python",
+        "Go",
+        "Java"
+      ]
+    },
+    "responsibilities": [
+      "Design and implement RESTful and GraphQL APIs",
+      "Ensure APIs are secure, scalable, and well-documented",
+      "Collaborate with frontend and backend teams",
+      "Optimize performance and handle versioning of APIs",
+      "Use CI/CD pipelines for deployment and testing"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/endpoints/docs",
+      "apigee": "https://cloud.google.com/apigee",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-for-api-design",
+      "tutorials": "https://developers.google.com/learn/pathways/api-design-development"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Citizen Developer",
+    "category": "Developer",
+    "description": "A Citizen Developer builds applications using low-code or no-code platforms, enabling non-professional developers to contribute to digital solutions. They help teams automate workflows and create applications without extensive coding experience.",
+    "requirements": {
+      "services": [
+        "AppSheet",
+        "Sheets API"
+      ],
+      "tools": [
+        "AppSheet Editor"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": [
+        "JavaScript",
+        "SQL"
+      ]
+    },
+    "responsibilities": [
+      "Develop apps using low-code/no-code platforms",
+      "Automate workflows for business teams",
+      "Collaborate with IT and professional developers",
+      "Ensure app security and data integrity",
+      "Maintain and update existing citizen apps"
+    ],
+    "links": {
+      "documentation": "https://developers.google.com/appsheet",
+      "bestPractices": "https://cloud.google.com/solutions/citizen-developer-best-practices",
+      "tutorials": "https://developers.google.com/learn/pathways/appsheet"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Cloud Digital Leader",
+    "category": "Leadership",
+    "description": "A Cloud Digital Leader drives digital transformation initiatives within an organization. They guide cloud adoption, optimize cloud spending, and ensure teams align with strategic goals while leveraging cloud technologies effectively.",
+    "requirements": {
+      "services": [
+        "Cloud Billing",
+        "IAM"
+      ],
+      "tools": [
+        "GCP Console",
+        "BigQuery"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": []
+    },
+    "responsibilities": [
+      "Lead cloud adoption and digital transformation strategies",
+      "Optimize cloud costs and resource utilization",
+      "Provide guidance to technical and business teams",
+      "Ensure security and compliance best practices are followed",
+      "Foster innovation through cloud technologies"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/solutions/cloud-digital-leader",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-for-cloud-adoption",
+      "tutorials": "https://cloud.google.com/learn/cloud-digital-leader"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Cloud Engineer",
+    "category": "Cloud",
+    "description": "A Cloud Engineer is responsible for designing, deploying, and managing cloud infrastructure. They work with both cloud platforms and automation tools to ensure systems are scalable, secure, and highly available.",
+    "requirements": {
+      "services": [
+        "Compute Engine",
+        "GKE",
+        "Cloud Storage"
+      ],
+      "tools": [
+        "Terraform",
+        "Ansible"
+      ],
+      "platforms": [
+        "GCP",
+        "AWS"
+      ],
+      "languages": [
+        "Python",
+        "Bash"
+      ]
+    },
+    "responsibilities": [
+      "Design and implement cloud infrastructure",
+      "Automate deployments using Terraform and Ansible",
+      "Manage Kubernetes clusters and virtual machines",
+      "Monitor and optimize cloud performance",
+      "Ensure security, backup, and disaster recovery"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/solutions/cloud-engineer",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-for-cloud-infrastructure",
+      "tutorials": "https://cloud.google.com/learn/cloud-engineer"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Cloud Architect",
+    "category": "Cloud",
+    "description": "A Cloud Architect designs cloud solutions and infrastructure, ensuring alignment with business requirements and technical standards. They focus on scalability, security, and cost optimization of cloud environments.",
+    "requirements": {
+      "services": [
+        "VPC",
+        "Cloud Load Balancing",
+        "Cloud Storage"
+      ],
+      "tools": [
+        "Terraform",
+        "Cloud Deployment Manager"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": [
+        "Python",
+        "Bash"
+      ]
+    },
+    "responsibilities": [
+      "Design and architect cloud infrastructure",
+      "Implement scalable and secure cloud solutions",
+      "Define standards and best practices for cloud usage",
+      "Collaborate with engineering and operations teams",
+      "Optimize costs and ensure high availability"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/solutions/cloud-architect",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-for-cloud-architecture",
+      "tutorials": "https://cloud.google.com/learn/cloud-architect"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Cloud Developer",
+    "category": "Developer",
+    "description": "A Cloud Developer builds, deploys, and maintains applications in cloud environments. They leverage cloud-native services and tools to develop scalable, reliable, and efficient applications.",
+    "requirements": {
+      "services": [
+        "Cloud Run",
+        "Firebase",
+        "App Engine"
+      ],
+      "tools": [
+        "Cloud SDK",
+        "VS Code"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": [
+        "JavaScript",
+        "Python",
+        "Go"
+      ]
+    },
+    "responsibilities": [
+      "Develop cloud-native applications using GCP services",
+      "Deploy and manage applications on Cloud Run, Firebase, and App Engine",
+      "Write clean, efficient, and maintainable code",
+      "Collaborate with cloud architects and other developers",
+      "Ensure application security, performance, and scalability"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/developers",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-for-cloud-development",
+      "tutorials": "https://cloud.google.com/learn/cloud-developer"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Contact Center Engineer",
+    "category": "Cloud",
+    "description": "A Contact Center Engineer designs, implements, and maintains cloud-based contact center solutions. They work with AI-powered tools and communication platforms to optimize customer interactions and workflows.",
+    "requirements": {
+      "services": [
+        "Contact Center AI",
+        "Dialogflow"
+      ],
+      "tools": [
+        "GCP Console",
+        "Postman"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": [
+        "Python",
+        "JavaScript"
+      ]
+    },
+    "responsibilities": [
+      "Design and implement cloud contact center solutions",
+      "Integrate AI tools for customer interactions",
+      "Develop and test Dialogflow agents and workflows",
+      "Collaborate with customer support and IT teams",
+      "Monitor performance and optimize system reliability"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/contact-center-ai",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-contact-center",
+      "tutorials": "https://cloud.google.com/learn/contact-center-engineer"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Data Analyst",
+    "category": "Data",
+    "description": "A Data Analyst collects, processes, and analyzes data to provide actionable insights. They work with databases, visualization tools, and analytics platforms to support business decisions.",
+    "requirements": {
+      "services": [
+        "BigQuery",
+        "Looker",
+        "Sheets"
+      ],
+      "tools": [
+        "Data Studio",
+        "Looker Studio"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": [
+        "SQL",
+        "Python"
+      ]
+    },
+    "responsibilities": [
+      "Analyze datasets to identify trends and patterns",
+      "Create dashboards and visualizations for stakeholders",
+      "Collaborate with business and technical teams",
+      "Ensure data accuracy and consistency",
+      "Support decision-making with data-driven insights"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/bigquery/docs",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-data-analytics",
+      "tutorials": "https://cloud.google.com/learn/data-analyst"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Data Engineer",
+    "category": "Data",
+    "description": "A Data Engineer builds and maintains data pipelines, ensuring data is accessible, reliable, and properly structured for analytics. They work with ETL tools, cloud services, and databases to support data-driven decision-making.",
+    "requirements": {
+      "services": [
+        "BigQuery",
+        "Dataflow",
+        "Pub/Sub"
+      ],
+      "tools": [
+        "Airflow",
+        "dbt"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": [
+        "SQL",
+        "Python"
+      ]
+    },
+    "responsibilities": [
+      "Design, build, and maintain data pipelines",
+      "Transform and structure data for analytics",
+      "Integrate data from multiple sources",
+      "Collaborate with data analysts and scientists",
+      "Ensure data quality, consistency, and availability"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/dataflow/docs",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-data-engineering",
+      "tutorials": "https://cloud.google.com/learn/data-engineer"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Database Engineer",
+    "category": "Data",
+    "description": "A Database Engineer designs, manages, and optimizes databases for cloud applications. They ensure data is structured efficiently, secure, and highly available for analytics and operational workloads.",
+    "requirements": {
+      "services": [
+        "Cloud SQL",
+        "Firestore",
+        "Bigtable"
+      ],
+      "tools": [
+        "pgAdmin",
+        "Cloud Console"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": [
+        "SQL",
+        "Python"
+      ]
+    },
+    "responsibilities": [
+      "Design and maintain cloud-based databases",
+      "Optimize database performance and queries",
+      "Ensure data integrity, security, and backups",
+      "Collaborate with developers and data engineers",
+      "Support analytics and operational data needs"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/sql/docs",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-database",
+      "tutorials": "https://cloud.google.com/learn/database-engineer"
+    }
+  },
+  {
+    "id": 11,
+    "name": "DevOps Engineer",
+    "category": "Cloud",
+    "description": "A DevOps Engineer automates and manages cloud infrastructure, ensuring efficient development, deployment, and operations. They focus on CI/CD pipelines, infrastructure as code, and system reliability.",
+    "requirements": {
+      "services": [
+        "Cloud Build",
+        "Cloud Deploy",
+        "GKE"
+      ],
+      "tools": [
+        "Terraform",
+        "GitLab CI",
+        "Jenkins"
+      ],
+      "platforms": [
+        "GCP",
+        "AWS"
+      ],
+      "languages": [
+        "Bash",
+        "Python"
+      ]
+    },
+    "responsibilities": [
+      "Design, implement, and maintain CI/CD pipelines",
+      "Automate cloud infrastructure using Terraform and scripts",
+      "Manage Kubernetes clusters and deployments",
+      "Monitor system performance and reliability",
+      "Collaborate with development and operations teams"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/devops",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-devops",
+      "tutorials": "https://cloud.google.com/learn/devops-engineer"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Google Workspace Administrator",
+    "category": "Admin",
+    "description": "A Google Workspace Administrator manages and configures Google Workspace services for organizations. They ensure smooth operation, security, and user support across Gmail, Drive, and other Workspace apps.",
+    "requirements": {
+      "services": [
+        "Admin Console",
+        "Gmail API",
+        "Drive API"
+      ],
+      "tools": [
+        "Google Admin",
+        "Sheets",
+        "Scripts"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": [
+        "Apps Script",
+        "JavaScript"
+      ]
+    },
+    "responsibilities": [
+      "Manage user accounts and permissions in Google Workspace",
+      "Configure and maintain Gmail, Drive, and other apps",
+      "Automate administrative tasks using Apps Script",
+      "Ensure security and compliance across Workspace services",
+      "Support users and troubleshoot technical issues"
+    ],
+    "links": {
+      "documentation": "https://support.google.com/a",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-workspace-admin",
+      "tutorials": "https://cloud.google.com/learn/google-workspace-admin"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Hybrid and Multi-Cloud Architect",
+    "category": "Cloud",
+    "description": "A Hybrid and Multi-Cloud Architect designs and implements cloud solutions across multiple platforms. They ensure seamless integration, scalability, and security across GCP, AWS, and Azure environments.",
+    "requirements": {
+      "services": [
+        "Anthos",
+        "BigQuery Omni",
+        "VMs"
+      ],
+      "tools": [
+        "Terraform",
+        "Ansible",
+        "Cloud Console"
+      ],
+      "platforms": [
+        "GCP",
+        "AWS",
+        "Azure"
+      ],
+      "languages": [
+        "Python",
+        "Bash"
+      ]
+    },
+    "responsibilities": [
+      "Design and implement hybrid and multi-cloud architectures",
+      "Ensure security, scalability, and reliability across clouds",
+      "Automate deployments and infrastructure management",
+      "Integrate services across GCP, AWS, and Azure",
+      "Collaborate with development and operations teams"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/solutions/multi-cloud",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-multi-cloud",
+      "tutorials": "https://cloud.google.com/learn/multi-cloud-architect"
+    }
+  },
+  {
+    "id": 14,
+    "name": "Machine Learning Engineer",
+    "category": "AI/ML",
+    "description": "Machine Learning Engineer проєктує, розробляє та впроваджує моделі машинного навчання для вирішення бізнес-завдань. Працює з наборами даних, ML-фреймворками та хмарними AI-сервісами для створення масштабованих і надійних рішень.",
+    "requirements": {
+      "services": [
+        "Vertex AI",
+        "AI Platform",
+        "BigQuery ML"
+      ],
+      "tools": [
+        "TensorFlow",
+        "PyTorch",
+        "scikit-learn"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": [
+        "Python",
+        "R"
+      ]
+    },
+    "responsibilities": [
+      "Проєктувати, навчати та впроваджувати моделі машинного навчання",
+      "Попередньо обробляти та аналізувати набори даних",
+      "Оптимізувати продуктивність та точність моделей",
+      "Співпрацювати з дата-інженерами та аналітиками",
+      "Інтегрувати ML-моделі в продукційні системи"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/vertex-ai/docs",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-ml",
+      "tutorials": "https://cloud.google.com/learn/machine-learning-engineer"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Network Engineer",
+    "category": "Cloud",
+    "description": "A Network Engineer designs, deploys, and manages cloud network infrastructure. They ensure secure, reliable, and scalable connectivity across cloud environments, optimizing network performance and reliability.",
+    "requirements": {
+      "services": [
+        "VPC",
+        "Cloud VPN",
+        "Cloud Router"
+      ],
+      "tools": [
+        "Cloud Console",
+        "Terraform"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": [
+        "Bash",
+        "Python"
+      ]
+    },
+    "responsibilities": [
+      "Design and implement cloud network architectures",
+      "Configure VPNs, VPCs, and routers",
+      "Monitor and optimize network performance",
+      "Ensure security and compliance of network traffic",
+      "Collaborate with DevOps and cloud teams"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/networking/docs",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-networking",
+      "tutorials": "https://cloud.google.com/learn/network-engineer"
+    }
+  },
+  {
+    "id": 16,
+    "name": "Security Engineer",
+    "category": "Security",
+    "description": "A Security Engineer designs and implements security measures to protect cloud infrastructure and applications. They monitor threats, enforce policies, and ensure compliance across GCP environments.",
+    "requirements": {
+      "services": [
+        "Cloud Armor",
+        "Security Command Center",
+        "IAM"
+      ],
+      "tools": [
+        "Cloud Security Scanner",
+        "Terraform"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": [
+        "Python",
+        "Bash"
+      ]
+    },
+    "responsibilities": [
+      "Design and implement cloud security strategies",
+      "Monitor security threats and incidents",
+      "Manage IAM roles and access controls",
+      "Conduct vulnerability assessments and remediation",
+      "Ensure compliance with security standards and best practices"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/security",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-security",
+      "tutorials": "https://cloud.google.com/learn/security-engineer"
+    }
+  },
+  {
+    "id": 17,
+    "name": "Startup Cloud Engineer",
+    "category": "Cloud",
+    "description": "A Startup Cloud Engineer designs and manages cloud infrastructure for startups, focusing on rapid development, scalability, and cost-efficiency. They leverage cloud services to accelerate product delivery.",
+    "requirements": {
+      "services": [
+        "Firebase",
+        "App Engine",
+        "Cloud Run"
+      ],
+      "tools": [
+        "Cloud SDK",
+        "Terraform"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": [
+        "JavaScript",
+        "Python"
+      ]
+    },
+    "responsibilities": [
+      "Design and deploy cloud infrastructure for startup applications",
+      "Optimize for cost, performance, and scalability",
+      "Automate deployments and infrastructure management",
+      "Integrate cloud services to accelerate development",
+      "Collaborate with development and product teams"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/startup",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-startup",
+      "tutorials": "https://cloud.google.com/learn/startup-cloud-engineer"
+    }
+  },
+  {
+    "id": 18,
+    "name": "Generative AI Leader",
+    "category": "AI/ML",
+    "description": "Responsible for implementing and managing generative AI solutions in the company, coordinating ML engineers and developers teams.",
+    "requirements": {
+      "services": ["Vertex AI", "AI Platform", "Generative AI Models"],
+      "tools": ["TensorFlow", "PyTorch", "LangChain"],
+      "platforms": ["GCP", "AWS"],
+      "languages": ["Python", "R"]
+    },
+    "responsibilities": [
+      "Develop strategies for using Generative AI",
+      "Coordinate AI/ML teams",
+      "Implement and optimize AI models",
+      "Monitor AI system performance and security"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/vertex-ai/docs",
+      "apigee": "https://cloud.google.com/apigee",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-for-ai",
+      "tutorials": "https://developers.google.com/learn/pathways/ai"
+    }
+  }
+]

@@ -1,0 +1,648 @@
+[
+  {
+    "id": 1,
+    "name": "API Розробник",
+    "category": "Developer",
+    "description": "API Розробник відповідає за проєктування, створення та підтримку API, які дозволяють додаткам і сервісам взаємодіяти. Він працює з хмарними платформами, інструментами управління API та мовами програмування для забезпечення безпечних, масштабованих та ефективних інтеграцій.",
+    "requirements": {
+      "services": [
+        "Cloud Functions",
+        "Apigee",
+        "Cloud Endpoints",
+        "Pub/Sub"
+      ],
+      "tools": [
+        "Postman",
+        "Swagger (OpenAPI)",
+        "Insomnia",
+        "Git"
+      ],
+      "platforms": [
+        "Google Cloud Platform (GCP)",
+        "API Gateway",
+        "Kubernetes"
+      ],
+      "languages": [
+        "JavaScript",
+        "Python",
+        "Go",
+        "Java"
+      ]
+    },
+    "responsibilities": [
+      "Проєктувати та реалізовувати RESTful та GraphQL API",
+      "Забезпечувати безпеку, масштабованість та документацію API",
+      "Співпрацювати з фронтенд та бекенд командами",
+      "Оптимізувати продуктивність та управляти версіями API",
+      "Використовувати CI/CD для деплою та тестування"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/endpoints/docs",
+      "apigee": "https://cloud.google.com/apigee",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-for-api-design",
+      "tutorials": "https://developers.google.com/learn/pathways/api-design-development"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Citizen Developer",
+    "category": "Developer",
+    "description": "Citizen Developer створює додатки, використовуючи платформи з низьким кодом або без коду, що дозволяє непрофесійним розробникам брати участь у цифрових рішеннях. Вони допомагають командам автоматизувати робочі процеси та створювати додатки без глибоких знань програмування.",
+    "requirements": {
+      "services": [
+        "AppSheet",
+        "Sheets API"
+      ],
+      "tools": [
+        "AppSheet Editor"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": [
+        "JavaScript",
+        "SQL"
+      ]
+    },
+    "responsibilities": [
+      "Розробляти додатки з використанням платформ low-code/no-code",
+      "Автоматизувати робочі процеси для бізнес-команд",
+      "Співпрацювати з IT та професійними розробниками",
+      "Забезпечувати безпеку додатків та цілісність даних",
+      "Підтримувати та оновлювати існуючі додатки"
+    ],
+    "links": {
+      "documentation": "https://developers.google.com/appsheet",
+      "bestPractices": "https://cloud.google.com/solutions/citizen-developer-best-practices",
+      "tutorials": "https://developers.google.com/learn/pathways/appsheet"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Cloud Digital Leader",
+    "category": "Лідерство",
+    "description": "Cloud Digital Leader керує ініціативами цифрової трансформації в організації. Вони спрямовують впровадження хмарних технологій, оптимізують витрати на хмару та забезпечують, щоб команди відповідали стратегічним цілям, ефективно використовуючи хмарні технології.",
+    "requirements": {
+      "services": [
+        "Cloud Billing",
+        "IAM"
+      ],
+      "tools": [
+        "GCP Console",
+        "BigQuery"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": []
+    },
+    "responsibilities": [
+      "Керувати впровадженням хмарних технологій та стратегіями цифрової трансформації",
+      "Оптимізовувати витрати на хмарні ресурси",
+      "Надавати рекомендації технічним та бізнес-командам",
+      "Забезпечувати дотримання найкращих практик безпеки та комплаєнсу",
+      "Сприяти інноваціям через хмарні технології"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/solutions/cloud-digital-leader",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-for-cloud-adoption",
+      "tutorials": "https://cloud.google.com/learn/cloud-digital-leader"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Cloud Engineer",
+    "category": "Cloud",
+    "description": "Cloud Engineer відповідає за проєктування, розгортання та управління хмарною інфраструктурою. Вони працюють з хмарними платформами та інструментами автоматизації, щоб забезпечити масштабованість, безпеку та високу доступність систем.",
+    "requirements": {
+      "services": [
+        "Compute Engine",
+        "GKE",
+        "Cloud Storage"
+      ],
+      "tools": [
+        "Terraform",
+        "Ansible"
+      ],
+      "platforms": [
+        "GCP",
+        "AWS"
+      ],
+      "languages": [
+        "Python",
+        "Bash"
+      ]
+    },
+    "responsibilities": [
+      "Проєктувати та впроваджувати хмарну інфраструктуру",
+      "Автоматизувати деплоймент за допомогою Terraform та Ansible",
+      "Керувати Kubernetes кластерами та віртуальними машинами",
+      "Моніторити та оптимізувати продуктивність хмари",
+      "Забезпечувати безпеку, резервне копіювання та відновлення після аварій"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/solutions/cloud-engineer",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-for-cloud-infrastructure",
+      "tutorials": "https://cloud.google.com/learn/cloud-engineer"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Cloud Architect",
+    "category": "Cloud",
+    "description": "Cloud Architect проєктує хмарні рішення та інфраструктуру, забезпечуючи відповідність бізнес-вимогам та технічним стандартам. Основна увага приділяється масштабованості, безпеці та оптимізації витрат хмарного середовища.",
+    "requirements": {
+      "services": [
+        "VPC",
+        "Cloud Load Balancing",
+        "Cloud Storage"
+      ],
+      "tools": [
+        "Terraform",
+        "Cloud Deployment Manager"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": [
+        "Python",
+        "Bash"
+      ]
+    },
+    "responsibilities": [
+      "Проєктувати та архітектувати хмарну інфраструктуру",
+      "Реалізовувати масштабовані та безпечні хмарні рішення",
+      "Визначати стандарти та кращі практики використання хмари",
+      "Співпрацювати з інженерними та операційними командами",
+      "Оптимізовувати витрати та забезпечувати високу доступність"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/solutions/cloud-architect",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-for-cloud-architecture",
+      "tutorials": "https://cloud.google.com/learn/cloud-architect"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Cloud Developer",
+    "category": "Developer",
+    "description": "Cloud Developer створює, розгортає та підтримує додатки в хмарних середовищах. Вони використовують хмарні сервіси та інструменти для розробки масштабованих, надійних та ефективних додатків.",
+    "requirements": {
+      "services": [
+        "Cloud Run",
+        "Firebase",
+        "App Engine"
+      ],
+      "tools": [
+        "Cloud SDK",
+        "VS Code"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": [
+        "JavaScript",
+        "Python",
+        "Go"
+      ]
+    },
+    "responsibilities": [
+      "Розробляти хмарно-орієнтовані додатки з використанням сервісів GCP",
+      "Розгортати та керувати додатками на Cloud Run, Firebase та App Engine",
+      "Писати чистий, ефективний та підтримуваний код",
+      "Співпрацювати з архітекторами та іншими розробниками",
+      "Забезпечувати безпеку, продуктивність та масштабованість додатків"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/developers",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-for-cloud-development",
+      "tutorials": "https://cloud.google.com/learn/cloud-developer"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Contact Center Engineer",
+    "category": "Cloud",
+    "description": "Contact Center Engineer проєктує, впроваджує та підтримує хмарні рішення для контакт-центрів. Вони працюють з інструментами на основі штучного інтелекту та комунікаційними платформами для оптимізації взаємодії з клієнтами та робочих процесів.",
+    "requirements": {
+      "services": [
+        "Contact Center AI",
+        "Dialogflow"
+      ],
+      "tools": [
+        "GCP Console",
+        "Postman"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": [
+        "Python",
+        "JavaScript"
+      ]
+    },
+    "responsibilities": [
+      "Проєктувати та впроваджувати хмарні рішення для контакт-центрів",
+      "Інтегрувати AI-інструменти для взаємодії з клієнтами",
+      "Розробляти та тестувати агенти Dialogflow і робочі процеси",
+      "Співпрацювати з командами підтримки та IT",
+      "Моніторити продуктивність та оптимізувати надійність системи"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/contact-center-ai",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-contact-center",
+      "tutorials": "https://cloud.google.com/learn/contact-center-engineer"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Data Analyst",
+    "category": "Data",
+    "description": "Data Analyst збирає, обробляє та аналізує дані для отримання практичних висновків. Вони працюють з базами даних, інструментами візуалізації та аналітичними платформами для підтримки бізнес-рішень.",
+    "requirements": {
+      "services": [
+        "BigQuery",
+        "Looker",
+        "Sheets"
+      ],
+      "tools": [
+        "Data Studio",
+        "Looker Studio"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": [
+        "SQL",
+        "Python"
+      ]
+    },
+    "responsibilities": [
+      "Аналізувати набори даних для виявлення трендів та закономірностей",
+      "Створювати дашборди та візуалізації для зацікавлених сторін",
+      "Співпрацювати з бізнес та технічними командами",
+      "Забезпечувати точність та узгодженість даних",
+      "Підтримувати прийняття рішень на основі даних"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/bigquery/docs",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-data-analytics",
+      "tutorials": "https://cloud.google.com/learn/data-analyst"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Data Engineer",
+    "category": "Data",
+    "description": "Data Engineer створює та підтримує канали обробки даних, забезпечуючи доступність, надійність та правильну структуру даних для аналітики. Вони працюють з ETL-інструментами, хмарними сервісами та базами даних для підтримки рішень на основі даних.",
+    "requirements": {
+      "services": [
+        "BigQuery",
+        "Dataflow",
+        "Pub/Sub"
+      ],
+      "tools": [
+        "Airflow",
+        "dbt"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": [
+        "SQL",
+        "Python"
+      ]
+    },
+    "responsibilities": [
+      "Проєктувати, створювати та підтримувати канали обробки даних",
+      "Трансформувати та структурувати дані для аналітики",
+      "Інтегрувати дані з кількох джерел",
+      "Співпрацювати з аналітиками та дата-сайентистами",
+      "Забезпечувати якість, узгодженість та доступність даних"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/dataflow/docs",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-data-engineering",
+      "tutorials": "https://cloud.google.com/learn/data-engineer"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Database Engineer",
+    "category": "Data",
+    "description": "Database Engineer проєктує, керує та оптимізує бази даних для хмарних додатків. Вони забезпечують ефективну структуру даних, безпеку та високу доступність для аналітики та операційних процесів.",
+    "requirements": {
+      "services": [
+        "Cloud SQL",
+        "Firestore",
+        "Bigtable"
+      ],
+      "tools": [
+        "pgAdmin",
+        "Cloud Console"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": [
+        "SQL",
+        "Python"
+      ]
+    },
+    "responsibilities": [
+      "Проєктувати та підтримувати хмарні бази даних",
+      "Оптимізувати продуктивність баз даних та запити",
+      "Забезпечувати цілісність, безпеку та резервне копіювання даних",
+      "Співпрацювати з розробниками та дата-інженерами",
+      "Підтримувати аналітичні та операційні потреби у даних"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/sql/docs",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-database",
+      "tutorials": "https://cloud.google.com/learn/database-engineer"
+    }
+  },
+  {
+    "id": 11,
+    "name": "DevOps Engineer",
+    "category": "Cloud",
+    "description": "DevOps Engineer автоматизує та управляє хмарною інфраструктурою, забезпечуючи ефективну розробку, розгортання та експлуатацію. Основна увага приділяється CI/CD, інфраструктурі як коду та надійності системи.",
+    "requirements": {
+      "services": [
+        "Cloud Build",
+        "Cloud Deploy",
+        "GKE"
+      ],
+      "tools": [
+        "Terraform",
+        "GitLab CI",
+        "Jenkins"
+      ],
+      "platforms": [
+        "GCP",
+        "AWS"
+      ],
+      "languages": [
+        "Bash",
+        "Python"
+      ]
+    },
+    "responsibilities": [
+      "Проєктувати, впроваджувати та підтримувати CI/CD-пайплайни",
+      "Автоматизувати хмарну інфраструктуру за допомогою Terraform та скриптів",
+      "Керувати кластерами Kubernetes та розгортаннями",
+      "Моніторити продуктивність та надійність системи",
+      "Співпрацювати з командами розробки та експлуатації"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/devops",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-devops",
+      "tutorials": "https://cloud.google.com/learn/devops-engineer"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Google Workspace Administrator",
+    "category": "Admin",
+    "description": "Google Workspace Administrator керує та налаштовує сервіси Google Workspace для організацій. Забезпечує стабільну роботу, безпеку та підтримку користувачів у Gmail, Drive та інших додатках Workspace.",
+    "requirements": {
+      "services": [
+        "Admin Console",
+        "Gmail API",
+        "Drive API"
+      ],
+      "tools": [
+        "Google Admin",
+        "Sheets",
+        "Scripts"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": [
+        "Apps Script",
+        "JavaScript"
+      ]
+    },
+    "responsibilities": [
+      "Керувати обліковими записами та правами користувачів у Google Workspace",
+      "Налаштовувати та підтримувати Gmail, Drive та інші додатки",
+      "Автоматизувати адміністративні завдання за допомогою Apps Script",
+      "Забезпечувати безпеку та відповідність сервісів Workspace",
+      "Підтримувати користувачів та вирішувати технічні проблеми"
+    ],
+    "links": {
+      "documentation": "https://support.google.com/a",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-workspace-admin",
+      "tutorials": "https://cloud.google.com/learn/google-workspace-admin"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Hybrid and Multi-Cloud Architect",
+    "category": "Cloud",
+    "description": "Hybrid and Multi-Cloud Architect проєктує та впроваджує хмарні рішення на кількох платформах. Забезпечує безшовну інтеграцію, масштабованість та безпеку в середовищах GCP, AWS та Azure.",
+    "requirements": {
+      "services": [
+        "Anthos",
+        "BigQuery Omni",
+        "VMs"
+      ],
+      "tools": [
+        "Terraform",
+        "Ansible",
+        "Cloud Console"
+      ],
+      "platforms": [
+        "GCP",
+        "AWS",
+        "Azure"
+      ],
+      "languages": [
+        "Python",
+        "Bash"
+      ]
+    },
+    "responsibilities": [
+      "Проєктувати та впроваджувати гібридні та мультихмарні архітектури",
+      "Забезпечувати безпеку, масштабованість та надійність між хмарами",
+      "Автоматизувати розгортання та управління інфраструктурою",
+      "Інтегрувати сервіси GCP, AWS та Azure",
+      "Співпрацювати з командами розробки та експлуатації"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/solutions/multi-cloud",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-multi-cloud",
+      "tutorials": "https://cloud.google.com/learn/multi-cloud-architect"
+    }
+  },
+  {
+    "id": 14,
+    "name": "Machine Learning Engineer",
+    "category": "AI/ML",
+    "description": "A Machine Learning Engineer designs, develops, and deploys machine learning models to solve business problems. They work with datasets, ML frameworks, and cloud AI services to build scalable and reliable solutions.",
+    "requirements": {
+      "services": [
+        "Vertex AI",
+        "AI Platform",
+        "BigQuery ML"
+      ],
+      "tools": [
+        "TensorFlow",
+        "PyTorch",
+        "scikit-learn"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": [
+        "Python",
+        "R"
+      ]
+    },
+    "responsibilities": [
+      "Design, train, and deploy machine learning models",
+      "Preprocess and analyze datasets",
+      "Optimize model performance and accuracy",
+      "Collaborate with data engineers and analysts",
+      "Integrate ML models into production systems"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/vertex-ai/docs",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-ml",
+      "tutorials": "https://cloud.google.com/learn/machine-learning-engineer"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Network Engineer",
+    "category": "Cloud",
+    "description": "Network Engineer проєктує, впроваджує та керує хмарною мережею. Забезпечує безпечну, надійну та масштабовану взаємозв'язок між хмарами, оптимізуючи продуктивність та надійність мережі.",
+    "requirements": {
+      "services": [
+        "VPC",
+        "Cloud VPN",
+        "Cloud Router"
+      ],
+      "tools": [
+        "Cloud Console",
+        "Terraform"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": [
+        "Bash",
+        "Python"
+      ]
+    },
+    "responsibilities": [
+      "Проєктувати та впроваджувати хмарні мережеві архітектури",
+      "Налаштовувати VPN, VPC та маршрутизатори",
+      "Моніторити та оптимізувати продуктивність мережі",
+      "Забезпечувати безпеку та відповідність мережевого трафіку",
+      "Співпрацювати з командами DevOps та хмарних інженерів"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/networking/docs",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-networking",
+      "tutorials": "https://cloud.google.com/learn/network-engineer"
+    }
+  },
+  {
+    "id": 16,
+    "name": "Security Engineer",
+    "category": "Security",
+    "description": "Security Engineer проєктує та впроваджує заходи безпеки для захисту хмарної інфраструктури та додатків. Відстежує загрози, впроваджує політики та забезпечує відповідність стандартам у GCP.",
+    "requirements": {
+      "services": [
+        "Cloud Armor",
+        "Security Command Center",
+        "IAM"
+      ],
+      "tools": [
+        "Cloud Security Scanner",
+        "Terraform"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": [
+        "Python",
+        "Bash"
+      ]
+    },
+    "responsibilities": [
+      "Проєктувати та впроваджувати стратегії безпеки хмари",
+      "Моніторити загрози та інциденти безпеки",
+      "Керувати ролями та контролем доступу (IAM)",
+      "Проводити оцінку вразливостей та усунення ризиків",
+      "Забезпечувати відповідність стандартам та найкращим практикам безпеки"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/security",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-security",
+      "tutorials": "https://cloud.google.com/learn/security-engineer"
+    }
+  },
+  {
+    "id": 17,
+    "name": "Startup Cloud Engineer",
+    "category": "Cloud",
+    "description": "Startup Cloud Engineer проєктує та керує хмарною інфраструктурою для стартапів, орієнтуючись на швидку розробку, масштабованість та економічність. Використовує хмарні сервіси для прискорення доставки продукту.",
+    "requirements": {
+      "services": [
+        "Firebase",
+        "App Engine",
+        "Cloud Run"
+      ],
+      "tools": [
+        "Cloud SDK",
+        "Terraform"
+      ],
+      "platforms": [
+        "GCP"
+      ],
+      "languages": [
+        "JavaScript",
+        "Python"
+      ]
+    },
+    "responsibilities": [
+      "Проєктувати та впроваджувати хмарну інфраструктуру для стартап-додатків",
+      "Оптимізувати витрати, продуктивність та масштабованість",
+      "Автоматизувати розгортання та управління інфраструктурою",
+      "Інтегрувати хмарні сервіси для прискорення розробки",
+      "Співпрацювати з командами розробки та продукту"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/startup",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-startup",
+      "tutorials": "https://cloud.google.com/learn/startup-cloud-engineer"
+    }
+  },
+  {
+    "id": 18,
+    "name": "Generative AI Leader",
+    "category": "AI/ML",
+    "description": "Відповідає за впровадження та керування генеративними AI-рішеннями в компанії, координує команди ML інженерів та розробників.",
+    "requirements": {
+      "services": ["Vertex AI", "AI Platform", "Generative AI Models"],
+      "tools": ["TensorFlow", "PyTorch", "LangChain"],
+      "platforms": ["GCP", "AWS"],
+      "languages": ["Python", "R"]
+    },
+    "responsibilities": [
+      "Розробка стратегій використання Generative AI",
+      "Координація команд AI/ML",
+      "Впровадження та оптимізація моделей",
+      "Моніторинг продуктивності та безпеки AI-систем"
+    ],
+    "links": {
+      "documentation": "https://cloud.google.com/vertex-ai/docs",
+      "apigee": "https://cloud.google.com/apigee",
+      "bestPractices": "https://cloud.google.com/architecture/best-practices-for-ai",
+      "tutorials": "https://developers.google.com/learn/pathways/ai"
+    }
+  }
+]

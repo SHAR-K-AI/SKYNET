@@ -12,7 +12,7 @@ export interface ResourceItem {
     content: string;
 }
 
-const FILE_UA = path.join(process.cwd(), "resources_ua.json");
+const FILE_UA = path.join(process.cwd(), "resources_uk.json");
 const FILE_EN = path.join(process.cwd(), "resources_en.json");
 
 function readResources(filePath: string): ResourceItem[] {
@@ -27,7 +27,7 @@ function writeResources(filePath: string, resources: ResourceItem[]) {
 
 export async function GET(req: NextRequest) {
     try {
-        const lang = req.nextUrl.searchParams.get("lang") || "en";
+        const lang = req.nextUrl.searchParams.get("lang") || "uk";
         const filePath = lang === "en" ? FILE_EN : FILE_UA;
         const resources = readResources(filePath);
 
@@ -78,7 +78,7 @@ export async function POST(req: NextRequest) {
 
 export async function PUT(req: NextRequest) {
     try {
-        const lang = req.nextUrl.searchParams.get("lang") || "en";
+        const lang = req.nextUrl.searchParams.get("lang") || "uk";
         const filePath = lang === "en" ? FILE_EN : FILE_UA;
         const updatedResource: ResourceItem = await req.json();
 
