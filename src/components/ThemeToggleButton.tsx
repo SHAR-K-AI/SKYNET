@@ -2,10 +2,21 @@
 
 import {motion} from 'framer-motion';
 import {useTheme} from 'next-themes';
+import {useEffect, useState} from 'react';
 import SoundWrapper from "@/components/SoundWrapper";
 
 export default function ThemeToggleButton() {
     const {theme, setTheme} = useTheme();
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
+    if (!mounted) {
+        // уникнемо SSR-глюків
+        return null;
+    }
 
     const currentTheme = theme ?? 'light';
     const isLight = currentTheme === 'light';
@@ -17,7 +28,7 @@ export default function ThemeToggleButton() {
     return (
         <SoundWrapper>
             <motion.button
-                onClick={() => setTheme(prev => (prev === 'light' ? 'dark' : 'light'))}
+                onClick={() => setTheme(isLight ? 'dark' : 'light')}
                 className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-200 dark:bg-gray-700 shadow-lg cursor-pointer hover:scale-110 transition-transform"
                 whileTap={{scale: 0.9}}
                 title="Перемкнути тему"

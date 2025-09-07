@@ -38,6 +38,7 @@
     "contact": "Contact",
     "questions": "Expanded Questions",
     "zodiac-roles": "GCP Zodiac",
+    "trending": "Google Trends",
     "links": "Useful Links",
     "arcade-calculator": "Arcade Calculator"
   },
@@ -69,5 +70,14 @@
     "documentation": "Documentation",
     "bestPractices": "Best Practices",
     "tutorials": "Tutorials"
+  },
+  "TrendingPage": {
+    "title": "Google Trends — Ukraine",
+    "intro": "Google Trends shows what Google users are searching for in real time and allows you to track popular queries by country, region, or category. You can analyze interest trends over time, compare multiple queries, and follow trends in news and social media.",
+    "helpText": "This service helps marketers, journalists, researchers, and ordinary users better understand current events and popular topics. For detailed viewing and in-depth analysis, visit {link}.",
+    "officialLinkText": "official Google Trends website",
+    "fallbackTitle": "No data available",
+    "fallbackDescription": "Unable to load trends. Please try again later.",
+    "fallbackExtendedDescription": "The Google Trends service is temporarily unavailable. Usually, you can view the most popular search queries of Ukrainian users in real time, analyze interest dynamics, and find related news."
   }
 }
