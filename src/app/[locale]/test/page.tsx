@@ -1041,16 +1041,23 @@ export default function GcpRoleQuiz() {
     const progress = Math.round(((current + 1) / questions.length) * 100);
 
     return (
-        <div className="max-w-xl mx-auto p-6">
-            <motion.h1 className="text-3xl font-bold mb-6" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }}>
+        <div className="max-w-xl mx-auto">
+            <motion.h1
+                className="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+            >
                 GCP Career Quiz
             </motion.h1>
 
             {/* Прогресбар */}
-            <div className="w-full bg-gray-200 rounded-full h-4 mb-2">
-                <div className="bg-blue-500 h-4 rounded-full transition-all" style={{ width: `${progress}%` }} />
+            <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-4 mb-2">
+                <div
+                    className="bg-blue-500 h-4 rounded-full transition-all"
+                    style={{ width: `${progress}%` }}
+                />
             </div>
-            <div className="text-sm text-gray-600 mb-4">
+            <div className="text-sm text-gray-600 dark:text-gray-300 mb-4">
                 Питання {current + 1} з {questions.length}
             </div>
 
@@ -1061,12 +1068,22 @@ export default function GcpRoleQuiz() {
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: -50 }}
                     transition={{ duration: 0.4 }}
-                    className="p-6 border rounded-2xl shadow-lg bg-white"
+                    className="p-6 border rounded-2xl shadow-lg bg-white dark:bg-gray-800 dark:border-gray-700"
                 >
-                    <h2 className="text-xl font-semibold mb-4">{q.question}</h2>
+                    <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+                        {q.question}
+                    </h2>
+
                     <div className="mb-4 overflow-hidden rounded-lg">
-                        <AppImage src={q.image} alt="quiz" width={400} height={200} className="w-full object-cover" />
+                        <AppImage
+                            src={q.image}
+                            alt="quiz"
+                            width={400}
+                            height={200}
+                            className="w-48 h-28 object-cover mx-auto rounded-lg"
+                        />
                     </div>
+
                     <div className="space-y-3">
                         {q.options.map((opt, i) => (
                             <motion.button
@@ -1074,10 +1091,16 @@ export default function GcpRoleQuiz() {
                                 whileTap={{ scale: 0.97 }}
                                 key={i}
                                 onClick={() => handleAnswer(opt.roles)}
-                                className="w-full text-left p-4 rounded-lg border shadow-sm hover:bg-gray-50"
+                                className="w-full text-left p-4 rounded-lg border shadow-sm
+                         hover:bg-gray-50 dark:hover:bg-gray-700
+                         bg-white dark:bg-gray-900
+                         border-gray-200 dark:border-gray-700
+                         text-gray-900 dark:text-gray-100"
                             >
                                 <div className="font-medium">{opt.text}</div>
-                                <div className="text-sm text-gray-500">{opt.hint}</div>
+                                <div className="text-sm text-gray-500 dark:text-gray-400">
+                                    {opt.hint}
+                                </div>
                             </motion.button>
                         ))}
                     </div>

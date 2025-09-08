@@ -32,12 +32,12 @@
     "save": "Save"
   },
   "Menu": {
-    "blog": "News",
     "home": "Home",
     "about": "About",
-    "contact": "Contact",
-    "questions": "Expanded Questions",
+    "test": "GCP Test",
+    "questions": "GCP Questions",
     "zodiac-roles": "GCP Zodiac",
+    "blog": "News",
     "trending": "Google Trends",
     "links": "Useful Links",
     "arcade-calculator": "Arcade Calculator"

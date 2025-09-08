@@ -32,12 +32,12 @@
     "save": "Зберегти"
   },
   "Menu": {
-    "blog": "Новини",
     "home": "Головна",
     "about": "Про проект",
-    "contact": "Контакти",
-    "questions": "Розгорнуті питання",
+    "test": "GCP Тест",
+    "questions": "GCP Питання",
     "zodiac-roles": "GCP Зодіак",
+    "blog": "Новини",
     "trending": "Google Тренди",
     "links": "Корисні посилання",
     "arcade-calculator": "Калькулятор Аркади"

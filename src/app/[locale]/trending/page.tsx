@@ -1,4 +1,4 @@
-import { getGoogleTrends } from "@/app/api/trends";
+import {getGoogleTrends} from "@/app/api/trends";
 
 interface TrendNewsItem {
     title: string | string[];
@@ -49,7 +49,8 @@ export default async function UATrending() {
             </h1>
 
             <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                Це <span className="font-medium">самі останні тренди</span> українських користувачів Google у реальному часі.
+                Це <span className="font-medium">самі останні тренди</span> українських користувачів Google у реальному
+                часі.
             </p>
 
             <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
@@ -65,7 +66,8 @@ export default async function UATrending() {
             </p>
 
             <p className="text-sm text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-                Google Trends дозволяє переглядати найпопулярніші пошукові запити українських користувачів у реальному часі,
+                Google Trends дозволяє переглядати найпопулярніші пошукові запити українських користувачів у реальному
+                часі,
                 аналізувати динаміку інтересу до тем, порівнювати популярність різних запитів
                 та знаходити пов’язані новини. Сервіс допомагає зрозуміти актуальні тенденції,
                 відстежувати сезонні зміни популярності та знаходити контент, який цікавить вашу аудиторію.
@@ -108,29 +110,43 @@ export default async function UATrending() {
                             {t.news && t.news.length > 0 && (
                                 <div className="mt-2">
                                     <h3 className="font-medium mb-1 text-gray-700 dark:text-gray-300">Новини:</h3>
-                                    {t.news.map((n, nIdx) => {
-                                        const title = Array.isArray(n.title) ? n.title[0] : n.title;
-                                        const url = Array.isArray(n.url) ? n.url[0] : n.url;
-                                        const domain = (() => {
+                                    {t.news
+                                        .filter((n) => {
+                                            const url = Array.isArray(n.url) ? n.url[0] : n.url;
                                             try {
-                                                return new URL(url).hostname;
+                                                const domain = new URL(url).hostname;
+                                                return !domain.endsWith(".ru");
                                             } catch {
-                                                return "";
+                                                return true;
                                             }
-                                        })();
+                                        })
+                                        .map((n, nIdx) => {
+                                            const title = Array.isArray(n.title) ? n.title[0] : n.title;
+                                            const url = Array.isArray(n.url) ? n.url[0] : n.url;
+                                            const domain = (() => {
+                                                try {
+                                                    return new URL(url).hostname;
+                                                } catch {
+                                                    return "";
+                                                }
+                                            })();
 
-                                        return (
-                                            <a
-                                                key={nIdx}
-                                                href={url}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="block mb-2 text-blue-600 dark:text-blue-400 hover:underline"
-                                            >
-                                                {title} <span className="text-gray-500 dark:text-gray-400 text-xs">({domain})</span>
-                                            </a>
-                                        );
-                                    })}
+                                            return (
+                                                <a
+                                                    key={nIdx}
+                                                    href={url}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="block mb-2 text-blue-600 dark:text-blue-400 hover:underline"
+                                                >
+                                                    {title}
+                                                    <div className="text-gray-500 dark:text-gray-400 text-xs text-right">
+                                                        ({domain})
+                                                    </div>
+                                                </a>
+                                            );
+                                        })}
+
                                 </div>
                             )}
                         </div>

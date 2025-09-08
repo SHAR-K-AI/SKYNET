@@ -130,9 +130,9 @@ export default function FAQPage() {
                         <motion.div
                             key={f.id}
                             layout
-                            initial={{ opacity: 0, y: 20, scale: 0.95 }}
-                            animate={{ opacity: 1, y: 0, scale: 1 }}
-                            exit={{ opacity: 0, y: -20, scale: 0.95 }}
+                            initial={{ opacity: 0,  scale: 0.95 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            exit={{ opacity: 0, scale: 0.95 }}
                             transition={{ duration: 0.5 }}
                             className="rounded-2xl p-5 shadow-xl hover:scale-[1.02] transition-all duration-300 cursor-pointer
                 bg-white text-gray-900 dark:bg-gray-800 dark:text-gray-100"

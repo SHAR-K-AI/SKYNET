@@ -8,6 +8,7 @@ const menuItems = [
     "home",
     "about",
     "questions",
+    "test",
     "zodiac-roles",
     "links",
     // "arcade-calculator",
