@@ -1,0 +1,121 @@
+[
+  {
+    "type": "card",
+    "title": "Ukraine: The Next Chapter",
+    "description": "Мистецький проєкт від Google Arts & Culture",
+    "url": "https://artsandculture.google.com/project/ukraine-the-next-chapter?hl=uk",
+    "imageUrl": "https://lh3.googleusercontent.com/ci/AL18g_Qbc6JMST4c_hz0jExDAtGHLu7kviWWNT0hzqSeeRAw_MDBXMiEMatoowWNM-1fa6kiWYsFTkU=w1847-h438-pp-rw-v1"
+  },
+  {
+    "type": "youtube",
+    "title": "The Software Supply Chain Song (I'm Goin' To Production)",
+    "url": "https://www.youtube.com/embed/NaR8WlLtPw0"
+  },
+  {
+    "type": "link",
+    "title": "Discord: Google Developer Community",
+    "url": "https://discord.gg/googledevelopers"
+  },
+  {
+    "type": "card",
+    "title": "Google Cloud для студентів: впевнений старт кар'єри",
+    "description": "Безоплатна програма навчання з хмарних технологій для закладів вищої та фахової передвищої освіти України. Програма надає необхідні знання й практичні навички роботи з Google Cloud: генеративний ШІ, аналіз даних, кібербезпека, хмарна інженерія тощо. Для викладачів та адміністрації: напишіть на gcloudeduua@gmail.com",
+    "url": "https://rsvp.withgoogle.com/events/google-cloud-confident-career-start/home"
+  },
+  {
+    "type": "card",
+    "title": "Google Cloud: польська програма",
+    "description": "Rozwiń swoje kompetencje i sprostaj wyzwaniom przyszłości. Weź udział w wyzwaniu Rozwiń Karierę z Google Cloud, otrzymaj bezpłatny, 30-dniowy dostęp do platformy Google Cloud Skills Boost, zdobywaj odznaki umiejętności i nagrody. Program dla studentów i osób z podstawową wiedzą informatyczną lub SQL w Polsce.",
+    "url": "https://rsvp.withgoogle.com/events/rozwinkarierezgooglecloud/o-programie"
+  },
+  {
+    "type": "youtube",
+    "title": "Introducing Google Vids",
+    "url": "https://www.youtube.com/embed/4SCjXcBeW1E"
+  },
+  {
+    "type": "youtube",
+    "title": "Lupe Fiasco x Large Language Models | Google Lab Sessions",
+    "url": "https://www.youtube.com/embed/yYp18JAvKkQ"
+  },
+  {
+    "type": "youtube",
+    "title": "Україна тут: Ваша культурна пригода чекає",
+    "url": "https://www.youtube.com/embed/dBgQLQcngxQ"
+  },
+  {
+    "type": "card",
+    "title": "Prebunking with Google",
+    "description": "Не дозволяйте маніпулювати собою й своїми близькими онлайн. Google і Jigsaw у співпраці з Moonshot і місцевими експертами підготували навчальні відео про те, як боротися з найпоширенішими тактиками маніпуляцій та дезінформації.",
+    "url": "https://prebunkingwithgoogle.detector.media",
+    "imageUrl": "https://prebunkingwithgoogle.detector.media/images/client/plugs/hero_2.jpg"
+  },
+  {
+    "type": "youtube",
+    "title": "Як новий штучний інтелект Google може зробити революцію в медицині? AlphaFold 3",
+    "url": "https://www.youtube.com/embed/58SGGoi_Ecs"
+  },
+  {
+    "type": "link",
+    "title": "Notebook LM від Google",
+    "description": "Think Smarter, Not Harder. Інструмент для швидкого розуміння важливої інформації, створений на базі Gemini.",
+    "url": "https://notebooklm.google/"
+  },
+  {
+    "type": "link",
+    "title": "Project IDX",
+    "description": "Project IDX — це AI-підтримуваний робочий простір для повноцінної розробки мультиплатформових додатків у хмарі.",
+    "url": "https://idx.dev/blog/article/introducing-idx-templates"
+  },
+  {
+    "type": "link",
+    "title": "Чому SAIF: структура Google для відповідального штучного інтелекту",
+    "description": "Дізнайтеся про SAIF — рамкову структуру Google для створення та використання ШІ відповідально та безпечно.",
+    "url": "https://saif.google/why-saif"
+  },
+  {
+    "type": "link",
+    "title": "Google for Developers - YouTube",
+    "url": "https://www.youtube.com/@GoogleDevelopers"
+  },
+  {
+    "type": "link",
+    "title": "Google Cloud - YouTube",
+    "url": "https://www.youtube.com/@googlecloud"
+  },
+  {
+    "type": "link",
+    "title": "GDG Cloud Kyiv - YouTube",
+    "url": "https://www.youtube.com/@GDGCloudKyiv"
+  },
+  {
+    "type": "link",
+    "title": "Випустіть мене з IT - YouTube",
+    "url": "https://www.youtube.com/@vmzit.podcast"
+  },
+  {
+    "type": "link",
+    "title": "Віктор Турський про програмування - YouTube",
+    "url": "https://www.youtube.com/@AboutProgramming"
+  },
+  {
+    "type": "link",
+    "title": "Shar-K-ai: AI та технології - YouTube",
+    "url": "https://www.youtube.com/@Shar-K-ai"
+  },
+  {
+    "type": "link",
+    "title": "Сергій Бабіч та Дивовижний світ веброзробки - YouTube",
+    "url": "https://www.youtube.com/@babichweb"
+  },
+  {
+    "type": "link",
+    "title": "Dima in Engineering Management - YouTube",
+    "url": "https://www.youtube.com/@so_nerdy"
+  },
+  {
+    "type": "link",
+    "title": "Timur Shemsedinov - YouTube",
+    "url": "https://www.youtube.com/@TimurShemsedinov"
+  }
+]

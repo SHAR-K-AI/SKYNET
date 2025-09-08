@@ -21,8 +21,8 @@ interface Role {
     };
 }
 
-const FILE_UA = path.join(process.cwd(), "role_uk.json");
-const FILE_EN = path.join(process.cwd(), "role_en.json");
+const FILE_UA = path.join(process.cwd(), "/data/role_uk.json");
+const FILE_EN = path.join(process.cwd(), "/data/role_en.json");
 
 function readRoles(filePath: string): Role[] {
     if (!fs.existsSync(filePath)) return [];

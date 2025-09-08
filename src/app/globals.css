@@ -5,6 +5,7 @@
 @import "./styles/sky.css";
 @import "./styles/sun.css";
 @import "./styles/clouds.css";
+@import "./styles/loading.css";
 @import "react-chrome-dino-ts/index.css";
 
 @custom-variant dark (&:where(.dark, .dark *));

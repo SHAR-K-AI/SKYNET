@@ -14,7 +14,7 @@ export default function AboutPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
             >
-                Про фан-сайт 🌌
+                Про проект 🌌
             </motion.h1>
 
             <motion.p

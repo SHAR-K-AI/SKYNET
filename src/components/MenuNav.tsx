@@ -7,12 +7,12 @@ import {useTheme} from "next-themes";
 const menuItems = [
     "home",
     "about",
-    "blog",
-    "trending",
     "questions",
     "zodiac-roles",
-    "arcade-calculator",
     "links",
+    // "arcade-calculator",
+    "blog",
+    "trending",
 ];
 
 const itemVariants: Variants = {

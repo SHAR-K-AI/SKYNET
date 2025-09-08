@@ -6,6 +6,7 @@ import CardGrid, { CardData } from "@/components/CardGrid";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 import SoundWrapper from "@/components/SoundWrapper";
 import AppImage from "@/components/Image";
+import { XMarkIcon } from "@heroicons/react/24/outline";
 
 const backdropVariants: Variants = {
     hidden: { opacity: 0 },
@@ -33,14 +34,14 @@ function WelcomeModal({
 }) {
     return (
         <motion.div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4 overflow-y-auto"
             variants={backdropVariants}
             initial="hidden"
             animate="visible"
             exit="exit"
         >
             <motion.div
-                className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl max-w-3xl p-8 space-y-6 text-center relative transition-colors duration-500"
+                className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl max-w-3xl w-full p-8 space-y-6 text-center relative transition-colors duration-500 max-h-[90vh] overflow-y-auto"
                 variants={modalVariants}
                 initial="hidden"
                 animate="visible"
@@ -51,7 +52,7 @@ function WelcomeModal({
                     className="absolute top-4 right-4 text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white"
                     onClick={onClose}
                 >
-                    ✕
+                    <XMarkIcon className="w-6 h-6" />
                 </button>
 
                 <motion.h1
@@ -116,8 +117,8 @@ function WelcomeModal({
                 >
                     <SoundWrapper>
             <span
-                className="inline-block bg-blue-600 dark:bg-blue-500 text-white px-6 py-3 rounded-xl font-semibold shadow-md hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors duration-300"
                 onClick={onClose}
+                className="inline-block  cursor-pointer bg-blue-600 dark:bg-blue-500 text-white px-6 py-3 rounded-xl font-semibold shadow-md hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors duration-300"
             >
               {t("joinAndLearn")}
             </span>
@@ -165,12 +166,12 @@ export default function MainPage() {
     return (
         <div className="min-h-screen text-gray-900 dark:text-gray-100 relative transition-colors duration-500">
             <AnimatePresence>
-                {showModal && <WelcomeModal t={t} onClose={() => setShowModal(false)} />}
+                {showModal && <WelcomeModal t={t} onClose={() => setShowModal(false)}/>}
             </AnimatePresence>
-
+            <span className="loader"></span>
             <section className="md:p-6 mt-6">
                 <h2 className="text-2xl sm:text-3xl font-bold mb-8">{t('title')}</h2>
-                {loading ? <p>Loading...</p> : <CardGrid cards={cards} />}
+                {loading ? <p>Loading...</p> : <CardGrid cards={cards}/>}
             </section>
         </div>
     );

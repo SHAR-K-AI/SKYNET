@@ -270,9 +270,9 @@ export default function RolesConstellation() {
                 className="absolute bottom-2 left-2 text-xs text-gray-300 bg-gray-900/70 px-2 py-1 rounded-md pointer-events-none">
                 {t("instruction")}
             </div>
-
+2
             <div ref={canvasRef} className="absolute inset-0 w-full h-full"/>
-
+1
             <div
                 className={`
           absolute top-10 right-10 max-w-md p-4 text-white rounded-lg shadow-lg overflow-y-auto max-h-[400px]

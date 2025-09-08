@@ -134,5 +134,13 @@
     "imageUrl": "/images/exp-ai.png",
     "description": "An AI education program for teachers and students aged 11–14.",
     "content": "Experience AI is an educational program developed by the Raspberry Pi Foundation in collaboration with Google DeepMind. It provides cutting-edge resources on artificial intelligence and machine learning, supporting teachers in integrating these topics into their lessons. The program engages students aged 11–14 in exploring AI and empowers educators in a rapidly evolving technological field.\n\nKey features:\n- AI and machine learning resources\n- For teachers and students aged 11–14\n- Developed by Raspberry Pi Foundation and Google DeepMind\n- Helps integrate AI into classroom lessons\n- Supports educators in the fast-changing field of technology"
+  },
+  {
+    "id": "d3e4f5a6-b7c8-9d0e-f1a2-3b4c5d6e7f8g-en",
+    "title": "5-Day AI Agents Intensive Course with Google",
+    "link": "https://rsvp.withgoogle.com/events/google-ai-agents-intensive_2025",
+    "imageUrl": "https://storage.googleapis.com/kaggle-media/Images/AI%20Agents%20Course%20Illustration%20-%20v1.png",
+    "description": "A free 5-day intensive course by Google on building and deploying AI agents.",
+    "content": "Join the 5-Day AI Agents Intensive Course with Google, running Monday, November 10 - Friday, November 14.\n\nSince last November, over 420,000 learners worldwide registered to join our 5-day Generative AI Intensive Course with Google. Now comes the sequel: the 5-Day AI Agents Intensive – a no-cost course designed to help you build and deploy the next frontier of AI.\n\nWhether you’re just starting with agents or advancing your expertise, this immersive experience guides you through architectures, tools, and best practices shaping the future of intelligent, autonomous systems. You’ll apply your knowledge through a capstone project, gaining the foundation to create everything from simple AI agents to sophisticated multi-agent systems.\n\nKey features:\n- Free 5-day online course (Nov 10–14)\n- Created by Google ML researchers and engineers\n- Covers models, tools, orchestration, memory, and evaluation\n- Hands-on codelabs, examples, and live discussions\n- Capstone project to apply knowledge\n- Learn how to move beyond LLM prototypes to production-ready AI agents"
   }
 ]
