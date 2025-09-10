@@ -1,7 +1,8 @@
-// components/QuizQuestion.tsx
 'use client';
+
 import { motion, AnimatePresence } from "framer-motion";
 import AppImage from "@/components/Image";
+import {useEffect} from "react";
 
 interface Option {
     text: string;
@@ -18,6 +19,13 @@ interface QuizQuestionProps {
 }
 
 export default function QuizQuestion({ question, image, options, handleAnswer, keyId }: QuizQuestionProps) {
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }, [keyId]);
+
     return (
         <AnimatePresence mode="wait">
             <motion.div
