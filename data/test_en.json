@@ -1,0 +1,398 @@
+[
+  {
+    "question": "Imagine you're setting up a new project in Google Cloud. What would be your first step? Choose the option that best fits your style.",
+    "image": "/images/test/q-1.png",
+    "options": [
+      {
+        "text": "Set up the VM infrastructure and network, then write scripts to automate it.",
+        "categories": ["R"],
+        "hint": "Your approach is a quick start and automation."
+      },
+      {
+        "text": "Study the documentation and best practices to choose the optimal architecture.",
+        "categories": ["I"],
+        "hint": "You like to analyze and find the best solutions."
+      },
+      {
+        "text": "Draw an architectural diagram of the project and present it to the team.",
+        "categories": ["A"],
+        "hint": "You think visually and aim for a clear vision."
+      },
+      {
+        "text": "Define the project roadmap and goals to plan its development.",
+        "categories": ["E"],
+        "hint": "You are focused on strategy and long-term planning."
+      },
+      {
+        "text": "Create checklists and access policies to ensure everything is organized.",
+        "categories": ["C"],
+        "hint": "Order, organization, and compliance with standards are important to you."
+      },
+      {
+        "text": "Communicate with the team to understand their needs and expectations for the project.",
+        "categories": ["S"],
+        "hint": "You prioritize collaboration and the needs of the team."
+      }
+    ]
+  },
+  {
+    "question": "Imagine you're tasked with optimizing queries in BigQuery. What would be your first step? Choose the option that best fits your work style.",
+    "image": "/images/test/q-2.png",
+    "options": [
+      {
+        "text": "Immediately write scripts and tests for optimization to get a quick result.",
+        "categories": ["R"],
+        "hint": "Your approach is hands-on action and rapid implementation."
+      },
+      {
+        "text": "Analyze the data and queries to find the most inefficient ones.",
+        "categories": ["I"],
+        "hint": "You first delve into analysis to find the root of the problem."
+      },
+      {
+        "text": "Create visualizations to demonstrate the results of the optimization.",
+        "categories": ["A"],
+        "hint": "You like to explain complex things using visual materials."
+      },
+      {
+        "text": "Train the team on how to use query optimization tools.",
+        "categories": ["S"],
+        "hint": "You believe the best way to solve a problem is to empower others."
+      },
+      {
+        "text": "Prepare a presentation for management to show how optimization will impact efficiency.",
+        "categories": ["E"],
+        "hint": "You are focused on strategy and communication with leadership."
+      },
+      {
+        "text": "Document the data structure and optimization processes to ensure everything is recorded for the future.",
+        "categories": ["C"],
+        "hint": "You prefer order, documentation, and systematic approaches."
+      }
+    ]
+  },
+  {
+    "question": "Imagine you're planning CI/CD for a new project. What would be your first step? Choose the option that best fits your style.",
+    "image": "/images/test/q-3.png",
+    "options": [
+      {
+        "text": "Set up pipelines and automation to speed up deployment.",
+        "categories": ["R"],
+        "hint": "You focus on quick action and practical implementation."
+      },
+      {
+        "text": "Study CI/CD best practices to develop an effective process.",
+        "categories": ["I"],
+        "hint": "You start with a deep analysis and a search for the best solution."
+      },
+      {
+        "text": "Develop a clear interface for monitoring the CI/CD process.",
+        "categories": ["A"],
+        "hint": "It's important to you that the process is visual and understandable for everyone."
+      },
+      {
+        "text": "Coordinate the development team so everyone understands the new process.",
+        "categories": ["S"],
+        "hint": "You prioritize communication and teamwork."
+      },
+      {
+        "text": "Create a release plan and quality control to ensure reliability.",
+        "categories": ["E"],
+        "hint": "You are oriented towards strategy, planning, and control."
+      },
+      {
+        "text": "Document all CI/CD processes and instructions for future use.",
+        "categories": ["C"],
+        "hint": "Your approach is to systematize and document every step."
+      }
+    ]
+  },
+  {
+    "question": "Imagine you need to protect a cloud infrastructure from attacks. What would you do first? Choose the option that best fits your style.",
+    "image": "/images/test/q-4.png",
+    "options": [
+      {
+        "text": "Set up a firewall and monitoring to block threats.",
+        "categories": ["R"],
+        "hint": "You're focused on quick, practical actions and protection."
+      },
+      {
+        "text": "Study threat and vulnerability reports to understand the potential risks.",
+        "categories": ["I"],
+        "hint": "Your approach is deep analysis and strategy development."
+      },
+      {
+        "text": "Create visual threat diagrams to better analyze them.",
+        "categories": ["A"],
+        "hint": "You like to visualize data for a better understanding of the situation."
+      },
+      {
+        "text": "Conduct security training for the team to increase their awareness.",
+        "categories": ["S"],
+        "hint": "You believe that training and team interaction are key to security."
+      },
+      {
+        "text": "Develop a security policy to establish clear rules for the entire team.",
+        "categories": ["E"],
+        "hint": "You are oriented towards leadership, strategic planning, and defining rules."
+      },
+      {
+        "text": "Document procedures and access policies to ensure compliance.",
+        "categories": ["C"],
+        "hint": "Your approach is systematization, documentation, and control."
+      }
+    ]
+  },
+  {
+    "question": "Imagine you're creating an ML model for data prediction. What is your approach? Choose the option that best fits your style.",
+    "image": "/images/test/q-5.png",
+    "options": [
+      {
+        "text": "Train the model on a dataset and write the code for its integration.",
+        "categories": ["R"],
+        "hint": "You're focused on rapid implementation and hands-on work."
+      },
+      {
+        "text": "Analyze the data and choose an algorithm to get the most accurate result.",
+        "categories": ["I"],
+        "hint": "Your approach is deep analysis and selecting the best solution."
+      },
+      {
+        "text": "Create visualizations of the results to show the model's effectiveness.",
+        "categories": ["A"],
+        "hint": "You like to explain complex ideas using visual materials."
+      },
+      {
+        "text": "Collaborate with the team to obtain high-quality data.",
+        "categories": ["S"],
+        "hint": "You believe the project's success depends on quality collaboration."
+      },
+      {
+        "text": "Present the results to management to justify the business value.",
+        "categories": ["E"],
+        "hint": "You are oriented towards strategy, communication, and demonstrating value."
+      },
+      {
+        "text": "Document the model development steps so others can reproduce it.",
+        "categories": ["C"],
+        "hint": "Your approach is order, systematization, and documentation."
+      }
+    ]
+  },
+  {
+    "question": "Imagine you're creating a network infrastructure for a large project. What would you do first? Choose the option that best fits your style.",
+    "image": "/images/test/q-6.png",
+    "options": [
+      {
+        "text": "Set up routers and networks to ensure connectivity.",
+        "categories": ["R"],
+        "hint": "You are focused on quick, practical actions and configuration."
+      },
+      {
+        "text": "Analyze traffic and bandwidth to optimize the network.",
+        "categories": ["I"],
+        "hint": "Your approach is deep analysis and finding the most effective solutions."
+      },
+      {
+        "text": "Create a network map to visualize its topology for all participants.",
+        "categories": ["A"],
+        "hint": "It's important to you that the process is visual and clear."
+      },
+      {
+        "text": "Coordinate the network team to avoid conflicts.",
+        "categories": ["S"],
+        "hint": "You prioritize communication and effective teamwork."
+      },
+      {
+        "text": "Develop a deployment strategy to ensure efficiency.",
+        "categories": ["E"],
+        "hint": "You are oriented towards strategy, planning, and leadership."
+      },
+      {
+        "text": "Document the topology and settings to ensure everything is recorded.",
+        "categories": ["C"],
+        "hint": "Your approach is to systematize and document every step."
+      }
+    ]
+  },
+  {
+    "question": "Imagine you need to set up a database for a new service. How would you approach this? Choose the option that best fits your style.",
+    "image": "https://source.unsplash.com/400x200/?database,server",
+    "options": [
+      {
+        "text": "Immediately set up tables and indexes to make the database fast.",
+        "categories": ["R"],
+        "hint": "You're focused on quick, practical actions and configuration."
+      },
+      {
+        "text": "Analyze queries and data structure to improve performance.",
+        "categories": ["I"],
+        "hint": "Your approach is deep analysis and finding the most effective solutions."
+      },
+      {
+        "text": "Create a database schema as a diagram to make its structure clear.",
+        "categories": ["A"],
+        "hint": "It's important to you that the process is visual and understandable for everyone."
+      },
+      {
+        "text": "Collaborate with the development team to understand their needs.",
+        "categories": ["S"],
+        "hint": "You prioritize communication and effective teamwork."
+      },
+      {
+        "text": "Develop a backup policy to secure the data.",
+        "categories": ["E"],
+        "hint": "You are oriented towards strategy, planning, and ensuring reliability."
+      },
+      {
+        "text": "Document the database structure and settings so others can work with it.",
+        "categories": ["C"],
+        "hint": "Your approach is to systematize and document every step."
+      }
+    ]
+  },
+  {
+    "question": "Imagine you're creating an analytical dashboard for management. What's your main focus? Choose the option that best fits your style.",
+    "image": "https://source.unsplash.com/400x200/?dashboard,analytics",
+    "options": [
+      {
+        "text": "Set up connections to data sources and automate updates.",
+        "categories": ["R"],
+        "hint": "You're focused on quick, practical actions and automation."
+      },
+      {
+        "text": "Analyze metrics and KPIs to identify what's most important for the business.",
+        "categories": ["I"],
+        "hint": "Your approach is deep analysis and identifying key indicators."
+      },
+      {
+        "text": "Design the dashboard to be intuitive and easy to understand.",
+        "categories": ["A"],
+        "hint": "It's important to you that information is presented visually and clearly."
+      },
+      {
+        "text": "Discuss team and management needs to ensure the dashboard is useful.",
+        "categories": ["S"],
+        "hint": "You prioritize communication and teamwork."
+      },
+      {
+        "text": "Present the findings to management to justify the conclusions.",
+        "categories": ["E"],
+        "hint": "You are oriented towards strategy, communication, and demonstrating value."
+      },
+      {
+        "text": "Document the metrics and formulas for transparency and future use.",
+        "categories": ["C"],
+        "hint": "Your approach is systematization and documentation of every step."
+      }
+    ]
+  },
+  {
+    "question": "Imagine you need to integrate Google Workspace for your team. What would be your first step? Choose the option that best fits your style.",
+    "image": "https://source.unsplash.com/400x200/?workspace,cloud",
+    "options": [
+      {
+        "text": "Set up access and groups to get everything working without delay.",
+        "categories": ["R"],
+        "hint": "You're focused on quick, practical actions and configuration."
+      },
+      {
+        "text": "Study the documentation and best practices to set everything up correctly.",
+        "categories": ["I"],
+        "hint": "Your approach is deep analysis and finding the most effective solutions."
+      },
+      {
+        "text": "Create interactive diagrams for users to make it easier for them to understand.",
+        "categories": ["A"],
+        "hint": "It's important to you that information is presented visually and clearly."
+      },
+      {
+        "text": "Conduct training for the team so everyone learns how to use the services.",
+        "categories": ["S"],
+        "hint": "You prioritize communication and supporting colleagues."
+      },
+      {
+        "text": "Develop a service usage policy to ensure security.",
+        "categories": ["E"],
+        "hint": "You are oriented towards strategy, planning, and ensuring reliability."
+      },
+      {
+        "text": "Document settings and roles to avoid confusion.",
+        "categories": ["C"],
+        "hint": "Your approach is to systematize and document every step."
+      }
+    ]
+  },
+  {
+    "question": "Imagine you need to set up a scalable cloud architecture. What would you start with? Choose the option that best fits your style.",
+    "image": "https://source.unsplash.com/400x200/?cloud,architecture",
+    "options": [
+      {
+        "text": "Set up services and automation so the system can scale.",
+        "categories": ["R"],
+        "hint": "You're focused on quick, practical actions and implementation."
+      },
+      {
+        "text": "Analyze the load and resources to determine the optimal size.",
+        "categories": ["I"],
+        "hint": "Your approach is deep analysis and developing an effective plan."
+      },
+      {
+        "text": "Create architectural diagrams to visualize the structure.",
+        "categories": ["A"],
+        "hint": "It's important to you that information is presented visually and clearly."
+      },
+      {
+        "text": "Coordinate the work of engineers to ensure smooth operation.",
+        "categories": ["S"],
+        "hint": "You prioritize communication and effective teamwork."
+      },
+      {
+        "text": "Develop a scaling strategy to plan for the future.",
+        "categories": ["E"],
+        "hint": "You are oriented towards strategy, planning, and leadership."
+      },
+      {
+        "text": "Document the architecture and settings to easily track changes.",
+        "categories": ["C"],
+        "hint": "Your approach is to systematize and document every step."
+      }
+    ]
+  },
+  {
+    "question": "Imagine you're creating an analytical model for a business. What's your approach? Choose the option that best fits your style.",
+    "image": "https://source.unsplash.com/400x200/?analytics,model",
+    "options": [
+      {
+        "text": "Immediately create scripts for data collection and processing to get started.",
+        "categories": ["R"],
+        "hint": "You're focused on quick, practical actions and implementation."
+      },
+      {
+        "text": "Thoroughly analyze the data to understand patterns before building the model.",
+        "categories": ["I"],
+        "hint": "Your approach is deep analysis and developing an effective plan."
+      },
+      {
+        "text": "Develop visualizations of forecasts to make the results clear.",
+        "categories": ["A"],
+        "hint": "It's important to you that information is presented visually and clearly."
+      },
+      {
+        "text": "Discuss team needs to ensure the model is useful.",
+        "categories": ["S"],
+        "hint": "You prioritize communication and effective teamwork."
+      },
+      {
+        "text": "Present the results to management to justify business decisions.",
+        "categories": ["E"],
+        "hint": "You are oriented towards strategy, planning, and leadership."
+      },
+      {
+        "text": "Document the steps and formulas to ensure transparency.",
+        "categories": ["C"],
+        "hint": "Your approach is to systematize and document every step."
+      }
+    ]
+  }
+]

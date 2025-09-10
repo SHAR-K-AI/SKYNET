@@ -168,7 +168,6 @@ export default function MainPage() {
             <AnimatePresence>
                 {showModal && <WelcomeModal t={t} onClose={() => setShowModal(false)}/>}
             </AnimatePresence>
-            <span className="loader"></span>
             <section className="md:p-6 mt-6">
                 <h2 className="text-2xl sm:text-3xl font-bold mb-8">{t('title')}</h2>
                 {loading ? <p>Loading...</p> : <CardGrid cards={cards}/>}
