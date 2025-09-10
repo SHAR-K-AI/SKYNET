@@ -8,6 +8,7 @@ import {NextIntlClientProvider} from "next-intl";
 import Footer from "@/components/Footer";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import Script from "next/script";
+import {PlayerProvider} from "@/components/PlayerProvider";
 
 const roboto = Roboto({
     variable: "--font-roboto",
@@ -39,8 +40,8 @@ interface PageProps {
     params: { locale: string };
 }
 
-export function generateMetadata({ params }: PageProps): Metadata {
-    const { locale } = params;
+export function generateMetadata({params}: PageProps): Metadata {
+    const {locale} = params;
     return siteMetadata[locale] || siteMetadata['en'];
 }
 
@@ -77,12 +78,14 @@ export default async function LocaleLayout({
         <NextIntlClientProvider locale={locale}>
             <ThemeProvider attribute="class" defaultTheme="dark">
                 <ThemeBackground/>
-                <div className="min-h-screen flex flex-col transition-colors">
-                    <Header/>
-                    <main className="flex-1 p-8 transition-colors">{children}</main>
-                    <ScrollToTopButton/>
-                    <Footer/>
-                </div>
+                <PlayerProvider>
+                    <div className="min-h-screen flex flex-col transition-colors">
+                        <Header/>
+                        <main className="flex-1 p-8 transition-colors">{children}</main>
+                        <ScrollToTopButton/>
+                        <Footer/>
+                    </div>
+                </PlayerProvider>
             </ThemeProvider>
         </NextIntlClientProvider>
         </body>
