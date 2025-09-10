@@ -127,7 +127,7 @@ export default function GcpRoleQuiz() {
     const progress = Math.round(((current + 1) / questions.length) * 100);
 
     return (
-        <div className="max-w-xl mx-auto">
+        <div className="max-w-xl mx-auto overflow-hidden">
             <ProgressBar progress={progress} />
             <div className="text-right text-sm font-medium text-gray-600 dark:text-gray-400 mb-4">
                 {current + 1} з {questions.length}
