@@ -75,18 +75,16 @@ export default function QuizIntro({ startQuiz }: QuizIntroProps) {
             />
 
             <p className="text-md text-gray-600 dark:text-gray-400 mb-6">
-                {t.rich("about", {
-                    riasec: (
-                        <a
-                            href="https://en.wikipedia.org/wiki/Holland_Codes"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="underline text-blue-600 hover:text-blue-800"
-                        >
-                            <RIASECLetters />
-                        </a>
-                    ),
-                })}
+                {t.rich("about-1")}
+                <a
+                    href="https://en.wikipedia.org/wiki/Holland_Codes"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline text-blue-600 hover:text-blue-800"
+                >
+                    <RIASECLetters />
+                </a>
+                {t.rich("about-2")}
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
