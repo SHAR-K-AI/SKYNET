@@ -37,7 +37,6 @@ export default function GcpRoleQuiz() {
             .finally(() => setLoading(false));
     }, []);
 
-    // Відновлення результату з URL
     useEffect(() => {
         const encodedResult = searchParams.get("result");
         if (encodedResult) {
