@@ -10,7 +10,7 @@ import ProgressBar from "@/components/ProgressBar";
 interface OptionType {
     text: string;
     categories: string[];
-    hint?: string; // робимо опціональним
+    hint?: string;
 }
 
 interface QuestionType {
@@ -29,7 +29,6 @@ export default function GcpRoleQuiz() {
     const [answers, setAnswers] = useState<string[]>([]);
     const [result, setResult] = useState<Record<string, number> | null>(null);
 
-    // Завантаження питань (можна замінити на свій API)
     useEffect(() => {
         fetch("/api/test")
             .then(res => res.json())
@@ -104,7 +103,6 @@ export default function GcpRoleQuiz() {
         router.replace("/");
     };
 
-    // Рендер залежно від стану
     if (loading) return (
         <div className="flex justify-center items-center h-screen">
             <span className="loader"></span>
@@ -120,7 +118,6 @@ export default function GcpRoleQuiz() {
     if (result) return <QuizResult result={result} restartQuiz={restartQuiz} />;
     if (current === -1) return <QuizIntro startQuiz={startQuiz} />;
 
-    // Гарантовано беремо питання
     const q = questions[current];
     if (!q) return null;
 
