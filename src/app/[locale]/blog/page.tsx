@@ -7,8 +7,6 @@ export default async function GoogleBlogPage() {
     const posts = await getGoogleBlogPosts();
 
     return (
-        <main className="py-8 min-h-screen">
-            <GoogleBlogWidget posts={posts} />
-        </main>
+        <GoogleBlogWidget posts={posts}/>
     );
 }

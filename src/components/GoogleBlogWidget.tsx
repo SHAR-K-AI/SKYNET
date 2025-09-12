@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl';
 import React from "react";
 import { NewspaperIcon, ClockIcon, DocumentTextIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 
@@ -14,20 +15,21 @@ type WidgetProps = {
 };
 
 export default function GoogleBlogWidget({ posts, loading = false }: WidgetProps) {
+    const t = useTranslations('GoogleBlogWidget');
+
     return (
-        <div className="p-6 rounded-2xl mx-auto max-w-4xl transition-all duration-500 ease-in-out border-2 border-dashed border-white">
-            <h2 className="text-3xl font-extrabold mb-4 text-center text-blue-700 dark:text-blue-400 drop-shadow-md">
-                ✨ Новини від Google ✨
-            </h2>
+        <div className="space-y-10 p-6 rounded-2xl mx-auto max-w-4xl transition-all duration-500 ease-in-out border-2 border-dashed border-white">
+            <h1 className="text-4xl font-extrabold mb-4 text-center text-blue-700 dark:text-blue-400 drop-shadow-md">
+                {t('title')}
+            </h1>
 
             <p className="text-lg text-gray-700 dark:text-gray-300 text-center mb-6">
-                Отримуйте найсвіжіші новини та оновлення безпосередньо з офіційних блогів Google. Тут ви знайдете важливі анонси, корисні поради та цікаві історії, що стосуються продуктів і технологій, які змінили світ.
+                {t('description')}
             </p>
 
             <div className="mb-6 text-center">
                 <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
-                    Також є цікавий <span className="font-bold">офіційний блог Google Україна</span>,
-                    завдяки якому ви можете дізнаватись новини першими! Тисни
+                    {t('uaBlog')}
                 </p>
                 <a
                     href="https://ukraine.googleblog.com/"
@@ -42,14 +44,13 @@ export default function GoogleBlogWidget({ posts, loading = false }: WidgetProps
                     <span className="text-xl font-bold tracking-tight text-blue-600 dark:text-blue-400">g</span>
                     <span className="text-xl font-bold tracking-tight text-green-600 dark:text-green-400">l</span>
                     <span className="text-xl font-bold tracking-tight text-red-600 dark:text-red-400">e</span>
-                    <span className="text-gray-700 dark:text-gray-300 font-semibold text-lg ml-2">Україна</span>
+                    <span className="text-gray-700 dark:text-gray-300 font-semibold text-lg ml-2">{t('googleUa')}</span>
                     <ArrowTopRightOnSquareIcon className="h-6 w-6 text-gray-500 dark:text-gray-400 ml-2" />
                 </a>
             </div>
 
             <ul className="space-y-5">
                 {loading ? (
-                    // Ефект "скелетона"
                     Array.from({ length: 3 }).map((_, index) => (
                         <li
                             key={index}
@@ -61,20 +62,17 @@ export default function GoogleBlogWidget({ posts, loading = false }: WidgetProps
                         </li>
                     ))
                 ) : (
-                    // Відображення реальних постів
                     posts.map((post, index) => (
                         <li
                             key={post.link || index}
                             className="p-5 border border-gray-200 rounded-xl bg-white hover:bg-blue-50 hover:border-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:border-blue-700
                             hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 ease-in-out cursor-pointer group relative"
                         >
-                            {/* Іконка в правому верхньому куті */}
                             <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <ArrowTopRightOnSquareIcon className="h-6 w-6 text-gray-400 dark:text-gray-500" />
                             </div>
 
                             <a href={post.link} target="_blank" rel="noopener noreferrer">
-                                {/* Блок із заголовком та іконкою */}
                                 <div className="flex items-start mb-2">
                                     <NewspaperIcon className="h-6 w-6 text-blue-500 dark:text-blue-300 flex-shrink-0 mt-1 mr-2" />
                                     <h3 className="text-xl font-bold text-blue-600 group-hover:text-blue-800 dark:text-blue-300 dark:group-hover:text-blue-100 hover:underline transition-colors duration-300">

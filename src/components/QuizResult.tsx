@@ -16,6 +16,7 @@ import {
 
 import Badge from "@/components/Bage";
 import {useTranslations} from "next-intl";
+import {useState} from "react";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
@@ -140,6 +141,8 @@ const getRoleData = (role: string) => rolesData.find(item => item.role_name === 
 export default function QuizResult({result, restartQuiz}: QuizResultProps) {
     const labels = Object.keys(result);
     const data = Object.values(result);
+    const [copied, setCopied] = useState(false);
+
     const t = useTranslations('QuizResult');
 
     const sortedRoles = Object.entries(result).sort((a, b) => b[1] - a[1]).map(([role]) => role);
@@ -203,6 +206,16 @@ export default function QuizResult({result, restartQuiz}: QuizResultProps) {
 
     const shareUrl = typeof window !== "undefined" ? window.location.href : "";
 
+    const handleCopy = async () => {
+        try {
+            await navigator.clipboard.writeText(shareUrl);
+            setCopied(true);
+            setTimeout(() => setCopied(false), 3000); // повідомлення зникне через 3 сек
+        } catch (err) {
+            console.error("Failed to copy: ", err);
+        }
+    };
+
     return (
         <div className="max-w-4xl mx-auto p-6 bg-white/60 dark:bg-gray-900/60 rounded-xl shadow-lg mt-8 transition-colors duration-500">
             <motion.h1
@@ -260,16 +273,23 @@ export default function QuizResult({result, restartQuiz}: QuizResultProps) {
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-4 mt-12">
                 <button
                     onClick={restartQuiz}
-                    className="px-8 py-3 bg-blue-600 text-white font-semibold rounded-full shadow-lg hover:bg-blue-700 transition transform hover:scale-105"
+                    className="cursor-pointer px-8 py-3 bg-blue-600 text-white font-semibold rounded-full shadow-lg hover:bg-blue-700 transition transform hover:scale-105"
                 >
                     {t('retry')}
                 </button>
-                <button
-                    onClick={() => navigator.clipboard.writeText(shareUrl)}
-                    className="px-8 py-3 bg-green-600 text-white font-semibold rounded-full shadow-lg hover:bg-green-700 transition transform hover:scale-105"
-                >
-                    {t('shareResult')}
-                </button>
+                <div className="relative flex flex-col items-center">
+                    <button
+                        onClick={handleCopy}
+                        className="cursor-pointer px-8 py-3 bg-green-600 text-white font-semibold rounded-full shadow-lg hover:bg-green-700 transition transform hover:scale-105"
+                    >
+                        {t('shareResult')}
+                    </button>
+                    {copied && (
+                        <span className="absolute top-full mt-2 text-sm text-green-600 dark:text-green-400">
+                            ✅ {t('linkCopied')}
+                        </span>
+                    )}
+                </div>
             </div>
 
             <p className="text-center text-gray-500 dark:text-gray-400 text-sm my-6">

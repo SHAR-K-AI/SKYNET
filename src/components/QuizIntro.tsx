@@ -37,14 +37,14 @@ const RIASECCard = ({ type, title, description }: RIASECCardProps) => (
     <article className="p-5 bg-gray-50 dark:bg-gray-700 rounded-xl shadow-md hover:shadow-lg transition duration-300">
         <div className="flex items-center mb-2">
             <div
-                className={`flex items-center justify-center w-10 h-10 rounded-full ${RIASEC_COLORS[type]} bg-gray-200 dark:bg-gray-600  font-extrabold mr-3`}
+                className={`flex items-center justify-center w-10 h-10 rounded-full ${RIASEC_COLORS[type]} bg-gray-200 dark:bg-gray-100  font-extrabold mr-3`}
             >
                 {type}
             </div>
 
             <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100">{title}</h3>
         </div>
-        <p className="text-sm text-gray-600 dark:text-gray-300">{description}</p>
+        <p className="text-sm text-gray-600 dark:text-gray-300 text-left">{description}</p>
     </article>
 );
 
@@ -55,7 +55,7 @@ export default function QuizIntro({ startQuiz }: QuizIntroProps) {
     const RIASEC_KEYS = ["R", "I", "A", "S", "E", "C"];
 
     return (
-        <section className="max-w-3xl mx-auto p-6 text-center bg-white dark:bg-gray-800 rounded-2xl shadow-xl mt-10">
+        <section className="max-w-4xl mx-auto p-6 text-center bg-white dark:bg-gray-800 rounded-2xl shadow-xl mt-10">
             <motion.h1
                 className="text-3xl md:text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-red-500 to-green-500"
                 initial={{ opacity: 0, y: -20 }}
@@ -100,7 +100,7 @@ export default function QuizIntro({ startQuiz }: QuizIntroProps) {
 
             <button
                 onClick={startQuiz}
-                className=" cursor-pointer w-full sm:w-auto px-12 py-4 bg-blue-600 text-white font-bold rounded-full shadow-lg hover:bg-blue-700 transition transform hover:scale-105"
+                className="cursor-pointer w-full sm:w-auto px-12 py-4 bg-blue-600 text-white font-bold rounded-full shadow-lg hover:bg-blue-700 transition transform hover:scale-105"
             >
                 {t("start")}
             </button>

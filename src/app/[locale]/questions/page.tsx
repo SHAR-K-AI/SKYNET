@@ -89,7 +89,7 @@ export default function FAQPage() {
         <div className="min-h-screen text-gray-900 dark:text-gray-100 transition-colors duration-500">
             <div className="space-y-10 p-6 rounded-2xl mx-auto max-w-4xl transition-all duration-500 ease-in-out border-2 border-dashed border-white">
                 <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} className="space-y-3 text-center">
-                    <h1 className="text-4xl font-extrabold bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent">
+                    <h1 className="text-4xl font-extrabold mb-4 text-center text-blue-700 dark:text-blue-400 drop-shadow-md">
                         ✨ {t("Title")} ✨
                     </h1>
                 </motion.div>

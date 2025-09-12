@@ -27,7 +27,7 @@
     "id": "7b2d4f1a-0c9e-4d3b-a7a2-1c3f5b8d6e4f",
     "title": "Google Cloud Innovators",
     "link": "https://cloud.google.com/innovators",
-    "imageUrl": "/images/innovators.jpg",
+    "imageUrl": "/images/innovators.png",
     "description": "A community for professionals offering access to exclusive content, events, expert support, and professional development opportunities.",
     "content": "Google Cloud Innovators provides a community of professionals for knowledge sharing, learning, and access to Google Cloud resources. Participants can attend webinars and events, take part in hackathons, use learning materials, and explore case studies from leading companies.\n\nKey features:\n- Professional community for knowledge exchange\n- Exclusive content and learning materials\n- Events, webinars, and hackathons\n- Expert and mentor support\n- Professional development and certification opportunities\n\nThe program helps participants quickly develop skills, build professional connections, and apply knowledge in real-world projects."
   },
@@ -51,7 +51,7 @@
     "id": "2d7c6e4f-1b5a-4d3f-9a7b-3c8e5f2a1d9b",
     "title": "Women Techmakers",
     "link": "https://www.womentechmakers.com/",
-    "imageUrl": "/images/women-tech.jpg",
+    "imageUrl": "/images/women-tech.png",
     "description": "A program for women providing access to learning resources, community, events, and Google tools.",
     "content": "Google's Women Techmakers Program offers resources, mentorship, and community support for women in technology. The program aims to empower women by providing opportunities for learning, networking, and professional growth.\n\nKey features:\n- Learning resources including workshops, tutorials, and guides\n- Access to a global community of women in tech for collaboration and support\n- Participation in events, webinars, and conferences to expand skills and network\n- Opportunities to work with Google tools and platforms to develop projects\n- Mentorship and guidance from experienced professionals in the tech industry\n\nThe program helps women build technical skills, gain confidence, connect with peers, and contribute to innovative projects, fostering growth in their careers and the tech community."
   },
@@ -75,7 +75,7 @@
     "id": "a1b2c3d4-e5f6-4a7b-9c8d-0e1f2a3b4c5d",
     "title": "Google Ukraine Blog",
     "link": "https://ukraine.googleblog.com/",
-    "imageUrl": "/images/blog.jpeg",
+    "imageUrl": "/images/blog.png",
     "description": "The official Google blog for Ukraine with news and updates.",
     "content": "The Google Ukraine Blog publishes news, updates, and useful information about Google services, partnerships, initiatives, and events for Ukrainian users. The blog helps readers stay informed about the latest technology solutions, new products, and opportunities for business, education, and personal use.\n\nKey features:\n- Updates and news about Google services\n- Information on partnerships and local initiatives\n- Practical tips and guides for users and businesses\n- Announcements of events, competitions, and educational programs\n- Success stories and case studies from Ukrainian companies and startups\n\nThe blog allows Ukrainian users to access current information, find inspiration for their own projects, and effectively use Google products and services."
   },
