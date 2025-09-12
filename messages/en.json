@@ -1,15 +1,15 @@
 {
-   "MainPage": {
-     "title": "Resources",
-     "welcomeTitle": "Welcome to the fun GCP & AI fan site! 🎉",
-     "welcomeText": "No strict rules or boring instructions here. This is a place for learning, fun, and small victories in the world of cloud technologies.",
-     "whatYouWillFind": "What you'll find here:",
-     "resourcesAndGuides": "A curated selection of resources, guides, and tools that might come in handy anytime.",
-     "funContent": "Some fun content to make learning not only useful but also enjoyable 😎",
-     "usefulLinks": "Useful links to various interesting resources, answers to frequently asked questions, and much more.",
-     "fanInitiative": "This is a small fan initiative for everyone who wants to learn stress-free and enjoy the process.",
-     "joinAndLearn": "Join in, learn, and have fun! 🚀"
-   },
+  "MainPage": {
+    "title": "Resources",
+    "welcomeTitle": "Welcome to the fun GCP & AI fan site! 🎉",
+    "welcomeText": "No strict rules or boring instructions here. This is a place for learning, fun, and small victories in the world of cloud technologies.",
+    "whatYouWillFind": "What you'll find here:",
+    "resourcesAndGuides": "A curated selection of resources, guides, and tools that might come in handy anytime.",
+    "funContent": "Some fun content to make learning not only useful but also enjoyable 😎",
+    "usefulLinks": "Useful links to various interesting resources, answers to frequently asked questions, and much more.",
+    "fanInitiative": "This is a small fan initiative for everyone who wants to learn stress-free and enjoy the process.",
+    "joinAndLearn": "Join in, learn, and have fun! 🚀"
+  },
   "AboutPage": {
     "title": "About this fan site",
     "intro": "This site was created to help you explore GCP, AI, and related technologies in a fun and relaxed way.",
@@ -79,5 +79,105 @@
     "fallbackTitle": "No data available",
     "fallbackDescription": "Unable to load trends. Please try again later.",
     "fallbackExtendedDescription": "The Google Trends service is temporarily unavailable. Usually, you can view the most popular search queries of Ukrainian users in real time, analyze interest dynamics, and find related news."
+  },
+  "QuizIntro": {
+    "title": "GCP Career Matchmaker: Find Your Ideal Role!",
+    "intro": "Have you ever wondered which role in the Google Cloud Platform world suits you best?",
+    "about-1": "This quiz is based on the ",
+    "about-2": " model, which helps identify your professional interests. Take the quiz to find your ideal role!",
+    "start": "Start Quiz",
+    "riasec": {
+      "R": {
+        "title": "Realistic",
+        "description": "Hands-on work with infrastructure, server setup, and process automation in the cloud."
+      },
+      "I": {
+        "title": "Investigative",
+        "description": "Data analysis, working with BigQuery, machine learning, and optimizing GCP services."
+      },
+      "A": {
+        "title": "Artistic",
+        "description": "Creative development of cloud applications, architecture design, and UI/UX solutions."
+      },
+      "S": {
+        "title": "Social",
+        "description": "Collaborating with teams, user support, implementing solutions, and conducting GCP training."
+      },
+      "E": {
+        "title": "Enterprising",
+        "description": "Leadership in cloud projects, managing teams, and strategic planning on GCP."
+      },
+      "C": {
+        "title": "Conventional",
+        "description": "Documenting processes, monitoring services, and maintaining cloud standards and procedures."
+      }
+    }
+  },
+  "QuizResult": {
+    "congratulations": "Congratulations!",
+    "yourResult": "Here is your result:",
+    "mainProfile": "Your main profile",
+    "additionalRoles": "Your additional roles",
+    "descriptionUnavailable": "Description unavailable.",
+    "noAdditionalRoles": "No additional roles",
+    "retry": "Take again",
+    "shareResult": "Share your result",
+    "copyLink": "Copy the link or share it with friends!",
+    "roles": {
+      "CloudDigitalLeader": {
+        "description": "You lead digital transformation, manage teams, and implement innovations."
+      },
+      "GenerativeAILeader": {
+        "description": "You manage AI and generative model projects."
+      },
+      "GoogleWorkspaceAdministrator": {
+        "description": "You manage Google Workspace services for a team or organization."
+      },
+      "CloudDeveloper": {
+        "description": "You develop diverse applications, write code, and build functional solutions."
+      },
+      "StartupCloudEngineer": {
+        "description": "You quickly implement cloud solutions for startups and innovations."
+      },
+      "DataAnalyst": {
+        "description": "You analyze data, create reports, and help the business make decisions."
+      },
+      "DevOpsEngineer": {
+        "description": "You automate development and delivery processes, integrate CI/CD."
+      },
+      "APIDeveloper": {
+        "description": "You specialize in integrations and APIs, solving complex technical tasks."
+      },
+      "ContactCenterEngineer": {
+        "description": "You ensure stable operation of contact centers and communication systems."
+      },
+      "SecurityEngineer": {
+        "description": "You protect systems, find vulnerabilities, and implement security measures."
+      },
+      "NetworkEngineer": {
+        "description": "You configure networks, ensure security and connection stability."
+      },
+      "DatabaseEngineer": {
+        "description": "You manage databases, optimize performance and reliability."
+      },
+      "CloudArchitect": {
+        "description": "You design cloud architectures, optimize systems, and manage scaling."
+      },
+      "HybridMultiCloudArchitect": {
+        "description": "You design hybrid and multi-cloud solutions for complex systems."
+      },
+      "MachineLearningEngineer": {
+        "description": "You build ML models and integrate them into products."
+      },
+      "CloudEngineer": {
+        "description": "You are a practical cloud systems engineer, setting up and maintaining infrastructure."
+      },
+      "CitizenDeveloper": {
+        "description": "You create no-code solutions and help automate business processes."
+      },
+      "DataEngineer": {
+        "description": "You build data pipelines and ensure data quality for analytics and ML."
+      }
+    }
   }
 }

@@ -131,7 +131,7 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({childre
                         className="cursor-pointer fixed bottom-6 left-6 w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center shadow-2xl hover:scale-105 transition-transform z-50"
                         onClick={showPlayer}
                     >
-                        <MusicalNoteIcon className="w-4 h-4 text-white animate-pulse"/>
+                        <MusicalNoteIcon className="w-5 h-5 text-white animate-pulse"/>
                     </button>
                 </SoundWrapper>
             )}
@@ -271,7 +271,7 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({childre
                         className="cursor-pointer fixed bottom-6 left-6 w-12 h-12 rounded-full flex items-center justify-center shadow-md hover:scale-105 transition-transform z-50 animate-pulse-spin"
                         onClick={() => setVisible(false)}
                     >
-                        <MusicalNoteIcon className="w-4 h-4 text-white"/>
+                        <MusicalNoteIcon className="w-5 h-5 text-white"/>
                         <style jsx>{`
                             @keyframes spinPulse {
                                 0% {

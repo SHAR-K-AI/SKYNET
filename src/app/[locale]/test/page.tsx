@@ -99,7 +99,7 @@ export default function GcpRoleQuiz() {
         setCurrent(-1);
         setAnswers([]);
         setResult(null);
-        router.replace("/");
+        router.replace("/test");
     };
 
     if (loading) return (
