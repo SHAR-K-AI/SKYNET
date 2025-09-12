@@ -159,8 +159,7 @@ export default function QuizResult({result, restartQuiz}: QuizResultProps) {
     const barColors = data.map(getLevelColor);
     const roleColors: Record<string, string> = {};
     labels.forEach((role, i) => roleColors[role] = barColors[i]);
-    // const additionalRoles = labels.filter(role => role !== mainRole && roleColors[role] === "#0F9D58");
-    const additionalRoles = labels;
+    const additionalRoles = labels.filter(role => role !== mainRole && roleColors[role] === "#0F9D58");
 
     const chartData = {
         labels,
