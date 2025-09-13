@@ -1,55 +1,59 @@
 'use client';
 
-import React from 'react';
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
-export default function PrivacyPolicyPage() {
+export default function PrivacyPage() {
+    const t = useTranslations("Privacy");
+
     return (
-        <div className="min-h-screen max-w-4xl mx-auto text-gray-900 dark:text-gray-100 p-8 sm:p-12 space-y-8">
-            <motion.h1
-                className="text-4xl sm:text-5xl font-bold text-center mb-8"
+        <div className="min-h-screen text-gray-800 dark:text-gray-200 px-6 py-12">
+            <motion.div
+                className="max-w-3xl mx-auto space-y-8"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.6 }}
             >
-                Політика конфіденційності
-            </motion.h1>
+                <h1 className="text-3xl font-bold text-center">{t("title")}</h1>
+                <p>{t("intro", { site: "SkyNet" })}</p>
 
-            <motion.p
-                className="text-lg sm:text-xl leading-relaxed"
-                initial="hidden"
-                animate="visible"
-                custom={1}
-            >
-                Цей фан-сайт <strong>Skynet</strong> не збирає особисті дані користувачів. Ми не зберігаємо email, IP-адреси чи будь-яку іншу персональну інформацію.
-            </motion.p>
+                <section>
+                    <h2 className="text-xl font-semibold mb-2">{t("section1.title")}</h2>
+                    <ul className="list-disc list-inside space-y-1">
+                        <li>{t("section1.point1")}</li>
+                        <li>{t("section1.point2")}</li>
+                    </ul>
+                </section>
 
-            <motion.p
-                className="text-lg sm:text-xl leading-relaxed"
-                initial="hidden"
-                animate="visible"
-                custom={2}
-            >
-                Ми використовуємо лише сторонні бібліотеки для візуалізації та анімацій, які не передають персональні дані. Всі дані, що вводяться у навчальні приклади (наприклад, в інтерактивних демо), залишаються лише на вашому пристрої.
-            </motion.p>
+                <section>
+                    <h2 className="text-xl font-semibold mb-2">{t("section2.title")}</h2>
+                    <p>{t("section2.text")}</p>
+                </section>
 
-            <motion.p
-                className="text-lg sm:text-xl leading-relaxed"
-                initial="hidden"
-                animate="visible"
-                custom={3}
-            >
-                Використовуючи цей сайт, ви погоджуєтесь із тим, що ваша активність на сайті не передається третім особам і не використовується для маркетингових цілей.
-            </motion.p>
+                <section>
+                    <h2 className="text-xl font-semibold mb-2">{t("section3.title")}</h2>
+                    <p>{t("section3.text")}</p>
+                </section>
 
-            <motion.p
-                className="text-lg sm:text-xl leading-relaxed"
-                initial="hidden"
-                animate="visible"
-                custom={4}
-            >
-                Ця політика може час від часу оновлюватися, тому радимо переглядати її перед новими візитами на сайт.
-            </motion.p>
+                <section>
+                    <h2 className="text-xl font-semibold mb-2">{t("section4.title")}</h2>
+                    <p>{t("section4.text")}</p>
+                </section>
+
+                <section>
+                    <h2 className="text-xl font-semibold mb-2">{t("section5.title")}</h2>
+                    <p>{t("section5.text")}</p>
+                </section>
+
+                <section>
+                    <h2 className="text-xl font-semibold mb-2">{t("section6.title")}</h2>
+                    <p>{t("section6.text")}</p>
+                </section>
+
+                <p className="text-center text-sm text-gray-500 dark:text-gray-400 mt-12">
+                    {t("lastUpdated", { date: new Date().toLocaleDateString() })}
+                </p>
+            </motion.div>
         </div>
     );
 }

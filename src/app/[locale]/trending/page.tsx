@@ -43,7 +43,7 @@ export default async function UATrending() {
     }
 
     return (
-        <div className="mx-auto p-6 border border-dashed rounded-3xl">
+        <div className="mx-auto p-6 border-2 border-dashed border-white rounded-3xl">
             <h1 className="text-4xl font-extrabold mb-4 text-center text-blue-700 dark:text-blue-400 drop-shadow-md">
                 Google Trends — Україна
             </h1>
@@ -79,7 +79,7 @@ export default async function UATrending() {
                 {trends.map((t, idx) => (
                     <div
                         key={idx}
-                        className="rounded-2xl overflow-hidden shadow hover:shadow-xl transition-transform hover:scale-105 bg-white dark:bg-gray-800 flex flex-col"
+                        className="rounded-2xl overflow-hidden shadow hover:shadow-xl transition-transform hover:scale-105 bg-white/90 dark:bg-gray-800/90 flex flex-col"
                     >
                         {t.picture && (
                             <img
@@ -116,7 +116,7 @@ export default async function UATrending() {
                                     <h3 className="font-medium mb-1 text-gray-700 dark:text-gray-300 text-sm">
                                         Новини:
                                     </h3>
-                                    <div className="space-y-1 max-h-28 overflow-y-auto pr-1">
+                                    <div className="space-y-1 pr-1">
                                         {t.news
                                             .filter((n) => {
                                                 const url = Array.isArray(n.url) ? n.url[0] : n.url;

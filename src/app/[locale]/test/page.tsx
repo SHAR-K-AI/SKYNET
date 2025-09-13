@@ -1,11 +1,12 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { useRouter, useSearchParams } from "next/navigation";
+import {useEffect, useState} from 'react';
+import {useRouter, useSearchParams} from "next/navigation";
 import QuizIntro from "@/components/QuizIntro";
 import QuizQuestion from "@/components/QuizQuestion";
 import QuizResult from "@/components/QuizResult";
 import ProgressBar from "@/components/ProgressBar";
+import Spinner from "@/components/Spinner";
 
 interface OptionType {
     text: string;
@@ -103,9 +104,7 @@ export default function GcpRoleQuiz() {
     };
 
     if (loading) return (
-        <div className="flex justify-center items-center h-screen">
-            <span className="loader"></span>
-        </div>
+        <Spinner/>
     );
 
     if (!questions.length) return (
@@ -114,8 +113,8 @@ export default function GcpRoleQuiz() {
         </div>
     );
 
-    if (result) return <QuizResult result={result} restartQuiz={restartQuiz} />;
-    if (current === -1) return <QuizIntro startQuiz={startQuiz} />;
+    if (result) return <QuizResult result={result} restartQuiz={restartQuiz}/>;
+    if (current === -1) return <QuizIntro startQuiz={startQuiz}/>;
 
     const q = questions[current];
     if (!q) return null;
@@ -124,7 +123,7 @@ export default function GcpRoleQuiz() {
 
     return (
         <div className="max-w-4xl mx-auto overflow-hidden">
-            <ProgressBar progress={progress} />
+            <ProgressBar progress={progress}/>
             <div className="text-right text-sm font-medium text-gray-600 dark:text-gray-400 mb-4">
                 {current + 1} з {questions.length}
             </div>

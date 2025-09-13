@@ -199,5 +199,63 @@
     "description": "Get the latest news and updates directly from Google’s official blogs. Here you’ll find important announcements, helpful tips, and inspiring stories about products and technologies that have changed the world.",
     "uaBlog": "There is also the official Google Ukraine blog, where you can be the first to get updates! Click here",
     "googleUa": "Ukraine"
+  },
+  "Privacy": {
+    "title": "Privacy Policy",
+    "intro": "This fan site {site} respects your privacy. We strive to provide safe and comfortable use of the site without collecting unnecessary information about you.",
+    "section1": {
+      "title": "1. What data we collect",
+      "point1": "We do not collect personal data from users.",
+      "point2": "Visiting the site is possible without registration or entering personal data."
+    },
+    "section2": {
+      "title": "2. Use of cookies",
+      "text": "The site may use technical cookies for proper functioning (for example, saving language preferences or theme settings). These cookies do not contain personal data. You can disable cookies in your browser settings."
+    },
+    "section3": {
+      "title": "3. Third-party services",
+      "text": "The site may include embedded third-party services (YouTube, social buttons, analytics). They may collect anonymous data under their own policies. We do not control this processing and recommend reviewing the privacy policies of the respective services."
+    },
+    "section4": {
+      "title": "4. Use of data",
+      "text": "All information that may be collected automatically (e.g., visit statistics) is used only to improve the site and is not shared with third parties."
+    },
+    "section5": {
+      "title": "5. Security",
+      "text": "We take measures to protect the site from unauthorized access or misuse of information. However, complete security of data transmission over the Internet cannot be guaranteed."
+    },
+    "section6": {
+      "title": "6. Changes to the policy",
+      "text": "This policy may be updated. We recommend reviewing it periodically before new visits to the site."
+    },
+    "lastUpdated": "Last updated: {date}"
+  },
+  "Terms": {
+    "title": "Terms of Use",
+    "intro": "This fan site {site} is created exclusively for educational and entertainment purposes. All materials on the site are unofficial and are not affiliated with commercial companies or rights holders.",
+    "sec1": {
+      "title": "1. Non-commercial nature",
+      "p1": "The site has no commercial purpose.",
+      "p2": "All materials are posted for informational and personal use only.",
+      "p3": "Use of brands, logos or names is carried out under the principles of fair use."
+    },
+    "sec2": {
+      "title": "2. Responsible use",
+      "text": "Users agree to use the site only for lawful purposes. It is forbidden to use information obtained for unlawful actions, infringement of third-party rights or distribution of harmful content."
+    },
+    "sec3": {
+      "title": "3. Disclaimer",
+      "text": "The site administration is not responsible for any consequences of using the site's materials. All information is provided \"as is\" without any warranties of accuracy, completeness or fitness for a particular purpose."
+    },
+    "sec4": {
+      "title": "4. External links",
+      "text": "The site may contain links to external resources. We do not control the content or policies of those resources and are not responsible for them."
+    },
+    "sec5": {
+      "title": "5. Changes to the terms",
+      "text": "We reserve the right to modify these terms of use at any time without prior notice. We recommend periodically reviewing this section to stay informed of updates."
+    },
+    "confirmation": "By using the site, you confirm that you have read these terms and agree to comply with them.",
+    "lastUpdated": "Last updated: {date}"
   }
 }

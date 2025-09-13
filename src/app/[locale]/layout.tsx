@@ -1,4 +1,4 @@
-import type {Metadata} from "next";
+// import type {Metadata} from "next";
 import {Roboto, Roboto_Mono} from "next/font/google";
 import "../globals.css";
 import {ThemeProvider} from "next-themes";
@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import Script from "next/script";
 import {PlayerProvider} from "@/components/PlayerProvider";
+import WelcomeModalWrapper from "@/components/WelcomeModal";
 
 const roboto = Roboto({
     variable: "--font-roboto",
@@ -21,37 +22,39 @@ const robotoMono = Roboto_Mono({
     weight: ["400", "700"],
 });
 
-interface MetadataByLocale {
-    [locale: string]: Metadata;
-}
+// interface MetadataByLocale {
+//     [locale: string]: Metadata;
+// }
 
-const siteMetadata: MetadataByLocale = {
-    en: {
-        title: "SkyNet",
-        description: "Fan site for learning GCP, AI, and cloud technologies",
-    },
-    ua: {
-        title: "SkyNet",
-        description: "Фан-сайт Skynet для навчання GCP, AI та хмарних технологій",
-    },
-};
+// const siteMetadata: MetadataByLocale = {
+//     en: {
+//         title: "SkyNet",
+//         description: "Fan site for learning GCP, AI, and cloud technologies",
+//     },
+//     ua: {
+//         title: "SkyNet",
+//         description: "Фан-сайт Skynet для навчання GCP, AI та хмарних технологій",
+//     },
+// };
 
-interface PageProps {
-    params: { locale: string };
-}
+// interface PageProps {
+//     params: { locale: string };
+// }
 
-export function generateMetadata({params}: PageProps): Metadata {
-    const {locale} = params;
-    return siteMetadata[locale] || siteMetadata['en'];
-}
+// export function generateMetadata({params}: PageProps): Metadata {
+//     const {locale} = params;
+//     return siteMetadata[locale] || siteMetadata['en'];
+// }
 
-export default async function LocaleLayout({
-                                               children,
-                                               params,
-                                           }: {
-    children: React.ReactNode;
-    params: Promise<{ locale: string }>;
-}) {
+export default async function LocaleLayout(
+    {
+        children,
+        params,
+    }: {
+        children: React.ReactNode;
+        params: Promise<{ locale: string }>;
+    }
+) {
     const {locale} = await params;
 
     return (
@@ -84,6 +87,7 @@ export default async function LocaleLayout({
                         <main className="flex-1 p-8 transition-colors">{children}</main>
                         <ScrollToTopButton/>
                         <Footer/>
+                        <WelcomeModalWrapper />
                     </div>
                 </PlayerProvider>
             </ThemeProvider>

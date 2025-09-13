@@ -1,55 +1,62 @@
 'use client';
 
-import React from 'react';
+import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 
-export default function TermsOfUsePage() {
+export default function TermsPage() {
+    const t = useTranslations('Terms');
+
     return (
-        <div className="min-h-screen max-w-4xl mx-auto text-gray-900 dark:text-gray-100 p-8 sm:p-12 space-y-8">
-            <motion.h1
-                className="text-4xl sm:text-5xl font-bold text-center mb-8"
-                initial={{ opacity: 0, y: 20 }}
+        <div className="min-h-screen text-gray-800 dark:text-gray-200 px-6 py-12">
+            <motion.div
+                className="max-w-3xl mx-auto space-y-8"
+                initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.5 }}
             >
-                Умови використання
-            </motion.h1>
+                <h1 className="text-3xl font-bold text-center">{t('title')}</h1>
 
-            <motion.p
-                className="text-lg sm:text-xl leading-relaxed"
-                initial="hidden"
-                animate="visible"
-                custom={1}
-            >
-                Цей фан-сайт <strong>Skynet</strong> створено для навчальних та розважальних цілей. Усі матеріали на сайті є неофіційними та не пов’язані з комерційними компаніями або правовласниками.
-            </motion.p>
+                <p className="leading-relaxed">
+                    {t('intro', { site: 'SkyNet' })}
+                </p>
 
-            <motion.p
-                className="text-lg sm:text-xl leading-relaxed"
-                initial="hidden"
-                animate="visible"
-                custom={2}
-            >
-                Всі користувачі погоджуються використовувати сайт відповідально. Не рекомендується застосовувати отримані знання для незаконних дій.
-            </motion.p>
+                <section>
+                    <h2 className="text-xl font-semibold mb-2">{t('sec1.title')}</h2>
+                    <ul className="list-disc list-inside space-y-2">
+                        <li>{t('sec1.p1')}</li>
+                        <li>{t('sec1.p2')}</li>
+                        <li>{t('sec1.p3')}</li>
+                    </ul>
+                </section>
 
-            <motion.p
-                className="text-lg sm:text-xl leading-relaxed"
-                initial="hidden"
-                animate="visible"
-                custom={3}
-            >
-                Власники сайту не несуть відповідальності за будь-які наслідки, пов’язані з використанням інформації та матеріалів на сайті.
-            </motion.p>
+                <section>
+                    <h2 className="text-xl font-semibold mb-2">{t('sec2.title')}</h2>
+                    <p className="leading-relaxed">{t('sec2.text')}</p>
+                </section>
 
-            <motion.p
-                className="text-lg sm:text-xl leading-relaxed"
-                initial="hidden"
-                animate="visible"
-                custom={4}
-            >
-                Використовуючи сайт, ви підтверджуєте, що ознайомились із цими умовами і погоджуєтесь їх дотримуватися.
-            </motion.p>
+                <section>
+                    <h2 className="text-xl font-semibold mb-2">{t('sec3.title')}</h2>
+                    <p className="leading-relaxed">{t('sec3.text')}</p>
+                </section>
+
+                <section>
+                    <h2 className="text-xl font-semibold mb-2">{t('sec4.title')}</h2>
+                    <p className="leading-relaxed">{t('sec4.text')}</p>
+                </section>
+
+                <section>
+                    <h2 className="text-xl font-semibold mb-2">{t('sec5.title')}</h2>
+                    <p className="leading-relaxed">{t('sec5.text')}</p>
+                </section>
+
+                <p className="text-center text-sm text-gray-500 dark:text-gray-400 mt-8">
+                    {t('confirmation')}
+                </p>
+
+                <p className="text-center text-sm text-gray-500 dark:text-gray-400 mt-4">
+                    {t('lastUpdated', { date: new Date().toLocaleDateString('uk-UA') })}
+                </p>
+            </motion.div>
         </div>
     );
 }

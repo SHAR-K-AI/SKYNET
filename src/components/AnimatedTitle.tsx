@@ -18,7 +18,7 @@ export default function AnimatedTitle() {
 
     const googleText = 'Google'.split('');
     const hoverText = 'SkyNet'.split('');
-    const letters = hovered ? hoverText : googleText;
+    const letters = hovered ? googleText  : hoverText;
 
     return (
         <SoundWrapper playOn="hover">
