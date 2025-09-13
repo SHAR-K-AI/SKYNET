@@ -1,8 +1,11 @@
 'use client';
 
-import React, {createContext, useContext, useState, useRef} from "react";
-import ReactPlayer from "react-player";
+import tracks from "@/../data/tracks.json";
+
 import classNames from "classnames";
+import ReactPlayer from "react-player";
+import React, { createContext, useContext, useState, useRef, useEffect } from "react";
+
 import {
     PlayIcon,
     PauseIcon,
@@ -31,45 +34,27 @@ interface PlayerContextType {
     trackIndex: number;
 }
 
-const tracks = [
-    {title: "Трек 1", url: "https://www.youtube.com/watch?v=04qpTNRC5-0"},
-    {title: "Трек 2", url: "https://www.youtube.com/watch?v=TTccdFybPUo"},
-    {title: "Трек 3", url: "https://www.youtube.com/watch?v=IizQs_N52no"},
-    {title: "Трек 4", url: "https://www.youtube.com/watch?v=gqI3GNcK_L0"},
-    {title: "Трек 5", url: "https://www.youtube.com/watch?v=2y56wHAw_FQ"},
-    {title: "Трек 6", url: "https://www.youtube.com/watch?v=fKGc_xaQkUU"},
-    {title: "Трек 7", url: "https://www.youtube.com/watch?v=4LRVoGyRIqk"},
-];
-
 const PlayerContext = createContext<PlayerContextType>({
     playing: false,
-    setPlaying: () => {
-    },
+    setPlaying: () => {},
     url: "",
-    setUrl: () => {
-    },
+    setUrl: () => {},
     playedSeconds: 0,
-    setPlayedSeconds: () => {
-    },
+    setPlayedSeconds: () => {},
     open: false,
-    togglePlayer: () => {
-    },
-    nextTrack: () => {
-    },
-    prevTrack: () => {
-    },
-    showPlayer: () => {
-    },
+    togglePlayer: () => {},
+    nextTrack: () => {},
+    prevTrack: () => {},
+    showPlayer: () => {},
     trackIndex: 0,
 });
 
 export const usePlayer = () => useContext(PlayerContext);
 
-export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({children}) => {
+export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [playing, setPlaying] = useState(true);
     const [url, setUrl] = useState(tracks[0].url);
     const [playedSeconds, setPlayedSeconds] = useState(0);
-
     const [open, setOpen] = useState(false);
     const [visible, setVisible] = useState(false);
     const [trackIndex, setTrackIndex] = useState(0);
@@ -77,6 +62,24 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({childre
     const [loop, setLoop] = useState(false);
 
     const playerRef = useRef(null);
+
+    const trackRefs = useRef<HTMLButtonElement[]>([]);
+    trackRefs.current = [];
+
+    const addToRefs = (el: HTMLButtonElement) => {
+        if (el && !trackRefs.current.includes(el)) {
+            trackRefs.current.push(el);
+        }
+    };
+
+    useEffect(() => {
+        if (trackRefs.current[trackIndex]) {
+            trackRefs.current[trackIndex].scrollIntoView({
+                behavior: "smooth",
+                block: "nearest",
+            });
+        }
+    }, [trackIndex, showList]);
 
     const togglePlayer = () => setOpen((prev) => !prev);
     const showPlayer = () => {
@@ -139,12 +142,11 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({childre
             {open && (
                 <div
                     className={classNames(
-                        {invisible: visible},
+                        { invisible: visible },
                         "fixed bottom-4 left-4 w-80 shadow-2xl rounded-xl overflow-hidden z-50 bg-white/90 backdrop-blur-md dark:bg-gray-900/80 transition-all"
                     )}
                 >
-                    <div
-                        className="flex items-center justify-between px-3 py-2 bg-gradient-to-r from-white/60 to-gray-100/40 dark:from-black/40 dark:to-gray-800/40">
+                    <div className="flex items-center justify-between px-3 py-2 bg-gradient-to-r from-white/60 to-gray-100/40 dark:from-black/40 dark:to-gray-800/40">
                         <div className="flex gap-1">
                             <SoundWrapper playOn="click">
                                 <button
@@ -232,23 +234,30 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({childre
                     </div>
 
                     {showList && (
-                        <div
-                            className="max-h-40 overflow-y-auto bg-gray-50 dark:bg-gray-800 px-3 py-2 border-b border-gray-200 dark:border-gray-700">
+                        <div className="max-h-60 overflow-y-auto bg-gray-50 dark:bg-gray-900 px-3 py-2 border-b border-gray-200 dark:border-gray-700">
                             {tracks.map((t, i) => (
                                 <button
                                     key={i}
-                                    className={classNames(
-                                        "cursor-pointer w-full text-left py-1 px-2 rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition",
-                                        trackIndex === i ? "bg-gray-300 dark:bg-gray-700 font-semibold" : ""
-                                    )}
+                                    ref={addToRefs}
                                     onClick={() => selectTrack(i)}
+                                    className={classNames(
+                                        "w-full flex flex-col justify-between py-2 px-3 mb-1 rounded-lg transition-all duration-200 cursor-pointer",
+                                        "hover:bg-gradient-to-r hover:from-blue-100/50 hover:to-indigo-100/50 dark:hover:from-blue-800/40 dark:hover:to-indigo-800/40",
+                                        trackIndex === i ? "bg-blue-200/40 dark:bg-blue-700/40 font-semibold" : "bg-white/0 dark:bg-gray-900/0"
+                                    )}
                                 >
-                                    {t.title}
+                                    <div className="flex items-center justify-between">
+                                        <span className="text-gray-800 dark:text-gray-100 truncate" title={t.title}>
+                                            {t.title}
+                                        </span>
+                                    </div>
+                                    <span className="text-xs text-gray-400 dark:text-gray-500 mt-1 line-clamp-1">
+                                        {t.genre}
+                                    </span>
                                 </button>
                             ))}
                         </div>
                     )}
-
                     <ReactPlayer
                         ref={playerRef}
                         src={url}
@@ -274,31 +283,13 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({childre
                         <MusicalNoteIcon className="w-5 h-5 text-white"/>
                         <style jsx>{`
                             @keyframes spinPulse {
-                                0% {
-                                    transform: rotate(0deg) scale(1);
-                                    background-color: #4285f4;
-                                }
-                                25% {
-                                    transform: rotate(90deg) scale(1.1);
-                                    background-color: #ea4335;
-                                }
-                                50% {
-                                    transform: rotate(180deg) scale(1);
-                                    background-color: #fbbc05;
-                                }
-                                75% {
-                                    transform: rotate(270deg) scale(1.1);
-                                    background-color: #34a853;
-                                }
-                                100% {
-                                    transform: rotate(360deg) scale(1);
-                                    background-color: #4285f4;
-                                }
+                                0% { transform: rotate(0deg) scale(1); background-color: #4285f4; }
+                                25% { transform: rotate(90deg) scale(1.1); background-color: #ea4335; }
+                                50% { transform: rotate(180deg) scale(1); background-color: #fbbc05; }
+                                75% { transform: rotate(270deg) scale(1.1); background-color: #34a853; }
+                                100% { transform: rotate(360deg) scale(1); background-color: #4285f4; }
                             }
-
-                            .animate-pulse-spin {
-                                animation: spinPulse 4s infinite linear;
-                            }
+                            .animate-pulse-spin { animation: spinPulse 4s infinite linear; }
                         `}</style>
                     </button>
                 </SoundWrapper>
