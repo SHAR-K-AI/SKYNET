@@ -4,7 +4,7 @@ import tracks from "@/../data/tracks.json";
 
 import classNames from "classnames";
 import ReactPlayer from "react-player";
-import React, { createContext, useContext, useState, useRef, useEffect } from "react";
+import React, {createContext, useContext, useState, useRef, useEffect} from "react";
 
 import {
     PlayIcon,
@@ -36,22 +36,29 @@ interface PlayerContextType {
 
 const PlayerContext = createContext<PlayerContextType>({
     playing: false,
-    setPlaying: () => {},
+    setPlaying: () => {
+    },
     url: "",
-    setUrl: () => {},
+    setUrl: () => {
+    },
     playedSeconds: 0,
-    setPlayedSeconds: () => {},
+    setPlayedSeconds: () => {
+    },
     open: false,
-    togglePlayer: () => {},
-    nextTrack: () => {},
-    prevTrack: () => {},
-    showPlayer: () => {},
+    togglePlayer: () => {
+    },
+    nextTrack: () => {
+    },
+    prevTrack: () => {
+    },
+    showPlayer: () => {
+    },
     trackIndex: 0,
 });
 
 export const usePlayer = () => useContext(PlayerContext);
 
-export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({children}) => {
     const [playing, setPlaying] = useState(true);
     const [url, setUrl] = useState(tracks[0].url);
     const [playedSeconds, setPlayedSeconds] = useState(0);
@@ -60,6 +67,7 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     const [trackIndex, setTrackIndex] = useState(0);
     const [showList, setShowList] = useState(false);
     const [loop, setLoop] = useState(false);
+    const [searchQuery, setSearchQuery] = useState("");
 
     const playerRef = useRef(null);
 
@@ -101,11 +109,33 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         setPlaying(true);
     };
 
-    const selectTrack = (index: number) => {
-        setTrackIndex(index);
-        setUrl(tracks[index].url);
-        setPlaying(true);
-        setShowList(false);
+    const selectTrack = (title: string) => {
+        const foundIndex = tracks.findIndex((t) => t.title === title);
+        if (foundIndex !== -1) {
+            setTrackIndex(foundIndex);
+            setUrl(tracks[foundIndex].url);
+            setPlaying(true);
+            setShowList(false);
+        }
+    };
+
+
+    const filteredTracks = tracks.filter((t) =>
+        t.title.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+
+    const highlightText = (text: string, query: string) => {
+        if (!query) return text;
+        const regex = new RegExp(`(${query})`, "gi");
+        return text.split(regex).map((part, i) =>
+            regex.test(part) ? (
+                <mark key={i} className="bg-yellow-300 text-black rounded px-0.5">
+                    {part}
+                </mark>
+            ) : (
+                part
+            )
+        );
     };
 
     return (
@@ -142,11 +172,12 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ childr
             {open && (
                 <div
                     className={classNames(
-                        { invisible: visible },
+                        {invisible: visible},
                         "fixed bottom-4 left-4 w-80 shadow-2xl rounded-xl overflow-hidden z-50 bg-white/90 backdrop-blur-md dark:bg-gray-900/80 transition-all"
                     )}
                 >
-                    <div className="flex items-center justify-between px-3 py-2 bg-gradient-to-r from-white/60 to-gray-100/40 dark:from-black/40 dark:to-gray-800/40">
+                    <div
+                        className="flex items-center justify-between px-3 py-2 bg-gradient-to-r from-white/60 to-gray-100/40 dark:from-black/40 dark:to-gray-800/40">
                         <div className="flex gap-1">
                             <SoundWrapper playOn="click">
                                 <button
@@ -234,42 +265,53 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ childr
                     </div>
 
                     {showList && (
-                        <div className="max-h-60 overflow-y-auto bg-gray-50 dark:bg-gray-900 px-3 py-2 border-b border-gray-200 dark:border-gray-700">
-                            {tracks.map((t, i) => (
-                                <button
-                                    key={i}
-                                    ref={addToRefs}
-                                    onClick={() => selectTrack(i)}
-                                    className={classNames(
-                                        "w-full flex flex-col justify-between py-2 px-3 mb-1 rounded-lg transition-all duration-200 cursor-pointer",
-                                        "hover:bg-gradient-to-r hover:from-blue-100/50 hover:to-indigo-100/50 dark:hover:from-blue-800/40 dark:hover:to-indigo-800/40",
-                                        trackIndex === i ? "bg-blue-200/40 dark:bg-blue-700/40 font-semibold" : "bg-white/0 dark:bg-gray-900/0"
-                                    )}
-                                >
-                                    <div className="flex items-center justify-between">
+                        <div
+                            className="bg-gray-50 dark:bg-gray-900 px-3 py-2 border-b border-gray-200 dark:border-gray-700">
+                            <input
+                                type="text"
+                                value={searchQuery}
+                                placeholder="Пошук треку..."
+                                onChange={(e) => setSearchQuery(e.target.value)}
+                                className="w-full mb-2 px-3 py-1 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-yellow-400 outline-none"
+                            />
+                            <div className="max-h-72 overflow-y-auto">
+                                {filteredTracks.map((t, i) => (
+                                    <button
+                                        key={t.title}
+                                        ref={addToRefs}
+                                        onClick={() => selectTrack(t.title)}
+                                        className={classNames(
+                                            "w-full flex flex-col justify-between py-2 px-3 mb-1 rounded-lg transition-all duration-200 cursor-pointer",
+                                            "hover:bg-gradient-to-r hover:from-blue-100/50 hover:to-indigo-100/50 dark:hover:from-blue-800/40 dark:hover:to-indigo-800/40",
+                                            trackIndex === i
+                                                ? "bg-blue-200/40 dark:bg-blue-700/40 font-semibold"
+                                                : "bg-white/0 dark:bg-gray-900/0"
+                                        )}
+                                    >
+                                        <div className="flex items-center justify-between">
                                         <span className="text-gray-800 dark:text-gray-100 truncate" title={t.title}>
-                                            {t.title}
+                                            {highlightText(t.title, searchQuery)}
                                         </span>
-                                    </div>
-                                    <span className="text-xs text-gray-400 dark:text-gray-500 mt-1 line-clamp-1">
+                                        </div>
+                                        <span className="text-xs text-gray-400 dark:text-gray-500 mt-1 line-clamp-1">
                                         {t.genre}
                                     </span>
-                                </button>
-                            ))}
+                                    </button>
+                                ))}
+                            </div>
                         </div>
-                    )}
-                    <ReactPlayer
-                        ref={playerRef}
-                        src={url}
-                        playing={playing}
-                        controls={false}
-                        width="100%"
-                        height="200px"
-                        loop={loop}
-                        onEnded={() => {
-                            if (!loop) nextTrack();
-                        }}
-                    />
+                    )} <ReactPlayer
+                    ref={playerRef}
+                    src={url}
+                    playing={playing}
+                    controls={false}
+                    width="100%"
+                    height="200px"
+                    loop={loop}
+                    onEnded={() => {
+                        if (!loop) nextTrack();
+                    }}
+                />
                 </div>
             )}
 
@@ -283,13 +325,31 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ childr
                         <MusicalNoteIcon className="w-5 h-5 text-white"/>
                         <style jsx>{`
                             @keyframes spinPulse {
-                                0% { transform: rotate(0deg) scale(1); background-color: #4285f4; }
-                                25% { transform: rotate(90deg) scale(1.1); background-color: #ea4335; }
-                                50% { transform: rotate(180deg) scale(1); background-color: #fbbc05; }
-                                75% { transform: rotate(270deg) scale(1.1); background-color: #34a853; }
-                                100% { transform: rotate(360deg) scale(1); background-color: #4285f4; }
+                                0% {
+                                    transform: rotate(0deg) scale(1);
+                                    background-color: #4285f4;
+                                }
+                                25% {
+                                    transform: rotate(90deg) scale(1.1);
+                                    background-color: #ea4335;
+                                }
+                                50% {
+                                    transform: rotate(180deg) scale(1);
+                                    background-color: #fbbc05;
+                                }
+                                75% {
+                                    transform: rotate(270deg) scale(1.1);
+                                    background-color: #34a853;
+                                }
+                                100% {
+                                    transform: rotate(360deg) scale(1);
+                                    background-color: #4285f4;
+                                }
                             }
-                            .animate-pulse-spin { animation: spinPulse 4s infinite linear; }
+
+                            .animate-pulse-spin {
+                                animation: spinPulse 4s infinite linear;
+                            }
                         `}</style>
                     </button>
                 </SoundWrapper>

@@ -1,36 +1,262 @@
 [
-  {"title": "LATEXFAUNA — NICH", "url": "https://www.youtube.com/watch?v=04qpTNRC5-0", "genre": "dreampop / інді"},
-  {"title": "Тартак feat. Катя Chilly — Понад Хмарами", "url": "https://www.youtube.com/watch?v=pgKL2sYWYJg", "genre": "український хіп-хоп / етно"},
-  {"title": "VOLODYMYR DANTES — ОДИНОКАЯ", "url": "https://www.youtube.com/watch?v=6UK11Db9iOE", "genre": "поп"},
-  {"title": "thekomakoma — Зірочки (feat. Just Nelson) ✨", "url": "https://www.youtube.com/watch?v=yyyGGugMRxE", "genre": "інді-поп / електроніка"},
-  {"title": "KLER — На вінілі", "url": "https://www.youtube.com/watch?v=EV9E7UiBpQc", "genre": "поп / інді"},
-  {"title": "Tember Blanche — Вечорниці", "url": "https://www.youtube.com/watch?v=iBN7IHWlvds", "genre": "інді-фолк / акустика"},
-  {"title": "Adam & Геля Зозуля — Особистий рай", "url": "https://www.youtube.com/watch?v=SdvHB5TB4_k", "genre": "поп / інді"},
-  {"title": "Jerry Heil — СНІГ", "url": "https://www.youtube.com/watch?v=PcY0RO1HF2M", "genre": "поп / експериментальна естрада"},
-  {"title": "Ла-Манш — Погляд (1998)", "url": "https://www.youtube.com/watch?v=INdKA9JGhYE", "genre": "рок / альтернатива"},
-  {"title": "Тоня Матвієнко — Кульбаби", "url": "https://www.youtube.com/watch?v=tOpsGhNHY58", "genre": "етно-поп / лірика"},
-  {"title": "YAKTAK & Святослав Вакарчук — На нічному небі", "url": "https://www.youtube.com/watch?v=TTccdFybPUo", "genre": "поп-рок / баллада"},
-  {"title": "Morphom, Swiernalis — Діти/Dzieci", "url": "https://www.youtube.com/watch?v=AVDrXogSN94", "genre": "електроніка / експериментал"},
-  {"title": "Хто вам сказав, що я слабка - Леся Українка", "url": "https://www.youtube.com/watch?v=c9m6vUnnPCw", "genre": "spoken word / поезія"},
-  {"title": "LATEXFAUNA — CHERKASCHYNA", "url": "https://www.youtube.com/watch?v=2y56wHAw_FQ", "genre": "інді / dreampop"},
-  {"title": "Як дитиною бувало — Леся Українка", "url": "https://www.youtube.com/watch?v=wZWon-mwTh8", "genre": "spoken word / поезія"},
-  {"title": "PARFENIUK x Максим Бородін — Боляче", "url": "https://www.youtube.com/watch?v=IizQs_N52no", "genre": "інді-поп / електроніка"},
-  {"title": "thekomakoma — Галактика Діви", "url": "https://www.youtube.com/watch?v=QIz0MMxP4Ck", "genre": "інді / synthpop"},
-  {"title": "KOZAK SIROMAHA & SUROV - Ворогам на зло", "url": "https://www.youtube.com/watch?v=b2jLx7I4ivA", "genre": "етно-рок / фолк"},
-  {"title": "Palindrom, Kurgan — Haha", "url": "https://www.youtube.com/watch?v=gqI3GNcK_L0", "genre": "реп / експериментал"},
-  {"title": "thekomakoma — Телескоп", "url": "https://www.youtube.com/watch?v=qn-HEQBbj8w", "genre": "інді-поп"},
-  {"title": "SUDNO 2023 MIXTAPE | Ukrainian Post Punk | Doomer Music", "url": "https://www.youtube.com/watch?v=Afk6KnPZMfY", "genre": "постпанк / doomer"},
-  {"title": "Панно Інно | Павло Тичина — Нейро Бандура x AI", "url": "https://www.youtube.com/watch?v=XpQm_SWV_Ig", "genre": "нейро-експеримент / фолк"},
-  {"title": "Vyshebaba & alyona alyona — Моє покоління", "url": "https://www.youtube.com/watch?v=iSxTCh1YFgw", "genre": "реп / хіп-хоп"},
-  {"title": "thekomakoma — Ліхтарик", "url": "https://www.youtube.com/watch?v=vmFTW-U8iLE", "genre": "інді / поп"},
-  {"title": "Jerry Heil & Volodymyr Dantes - ГУБИ У ГУБАХ", "url": "https://www.youtube.com/watch?v=iHz_rTYlXJE", "genre": "поп"},
-  {"title": "thekomakoma — Простотак", "url": "https://www.youtube.com/watch?v=KoEju038DVg", "genre": "інді"},
-  {"title": "LATEXFAUNA — LUCERNA", "url": "https://www.youtube.com/watch?v=fKGc_xaQkUU", "genre": "інді / dreampop"},
-  {"title": "Гаї Шумлять — Павло Тичина | Dark Rock", "url": "https://www.youtube.com/watch?v=bRt0I8ML5xY", "genre": "dark rock"},
-  {"title": "GRISANA — Kohoney", "url": "https://www.youtube.com/watch?v=84ndonzVnsA", "genre": "інді / поп"},
-  {"title": "POSITIFF — Небо нахилю", "url": "https://www.youtube.com/watch?v=sAbh8mgszkI", "genre": "поп"},
-  {"title": "ADAM — Таку як є", "url": "https://www.youtube.com/watch?v=Mqo6XTnjrsQ", "genre": "поп / соул"},
-  {"title": "О панно Інно — Павло Тичина | Rock", "url": "https://www.youtube.com/watch?v=Ix6U6Q8L1Oo", "genre": "рок / альтернатива"},
-  {"title": "Конвалія — Леся Українка | Rock Ballad", "url": "https://www.youtube.com/watch?v=L_amQPBPJwM", "genre": "рок-балада"},
-  {"title": "ТІНА КАРОЛЬ & SADSVIT — МИ", "url": "https://www.youtube.com/watch?v=4LRVoGyRIqk", "genre": "поп / інді"}
+  {
+    "title": "LATEXFAUNA — NICH",
+    "url": "https://www.youtube.com/watch?v=04qpTNRC5-0",
+    "genre": "dreampop / інді"
+  },
+  {
+    "title": "Тартак feat. Катя Chilly — Понад Хмарами",
+    "url": "https://www.youtube.com/watch?v=pgKL2sYWYJg",
+    "genre": "український хіп-хоп / етно"
+  },
+  {
+    "title": "VOLODYMYR DANTES — ОДИНОКАЯ",
+    "url": "https://www.youtube.com/watch?v=6UK11Db9iOE",
+    "genre": "поп"
+  },
+  {
+    "title": "TEYA DORA - DŽANUM",
+    "url": "https://www.youtube.com/watch?v=jD97hNDiyvI",
+    "genre": "балканський поп / етно"
+  },
+  {
+    "title": "FIЇNKA - Афини",
+    "url": "https://www.youtube.com/watch?v=s7of61sp7CY",
+    "genre": "фолк / етно-поп"
+  },
+  {
+    "title": "Everything (Freakniks Remix)",
+    "url": "https://www.youtube.com/watch?v=RyoRxx3Muds",
+    "genre": "електроніка / хаус"
+  },
+  {
+    "title": "Emilio Piano ft. Lucie - Maison",
+    "url": "https://www.youtube.com/watch?v=VNLrCWCv38Y",
+    "genre": "інді-поп / електроніка"
+  },
+  {
+    "title": "Скрябін — Най буде дощ (Piano Remix)",
+    "url": "https://www.youtube.com/watch?v=yLkcaqkmfnU",
+    "genre": "поп-рок / ремікс"
+  },
+  {
+    "title": "Måneskin - Torna a casa",
+    "url": "https://www.youtube.com/watch?v=ZZjnfWx0cvw",
+    "genre": "рок-балада"
+  },
+  {
+    "title": "Golden Brown - The Stranglers (slowed + reverb)",
+    "url": "https://www.youtube.com/watch?v=GmxkNB-QihI",
+    "genre": "постпанк / психоделія"
+  },
+  {
+    "title": "Hanumankind, Kalmi - Big Dawgs",
+    "url": "https://www.youtube.com/watch?v=hOHKltAiKXQ",
+    "genre": "хіп-хоп / реп"
+  },
+  {
+    "title": "Rammstein - Zeit",
+    "url": "https://www.youtube.com/watch?v=EbHGS_bVkXY",
+    "genre": "індастріал-метал"
+  },
+  {
+    "title": "thekomakoma — Зірочки (feat. Just Nelson)",
+    "url": "https://www.youtube.com/watch?v=yyyGGugMRxE",
+    "genre": "інді-поп / електроніка"
+  },
+  {
+    "title": "KLER — На вінілі",
+    "url": "https://www.youtube.com/watch?v=EV9E7UiBpQc",
+    "genre": "поп / інді"
+  },
+  {
+    "title": "Tember Blanche — Вечорниці",
+    "url": "https://www.youtube.com/watch?v=iBN7IHWlvds",
+    "genre": "інді-фолк / акустика"
+  },
+  {
+    "title": "Gibran Alcocer - Solas",
+    "url": "https://www.youtube.com/watch?v=7-_qRtGbCTE",
+    "genre": "неокласика / інструментал"
+  },
+  {
+    "title": "Dedublüman - Belki - Akustik",
+    "url": "https://www.youtube.com/watch?v=tdTg-LNi6eI",
+    "genre": "турецький рок / акустика"
+  },
+  {
+    "title": "Kodaline - Everything Works Out in the End",
+    "url": "https://www.youtube.com/watch?v=9IVTOh0TkkQ",
+    "genre": "інді-рок"
+  },
+  {
+    "title": "ROSÉ & Bruno Mars - APT.",
+    "url": "https://www.youtube.com/watch?v=ekr2nIex040",
+    "genre": "поп / R&B"
+  },
+  {
+    "title": "Carol of the Bells (10th Anniversary Edition) - Tommee Profitt",
+    "url": "https://www.youtube.com/watch?v=uddbZ9dEZwI",
+    "genre": "епік / кінематографічна музика"
+  },
+  {
+    "title": "Adam & Геля Зозуля — Особистий рай",
+    "url": "https://www.youtube.com/watch?v=SdvHB5TB4_k",
+    "genre": "поп / інді"
+  },
+  {
+    "title": "TWISTED - WORTH NOTHING",
+    "url": "https://www.youtube.com/watch?v=neOQ8s60sHU",
+    "genre": "альтернативний поп"
+  },
+  {
+    "title": "dArtagnan - Was wollen wir trinken",
+    "url": "https://www.youtube.com/watch?v=WiR-5swzlvE",
+    "genre": "фолк-рок"
+  },
+  {
+    "title": "MartA - Дай Бог",
+    "url": "https://www.youtube.com/watch?v=7AQzZrUKsLQ",
+    "genre": "поп / естрада"
+  },
+  {
+    "title": "Jerry Heil — СНІГ",
+    "url": "https://www.youtube.com/watch?v=PcY0RO1HF2M",
+    "genre": "поп / експериментальна естрада"
+  },
+  {
+    "title": "Ла-Манш — Погляд (1998)",
+    "url": "https://www.youtube.com/watch?v=INdKA9JGhYE",
+    "genre": "рок / альтернатива"
+  },
+  {
+    "title": "Тоня Матвієнко — Кульбаби",
+    "url": "https://www.youtube.com/watch?v=tOpsGhNHY58",
+    "genre": "етно-поп / лірика"
+  },
+  {
+    "title": "YAKTAK & Святослав Вакарчук — На нічному небі",
+    "url": "https://www.youtube.com/watch?v=TTccdFybPUo",
+    "genre": "поп-рок / балада"
+  },
+  {
+    "title": "Morphom, Swiernalis — Діти/Dzieci",
+    "url": "https://www.youtube.com/watch?v=AVDrXogSN94",
+    "genre": "електроніка / експериментал"
+  },
+  {
+    "title": "Хто вам сказав, що я слабка - Леся Українка",
+    "url": "https://www.youtube.com/watch?v=c9m6vUnnPCw",
+    "genre": "spoken word / поезія"
+  },
+  {
+    "title": "LATEXFAUNA — CHERKASCHYNA",
+    "url": "https://www.youtube.com/watch?v=2y56wHAw_FQ",
+    "genre": "інді / dreampop"
+  },
+  {
+    "title": "Як дитиною бувало — Леся Українка",
+    "url": "https://www.youtube.com/watch?v=wZWon-mwTh8",
+    "genre": "spoken word / поезія"
+  },
+  {
+    "title": "Ô Jésus, Fils du Dieu vivant",
+    "url": "https://www.youtube.com/watch?v=o2AGX_S5Jiw",
+    "genre": "хорова / духовна музика"
+  },
+  {
+    "title": "PARFENIUK x Максим Бородін — Боляче",
+    "url": "https://www.youtube.com/watch?v=IizQs_N52no",
+    "genre": "інді-поп / електроніка"
+  },
+  {
+    "title": "thekomakoma — Галактика Діви",
+    "url": "https://www.youtube.com/watch?v=QIz0MMxP4Ck",
+    "genre": "інді / synthpop"
+  },
+  {
+    "title": "KOZAK SIROMAHA & SUROV - Ворогам на зло",
+    "url": "https://www.youtube.com/watch?v=b2jLx7I4ivA",
+    "genre": "етно-рок / фолк"
+  },
+  {
+    "title": "Palindrom, Kurgan — Haha",
+    "url": "https://www.youtube.com/watch?v=gqI3GNcK_L0",
+    "genre": "реп / експериментал"
+  },
+  {
+    "title": "thekomakoma — Телескоп",
+    "url": "https://www.youtube.com/watch?v=qn-HEQBbj8w",
+    "genre": "інді-поп"
+  },
+  {
+    "title": "SUDNO 2023 MIXTAPE | Ukrainian Post Punk | Doomer Music",
+    "url": "https://www.youtube.com/watch?v=Afk6KnPZMfY",
+    "genre": "постпанк / doomer"
+  },
+  {
+    "title": "Панно Інно | Павло Тичина — Нейро Бандура x AI",
+    "url": "https://www.youtube.com/watch?v=XpQm_SWV_Ig",
+    "genre": "нейро-експеримент / фолк"
+  },
+  {
+    "title": "Vyshebaba & alyona alyona — Моє покоління",
+    "url": "https://www.youtube.com/watch?v=iSxTCh1YFgw",
+    "genre": "реп / хіп-хоп"
+  },
+  {
+    "title": "thekomakoma — Ліхтарик",
+    "url": "https://www.youtube.com/watch?v=vmFTW-U8iLE",
+    "genre": "інді / поп"
+  },
+  {
+    "title": "Jerry Heil & Volodymyr Dantes - ГУБИ У ГУБАХ",
+    "url": "https://www.youtube.com/watch?v=iHz_rTYlXJE",
+    "genre": "поп"
+  },
+  {
+    "title": "thekomakoma — Простотак",
+    "url": "https://www.youtube.com/watch?v=KoEju038DV",
+    "genre": "інді"
+  },
+  {
+    "title": "LATEXFAUNA — LUCERNA",
+    "url": "https://www.youtube.com/watch?v=fKGc_xaQkUU",
+    "genre": "інді / dreampop"
+  },
+  {
+    "title": "Гаї Шумлять — Павло Тичина | Dark Rock",
+    "url": "https://www.youtube.com/watch?v=bRt0I8ML5xY",
+    "genre": "dark rock"
+  },
+  {
+    "title": "GRISANA — Kohoney",
+    "url": "https://www.youtube.com/watch?v=84ndonzVnsA",
+    "genre": "інді / поп"
+  },
+  {
+    "title": "POSITIFF — Небо нахилю",
+    "url": "https://www.youtube.com/watch?v=sAbh8mgszkI",
+    "genre": "поп"
+  },
+  {
+    "title": "ADAM — Таку як є",
+    "url": "https://www.youtube.com/watch?v=Mqo6XTnjrsQ",
+    "genre": "поп / соул"
+  },
+  {
+    "title": "О панно Інно — Павло Тичина | Rock",
+    "url": "https://www.youtube.com/watch?v=Ix6U6Q8L1Oo",
+    "genre": "рок / альтернатива"
+  },
+  {
+    "title": "Конвалія — Леся Українка | Rock Ballad",
+    "url": "https://www.youtube.com/watch?v=L_amQPBPJwM",
+    "genre": "рок-балада"
+  },
+  {
+    "title": "ТІНА КАРОЛЬ & SADSVIT — МИ",
+    "url": "https://www.youtube.com/watch?v=4LRVoGyRIqk",
+    "genre": "поп / інді"
+  }
 ]

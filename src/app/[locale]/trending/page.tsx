@@ -1,4 +1,5 @@
 import { getGoogleTrends } from "@/app/api/trends";
+import TrendingInfo from "@/components/TrendingInfo";
 
 interface TrendNewsItem {
     title: string | string[];
@@ -44,37 +45,7 @@ export default async function UATrending() {
 
     return (
         <div className="mx-auto p-6 border-2 border-dashed border-white rounded-3xl">
-            <h1 className="text-4xl font-extrabold mb-4 text-center text-blue-700 dark:text-blue-400 drop-shadow-md">
-                Google Trends — Україна
-            </h1>
-
-            <p className="text-gray-600 dark:text-gray-400 mb-2">
-                Це <span className="font-medium">самі останні тренди</span> українських
-                користувачів Google у реальному часі.
-            </p>
-
-            <p className="text-gray-600 dark:text-gray-400 mb-4">
-                Ви можете досліджувати актуальні теми та аналітику безпосередньо на
-                <a
-                    href="https://trends.google.com/trending?geo=UA&hl=uk"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 dark:text-blue-400 font-medium ml-1"
-                >
-                    офіційному сайті Google Trends
-                </a>
-                .
-            </p>
-
-            <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-                Google Trends дозволяє переглядати найпопулярніші пошукові запити
-                українських користувачів у реальному часі, аналізувати динаміку
-                інтересу до тем, порівнювати популярність різних запитів та знаходити
-                пов’язані новини. Сервіс допомагає зрозуміти актуальні тенденції,
-                відстежувати сезонні зміни популярності та знаходити контент, який
-                цікавить вашу аудиторію.
-            </p>
-
+            <TrendingInfo/>
             <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
                 {trends.map((t, idx) => (
                     <div

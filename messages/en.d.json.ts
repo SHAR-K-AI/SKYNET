@@ -260,6 +260,17 @@ declare const messages: {
     },
     "confirmation": "By using the site, you confirm that you have read these terms and agree to comply with them.",
     "lastUpdated": "Last updated: {date}"
+  },
+  "GoogleTrends": {
+    "title": "Google Trends — Ukraine",
+    "description_short": "These are the latest trends of Google users in Ukraine in real time.",
+    "description_long": "Google Trends allows you to see the most popular search queries of Ukrainian users in real time, analyze the dynamics of interest in topics, compare the popularity of different queries, and find related news. The service helps to understand current trends, track seasonal changes in popularity, and find content that interests your audience.",
+    "link_text": "official Google Trends website",
+    "news_title": "News:",
+    "traffic": "Traffic",
+    "no_data_title": "No data",
+    "no_data_description": "Failed to load trends. Please try again later.",
+    "no_data_extended": "The Google Trends service is temporarily unavailable."
   }
 };
 export default messages;
