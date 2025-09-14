@@ -39,6 +39,7 @@ export default function Magnetic({ children }: FramerProps) {
             onTouchEnd={() => setPos({ x: 0, y: 0 })}
             animate={{ x: pos.x, y: pos.y }}
             style={{ position: "relative" }}
+            onClick={() => setPos({ x: 0, y: 0 })}
             transition={{ type: "spring", stiffness: 200, damping: 20 }}
         >
             {children}
