@@ -16,7 +16,7 @@ export default function AnimatedTitle() {
         'text-red-500'
     ];
 
-    const googleText = 'Googol'.split('');
+    const googleText = 'SkyNet'.split('');
     const hoverText = 'SkyNet'.split('');
     const letters = hovered ? googleText  : hoverText;
 
