@@ -8,12 +8,12 @@
     "content": "“Become a Google Cloud Expert” is a learning webinar series where Google Cloud experts share practical knowledge and real-world experience of working in the cloud. The program is designed to help developers, analysts, administrators, and other professionals strengthen their skills and explore the full potential of Google Cloud.\n\nEven if you didn’t join the latest cohort, you can still register and access recordings of past workshops. This allows you to learn at your own pace and revisit valuable content anytime.\n\nA unique feature of the program is its active community: participants from different cohorts have self-organized into a network where they support each other and share experiences. By registering, you gain access to this community and expand your professional network.\n\nKey features:\n- Webinar series led by Google Cloud experts\n- Access to recordings of past workshops\n- Flexible self-paced learning\n- Community of participants for support and collaboration\n- Resources and opportunities to grow your career in cloud technologies"
   },
   {
-    "id": "8b3e12d5-6a4f-4c0a-b8b9-3fcd4a1f2b7e",
-    "title": "Google Cloud Skill Boost Arcade",
-    "link": "https://go.cloudskillsboost.google/arcade",
-    "imageUrl": "/images/arcade.jpg",
-    "description": "An interactive platform for learning cloud technologies through gamified tasks. Users can earn skill badges, certificates, and rewards.",
-    "content": "Google Cloud Skills Boost Arcade is an interactive platform by Google that combines learning cloud technologies with gamification. Users complete practical tasks and labs simulating real-world scenarios in Google Cloud.\n\nKey features:\n- Gamified tasks and quests\n- Skill badges\n- Certification\n- Rewards and collectibles\n- Hands-on experience\n- Interactive feedback\n- Motivation through progress"
+    "id": "f9e8d7c6-b5a4-4c3d-9e2f-1a0b9c8d7e6f",
+    "title": "Become a Google Cloud Expert",
+    "link": "https://rsvp.withgoogle.com/events/grow-your-career-with-google-cloud/about",
+    "imageUrl": "/images/gcp-ai.png",
+    "description": "A webinar series from Google Cloud experts to help you grow your career in cloud technologies.",
+    "content": "“Become a Google Cloud Expert” is a learning webinar series where Google Cloud experts share practical knowledge and real-world experience of working in the cloud. The program is designed to help developers, analysts, administrators, and other professionals strengthen their skills and explore the full potential of Google Cloud.\n\nEven if you didn’t join the latest cohort, you can still register and access recordings of past workshops. This allows you to learn at your own pace and revisit valuable content anytime.\n\nA unique feature of the program is its active community: participants from different cohorts have self-organized into a network where they support each other and share experiences. By registering, you gain access to this community and expand your professional network.\n\nKey features:\n- Webinar series led by Google Cloud experts\n- Access to recordings of past workshops\n- Flexible self-paced learning\n- Community of participants for support and collaboration\n- Resources and opportunities to grow your career in cloud technologies"
   },
   {
     "id": "e1a4b7d2-9c9f-4d2a-9c2e-4a5f2c0f7c1b",
@@ -142,5 +142,13 @@
     "imageUrl": "https://storage.googleapis.com/kaggle-media/Images/AI%20Agents%20Course%20Illustration%20-%20v1.png",
     "description": "A free 5-day intensive course by Google on building and deploying AI agents.",
     "content": "Join the 5-Day AI Agents Intensive Course with Google, running Monday, November 10 - Friday, November 14.\n\nSince last November, over 420,000 learners worldwide registered to join our 5-day Generative AI Intensive Course with Google. Now comes the sequel: the 5-Day AI Agents Intensive – a no-cost course designed to help you build and deploy the next frontier of AI.\n\nWhether you’re just starting with agents or advancing your expertise, this immersive experience guides you through architectures, tools, and best practices shaping the future of intelligent, autonomous systems. You’ll apply your knowledge through a capstone project, gaining the foundation to create everything from simple AI agents to sophisticated multi-agent systems.\n\nKey features:\n- Free 5-day online course (Nov 10–14)\n- Created by Google ML researchers and engineers\n- Covers models, tools, orchestration, memory, and evaluation\n- Hands-on codelabs, examples, and live discussions\n- Capstone project to apply knowledge\n- Learn how to move beyond LLM prototypes to production-ready AI agents"
+  },
+  {
+    "id": "e2f3a4b5-c6d7-48e9-9f0a-1b2c3d4e5f6a",
+    "title": "Google Career Dreamer",
+    "link": "https://grow.google/career-dreamer/home",
+    "imageUrl": "/images/gcd.png",
+    "description": "A free AI-powered tool from Google to help you explore career options and discover new opportunities.",
+    "content": "“Google Career Dreamer” is a free tool that uses AI to help you explore career paths, discover new opportunities, and create a personalized statement about your strengths.\n\nWhether you’re just starting your journey, shifting careers, or looking for fresh inspiration, Career Dreamer can guide you toward roles that match your skills and background. You don’t even need a resume — just a list of your past experience and education.\n\nHow it works:\n1. Answer a few simple questions about your work and education history. The tool will suggest skills you may have developed.\n2. Receive a personalized strengths statement that can be adapted for job applications, such as cover letters.\n3. Explore suggested career paths, complete with real job listings, tips, and resources.\n\nWhy try it? Career Dreamer is quick, free, and a great way to learn about new opportunities. It helps you see how your unique experiences connect to potential careers you may not have considered.\n\nKey features:\n- Free, AI-powered career exploration tool\n- Personalized strengths statement for job applications\n- Suggested career paths and real job listings\n- Easy to use, no resume required\n- Helpful for students, career changers, and job seekers"
   }
 ]

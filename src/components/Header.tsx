@@ -1,14 +1,15 @@
 'use client';
 
-import { useState } from 'react';
-import {  AnimatePresence } from 'framer-motion';
+import { useState} from 'react';
+import {AnimatePresence} from 'framer-motion';
 import AnimatedTitle from '@/components/AnimatedTitle';
-import { useTranslations, useLocale } from 'next-intl';
+import {useTranslations, useLocale} from 'next-intl';
 
 import MenuNav from "@/components/MenuNav";
 import MenuButton from "@/components/MenuButton";
 import MenuOverlay from "@/components/MenuOverlay";
 import HeaderActions from "@/components/HeaderActions";
+import Magnetic from "@/components/Magnetic";
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,16 +19,20 @@ export default function Header() {
 
     return (
         <header className="w-full relative p-4 flex items-center z-50">
-            <MenuButton isOpen={isOpen} toggleMenu={toggleMenu} />
+            <div className="fixed top-10 left-10">
+                <Magnetic>
+                    <MenuButton isOpen={isOpen} toggleMenu={toggleMenu}/>
+                </Magnetic>
+            </div>
             <div className="flex-1 flex justify-center">
-                <AnimatedTitle />
+                <Magnetic> <AnimatedTitle/></Magnetic>
             </div>
             <HeaderActions className="hidden fixed top-10 right-5 md:flex items-center justify-center flex-col gap-4"/>
             <AnimatePresence>
                 {isOpen && (
                     <>
-                        <MenuOverlay toggleMenu={toggleMenu} />
-                        <MenuNav locale={locale} t={t} toggleMenu={toggleMenu} />
+                        <MenuOverlay toggleMenu={toggleMenu}/>
+                        <MenuNav locale={locale} t={t} toggleMenu={toggleMenu}/>
                     </>
                 )}
             </AnimatePresence>

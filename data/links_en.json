@@ -117,6 +117,11 @@
     "type": "link",
     "title": "Timur Shemsedinov - YouTube",
     "url": "https://www.youtube.com/@TimurShemsedinov"
+  },
+  {
+    "type": "card",
+    "title": "Google Cloud Community",
+    "description": "Participants from different program cohorts have organized a Telegram group to support each other. Join to become part of the community and share knowledge and experiences!",
+    "url": "https://t.me/cloudskillsboost"
   }
-
 ]

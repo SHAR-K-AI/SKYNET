@@ -2,11 +2,12 @@
 
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
-import { useState } from "react";
-import { motion } from "framer-motion";
+import {useTranslations} from 'next-intl';
+import React, {useState} from "react";
+import {motion} from "framer-motion";
+import AppImage from "@/components/Image";
 
-const DinoGameNoSSR = dynamic(() => import('react-chrome-dino-ts'), { ssr: false });
+const DinoGameNoSSR = dynamic(() => import('react-chrome-dino-ts'), {ssr: false});
 
 interface Heart {
     id: string;
@@ -22,7 +23,7 @@ export default function DinoGameFooter() {
         for (let i = 0; i < count; i++) {
             setTimeout(() => {
                 const id = Math.random().toString(36).slice(2, 11);
-                setHearts(prev => [...prev, { id, x: Math.random() * 250 - 25 }]);
+                setHearts(prev => [...prev, {id, x: Math.random() * 250 - 25}]);
 
                 setTimeout(() => {
                     setHearts(prev => prev.filter(h => h.id !== id));
@@ -33,11 +34,19 @@ export default function DinoGameFooter() {
 
     return (
         <footer className="relative">
+
+
             <div className="w-full max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl relative mx-auto z-0 -mb-4">
-                <DinoGameNoSSR />
+                <DinoGameNoSSR/>
             </div>
 
-            <div className="w-full py-8 footer-pixel-light z-10">
+            <div className="w-full py-8 footer-pixel-light z-10 relative">
+                <AppImage
+                    alt="ILG"
+                    width={250}
+                    src="/images/footer-img.png"
+                    className="object-cover rounded-lg absolute md:-top-25 invisible md:visible md:left-30 opacity-85"
+                />
                 <div className="max-w-6xl mx-auto flex flex-col items-center justify-between gap-2">
 
                     <div
@@ -53,10 +62,10 @@ export default function DinoGameFooter() {
                             <motion.span
                                 key={heart.id}
                                 className="absolute text-pink-500 text-lg"
-                                style={{ left: `50%` }}
-                                initial={{ y: 0, scale: 1, opacity: 1, x: heart.x }}
-                                animate={{ y: -60 - Math.random() * 20, scale: 1.2, opacity: 0 }}
-                                transition={{ duration: 1, ease: 'easeOut' }}
+                                style={{left: `50%`}}
+                                initial={{y: 0, scale: 1, opacity: 1, x: heart.x}}
+                                animate={{y: -60 - Math.random() * 20, scale: 1.2, opacity: 0}}
+                                transition={{duration: 1, ease: 'easeOut'}}
                             >
                                 ❤️
                             </motion.span>
@@ -76,7 +85,6 @@ export default function DinoGameFooter() {
                             {t('termsOfUse')}
                         </Link>
                     </div>
-
                 </div>
             </div>
         </footer>

@@ -4,6 +4,7 @@ import {Dialog, Transition} from '@headlessui/react';
 import React, {Fragment, useEffect, useState} from 'react';
 import AppImage from "@/components/Image";
 import {useLocale} from "next-intl";
+import Magnetic from "@/components/Magnetic";
 
 interface LinkItem {
     type: 'youtube' | 'card' | 'link';
@@ -48,6 +49,7 @@ export default function LinksPage() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
                 {links.map((item, idx) => (
+
                     <div
                         key={idx}
                         className="relative cursor-pointer p-4 rounded-xl bg-white/60 dark:bg-gray-800/50
@@ -64,28 +66,30 @@ export default function LinksPage() {
                                     </p>
                                 )}
                             </div>
+                            <Magnetic>
+                                <div
+                                    className="relative h-16 w-16 flex-shrink-0 cursor-pointer hover:scale-110 transition"
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        handleCopy(item.url);
+                                    }}
+                                >
 
-                            <div
-                                className="relative h-16 w-16 flex-shrink-0 cursor-pointer hover:scale-110 transition"
-                                onClick={(e) => {
-                                    e.stopPropagation();
-                                    handleCopy(item.url);
-                                }}
-                            >
-                                <AppImage
-                                    src="/images/click.png"
-                                    alt={item.title}
-                                    fill
-                                    style={{objectFit: 'contain'}}
-                                    className="bg-white/90 rounded-md"
-                                />
-                            </div>
+                                    <AppImage
+                                        src="/images/click.png"
+                                        alt={item.title}
+                                        fill
+                                        style={{objectFit: 'contain'}}
+                                        className="bg-white/90 rounded-md"
+                                    />
+
+                                </div>
+                            </Magnetic>
                         </div>
                     </div>
                 ))}
             </div>
 
-            {/* Модалка */}
             <Transition appear show={!!selected} as={Fragment}>
                 <Dialog as="div" className="relative z-50" onClose={() => setSelected(null)}>
                     <Transition.Child
@@ -133,12 +137,12 @@ export default function LinksPage() {
                                         {selected.type === 'card' && (
                                             <div className="flex justify-center items-center gap-4 mb-4">
                                                 {selected.imageUrl && (
-                                                        <AppImage
-                                                            width={150}
-                                                            alt={selected.title}
-                                                            src={selected.imageUrl}
-                                                            className="object-cover rounded-lg"
-                                                        />
+                                                    <AppImage
+                                                        width={150}
+                                                        alt={selected.title}
+                                                        src={selected.imageUrl}
+                                                        className="object-cover rounded-lg"
+                                                    />
                                                 )}
                                                 <p className="text-gray-700 dark:text-gray-300">
                                                     {selected.description}

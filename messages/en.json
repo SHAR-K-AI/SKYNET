@@ -97,7 +97,7 @@
       },
       "A": {
         "title": "Artistic",
-        "description": "Creative development of cloud applications, architecture design, and UI/UX solutions."
+        "description": "Creative development of applications, architecture design, and UI/UX solutions."
       },
       "S": {
         "title": "Social",
@@ -105,7 +105,7 @@
       },
       "E": {
         "title": "Enterprising",
-        "description": "Leadership in cloud projects, managing teams, and strategic planning on GCP."
+        "description": "Leadership in projects, managing teams, and strategic planning on GCP."
       },
       "C": {
         "title": "Conventional",
@@ -123,7 +123,7 @@
     "noAdditionalRoles": "No additional roles",
     "retry": "Take again",
     "shareResult": "Share your result",
-    "copyLink": "Copy the link or share it with friends!",
+    "copyLink": "Copy the link and share it with friends!",
     "roles": {
       "CloudDigitalLeader": {
         "description": "You lead digital transformation, manage teams, and implement innovations."

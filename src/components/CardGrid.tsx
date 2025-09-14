@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './Card';
+import Magnetic from "@/components/Magnetic";
 
 export interface CardData {
     title: string;
@@ -25,7 +26,9 @@ const CardGrid: React.FC<CardGridProps> = ({cards}) => {
                 "
         >
             {cards.map((card, index) => (
-                <Card key={index} {...card} />
+                <Magnetic key={index}>
+                    <Card {...card} />
+                </Magnetic>
             ))}
         </div>
     );
