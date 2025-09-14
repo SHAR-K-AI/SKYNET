@@ -1,6 +1,7 @@
 "use client";
-import { useRef, useState, ReactNode, MouseEvent, TouchEvent } from "react";
+
 import { motion } from "framer-motion";
+import { useRef, useState, ReactNode, useEffect, MouseEvent, TouchEvent } from "react";
 
 interface FramerProps {
     children: ReactNode;
@@ -9,37 +10,61 @@ interface FramerProps {
 export default function Magnetic({ children }: FramerProps) {
     const ref = useRef<HTMLDivElement | null>(null);
     const [pos, setPos] = useState({ x: 0, y: 0 });
-
     const strength = 0.25;
 
-    const handleMouse = (e: MouseEvent<HTMLDivElement>) => {
+    const updatePos = (clientX: number, clientY: number) => {
         if (!ref.current) return;
-        const r = ref.current.getBoundingClientRect();
-        const mx = e.clientX - (r.left + r.width / 2);
-        const my = e.clientY - (r.top + r.height / 2);
+
+        const rect = ref.current.getBoundingClientRect();
+        const mx = clientX - (rect.left + rect.width / 2);
+        const my = clientY - (rect.top + rect.height / 2);
         setPos({ x: mx * strength, y: my * strength });
     };
 
-    const handleTouch = (e: TouchEvent<HTMLDivElement>) => {
-        if (!ref.current) return;
-        const r = ref.current.getBoundingClientRect();
-        const touch = e.touches[0];
-        const mx = touch.clientX - (r.left + r.width / 2);
-        const my = touch.clientY - (r.top + r.height / 2);
-        setPos({ x: mx * strength, y: my * strength });
+    const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => updatePos(e.clientX, e.clientY);
+    const handleTouchMove = (e: TouchEvent<HTMLDivElement>) => {
+        if (e.touches.length > 0) {
+            updatePos(e.touches[0].clientX, e.touches[0].clientY);
+        }
     };
+
+    const resetPos = () => setPos({ x: 0, y: 0 });
+
+    useEffect(() => {
+        const handleOutsideClick = (e: Event) => {
+            if (ref.current && !ref.current.contains(e.target as Node)) {
+                resetPos();
+            }
+        };
+
+        document.addEventListener("mousedown", handleOutsideClick);
+        document.addEventListener("touchstart", handleOutsideClick);
+
+        return () => {
+            document.removeEventListener("mousedown", handleOutsideClick);
+            document.removeEventListener("touchstart", handleOutsideClick);
+        };
+    }, []);
+
+    useEffect(() => {
+        if (!ref.current) return;
+        const observer = new ResizeObserver(() => resetPos());
+        observer.observe(ref.current);
+        return () => observer.disconnect();
+    }, []);
 
     return (
         <motion.div
             ref={ref}
+            onClick={resetPos}
+            onTouchEnd={resetPos}
             className="inline-flex"
-            onMouseMove={handleMouse}
-            onMouseLeave={() => setPos({ x: 0, y: 0 })}
-            onTouchMove={handleTouch}
-            onTouchEnd={() => setPos({ x: 0, y: 0 })}
-            animate={{ x: pos.x, y: pos.y }}
+            onMouseLeave={resetPos}
+            onTouchCancel={resetPos}
+            onMouseMove={handleMouseMove}
+            onTouchMove={handleTouchMove}
             style={{ position: "relative" }}
-            onClick={() => setPos({ x: 0, y: 0 })}
+            animate={{ x: pos.x, y: pos.y }}
             transition={{ type: "spring", stiffness: 200, damping: 20 }}
         >
             {children}
