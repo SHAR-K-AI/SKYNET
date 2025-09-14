@@ -99,11 +99,11 @@ function WelcomeModal(
                 </motion.p>
 
                 <AppImage
-                    src="/images/click.png"
                     alt="welcome"
-                    width={150}
+                    width={250}
+                    src="/images/about.png"
                     style={{objectFit: 'contain'}}
-                    className="m-auto"
+                    className="m-auto bg-white/80 rounded-xl"
                 />
 
                 <motion.div
