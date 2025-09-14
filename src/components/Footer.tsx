@@ -1,10 +1,10 @@
 'use client';
 
-import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import {useTranslations} from 'next-intl';
-import React, {useState} from "react";
+import dynamic from 'next/dynamic';
 import {motion} from "framer-motion";
+import React, {useState} from "react";
+import {useTranslations} from 'next-intl';
 import AppImage from "@/components/Image";
 
 const DinoGameNoSSR = dynamic(() => import('react-chrome-dino-ts'), {ssr: false});
@@ -34,9 +34,7 @@ export default function DinoGameFooter() {
 
     return (
         <footer className="relative">
-
-
-            <div className="w-full max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl relative mx-auto z-0 -mb-4">
+            <div className="w-full max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl relative mx-auto z-20 -mb-3.5">
                 <DinoGameNoSSR/>
             </div>
 
