@@ -12,6 +12,7 @@ const menuItems = [
     "test",
     "zodiac-roles",
     "links",
+    "prompt-engineering",
     // "arcade-calculator",
     "blog",
     "trending",

@@ -161,7 +161,12 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({childre
                 <SoundWrapper playOn="click">
                     <button
                         aria-label="Відкрити плеєр"
-                        className="cursor-pointer fixed bottom-6 left-6 w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center shadow-2xl hover:scale-105 transition-transform z-50"
+                        className="fixed bottom-6 left-6 w-12 h-12 rounded-full
+  flex items-center justify-center cursor-pointer
+  bg-gradient-to-br from-blue-500 to-indigo-600
+  shadow-2xl transform transition duration-150 ease-in-out
+  hover:scale-105 hover:from-yellow-400 hover:to-yellow-600
+  z-50"
                         onClick={showPlayer}
                     >
                         <MusicalNoteIcon className="w-5 h-5 text-white animate-pulse"/>

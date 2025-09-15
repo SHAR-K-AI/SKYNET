@@ -40,6 +40,7 @@
     "blog": "Новини",
     "trending": "Google Тренди",
     "links": "Корисні посилання",
+    "prompt-engineering": "Prompt Engineering",
     "arcade-calculator": "Калькулятор Аркади"
   },
   "FAQ": {
@@ -269,5 +270,10 @@
     "no_data_title": "Немає даних",
     "no_data_description": "Не вдалося завантажити тренди. Спробуйте пізніше.",
     "no_data_extended": "Сервіс Google Trends тимчасово недоступний."
+  },
+  "PromptEngineering": {
+    "title": "Prompt Engineering",
+    "description": "Prompt Engineering — це мистецтво та наука створення запитів (prompts), які допомагають отримувати найкращі результати від моделей штучного інтелекту. Влучно сформульований промт може кардинально змінити якість відповіді.",
+    "subtitle": "Цікаві приклади промптів"
   }
 }

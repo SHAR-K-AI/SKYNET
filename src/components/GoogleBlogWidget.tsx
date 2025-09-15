@@ -124,7 +124,6 @@ const BlogPostCard = ({ post }: { post: Post }) => {
     );
 };
 
-// ---- main ----
 export default function GoogleBlogWidget({ posts, loading = false }: WidgetProps) {
     const t = useTranslations("GoogleBlogWidget");
 

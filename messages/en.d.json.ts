@@ -43,6 +43,7 @@ declare const messages: {
     "blog": "News",
     "trending": "Google Trends",
     "links": "Useful Links",
+    "prompt-engineering": "Prompt Engineering",
     "arcade-calculator": "Arcade Calculator"
   },
   "FAQ": {
@@ -271,6 +272,11 @@ declare const messages: {
     "no_data_title": "No data",
     "no_data_description": "Failed to load trends. Please try again later.",
     "no_data_extended": "The Google Trends service is temporarily unavailable."
+  },
+  "PromptEngineering": {
+    "title": "Prompt Engineering",
+    "description": "Prompt Engineering is the art and science of crafting prompts that help obtain the best results from AI models. A well-formulated prompt can dramatically improve the quality of the response.",
+    "subtitle": "Interesting Prompt Examples"
   }
 };
 export default messages;

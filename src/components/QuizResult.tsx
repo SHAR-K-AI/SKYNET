@@ -28,7 +28,7 @@ interface QuizResultProps {
 const rolesData = [
     {
         role_key: "CloudDigitalLeader",
-        role_name: "Cloud Digital Leader", // англійський дефолт
+        role_name: "Cloud Digital Leader",
         persona: "Dino",
         image: "/images/test/cdl.png"
     },
