@@ -56,14 +56,6 @@
     "content": "Google's Women Techmakers Program offers resources, mentorship, and community support for women in technology. The program aims to empower women by providing opportunities for learning, networking, and professional growth.\n\nKey features:\n- Learning resources including workshops, tutorials, and guides\n- Access to a global community of women in tech for collaboration and support\n- Participation in events, webinars, and conferences to expand skills and network\n- Opportunities to work with Google tools and platforms to develop projects\n- Mentorship and guidance from experienced professionals in the tech industry\n\nThe program helps women build technical skills, gain confidence, connect with peers, and contribute to innovative projects, fostering growth in their careers and the tech community."
   },
   {
-    "id": "6f3b1d7a-9c8e-4b2d-8a5f-7d3c1e2b4a6d",
-    "title": "Credly",
-    "link": "https://www.credly.com/",
-    "imageUrl": "/images/credly.png",
-    "description": "A platform for managing digital certificates and badges.",
-    "content": "Credly allows users to showcase their professional achievements through digital certificates and badges. Although it is not a Google platform, it can be very useful for collecting your certificates and badges in one place and effectively demonstrating your skills and expertise to potential employers or colleagues.\n\nKey features:\n- Centralized management of certificates and badges\n- Publishing and showcasing achievements in a professional portfolio\n- Recognition and validation of skills\n- Ability to share accomplishments on social media and professional platforms\n\nCredly helps structure and visualize professional progress, making achievements more visible and accessible to others."
-  },
-  {
     "id": "f1e2d3c4-b5a6-4d7f-8c9a-0b1c2d3e4f5a",
     "title": "AI for Productivity",
     "link": "https://google.brandlive.com/AI-for-productivity/uk",
@@ -134,6 +126,14 @@
     "imageUrl": "/images/exp-ai.png",
     "description": "An AI education program for teachers and students aged 11–14.",
     "content": "Experience AI is an educational program developed by the Raspberry Pi Foundation in collaboration with Google DeepMind. It provides cutting-edge resources on artificial intelligence and machine learning, supporting teachers in integrating these topics into their lessons. The program engages students aged 11–14 in exploring AI and empowers educators in a rapidly evolving technological field.\n\nKey features:\n- AI and machine learning resources\n- For teachers and students aged 11–14\n- Developed by Raspberry Pi Foundation and Google DeepMind\n- Helps integrate AI into classroom lessons\n- Supports educators in the fast-changing field of technology"
+  },
+  {
+    "id": "6f3b1d7a-9c8e-4b2d-8a5f-7d3c1e2b4a6d",
+    "title": "Credly",
+    "link": "https://www.credly.com/",
+    "imageUrl": "/images/credly.png",
+    "description": "A platform for managing digital certificates and badges.",
+    "content": "Credly allows users to showcase their professional achievements through digital certificates and badges. Although it is not a Google platform, it can be very useful for collecting your certificates and badges in one place and effectively demonstrating your skills and expertise to potential employers or colleagues.\n\nKey features:\n- Centralized management of certificates and badges\n- Publishing and showcasing achievements in a professional portfolio\n- Recognition and validation of skills\n- Ability to share accomplishments on social media and professional platforms\n\nCredly helps structure and visualize professional progress, making achievements more visible and accessible to others."
   },
   {
     "id": "d3e4f5a6-b7c8-9d0e-f1a2-3b4c5d6e7f8g-en",

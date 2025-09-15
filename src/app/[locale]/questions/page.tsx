@@ -102,7 +102,21 @@ export default function FAQPage() {
                 >
                     {t("Description")}
                 </motion.p>
-
+                <div
+                    className="mt-4 p-4 rounded-xl text-sm text-right text-gray-700 dark:text-gray-300 ">
+                    <strong>{t("OriginalArticle")}</strong>
+                    <br/>
+                    <a
+                        href="https://medium.com/google-cloud/mastering-google-cloud-platform-a-list-of-questions-to-consider-for-beginners-intermediates-and-82c02d9f2e2b"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300"
+                    >
+                        Mastering Google Cloud Platform:
+                        <br/>
+                        A List of Questions to Consider for Beginners, Intermediates, and Experts
+                    </a>
+                </div>
                 <motion.div className="relative" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
                     <MagnifyingGlassIcon className="absolute left-3 top-3 h-5 w-5 text-gray-400 dark:text-gray-300" />
                     <input

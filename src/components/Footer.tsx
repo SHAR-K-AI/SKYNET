@@ -33,7 +33,7 @@ export default function DinoGameFooter() {
     };
 
     return (
-        <footer className="relative">
+        <footer>
             <div className="w-full max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl relative mx-auto z-20 -mb-3.5">
                 <DinoGameNoSSR/>
             </div>
@@ -43,7 +43,7 @@ export default function DinoGameFooter() {
                     alt="ILG"
                     width={250}
                     src="/images/footer-img.png"
-                    className="object-cover rounded-lg absolute md:-top-25 invisible md:visible md:left-30 opacity-85"
+                    className="object-cover rounded-lg absolute md:-top-25 hidden md:block md:left-30 opacity-85"
                 />
                 <div className="max-w-6xl mx-auto flex flex-col items-center justify-between gap-2">
 

@@ -2,7 +2,7 @@
 
 import { Dialog, Transition } from '@headlessui/react';
 import React, { Fragment, useState, useMemo, useCallback } from 'react';
-import { ClipboardIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { DocumentDuplicateIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import AppImage from "@/components/Image";
 
 export interface CardProps {
@@ -47,7 +47,7 @@ const Card: React.FC<CardProps> = ({ title, description, imageUrl, content, link
             >
                 {domain}
             </a>
-            <ClipboardIcon
+            <DocumentDuplicateIcon
                 onClick={handleCopy}
                 className="w-5 h-5 text-white dark:text-gray-200 hover:text-green-500 cursor-pointer transition-transform duration-200 hover:scale-110"
             />
