@@ -1,6 +1,7 @@
 {
   "MainPage": {
     "title": "Resources",
+    "description": "This collection features educational programs, online courses, intensives, communities, and platforms designed to develop skills in cloud technologies, artificial intelligence, cybersecurity, and programming. They help you gain practical experience, earn certificates, grow your career, automate work processes, and use digital tools safely.",
     "welcomeTitle": "Welcome to the fun GCP & AI fan site! 🎉",
     "welcomeText": "No strict rules or boring instructions here. This is a place for learning, fun, and small victories in the world of cloud technologies. ☁",
     "whatYouWillFind": "What you'll find here:",

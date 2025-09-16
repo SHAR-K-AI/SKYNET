@@ -33,10 +33,12 @@ export default function MainPage() {
 
     return (
         <div className="min-h-screen text-gray-900 dark:text-gray-100 relative transition-colors duration-500">
-            <AnimatePresence>
-            </AnimatePresence>
+            <AnimatePresence/>
             <section className="md:p-6 mt-6">
-                <h2 className="text-4xl font-extrabold mb-4 text-blue-700 dark:text-blue-400 drop-shadow-md">{t('title')}</h2>
+                <h1 className="md:text-6xl text-xl font-extrabold mb-6 text-gray-900 dark:text-white tracking-tight leading-tight">{t('title')}</h1>
+                <p className="md:text-xl mb-12 text-gray-700 dark:text-gray-300 leading-relaxed">
+                    {t("description")}
+                </p>
                 {loading ? <Spinner/> : <CardGrid cards={cards}/>}
             </section>
         </div>

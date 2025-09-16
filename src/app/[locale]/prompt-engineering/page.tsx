@@ -42,7 +42,7 @@ export default function PromptEngineeringPage() {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="text-6xl font-extrabold mb-6 text-gray-900 dark:text-white tracking-tight leading-tight"
+                    className="md:text-6xl text-xl font-extrabold mb-6 text-gray-900 dark:text-white tracking-tight leading-tight"
                 >
                     {t("title")}
                 </motion.h1>
