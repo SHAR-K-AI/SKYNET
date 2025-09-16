@@ -8,14 +8,14 @@ import { useTheme } from "next-themes";
 const menuItems = [
     "home",
     "about",
-    "questions",
-    "test",
     "zodiac-roles",
-    "links",
-    "prompt-engineering",
-    // "arcade-calculator",
+    "test",
+    "questions",
     "blog",
     "trending",
+    // "arcade-calculator",
+    "prompt-engineering",
+    "links",
 ];
 
 const itemVariants: Variants = {

@@ -46,7 +46,7 @@
   },
   "FAQ": {
     "Title": "Expanded Questions",
-    "Description": "This page is inspired by an article on Medium. It contains questions from the original article as well as new questions and answers that may be helpful for your learning and practice. Whether you are just starting or seeking to deepen your knowledge, this resource will guide you in asking the right questions and finding useful answers.",
+    "Description": "This page is inspired by a Medium article and supplemented with other resources. Here you will find questions from the article, as well as new questions and answers that may be useful for your learning and practice. Whether you are just starting out or looking to deepen your knowledge, this resource will help you ask the right questions and get answers.",
     "SearchPlaceholder": "Search questions...",
     "All": "All",
     "Loading": "Loading...",
@@ -261,8 +261,9 @@
     "lastUpdated": "Last updated: {date}"
   },
   "GoogleTrends": {
-    "title": "Google Trends — Ukraine",
-    "description_short": "These are the latest trends of Google users in Ukraine in real time.",
+    "title": "Google Trends",
+    "about": "You can explore current topics and analytics directly at ",
+    "description_short": "These are the latest trends of Google users in Ukraine in real time. ",
     "description_long": "Google Trends allows you to see the most popular search queries of Ukrainian users in real time, analyze the dynamics of interest in topics, compare the popularity of different queries, and find related news. The service helps to understand current trends, track seasonal changes in popularity, and find content that interests your audience.",
     "link_text": "official Google Trends website",
     "news_title": "News:",

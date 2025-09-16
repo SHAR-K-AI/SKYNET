@@ -7,16 +7,12 @@ export default function TrendingInfo() {
 
     return (
         <div className="mb-6">
-            <h1 className="text-4xl font-extrabold mb-4 text-center text-blue-700 dark:text-blue-400 drop-shadow-md">
+            <h1 className="md:text-6xl text-xl font-extrabold mb-6 text-gray-900 dark:text-white tracking-tight leading-tight">
                 {t("title")}
             </h1>
 
-            <p className="text-gray-600 dark:text-gray-400 mb-2 font-medium">
+            <p className="md:text-xl text-gray-700 dark:text-gray-400 mb-2 font-medium">
                 {t("description_short")}
-
-            </p>
-
-            <p className="text-gray-600 dark:text-gray-400 mb-4">
                 {t("about")}
                 <a
                     href="https://trends.google.com/trending?geo=UA&hl=uk"
@@ -28,7 +24,11 @@ export default function TrendingInfo() {
                 </a>.
             </p>
 
-            <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+            <p className="md:text-xl text-gray-700 dark:text-gray-400 mb-4">
+
+            </p>
+
+            <p className="md:text-xl text-gray-700 dark:text-gray-400 mb-6 leading-relaxed">
                 {t("description_long")}
             </p>
         </div>

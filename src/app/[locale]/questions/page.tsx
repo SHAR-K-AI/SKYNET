@@ -93,12 +93,11 @@ export default function FAQPage() {
                         ✨ {t("Title")} ✨
                     </h1>
                 </motion.div>
-
                 <motion.p
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="leading-relaxed max-w-2xl mx-auto text-center text-gray-600 dark:text-gray-300"
+                    className="leading-relaxed  mx-auto text-gray-600 dark:text-gray-300"
                 >
                     {t("Description")}
                 </motion.p>
