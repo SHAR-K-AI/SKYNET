@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "API Розробник",
+    "name": "API Developer",
     "category": "Developer",
     "description": "API Розробник відповідає за проєктування, створення та підтримку API, які дозволяють додаткам і сервісам взаємодіяти. Він працює з хмарними платформами, інструментами управління API та мовами програмування для забезпечення безпечних, масштабованих та ефективних інтеграцій.",
     "requirements": {
@@ -23,6 +23,7 @@
         "Kubernetes"
       ],
       "languages": [
+        "TypeScript",
         "JavaScript",
         "Python",
         "Go",
@@ -38,9 +39,8 @@
     ],
     "links": {
       "documentation": "https://cloud.google.com/endpoints/docs",
-      "apigee": "https://cloud.google.com/apigee",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-for-api-design",
-      "tutorials": "https://developers.google.com/learn/pathways/api-design-development"
+      "bestPractices": "",
+      "tutorials": "https://www.cloudskillsboost.google/paths/21"
     }
   },
   {
@@ -72,9 +72,9 @@
       "Підтримувати та оновлювати існуючі додатки"
     ],
     "links": {
-      "documentation": "https://developers.google.com/appsheet",
-      "bestPractices": "https://cloud.google.com/solutions/citizen-developer-best-practices",
-      "tutorials": "https://developers.google.com/learn/pathways/appsheet"
+      "documentation": "https://cloud.google.com/appsheet?hl=uk",
+      "bestPractices": "",
+      "tutorials": "https://www.cloudskillsboost.google/paths/30"
     }
   },
   {
@@ -104,9 +104,9 @@
       "Сприяти інноваціям через хмарні технології"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/solutions/cloud-digital-leader",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-for-cloud-adoption",
-      "tutorials": "https://cloud.google.com/learn/cloud-digital-leader"
+      "documentation": "https://cloud.google.com/learn/certification/cloud-digital-leader",
+      "bestPractices": "https://www.youtube.com/watch?v=cbcd6-m8sHg",
+      "tutorials": "https://www.cloudskillsboost.google/paths/9"
     }
   },
   {
@@ -141,9 +141,9 @@
       "Забезпечувати безпеку, резервне копіювання та відновлення після аварій"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/solutions/cloud-engineer",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-for-cloud-infrastructure",
-      "tutorials": "https://cloud.google.com/learn/cloud-engineer"
+      "documentation": "https://cloud.google.com/learn/certification/cloud-engineer",
+      "bestPractices": "https://www.youtube.com/watch?v=OlAmyf8_4O4",
+      "tutorials": "https://www.cloudskillsboost.google/paths/11"
     }
   },
   {
@@ -177,9 +177,9 @@
       "Оптимізовувати витрати та забезпечувати високу доступність"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/solutions/cloud-architect",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-for-cloud-architecture",
-      "tutorials": "https://cloud.google.com/learn/cloud-architect"
+      "documentation": "https://cloud.google.com/learn/certification/cloud-architect",
+      "bestPractices": "https://www.youtube.com/watch?v=u43gJJrVa1I",
+      "tutorials": "https://www.cloudskillsboost.google/paths/12"
     }
   },
   {
@@ -214,9 +214,9 @@
       "Забезпечувати безпеку, продуктивність та масштабованість додатків"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/developers",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-for-cloud-development",
-      "tutorials": "https://cloud.google.com/learn/cloud-developer"
+      "documentation": "https://cloud.google.com/learn/certification/cloud-developer",
+      "bestPractices": "https://cloud.google.com/developers?hl=uk",
+      "tutorials": "https://www.cloudskillsboost.google/paths/19"
     }
   },
   {
@@ -249,9 +249,9 @@
       "Моніторити продуктивність та оптимізувати надійність системи"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/contact-center-ai",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-contact-center",
-      "tutorials": "https://cloud.google.com/learn/contact-center-engineer"
+      "documentation": "https://cloud.google.com/dialogflow/docs",
+      "bestPractices": "",
+      "tutorials": "https://cloud.google.com/contact-center/ccai-platform/docs"
     }
   },
   {
@@ -285,9 +285,9 @@
       "Підтримувати прийняття рішень на основі даних"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/bigquery/docs",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-data-analytics",
-      "tutorials": "https://cloud.google.com/learn/data-analyst"
+      "documentation": "https://cloud.google.com/docs/data",
+      "bestPractices": "https://www.cloudskillsboost.google/paths/420",
+      "tutorials": "https://www.cloudskillsboost.google/paths/18"
     }
   },
   {
@@ -321,9 +321,9 @@
       "Забезпечувати якість, узгодженість та доступність даних"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/dataflow/docs",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-data-engineering",
-      "tutorials": "https://cloud.google.com/learn/data-engineer"
+      "documentation": "https://cloud.google.com/learn/certification/data-engineer",
+      "bestPractices": "https://cloud.google.com/learn/training/data-engineering-and-analytics",
+      "tutorials": "https://www.cloudskillsboost.google/paths/16"
     }
   },
   {
@@ -357,9 +357,9 @@
       "Підтримувати аналітичні та операційні потреби у даних"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/sql/docs",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-database",
-      "tutorials": "https://cloud.google.com/learn/database-engineer"
+      "documentation": "https://cloud.google.com/learn/certification/cloud-database-engineer",
+      "bestPractices": "",
+      "tutorials": "https://www.cloudskillsboost.google/paths/22"
     }
   },
   {
@@ -395,9 +395,9 @@
       "Співпрацювати з командами розробки та експлуатації"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/devops",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-devops",
-      "tutorials": "https://cloud.google.com/learn/devops-engineer"
+      "documentation": "https://cloud.google.com/learn/certification/cloud-devops-engineer",
+      "bestPractices": "",
+      "tutorials": "https://www.cloudskillsboost.google/paths/20"
     }
   },
   {
@@ -432,9 +432,9 @@
       "Підтримувати користувачів та вирішувати технічні проблеми"
     ],
     "links": {
-      "documentation": "https://support.google.com/a",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-workspace-admin",
-      "tutorials": "https://cloud.google.com/learn/google-workspace-admin"
+      "documentation": "https://cloud.google.com/learn/certification/google-workspace-administrator",
+      "bestPractices": "",
+      "tutorials": "https://www.cloudskillsboost.google/paths/24"
     }
   },
   {
@@ -471,16 +471,16 @@
       "Співпрацювати з командами розробки та експлуатації"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/solutions/multi-cloud",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-multi-cloud",
-      "tutorials": "https://cloud.google.com/learn/multi-cloud-architect"
+      "documentation": "https://cloud.google.com/architecture/hybrid-multicloud-patterns/strategy",
+      "bestPractices": "",
+      "tutorials": "https://www.cloudskillsboost.google/paths/13"
     }
   },
   {
     "id": 14,
     "name": "Machine Learning Engineer",
     "category": "AI/ML",
-    "description": "A Machine Learning Engineer designs, develops, and deploys machine learning models to solve business problems. They work with datasets, ML frameworks, and cloud AI services to build scalable and reliable solutions.",
+    "description": "Machine Learning Engineer розробляє, впроваджує та розгортає моделі машинного навчання для вирішення бізнес-завдань. Він працює з наборами даних, фреймворками ML та хмарними AI-сервісами для створення масштабованих та надійних рішень.",
     "requirements": {
       "services": [
         "Vertex AI",
@@ -501,16 +501,16 @@
       ]
     },
     "responsibilities": [
-      "Design, train, and deploy machine learning models",
-      "Preprocess and analyze datasets",
-      "Optimize model performance and accuracy",
-      "Collaborate with data engineers and analysts",
-      "Integrate ML models into production systems"
+      "Проєктування, навчання та розгортання моделей машинного навчання",
+      "Попередня обробка та аналіз наборів даних",
+      "Оптимізація продуктивності та точності моделей",
+      "Співпраця з інженерами даних та аналітиками",
+      "Інтеграція ML-моделей у виробничі системи"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/vertex-ai/docs",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-ml",
-      "tutorials": "https://cloud.google.com/learn/machine-learning-engineer"
+      "documentation": "https://cloud.google.com/learn/certification/machine-learning-engineer",
+      "bestPractices": "https://developers.google.com/machine-learning/crash-course?hl=uk",
+      "tutorials": "https://www.cloudskillsboost.google/paths/17"
     }
   },
   {
@@ -544,9 +544,9 @@
       "Співпрацювати з командами DevOps та хмарних інженерів"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/networking/docs",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-networking",
-      "tutorials": "https://cloud.google.com/learn/network-engineer"
+      "documentation": "https://cloud.google.com/learn/certification/cloud-network-engineer",
+      "bestPractices": "",
+      "tutorials": "https://www.cloudskillsboost.google/paths/14"
     }
   },
   {
@@ -580,16 +580,16 @@
       "Забезпечувати відповідність стандартам та найкращим практикам безпеки"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/security",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-security",
-      "tutorials": "https://cloud.google.com/learn/security-engineer"
+      "documentation": "https://cloud.google.com/learn/certification/cloud-security-engineer",
+      "bestPractices": "",
+      "tutorials": "https://www.cloudskillsboost.google/paths/15"
     }
   },
   {
     "id": 17,
     "name": "Startup Cloud Engineer",
     "category": "Cloud",
-    "description": "Startup Cloud Engineer проєктує та керує хмарною інфраструктурою для стартапів, орієнтуючись на швидку розробку, масштабованість та економічність. Використовує хмарні сервіси для прискорення доставки продукту.",
+    "description": "Startup Cloud Engineer проєктує та керує хмарною інфраструктурою для стартапів, орієнтуючись на швидку розробку, масштабованість та економічність. Використовує хмарні сервіси для швидкого розгортання продукту та прототипування.",
     "requirements": {
       "services": [
         "Firebase",
@@ -616,9 +616,9 @@
       "Співпрацювати з командами розробки та продукту"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/startup",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-startup",
-      "tutorials": "https://cloud.google.com/learn/startup-cloud-engineer"
+      "documentation": "",
+      "bestPractices": "https://www.cloudskillsboost.google/paths/31?locale=uk",
+      "tutorials": "https://partner.cloudskillsboost.google/paths/91?locale=uk"
     }
   },
   {
@@ -639,10 +639,9 @@
       "Моніторинг продуктивності та безпеки AI-систем"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/vertex-ai/docs",
-      "apigee": "https://cloud.google.com/apigee",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-for-ai",
-      "tutorials": "https://developers.google.com/learn/pathways/ai"
+      "documentation": "https://cloud.google.com/learn/certification/generative-ai-leader",
+      "bestPractices": "",
+      "tutorials": "https://www.cloudskillsboost.google/paths/1951"
     }
   }
 ]

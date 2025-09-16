@@ -38,9 +38,8 @@
     ],
     "links": {
       "documentation": "https://cloud.google.com/endpoints/docs",
-      "apigee": "https://cloud.google.com/apigee",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-for-api-design",
-      "tutorials": "https://developers.google.com/learn/pathways/api-design-development"
+      "bestPractices": "",
+      "tutorials": "https://www.cloudskillsboost.google/paths/21"
     }
   },
   {
@@ -72,9 +71,9 @@
       "Maintain and update existing citizen apps"
     ],
     "links": {
-      "documentation": "https://developers.google.com/appsheet",
-      "bestPractices": "https://cloud.google.com/solutions/citizen-developer-best-practices",
-      "tutorials": "https://developers.google.com/learn/pathways/appsheet"
+      "documentation": "https://cloud.google.com/appsheet?hl=uk",
+      "bestPractices": "",
+      "tutorials": "https://www.cloudskillsboost.google/paths/30"
     }
   },
   {
@@ -104,9 +103,9 @@
       "Foster innovation through cloud technologies"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/solutions/cloud-digital-leader",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-for-cloud-adoption",
-      "tutorials": "https://cloud.google.com/learn/cloud-digital-leader"
+      "documentation": "https://cloud.google.com/learn/certification/cloud-digital-leader",
+      "bestPractices": "https://www.youtube.com/watch?v=cbcd6-m8sHg",
+      "tutorials": "https://www.cloudskillsboost.google/paths/9"
     }
   },
   {
@@ -141,9 +140,9 @@
       "Ensure security, backup, and disaster recovery"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/solutions/cloud-engineer",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-for-cloud-infrastructure",
-      "tutorials": "https://cloud.google.com/learn/cloud-engineer"
+      "documentation": "https://cloud.google.com/learn/certification/cloud-engineer",
+      "bestPractices": "https://www.youtube.com/watch?v=OlAmyf8_4O4",
+      "tutorials": "https://www.cloudskillsboost.google/paths/11"
     }
   },
   {
@@ -177,9 +176,9 @@
       "Optimize costs and ensure high availability"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/solutions/cloud-architect",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-for-cloud-architecture",
-      "tutorials": "https://cloud.google.com/learn/cloud-architect"
+      "documentation": "https://cloud.google.com/learn/certification/cloud-architect",
+      "bestPractices": "https://www.youtube.com/watch?v=u43gJJrVa1I",
+      "tutorials": "https://www.cloudskillsboost.google/paths/12"
     }
   },
   {
@@ -214,9 +213,9 @@
       "Ensure application security, performance, and scalability"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/developers",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-for-cloud-development",
-      "tutorials": "https://cloud.google.com/learn/cloud-developer"
+      "documentation": "https://cloud.google.com/learn/certification/cloud-developer",
+      "bestPractices": "https://cloud.google.com/developers?hl=uk",
+      "tutorials": "https://www.cloudskillsboost.google/paths/19"
     }
   },
   {
@@ -249,9 +248,9 @@
       "Monitor performance and optimize system reliability"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/contact-center-ai",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-contact-center",
-      "tutorials": "https://cloud.google.com/learn/contact-center-engineer"
+      "documentation": "https://cloud.google.com/dialogflow/docs",
+      "bestPractices": "",
+      "tutorials": "https://cloud.google.com/contact-center/ccai-platform/docs"
     }
   },
   {
@@ -285,9 +284,9 @@
       "Support decision-making with data-driven insights"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/bigquery/docs",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-data-analytics",
-      "tutorials": "https://cloud.google.com/learn/data-analyst"
+      "documentation": "https://cloud.google.com/docs/data",
+      "bestPractices": "https://www.cloudskillsboost.google/paths/420",
+      "tutorials": "https://www.cloudskillsboost.google/paths/18"
     }
   },
   {
@@ -321,9 +320,9 @@
       "Ensure data quality, consistency, and availability"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/dataflow/docs",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-data-engineering",
-      "tutorials": "https://cloud.google.com/learn/data-engineer"
+      "documentation": "https://cloud.google.com/learn/certification/data-engineer",
+      "bestPractices": "https://cloud.google.com/learn/training/data-engineering-and-analytics",
+      "tutorials": "https://www.cloudskillsboost.google/paths/16"
     }
   },
   {
@@ -357,9 +356,9 @@
       "Support analytics and operational data needs"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/sql/docs",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-database",
-      "tutorials": "https://cloud.google.com/learn/database-engineer"
+      "documentation": "https://cloud.google.com/learn/certification/cloud-database-engineer",
+      "bestPractices": "",
+      "tutorials": "https://www.cloudskillsboost.google/paths/22"
     }
   },
   {
@@ -395,9 +394,9 @@
       "Collaborate with development and operations teams"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/devops",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-devops",
-      "tutorials": "https://cloud.google.com/learn/devops-engineer"
+      "documentation": "https://cloud.google.com/learn/certification/cloud-devops-engineer",
+      "bestPractices": "",
+      "tutorials": "https://www.cloudskillsboost.google/paths/20"
     }
   },
   {
@@ -432,9 +431,9 @@
       "Support users and troubleshoot technical issues"
     ],
     "links": {
-      "documentation": "https://support.google.com/a",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-workspace-admin",
-      "tutorials": "https://cloud.google.com/learn/google-workspace-admin"
+      "documentation": "https://cloud.google.com/learn/certification/google-workspace-administrator",
+      "bestPractices": "",
+      "tutorials": "https://www.cloudskillsboost.google/paths/24"
     }
   },
   {
@@ -471,9 +470,9 @@
       "Collaborate with development and operations teams"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/solutions/multi-cloud",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-multi-cloud",
-      "tutorials": "https://cloud.google.com/learn/multi-cloud-architect"
+      "documentation": "https://cloud.google.com/architecture/hybrid-multicloud-patterns/strategy",
+      "bestPractices": "",
+      "tutorials": "https://www.cloudskillsboost.google/paths/13"
     }
   },
   {
@@ -508,9 +507,9 @@
       "Інтегрувати ML-моделі в продукційні системи"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/vertex-ai/docs",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-ml",
-      "tutorials": "https://cloud.google.com/learn/machine-learning-engineer"
+      "documentation": "https://cloud.google.com/learn/certification/machine-learning-engineer",
+      "bestPractices": "https://developers.google.com/machine-learning/crash-course?hl=uk",
+      "tutorials": "https://www.cloudskillsboost.google/paths/17"
     }
   },
   {
@@ -544,9 +543,9 @@
       "Collaborate with DevOps and cloud teams"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/networking/docs",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-networking",
-      "tutorials": "https://cloud.google.com/learn/network-engineer"
+      "documentation": "https://cloud.google.com/learn/certification/cloud-network-engineer",
+      "bestPractices": "",
+      "tutorials": "https://www.cloudskillsboost.google/paths/14"
     }
   },
   {
@@ -580,9 +579,9 @@
       "Ensure compliance with security standards and best practices"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/security",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-security",
-      "tutorials": "https://cloud.google.com/learn/security-engineer"
+      "documentation": "https://cloud.google.com/learn/certification/cloud-security-engineer",
+      "bestPractices": "",
+      "tutorials": "https://www.cloudskillsboost.google/paths/15"
     }
   },
   {
@@ -616,9 +615,9 @@
       "Collaborate with development and product teams"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/startup",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-startup",
-      "tutorials": "https://cloud.google.com/learn/startup-cloud-engineer"
+      "documentation": "",
+      "bestPractices": "https://www.cloudskillsboost.google/paths/31?locale=uk",
+      "tutorials": "https://partner.cloudskillsboost.google/paths/91?locale=uk"
     }
   },
   {
@@ -639,10 +638,9 @@
       "Monitor AI system performance and security"
     ],
     "links": {
-      "documentation": "https://cloud.google.com/vertex-ai/docs",
-      "apigee": "https://cloud.google.com/apigee",
-      "bestPractices": "https://cloud.google.com/architecture/best-practices-for-ai",
-      "tutorials": "https://developers.google.com/learn/pathways/ai"
+      "documentation": "https://cloud.google.com/learn/certification/generative-ai-leader",
+      "bestPractices": "",
+      "tutorials": "https://www.cloudskillsboost.google/paths/1951"
     }
   }
 ]
