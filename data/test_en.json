@@ -1,397 +1,1441 @@
 [
   {
-    "question": "Imagine you're setting up a new project in Google Cloud. What would be your first step? Choose the option that best fits your style.",
+    "question": "What type of tasks interests you the most?",
     "image": "/images/test/q-1.png",
     "options": [
       {
-        "text": "Set up the VM infrastructure and network, then write scripts to automate it.",
-        "categories": ["R"],
-        "hint": "Your approach is a quick start and automation."
+        "text": "Working with physical equipment and infrastructure.",
+        "categories": [
+          "R"
+        ],
+        "hint": "You are focused on concrete actions and working with real objects."
       },
       {
-        "text": "Study the documentation and best practices to choose the optimal architecture.",
-        "categories": ["I"],
-        "hint": "You like to analyze and find the best solutions."
+        "text": "Data research and algorithm development.",
+        "categories": [
+          "I"
+        ],
+        "hint": "You strive for deep analysis and the pursuit of new knowledge."
       },
       {
-        "text": "Draw an architectural diagram of the project and present it to the team.",
-        "categories": ["A"],
-        "hint": "You think visually and aim for a clear vision."
+        "text": "Developing creative solutions and improving user experience.",
+        "categories": [
+          "A"
+        ],
+        "hint": "You seek unconventional and creative approaches."
       },
       {
-        "text": "Define the project roadmap and goals to plan its development.",
-        "categories": ["E"],
-        "hint": "You are focused on strategy and long-term planning."
+        "text": "Teaching, mentoring, and supporting others.",
+        "categories": [
+          "S"
+        ],
+        "hint": "Knowledge sharing and interaction are important to you."
       },
       {
-        "text": "Create checklists and access policies to ensure everything is organized.",
-        "categories": ["C"],
-        "hint": "Order, organization, and compliance with standards are important to you."
+        "text": "Project management and team leadership.",
+        "categories": [
+          "E"
+        ],
+        "hint": "You engage others and look for collective solutions."
       },
       {
-        "text": "Communicate with the team to understand their needs and expectations for the project.",
-        "categories": ["S"],
-        "hint": "You prioritize collaboration and the needs of the team."
+        "text": "Organizing processes and quality control.",
+        "categories": [
+          "C"
+        ],
+        "hint": "You value systematic approaches and order."
       }
     ]
   },
   {
-    "question": "Imagine you're tasked with optimizing queries in BigQuery. What would be your first step? Choose the option that best fits your work style.",
+    "question": "What is the biggest challenge for you at work?",
     "image": "/images/test/q-2.png",
     "options": [
       {
-        "text": "Immediately write scripts and tests for optimization to get a quick result.",
-        "categories": ["R"],
-        "hint": "Your approach is hands-on action and rapid implementation."
+        "text": "Lack of order and systematization.",
+        "categories": [
+          "C"
+        ],
+        "hint": "You strive for structure and order."
       },
       {
-        "text": "Analyze the data and queries to find the most inefficient ones.",
-        "categories": ["I"],
-        "hint": "You first delve into analysis to find the root of the problem."
+        "text": "Inability to see the results of your work.",
+        "categories": [
+          "R"
+        ],
+        "hint": "Abstract results frustrate you."
       },
       {
-        "text": "Create visualizations to demonstrate the results of the optimization.",
-        "categories": ["A"],
-        "hint": "You like to explain complex things using visual materials."
+        "text": "Limited opportunities for creative expression.",
+        "categories": [
+          "A"
+        ],
+        "hint": "You are restricted by the lack of creative freedom."
       },
       {
-        "text": "Train the team on how to use query optimization tools.",
-        "categories": ["S"],
-        "hint": "You believe the best way to solve a problem is to empower others."
+        "text": "Unclear goals and lack of strategic vision.",
+        "categories": [
+          "E"
+        ],
+        "hint": "Disorganization and lack of planning bother you."
       },
       {
-        "text": "Prepare a presentation for management to show how optimization will impact efficiency.",
-        "categories": ["E"],
-        "hint": "You are focused on strategy and communication with leadership."
+        "text": "Working alone without team interaction.",
+        "categories": [
+          "S"
+        ],
+        "hint": "You dislike working in isolation from others."
       },
       {
-        "text": "Document the data structure and optimization processes to ensure everything is recorded for the future.",
-        "categories": ["C"],
-        "hint": "You prefer order, documentation, and systematic approaches."
+        "text": "Having to make decisions without sufficient information.",
+        "categories": [
+          "I"
+        ],
+        "hint": "Working in uncertainty is difficult for you."
       }
     ]
   },
   {
-    "question": "Imagine you're planning CI/CD for a new project. What would be your first step? Choose the option that best fits your style.",
+    "question": "What aspects of work match your personal interests the most?",
     "image": "/images/test/q-3.png",
     "options": [
       {
-        "text": "Set up pipelines and automation to speed up deployment.",
-        "categories": ["R"],
-        "hint": "You focus on quick action and practical implementation."
+        "text": "Intellectual challenges — researching and analyzing new knowledge.",
+        "categories": [
+          "I"
+        ],
+        "hint": "You are inspired by exploring and analyzing complex ideas."
       },
       {
-        "text": "Study CI/CD best practices to develop an effective process.",
-        "categories": ["I"],
-        "hint": "You start with a deep analysis and a search for the best solution."
+        "text": "Collaboration with people and supporting team spirit.",
+        "categories": [
+          "S"
+        ],
+        "hint": "Team interaction and cooperation are important to you."
       },
       {
-        "text": "Develop a clear interface for monitoring the CI/CD process.",
-        "categories": ["A"],
-        "hint": "It's important to you that the process is visual and understandable for everyone."
+        "text": "Result-oriented activities, competition, and rapid progress.",
+        "categories": [
+          "E"
+        ],
+        "hint": "You are focused on action, results, and drive."
       },
       {
-        "text": "Coordinate the development team so everyone understands the new process.",
-        "categories": ["S"],
-        "hint": "You prioritize communication and teamwork."
+        "text": "Organized and structured processes with clear rules.",
+        "categories": [
+          "C"
+        ],
+        "hint": "You feel comfortable in predictable and controlled processes."
       },
       {
-        "text": "Create a release plan and quality control to ensure reliability.",
-        "categories": ["E"],
-        "hint": "You are oriented towards strategy, planning, and control."
+        "text": "Concrete and practical tasks involving physical work or technology.",
+        "categories": [
+          "R"
+        ],
+        "hint": "You enjoy hands-on actions and applying skills."
       },
       {
-        "text": "Document all CI/CD processes and instructions for future use.",
-        "categories": ["C"],
-        "hint": "Your approach is to systematize and document every step."
+        "text": "Creative projects where you can implement your own ideas.",
+        "categories": [
+          "A"
+        ],
+        "hint": "You seek self-expression and creativity."
       }
     ]
   },
   {
-    "question": "Imagine you need to protect a cloud infrastructure from attacks. What would you do first? Choose the option that best fits your style.",
+    "question": "What type of vacation would you choose?",
     "image": "/images/test/q-4.png",
     "options": [
       {
-        "text": "Set up a firewall and monitoring to block threats.",
-        "categories": ["R"],
-        "hint": "You're focused on quick, practical actions and protection."
+        "text": "Attending scientific conferences or educational courses.",
+        "categories": [
+          "I"
+        ],
+        "hint": "You seek knowledge and intellectual growth."
       },
       {
-        "text": "Study threat and vulnerability reports to understand the potential risks.",
-        "categories": ["I"],
-        "hint": "Your approach is deep analysis and strategy development."
+        "text": "Volunteering or participating in social projects.",
+        "categories": [
+          "S"
+        ],
+        "hint": "Interaction and helping others are important to you."
       },
       {
-        "text": "Create visual threat diagrams to better analyze them.",
-        "categories": ["A"],
-        "hint": "You like to visualize data for a better understanding of the situation."
+        "text": "Business training or leadership seminar.",
+        "categories": [
+          "E"
+        ],
+        "hint": "You aim to develop leadership and organizational skills."
       },
       {
-        "text": "Conduct security training for the team to increase their awareness.",
-        "categories": ["S"],
-        "hint": "You believe that training and team interaction are key to security."
+        "text": "Hiking in the mountains or other active recreation.",
+        "categories": [
+          "R"
+        ],
+        "hint": "You prefer physical activity and action."
       },
       {
-        "text": "Develop a security policy to establish clear rules for the entire team.",
-        "categories": ["E"],
-        "hint": "You are oriented towards leadership, strategic planning, and defining rules."
+        "text": "Vacation with pre-planned excursions.",
+        "categories": [
+          "C"
+        ],
+        "hint": "Organization and structure matter to you."
       },
       {
-        "text": "Document procedures and access policies to ensure compliance.",
-        "categories": ["C"],
-        "hint": "Your approach is systematization, documentation, and control."
+        "text": "Art workshop or creative retreat.",
+        "categories": [
+          "A"
+        ],
+        "hint": "You seek opportunities for creative self-expression."
       }
     ]
   },
   {
-    "question": "Imagine you're creating an ML model for data prediction. What is your approach? Choose the option that best fits your style.",
+    "question": "You work best when:",
     "image": "/images/test/q-5.png",
     "options": [
       {
-        "text": "Train the model on a dataset and write the code for its integration.",
-        "categories": ["R"],
-        "hint": "You're focused on rapid implementation and hands-on work."
+        "text": "You have a specific task to complete hands-on.",
+        "categories": [
+          "R"
+        ],
+        "hint": "You focus on concrete actions and results."
       },
       {
-        "text": "Analyze the data and choose an algorithm to get the most accurate result.",
-        "categories": ["I"],
-        "hint": "Your approach is deep analysis and selecting the best solution."
+        "text": "You manage the process and make key decisions.",
+        "categories": [
+          "E"
+        ],
+        "hint": "You aim to develop leadership and organizational skills."
       },
       {
-        "text": "Create visualizations of the results to show the model's effectiveness.",
-        "categories": ["A"],
-        "hint": "You like to explain complex ideas using visual materials."
+        "text": "You have freedom for experimentation and creativity.",
+        "categories": [
+          "A"
+        ],
+        "hint": "You seek opportunities for creative self-expression."
       },
       {
-        "text": "Collaborate with the team to obtain high-quality data.",
-        "categories": ["S"],
-        "hint": "You believe the project's success depends on quality collaboration."
+        "text": "You follow clear instructions and procedures.",
+        "categories": [
+          "C"
+        ],
+        "hint": "Structure and consistency are important to you."
       },
       {
-        "text": "Present the results to management to justify the business value.",
-        "categories": ["E"],
-        "hint": "You are oriented towards strategy, communication, and demonstrating value."
+        "text": "You are part of a cohesive and friendly team.",
+        "categories": [
+          "S"
+        ],
+        "hint": "Interaction and teamwork matter to you."
       },
       {
-        "text": "Document the model development steps so others can reproduce it.",
-        "categories": ["C"],
-        "hint": "Your approach is order, systematization, and documentation."
+        "text": "You can focus deeply on a complex problem without distractions.",
+        "categories": [
+          "I"
+        ],
+        "hint": "You need concentration for in-depth analysis."
       }
     ]
   },
   {
-    "question": "Imagine you're creating a network infrastructure for a large project. What would you do first? Choose the option that best fits your style.",
+    "question": "Which genre of computer games do you prefer?",
     "image": "/images/test/q-6.png",
     "options": [
       {
-        "text": "Set up routers and networks to ensure connectivity.",
-        "categories": ["R"],
-        "hint": "You are focused on quick, practical actions and configuration."
+        "text": "Simulation or survival games where you can create your own world (e.g., Minecraft, Valheim).",
+        "categories": [
+          "R"
+        ],
+        "hint": "You enjoy building and achieving practical results."
       },
       {
-        "text": "Analyze traffic and bandwidth to optimize the network.",
-        "categories": ["I"],
-        "hint": "Your approach is deep analysis and finding the most effective solutions."
+        "text": "Cooperative games where success depends on a coordinated team (e.g., It Takes Two, Deep Rock Galactic).",
+        "categories": [
+          "S"
+        ],
+        "hint": "Interaction, trust, and team spirit are important to you."
       },
       {
-        "text": "Create a network map to visualize its topology for all participants.",
-        "categories": ["A"],
-        "hint": "It's important to you that the process is visual and clear."
+        "text": "Strategies and PvP games with high dynamics (e.g., League of Legends, DOTA 2, Apex Legends, Fortnite).",
+        "categories": [
+          "E"
+        ],
+        "hint": "You get a thrill from action and leadership."
       },
       {
-        "text": "Coordinate the network team to avoid conflicts.",
-        "categories": ["S"],
-        "hint": "You prioritize communication and effective teamwork."
+        "text": "Puzzles and exploratory adventures (e.g., Hollow Knight, The Witness, Return of the Obra Dinn).",
+        "categories": [
+          "I"
+        ],
+        "hint": "You are inspired by intellectual challenges and discovery."
       },
       {
-        "text": "Develop a deployment strategy to ensure efficiency.",
-        "categories": ["E"],
-        "hint": "You are oriented towards strategy, planning, and leadership."
+        "text": "Open-world and creative RPGs (e.g., Witcher, Skyrim, Red Dead Redemption 2).",
+        "categories": [
+          "A"
+        ],
+        "hint": "You seek creativity and self-expression."
       },
       {
-        "text": "Document the topology and settings to ensure everything is recorded.",
-        "categories": ["C"],
-        "hint": "Your approach is to systematize and document every step."
+        "text": "Games with clear rules where precision matters (e.g., Civilization VI, Factorio, Heroes of Might and Magic).",
+        "categories": [
+          "C"
+        ],
+        "hint": "You feel comfortable when there is order and clear boundaries."
       }
     ]
   },
   {
-    "question": "Imagine you need to set up a database for a new service. How would you approach this? Choose the option that best fits your style.",
-    "image": "https://source.unsplash.com/400x200/?database,server",
+    "question": "Which hobby attracts you the most?",
+    "image": "/images/test/q-7.png",
     "options": [
       {
-        "text": "Immediately set up tables and indexes to make the database fast.",
-        "categories": ["R"],
-        "hint": "You're focused on quick, practical actions and configuration."
+        "text": "Building, repairing, or creating something with your own hands.",
+        "categories": [
+          "R"
+        ],
+        "hint": "You are focused on making and hands-on work."
       },
       {
-        "text": "Analyze queries and data structure to improve performance.",
-        "categories": ["I"],
-        "hint": "Your approach is deep analysis and finding the most effective solutions."
+        "text": "Participating in a team sport.",
+        "categories": [
+          "S"
+        ],
+        "hint": "Interaction and teamwork are important to you."
       },
       {
-        "text": "Create a database schema as a diagram to make its structure clear.",
-        "categories": ["A"],
-        "hint": "It's important to you that the process is visual and understandable for everyone."
+        "text": "Reading scientific literature or conducting research.",
+        "categories": [
+          "I"
+        ],
+        "hint": "You strive for knowledge and intellectual growth."
       },
       {
-        "text": "Collaborate with the development team to understand their needs.",
-        "categories": ["S"],
-        "hint": "You prioritize communication and effective teamwork."
+        "text": "Collecting and organizing objects.",
+        "categories": [
+          "C"
+        ],
+        "hint": "You enjoy structure and order."
       },
       {
-        "text": "Develop a backup policy to secure the data.",
-        "categories": ["E"],
-        "hint": "You are oriented towards strategy, planning, and ensuring reliability."
+        "text": "Organizing events or projects.",
+        "categories": [
+          "E"
+        ],
+        "hint": "You aim to develop leadership and organizational skills."
       },
       {
-        "text": "Document the database structure and settings so others can work with it.",
-        "categories": ["C"],
-        "hint": "Your approach is to systematize and document every step."
+        "text": "Creative activities: painting, music, or writing.",
+        "categories": [
+          "A"
+        ],
+        "hint": "You seek opportunities for creative self-expression."
       }
     ]
   },
   {
-    "question": "Imagine you're creating an analytical dashboard for management. What's your main focus? Choose the option that best fits your style.",
-    "image": "https://source.unsplash.com/400x200/?dashboard,analytics",
+    "question": "How do you perceive constructive criticism?",
+    "image": "/images/test/q-8.png",
     "options": [
       {
-        "text": "Set up connections to data sources and automate updates.",
-        "categories": ["R"],
-        "hint": "You're focused on quick, practical actions and automation."
+        "text": "As a chance to analyze mistakes and correct them.",
+        "categories": [
+          "I"
+        ],
+        "hint": "You see criticism as a way to analyze and improve."
       },
       {
-        "text": "Analyze metrics and KPIs to identify what's most important for the business.",
-        "categories": ["I"],
-        "hint": "Your approach is deep analysis and identifying key indicators."
+        "text": "As inspiration to find new creative solutions.",
+        "categories": [
+          "A"
+        ],
+        "hint": "You view criticism as a stimulus for creativity."
       },
       {
-        "text": "Design the dashboard to be intuitive and easy to understand.",
-        "categories": ["A"],
-        "hint": "It's important to you that information is presented visually and clearly."
+        "text": "As feedback to improve overall strategy.",
+        "categories": [
+          "E"
+        ],
+        "hint": "You use criticism to adjust the general plan."
       },
       {
-        "text": "Discuss team and management needs to ensure the dashboard is useful.",
-        "categories": ["S"],
-        "hint": "You prioritize communication and teamwork."
+        "text": "As an opportunity for open dialogue and discussion.",
+        "categories": [
+          "S"
+        ],
+        "hint": "You are open to communication and discussion."
       },
       {
-        "text": "Present the findings to management to justify the conclusions.",
-        "categories": ["E"],
-        "hint": "You are oriented towards strategy, communication, and demonstrating value."
+        "text": "As a chance to improve practical skills.",
+        "categories": [
+          "R"
+        ],
+        "hint": "You focus on hands-on improvement."
       },
       {
-        "text": "Document the metrics and formulas for transparency and future use.",
-        "categories": ["C"],
-        "hint": "Your approach is systematization and documentation of every step."
+        "text": "As information to refine your work processes.",
+        "categories": [
+          "C"
+        ],
+        "hint": "You strive to improve processes and rules."
       }
     ]
   },
   {
-    "question": "Imagine you need to integrate Google Workspace for your team. What would be your first step? Choose the option that best fits your style.",
-    "image": "https://source.unsplash.com/400x200/?workspace,cloud",
+    "question": "Which music style do you enjoy listening to the most?",
+    "image": "/images/test/q-9.png",
     "options": [
       {
-        "text": "Set up access and groups to get everything working without delay.",
-        "categories": ["R"],
-        "hint": "You're focused on quick, practical actions and configuration."
+        "text": "Jazz improvisation — constant exploration of new combinations (e.g., Miles Davis, Herbie Hancock).",
+        "categories": [
+          "I"
+        ],
+        "hint": "You enjoy experimenting and discovering new ideas."
       },
       {
-        "text": "Study the documentation and best practices to set everything up correctly.",
-        "categories": ["I"],
-        "hint": "Your approach is deep analysis and finding the most effective solutions."
+        "text": "Symphonic or rock ballads — space for emotion and creativity (e.g., Queen, Coldplay).",
+        "categories": [
+          "A"
+        ],
+        "hint": "You seek expressiveness and creativity."
       },
       {
-        "text": "Create interactive diagrams for users to make it easier for them to understand.",
-        "categories": ["A"],
-        "hint": "It's important to you that information is presented visually and clearly."
+        "text": "Choral singing — harmony of voices and teamwork (e.g., Pentatonix, The King's Singers).",
+        "categories": [
+          "S"
+        ],
+        "hint": "Interaction and collective results are important to you."
       },
       {
-        "text": "Conduct training for the team so everyone learns how to use the services.",
-        "categories": ["S"],
-        "hint": "You prioritize communication and supporting colleagues."
+        "text": "Classical music with clear scores — everything planned (e.g., Mozart, Bach).",
+        "categories": [
+          "C"
+        ],
+        "hint": "You feel comfortable with clarity, structure, and rules."
       },
       {
-        "text": "Develop a service usage policy to ensure security.",
-        "categories": ["E"],
-        "hint": "You are oriented towards strategy, planning, and ensuring reliability."
+        "text": "Rhythmic drum beats — precise, stable, and practical (e.g., AC/DC, Foo Fighters).",
+        "categories": [
+          "R"
+        ],
+        "hint": "You value rhythm, order, and reliability in actions."
       },
       {
-        "text": "Document settings and roles to avoid confusion.",
-        "categories": ["C"],
-        "hint": "Your approach is to systematize and document every step."
+        "text": "Rap or electronic — drive, energy, and forward motion (e.g., Eminem, Daft Punk, The Weeknd).",
+        "categories": [
+          "E"
+        ],
+        "hint": "You enjoy speed, dynamics, and achievement."
       }
     ]
   },
   {
-    "question": "Imagine you need to set up a scalable cloud architecture. What would you start with? Choose the option that best fits your style.",
-    "image": "https://source.unsplash.com/400x200/?cloud,architecture",
+    "question": "You are part of a team developing a new product. What interests you the most?",
+    "image": "/images/test/q-10.png",
     "options": [
       {
-        "text": "Set up services and automation so the system can scale.",
-        "categories": ["R"],
-        "hint": "You're focused on quick, practical actions and implementation."
+        "text": "Its compliance with standards and quality requirements.",
+        "categories": [
+          "C"
+        ],
+        "hint": "You value adherence to rules and norms."
       },
       {
-        "text": "Analyze the load and resources to determine the optimal size.",
-        "categories": ["I"],
-        "hint": "Your approach is deep analysis and developing an effective plan."
+        "text": "Its unique design and visual appearance.",
+        "categories": [
+          "A"
+        ],
+        "hint": "You see the product as an object of creativity."
       },
       {
-        "text": "Create architectural diagrams to visualize the structure.",
-        "categories": ["A"],
-        "hint": "It's important to you that information is presented visually and clearly."
+        "text": "How it will function from a technical perspective.",
+        "categories": [
+          "R"
+        ],
+        "hint": "You focus on practical implementation and technical realization."
       },
       {
-        "text": "Coordinate the work of engineers to ensure smooth operation.",
-        "categories": ["S"],
-        "hint": "You prioritize communication and effective teamwork."
+        "text": "User needs and their feedback.",
+        "categories": [
+          "S"
+        ],
+        "hint": "You are people-oriented and attentive to their needs."
       },
       {
-        "text": "Develop a scaling strategy to plan for the future.",
-        "categories": ["E"],
-        "hint": "You are oriented towards strategy, planning, and leadership."
+        "text": "Its market potential and business model.",
+        "categories": [
+          "E"
+        ],
+        "hint": "You think big and strategically."
       },
       {
-        "text": "Document the architecture and settings to easily track changes.",
-        "categories": ["C"],
-        "hint": "Your approach is to systematize and document every step."
+        "text": "The fundamental principles behind it.",
+        "categories": [
+          "I"
+        ],
+        "hint": "You strive for a deep understanding of its internal logic."
       }
     ]
   },
   {
-    "question": "Imagine you're creating an analytical model for a business. What's your approach? Choose the option that best fits your style.",
-    "image": "https://source.unsplash.com/400x200/?analytics,model",
+    "question": "How do you like to spend your free time after a busy week?",
+    "image": "/images/test/q-11.png",
     "options": [
       {
-        "text": "Immediately create scripts for data collection and processing to get started.",
-        "categories": ["R"],
-        "hint": "You're focused on quick, practical actions and implementation."
+        "text": "After a busy week, you take time to meet friends, discuss the latest news, share experiences, and enjoy each other's company.",
+        "categories": [
+          "S"
+        ],
+        "hint": "This indicates your ability to collaborate. Communication and exchanging ideas are important to you."
       },
       {
-        "text": "Thoroughly analyze the data to understand patterns before building the model.",
-        "categories": ["I"],
-        "hint": "Your approach is deep analysis and developing an effective plan."
+        "text": "In your free evening, you gather friends or colleagues to organize an interesting joint activity, like planning a trip or a volunteer project, taking on a leadership role.",
+        "categories": [
+          "E"
+        ],
+        "hint": "This indicates your management skills. You enjoy organizing and leading processes."
       },
       {
-        "text": "Develop visualizations of forecasts to make the results clear.",
-        "categories": ["A"],
-        "hint": "It's important to you that information is presented visually and clearly."
+        "text": "You use your free time to analyze your budget, plan future expenses, or organize your belongings so everything is structured.",
+        "categories": [
+          "C"
+        ],
+        "hint": "This indicates your analytical ability. A systematic approach and order are important to you."
       },
       {
-        "text": "Discuss team needs to ensure the model is useful.",
-        "categories": ["S"],
-        "hint": "You prioritize communication and effective teamwork."
+        "text": "You dedicate the evening to studying a new subject that interests you or watch a documentary to gain new knowledge.",
+        "categories": [
+          "I"
+        ],
+        "hint": "This shows your research skills. You strive for deep exploration of a topic."
       },
       {
-        "text": "Present the results to management to justify business decisions.",
-        "categories": ["E"],
-        "hint": "You are oriented towards strategy, planning, and leadership."
+        "text": "You spend your free time implementing a long-planned idea, like starting a room renovation, creating something by hand, or practicing a new hobby.",
+        "categories": [
+          "R"
+        ],
+        "hint": "This shows your implementation skills. You enjoy turning ideas into real actions."
       },
       {
-        "text": "Document the steps and formulas to ensure transparency.",
-        "categories": ["C"],
-        "hint": "Your approach is to systematize and document every step."
+        "text": "You spend time coming up with new ideas, experimenting with unusual recipes, or finding creative solutions to problems that concern you.",
+        "categories": [
+          "A"
+        ],
+        "hint": "This shows your innovation skills. You constantly seek new and unconventional approaches."
+      }
+    ]
+  },
+  {
+    "question": "What kind of movies do you like?",
+    "image": "/images/test/q-12.png",
+    "options": [
+      {
+        "text": "Fantasy or arthouse films that create new worlds (e.g., Inception, The Lord of the Rings).",
+        "categories": [
+          "A"
+        ],
+        "hint": "You seek creativity and a unique vision."
+      },
+      {
+        "text": "Action or thrillers with dynamic events (e.g., Mad Max: Fury Road, John Wick).",
+        "categories": [
+          "E"
+        ],
+        "hint": "You enjoy movement, risk, and rapid achievement of goals."
+      },
+      {
+        "text": "Detective movies where you solve mysteries and search for answers (e.g., Sherlock Holmes, Knives Out).",
+        "categories": [
+          "I"
+        ],
+        "hint": "You are fascinated by analysis, logic, and truth-seeking."
+      },
+      {
+        "text": "Classic films with clear scripts and logical endings (e.g., Casablanca, The Godfather).",
+        "categories": [
+          "C"
+        ],
+        "hint": "You feel comfortable when there is structure, predictability, and order."
+      },
+      {
+        "text": "Documentaries based on facts and real events (e.g., Free Solo, The Social Dilemma).",
+        "categories": [
+          "R"
+        ],
+        "hint": "You enjoy when content is practical and realistic."
+      },
+      {
+        "text": "Dramas about relationships, focusing on people and their stories (e.g., The Pursuit of Happyness, La La Land).",
+        "categories": [
+          "S"
+        ],
+        "hint": "Collaboration and emotional connections are important to you."
+      }
+    ]
+  },
+  {
+    "question": "Imagine you are choosing a book to read. Which genre attracts you the most?",
+    "image": "/images/test/q-13.png",
+    "options": [
+      {
+        "text": "Manuals and instructions that help you create something by hand or learn a new practical skill.",
+        "categories": [
+          "R"
+        ],
+        "hint": "This indicates your ability for practical action and implementation."
+      },
+      {
+        "text": "Popular science books that expand your horizons and explain how the world works.",
+        "categories": [
+          "I"
+        ],
+        "hint": "This shows your research skills and intellectual development."
+      },
+      {
+        "text": "Fiction, fantasy, or poetry that allows immersion in a new world, develops imagination, and provides inspiration.",
+        "categories": [
+          "A"
+        ],
+        "hint": "This indicates your creativity and innovation skills."
+      },
+      {
+        "text": "Books on psychology, self-development, or biographies of notable individuals that help you understand yourself and others better.",
+        "categories": [
+          "S"
+        ],
+        "hint": "This shows your ability to collaborate and understand people."
+      },
+      {
+        "text": "Books on leadership, business, and management that provide ideas on achieving success and effective organization.",
+        "categories": [
+          "E"
+        ],
+        "hint": "This indicates your management and organizational skills."
+      },
+      {
+        "text": "Reference books, encyclopedias, or guides with precise data that help quickly find and organize information.",
+        "categories": [
+          "C"
+        ],
+        "hint": "This shows your analytical ability and preference for structure."
+      }
+    ]
+  },
+  {
+    "question": "How do you approach learning a new language?",
+    "image": "/images/test/q-14.png",
+    "options": [
+      {
+        "text": "You study grammar and structure.",
+        "categories": [
+          "I"
+        ],
+        "hint": "You strive for deep analysis and understanding."
+      },
+      {
+        "text": "You find conversation partners for practice.",
+        "categories": [
+          "S"
+        ],
+        "hint": "Interaction and communication are important to you."
+      },
+      {
+        "text": "You start speaking immediately without fearing mistakes.",
+        "categories": [
+          "R"
+        ],
+        "hint": "You focus on practical application."
+      },
+      {
+        "text": "You write down every rule and exception.",
+        "categories": [
+          "C"
+        ],
+        "hint": "Structure and consistency are important to you."
+      },
+      {
+        "text": "You learn words needed for work.",
+        "categories": [
+          "E"
+        ],
+        "hint": "You are goal-oriented and practical."
+      },
+      {
+        "text": "You listen to songs and watch movies.",
+        "categories": [
+          "A"
+        ],
+        "hint": "You seek creative and unconventional approaches."
+      }
+    ]
+  },
+  {
+    "question": "Which type of sport do you prefer?",
+    "image": "/images/test/q-15.png",
+    "options": [
+      {
+        "text": "Sprint or boxing — speed, drive, and decisiveness in action.",
+        "categories": [
+          "E"
+        ],
+        "hint": "You seek dynamics, challenges, and victories."
+      },
+      {
+        "text": "Chess — strategy and deep analysis before every move.",
+        "categories": [
+          "I"
+        ],
+        "hint": "You are inspired by thoughtful decision-making and finding optimal solutions."
+      },
+      {
+        "text": "Team football or volleyball — victory is only possible together.",
+        "categories": [
+          "S"
+        ],
+        "hint": "Collaboration and team spirit are important to you."
+      },
+      {
+        "text": "Figure skating or gymnastics — art in motion.",
+        "categories": [
+          "A"
+        ],
+        "hint": "You see room for creativity and beauty in activities."
+      },
+      {
+        "text": "Athletics or CrossFit — lots of movement and physical effort.",
+        "categories": [
+          "R"
+        ],
+        "hint": "You enjoy activity and hands-on action."
+      },
+      {
+        "text": "Golf or bowling — precise technique and discipline.",
+        "categories": [
+          "C"
+        ],
+        "hint": "Following rules and structure is important to you."
+      }
+    ]
+  },
+  {
+    "question": "Which work project is most interesting to you?",
+    "image": "/images/test/q-16.png",
+    "options": [
+      {
+        "text": "One that allows conducting scientific research.",
+        "categories": [
+          "I"
+        ],
+        "hint": "You strive for deep study and analysis."
+      },
+      {
+        "text": "One that has significant social impact.",
+        "categories": [
+          "S"
+        ],
+        "hint": "Interaction and helping others are important to you."
+      },
+      {
+        "text": "One that requires attention to detail and precision.",
+        "categories": [
+          "C"
+        ],
+        "hint": "Structure and following rules matter to you."
+      },
+      {
+        "text": "One that can bring high profit and expand the business.",
+        "categories": [
+          "E"
+        ],
+        "hint": "You are goal-oriented and strategic."
+      },
+      {
+        "text": "One that provides complete freedom for creativity.",
+        "categories": [
+          "A"
+        ],
+        "hint": "You seek opportunities for creative self-expression."
+      },
+      {
+        "text": "One that requires practical skills and engineering thinking.",
+        "categories": [
+          "R"
+        ],
+        "hint": "You focus on practical implementation and an engineering approach."
+      }
+    ]
+  },
+  {
+    "question": "When you have to learn a new technology:",
+    "image": "/images/test/q-17.png",
+    "options": [
+      {
+        "text": "You immediately write 'Hello, World!' and experiment with the syntax.",
+        "categories": [
+          "R"
+        ],
+        "hint": "You focus on practical application."
+      },
+      {
+        "text": "You study its documentation and standards.",
+        "categories": [
+          "C"
+        ],
+        "hint": "Structure and consistency are important to you."
+      },
+      {
+        "text": "You analyze where it can be most effective.",
+        "categories": [
+          "E"
+        ],
+        "hint": "You are goal-oriented and focus on practical usefulness."
+      },
+      {
+        "text": "You join a community of specialists to exchange experience.",
+        "categories": [
+          "S"
+        ],
+        "hint": "Interaction and communication matter to you."
+      },
+      {
+        "text": "You look for unconventional ways to use it.",
+        "categories": [
+          "A"
+        ],
+        "hint": "You seek creative and non-traditional approaches."
+      },
+      {
+        "text": "You read its history and philosophy to understand its concept.",
+        "categories": [
+          "I"
+        ],
+        "hint": "You aim for deep analysis and understanding."
+      }
+    ]
+  },
+  {
+    "question": "Which style of clothing do you prefer?",
+    "image": "/images/test/q-18.png",
+    "options": [
+      {
+        "text": "Classic with clean lines and strict tailoring — nothing extra (e.g., minimalist style, solid colors).",
+        "categories": [
+          "C"
+        ],
+        "hint": "You feel comfortable in structured and predictable environments."
+      },
+      {
+        "text": "Bright creative look — unusual and expressive (e.g., vintage, streetwear, designer experiments).",
+        "categories": [
+          "A"
+        ],
+        "hint": "Self-expression and originality matter to you."
+      },
+      {
+        "text": "Practical work outfit, uniform, or casual — convenient and functional (e.g., jeans and T-shirts, hoodies).",
+        "categories": [
+          "R"
+        ],
+        "hint": "You value practicality and comfort at work."
+      },
+      {
+        "text": "Classic suit or formal business style — everything thought out and logical (e.g., business suits, shirts, classic trousers).",
+        "categories": [
+          "I"
+        ],
+        "hint": "You appreciate order, system, and accuracy."
+      },
+      {
+        "text": "Sportswear or energetic style — fast, active, and dynamic (e.g., athleisure, sports brands).",
+        "categories": [
+          "E"
+        ],
+        "hint": "You enjoy acting, moving, and achieving goals."
+      },
+      {
+        "text": "Clothing for group events — comfortable for everyone and harmonious (e.g., smart casual, corporate style).",
+        "categories": [
+          "S"
+        ],
+        "hint": "You value teamwork and interaction."
+      }
+    ]
+  },
+  {
+    "question": "Imagine a server supporting an important project suddenly fails. Where would you start to solve the problem?",
+    "image": "/images/test/q-19.png",
+    "options": [
+      {
+        "text": "I would start by searching for possible causes of the failure, diving into logs and system reports to understand what happened.",
+        "categories": [
+          "I"
+        ],
+        "hint": "Your approach involves research and deep understanding of the problem."
+      },
+      {
+        "text": "I would immediately discuss the situation with the team to assign roles and find a solution together.",
+        "categories": [
+          "S"
+        ],
+        "hint": "You prefer collaboration and value collective problem-solving."
+      },
+      {
+        "text": "I would quickly try several typical solutions, like rebooting or restoring, to get the server running as soon as possible.",
+        "categories": [
+          "R"
+        ],
+        "hint": "You focus on implementation and practical experimentation."
+      },
+      {
+        "text": "I would create a clear action plan: what to check and in which order, to ensure nothing is missed.",
+        "categories": [
+          "C"
+        ],
+        "hint": "You prefer analysis and a systematic, step-by-step approach."
+      },
+      {
+        "text": "I would find an unconventional solution, like using alternative technologies or creating a temporary workaround to avoid downtime.",
+        "categories": [
+          "A"
+        ],
+        "hint": "You strive for innovation and creative problem-solving."
+      },
+      {
+        "text": "I would immediately prioritize: what is most important to restore first, who is responsible for what, and how to minimize project losses.",
+        "categories": [
+          "E"
+        ],
+        "hint": "You focus on management and strategic planning."
+      }
+    ]
+  },
+  {
+    "question": "Imagine you meet a new client. What would you focus on the most?",
+    "image": "/images/test/q-20.png",
+    "options": [
+      {
+        "text": "Listening to their ideas and building trusting relationships to understand their vision.",
+        "categories": [
+          "S"
+        ],
+        "hint": "Your approach emphasizes collaboration and strong connections."
+      },
+      {
+        "text": "Presenting your project in a unique and creative way to impress the client.",
+        "categories": [
+          "A"
+        ],
+        "hint": "You tend to favor innovation and creative self-expression."
+      },
+      {
+        "text": "Collecting information and analyzing their needs to find the best solution for their business.",
+        "categories": [
+          "I"
+        ],
+        "hint": "You strive for research and deep analysis."
+      },
+      {
+        "text": "Discussing technical project details, its implementation, and practical limitations.",
+        "categories": [
+          "R"
+        ],
+        "hint": "You focus on implementation and an engineering approach."
+      },
+      {
+        "text": "Recording all details and creating a clear plan to ensure nothing is missed.",
+        "categories": [
+          "C"
+        ],
+        "hint": "You prefer analysis and structured information."
+      },
+      {
+        "text": "Discussing budget, deadlines, and achieving specific results aligned with client goals.",
+        "categories": [
+          "E"
+        ],
+        "hint": "You focus on management and strategic planning."
+      }
+    ]
+  },
+  {
+    "question": "You are participating in a discussion. What do you do when the conversation reaches a dead end?",
+    "image": "/images/test/q-21.png",
+    "options": [
+      {
+        "text": "Ask questions to identify logical flaws in the arguments.",
+        "categories": [
+          "I"
+        ],
+        "hint": "You aim for deep analysis and understanding."
+      },
+      {
+        "text": "Shift the discussion to strategic goals to find a compromise.",
+        "categories": [
+          "E"
+        ],
+        "hint": "You are goal-oriented and focus on strategic solutions."
+      },
+      {
+        "text": "Try to improve communication and clarify each person's viewpoint.",
+        "categories": [
+          "S"
+        ],
+        "hint": "Interaction and interpersonal connections matter to you."
+      },
+      {
+        "text": "Systematize all suggestions and find the most optimal solution.",
+        "categories": [
+          "C"
+        ],
+        "hint": "Structure and consistency are important to you."
+      },
+      {
+        "text": "Propose a practical experiment to test the ideas.",
+        "categories": [
+          "R"
+        ],
+        "hint": "You focus on practical implementation and experimentation."
+      },
+      {
+        "text": "Suggest a brainstorming session to find creative solutions.",
+        "categories": [
+          "A"
+        ],
+        "hint": "You seek creative and non-traditional approaches."
+      }
+    ]
+  },
+  {
+    "question": "What is your attitude towards innovations and changes in technology?",
+    "image": "/images/test/q-22.png",
+    "options": [
+      {
+        "text": "I believe they can improve people's lives and society.",
+        "categories": [
+          "S"
+        ],
+        "hint": "Interaction and helping others are important to you."
+      },
+      {
+        "text": "I see them as an opportunity to create something completely new and unique.",
+        "categories": [
+          "A"
+        ],
+        "hint": "You seek creative and non-traditional approaches."
+      },
+      {
+        "text": "I like to study how they work to immediately apply them in my projects.",
+        "categories": [
+          "R"
+        ],
+        "hint": "You focus on practical application."
+      },
+      {
+        "text": "I analyze their potential and risks before deciding to use them.",
+        "categories": [
+          "I"
+        ],
+        "hint": "You aim for deep analysis and understanding."
+      },
+      {
+        "text": "I evaluate whether they comply with existing standards and safety regulations.",
+        "categories": [
+          "C"
+        ],
+        "hint": "Structure and rule compliance are important to you."
+      },
+      {
+        "text": "I see them as a tool for business growth and increasing competitiveness.",
+        "categories": [
+          "E"
+        ],
+        "hint": "You are goal-oriented and focus on strategic solutions."
+      }
+    ]
+  },
+  {
+    "question": "Imagine you need to master a new skill. Which learning method would you choose?",
+    "image": "/images/test/q-23.png",
+    "options": [
+      {
+        "text": "Attend a training or seminar where you can discuss ideas with experts and other participants.",
+        "categories": [
+          "S"
+        ],
+        "hint": "Your approach emphasizes collaboration and social interaction."
+      },
+      {
+        "text": "Self-study, watching lectures by renowned scholars, and conducting your own research.",
+        "categories": [
+          "I"
+        ],
+        "hint": "You are inclined toward research and deep analysis."
+      },
+      {
+        "text": "Practical workshop where you can immediately apply new knowledge.",
+        "categories": [
+          "R"
+        ],
+        "hint": "You focus on implementation and practical application."
+      },
+      {
+        "text": "A course that provides clear instructions on working with documents or tools.",
+        "categories": [
+          "C"
+        ],
+        "hint": "You prefer analysis and structuring information."
+      },
+      {
+        "text": "Creative workshop where you can experiment and create something unique.",
+        "categories": [
+          "A"
+        ],
+        "hint": "You strive for innovation and creative self-expression."
+      },
+      {
+        "text": "Business training in leadership to learn how to manage a team and achieve goals.",
+        "categories": [
+          "E"
+        ],
+        "hint": "You are inclined toward management and developing leadership skills."
+      }
+    ]
+  },
+  {
+    "question": "You are joining a new team. What do you focus on the most?",
+    "image": "/images/test/q-24.png",
+    "options": [
+      {
+        "text": "The team's culture and values.",
+        "categories": [
+          "A"
+        ],
+        "hint": "You look for opportunities for creative self-expression."
+      },
+      {
+        "text": "The rules and procedures existing in the team.",
+        "categories": [
+          "C"
+        ],
+        "hint": "Structure and following rules are important to you."
+      },
+      {
+        "text": "The technical stack and tools being used.",
+        "categories": [
+          "R"
+        ],
+        "hint": "You focus on practical implementation and an engineering approach."
+      },
+      {
+        "text": "Building strong relationships with colleagues.",
+        "categories": [
+          "S"
+        ],
+        "hint": "Communication and interpersonal connections matter to you."
+      },
+      {
+        "text": "The strategic goals set by the team.",
+        "categories": [
+          "E"
+        ],
+        "hint": "You are goal-oriented and focus on strategic solutions."
+      },
+      {
+        "text": "The project's logic and architecture.",
+        "categories": [
+          "I"
+        ],
+        "hint": "You aim for deep analysis and understanding."
+      }
+    ]
+  },
+  {
+    "question": "What motivates you the most at work?",
+    "image": "/images/test/q-25.png",
+    "options": [
+      {
+        "text": "The ability to create something tangible.",
+        "categories": [
+          "R"
+        ],
+        "hint": "You are motivated by creating something material and practical."
+      },
+      {
+        "text": "Freedom for creative self-expression.",
+        "categories": [
+          "A"
+        ],
+        "hint": "You are inspired by opportunities for creative expression."
+      },
+      {
+        "text": "Solving complex intellectual challenges.",
+        "categories": [
+          "I"
+        ],
+        "hint": "You strive for deep analysis and understanding."
+      },
+      {
+        "text": "Stability and predictability in the work process.",
+        "categories": [
+          "C"
+        ],
+        "hint": "Structure and following rules matter to you."
+      },
+      {
+        "text": "The feeling of helping other people.",
+        "categories": [
+          "S"
+        ],
+        "hint": "Interaction and helping others are important to you."
+      },
+      {
+        "text": "Opportunities for career growth.",
+        "categories": [
+          "E"
+        ],
+        "hint": "You are goal-oriented and focus on strategic solutions."
+      }
+    ]
+  },
+  {
+    "question": "Which dishes bring you pleasure and energy?",
+    "image": "/images/test/q-26.png",
+    "options": [
+      {
+        "text": "A complex recipe with new ingredients — a process of exploration and learning (e.g., sushi, exotic Asian dishes).",
+        "categories": [
+          "I"
+        ],
+        "hint": "You are inspired by discovering new ideas and deep analysis."
+      },
+      {
+        "text": "Everything by the book, with precise proportions — order and structure (e.g., baking from a standard recipe, classic desserts).",
+        "categories": [
+          "C"
+        ],
+        "hint": "You feel comfortable in predictable and organized processes."
+      },
+      {
+        "text": "A simple, hearty dish — quick, healthy, and reliable (e.g., soup, salad, sandwich).",
+        "categories": [
+          "R"
+        ],
+        "hint": "You value practicality and tangible results."
+      },
+      {
+        "text": "Family dinner or shared meal — teamwork and mutual support (e.g., pizza, pilaf, homemade lunch).",
+        "categories": [
+          "S"
+        ],
+        "hint": "Feeling connected and team spirit is important to you."
+      },
+      {
+        "text": "Bright, unconventional dish — creativity and self-expression (e.g., molecular cuisine, signature desserts).",
+        "categories": [
+          "A"
+        ],
+        "hint": "You enjoy experimenting and creating something unique."
+      },
+      {
+        "text": "Hot fast food or energy snack — quick and efficient (e.g., burgers, sandwiches, energy bars).",
+        "categories": [
+          "E"
+        ],
+        "hint": "You enjoy dynamism and quick results."
+      }
+    ]
+  },
+  {
+    "question": "How do you approach improvisation at work?",
+    "image": "/images/test/q-27.png",
+    "options": [
+      {
+        "text": "I use improvisation for quick decision-making.",
+        "categories": [
+          "E"
+        ],
+        "hint": "You are goal-oriented and focus on achieving results quickly."
+      },
+      {
+        "text": "I see it as a tool to test hypotheses.",
+        "categories": [
+          "I"
+        ],
+        "hint": "You strive for deep analysis and exploring ideas."
+      },
+      {
+        "text": "I only use it when necessary to solve a technical problem.",
+        "categories": [
+          "R"
+        ],
+        "hint": "You focus on practical solutions to technical challenges."
+      },
+      {
+        "text": "I prefer all actions to be coordinated with the team.",
+        "categories": [
+          "S"
+        ],
+        "hint": "Interaction and team collaboration matter to you."
+      },
+      {
+        "text": "I try to avoid improvisation as it may violate rules.",
+        "categories": [
+          "C"
+        ],
+        "hint": "Structure and rule compliance are important to you."
+      },
+      {
+        "text": "I believe improvisation is part of the creative process.",
+        "categories": [
+          "A"
+        ],
+        "hint": "You are inspired by opportunities for creative self-expression."
+      }
+    ]
+  },
+  {
+    "question": "How do you envision your ideal workday?",
+    "image": "/images/test/q-28.png",
+    "options": [
+      {
+        "text": "A process where I can experiment and create.",
+        "categories": [
+          "A"
+        ],
+        "hint": "You are inspired by creative tasks."
+      },
+      {
+        "text": "Lots of movement and tasks where skills can be applied.",
+        "categories": [
+          "R"
+        ],
+        "hint": "You enjoy active, practical work."
+      },
+      {
+        "text": "A clear schedule and predictable tasks without surprises.",
+        "categories": [
+          "C"
+        ],
+        "hint": "Organization and order are important to you."
+      },
+      {
+        "text": "Dynamic meetings, decision-making, and goal achievement.",
+        "categories": [
+          "E"
+        ],
+        "hint": "You are motivated by activity and results."
+      },
+      {
+        "text": "Time for analysis, research, and reflection.",
+        "categories": [
+          "I"
+        ],
+        "hint": "You value space for intellectual activity."
+      },
+      {
+        "text": "Working with people, communication, and mutual support.",
+        "categories": [
+          "S"
+        ],
+        "hint": "You gain energy from team interaction."
+      }
+    ]
+  },
+  {
+    "question": "If your work were a journey, what would it be?",
+    "image": "/images/test/q-29.png",
+    "options": [
+      {
+        "text": "A creative journey where I can draw my own maps.",
+        "categories": [
+          "A"
+        ],
+        "hint": "You aim to express uniqueness and create something new."
+      },
+      {
+        "text": "Exploring new territories where discovery is the main goal.",
+        "categories": [
+          "I"
+        ],
+        "hint": "You are attracted to the unknown and learning."
+      },
+      {
+        "text": "A group hike where support and team spirit matter.",
+        "categories": [
+          "S"
+        ],
+        "hint": "For you, a journey is meaningful with like-minded companions."
+      },
+      {
+        "text": "A journey where speed and crossing new horizons first are important.",
+        "categories": [
+          "E"
+        ],
+        "hint": "You perceive a journey as a race for results."
+      },
+      {
+        "text": "An expedition where having the right tools and taking concrete steps is key.",
+        "categories": [
+          "R"
+        ],
+        "hint": "You see work as a practical path with clear actions."
+      },
+      {
+        "text": "A well-organized tour with a route and schedule.",
+        "categories": [
+          "C"
+        ],
+        "hint": "You feel comfortable when the journey is predictable and structured."
+      }
+    ]
+  },
+  {
+    "question": "Which aspect of working with Google Cloud Platform do you enjoy the most?",
+    "image": "/images/test/q-30.png",
+    "options": [
+      {
+        "text": "Collaborating with others, helping the team implement services.",
+        "categories": [
+          "S"
+        ],
+        "hint": "You value teamwork and mutual support."
+      },
+      {
+        "text": "Configuring servers and compute resources to ensure everything runs reliably.",
+        "categories": [
+          "R"
+        ],
+        "hint": "You enjoy practical work with infrastructure."
+      },
+      {
+        "text": "Following rules and security standards, documenting processes.",
+        "categories": [
+          "C"
+        ],
+        "hint": "You value order, structure, and accuracy."
+      },
+      {
+        "text": "Exploring new services, analyzing how they work, and testing possibilities.",
+        "categories": [
+          "I"
+        ],
+        "hint": "You are interested in understanding complex systems and gaining new knowledge."
+      },
+      {
+        "text": "Quickly launching projects and seeing results from implementing services.",
+        "categories": [
+          "E"
+        ],
+        "hint": "Results and efficiency matter to you."
+      },
+      {
+        "text": "Creating creative solutions and innovative applications using GCP.",
+        "categories": [
+          "A"
+        ],
+        "hint": "You aim to apply technology creatively."
       }
     ]
   }
