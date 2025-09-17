@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Spinner from "@/components/Spinner";
 import React, { useEffect, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { ClipboardIcon, CheckIcon } from "@heroicons/react/24/outline";
+import { DocumentDuplicateIcon, CheckIcon } from "@heroicons/react/24/outline";
 
 interface PromptItem {
     title: string;
@@ -93,7 +93,7 @@ export default function PromptEngineeringPage() {
                                         {copiedIndex === i ? (
                                             <CheckIcon className="w-5 h-5 text-green-600 dark:text-green-400" />
                                         ) : (
-                                            <ClipboardIcon className="w-5 h-5 text-gray-600 dark:text-gray-300" />
+                                            <DocumentDuplicateIcon className="w-5 h-5 text-gray-600 dark:text-gray-300" />
                                         )}
                                     </button>
                                 </div>
