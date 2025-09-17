@@ -92,7 +92,7 @@ export default function MenuNav({
                                 <Link
                                     href={href}
                                     onClick={toggleMenu}
-                                    className="group inline-block transform transition-transform duration-300 hover:scale-110"
+                                    className="group inline-block transform transition-transform duration-300 hover:scale-110 w-full"
                                 >
                                     {label.split(" ").map((word: string, idx: number) => (
                                         <AnimatedWord key={idx} word={word} />

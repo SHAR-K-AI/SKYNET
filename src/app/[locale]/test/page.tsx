@@ -7,6 +7,7 @@ import QuizQuestion from "@/components/QuizQuestion";
 import QuizResult from "@/components/QuizResult";
 import ProgressBar from "@/components/ProgressBar";
 import Spinner from "@/components/Spinner";
+import {useLocale} from "next-intl";
 
 interface OptionType {
     text: string;
@@ -23,6 +24,7 @@ interface QuestionType {
 export default function GcpRoleQuiz() {
     const searchParams = useSearchParams();
     const router = useRouter();
+    const locale = useLocale();
 
     const [questions, setQuestions] = useState<QuestionType[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
@@ -31,7 +33,7 @@ export default function GcpRoleQuiz() {
     const [result, setResult] = useState<Record<string, number> | null>(null);
 
     useEffect(() => {
-        fetch("/api/test")
+        fetch(`/api/test?lang=${locale}`)
             .then(res => res.json())
             .then((data: QuestionType[]) => setQuestions(data))
             .catch(() => setQuestions([]))

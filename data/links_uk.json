@@ -9,120 +9,134 @@
   {
     "type": "video",
     "title": "The Software Supply Chain Song (I'm Goin' To Production)",
+    "description": "Весела пісня про процеси та виклики у ланцюгах постачання програмного забезпечення.",
     "url": "https://www.youtube.com/embed/NaR8WlLtPw0"
   },
   {
     "type": "link",
     "title": "Discord: Google Developer Community",
+    "description": "Приєднуйтеся до спільноти розробників Google, обмінюйтеся знаннями та досвідом у Discord.",
     "url": "https://discord.gg/googledevelopers"
   },
   {
     "type": "card",
     "title": "Google Cloud для студентів: впевнений старт кар'єри",
-    "description": "Безоплатна програма навчання з хмарних технологій для закладів вищої та фахової передвищої освіти України. Програма надає необхідні знання й практичні навички роботи з Google Cloud: генеративний ШІ, аналіз даних, кібербезпека, хмарна інженерія тощо. Для викладачів та адміністрації: напишіть на gcloudeduua@gmail.com",
+    "description": "Безоплатна програма навчання з хмарних технологій для студентів та викладачів України.",
     "url": "https://rsvp.withgoogle.com/events/google-cloud-confident-career-start/home"
   },
   {
     "type": "card",
     "title": "Google Cloud: польська програма",
-    "description": "Rozwiń swoje kompetencje i sprostaj wyzwaniom przyszłości. Weź udział w wyzwaniu Rozwiń Karierę z Google Cloud, otrzymaj bezpłatny, 30-dniowy dostęp do platformy Google Cloud Skills Boost, zdobywaj odznaki umiejętności i nagrody. Program dla studentów i osób z podstawową wiedzą informatyczną lub SQL w Polsce.",
+    "description": "Програма для студентів Польщі з базовими знаннями IT або SQL, що дає доступ до безкоштовного курсу Google Cloud Skills Boost.",
     "url": "https://rsvp.withgoogle.com/events/rozwinkarierezgooglecloud/o-programie"
   },
   {
     "type": "video",
     "title": "Introducing Google Vids",
+    "description": "Огляд нового формату відео від Google для легкого доступу до навчального контенту.",
     "url": "https://www.youtube.com/embed/4SCjXcBeW1E"
   },
   {
     "type": "video",
     "title": "Lupe Fiasco x Large Language Models | Google Lab Sessions",
+    "description": "Сесія Google Lab з Lupe Fiasco про великі мовні моделі та їхні застосування.",
     "url": "https://www.youtube.com/embed/yYp18JAvKkQ"
   },
   {
     "type": "video",
     "title": "Україна тут: Ваша культурна пригода чекає",
+    "description": "Відео-пригода, що знайомить із культурою та традиціями України.",
     "url": "https://www.youtube.com/embed/dBgQLQcngxQ"
   },
   {
     "type": "card",
     "title": "Prebunking with Google",
-    "description": "Не дозволяйте маніпулювати собою й своїми близькими онлайн. Google і Jigsaw у співпраці з Moonshot і місцевими експертами підготували навчальні відео про те, як боротися з найпоширенішими тактиками маніпуляцій та дезінформації.",
+    "description": "Навчальні матеріали про те, як розпізнавати маніпуляції та дезінформацію в інтернеті.",
     "url": "https://prebunkingwithgoogle.detector.media",
     "imageUrl": "https://prebunkingwithgoogle.detector.media/images/client/plugs/hero_2.jpg"
   },
   {
     "type": "video",
     "title": "Як новий штучний інтелект Google може зробити революцію в медицині? AlphaFold 3",
+    "description": "Відео про застосування AI Google для відкриттів у медицині та біології.",
     "url": "https://www.youtube.com/embed/58SGGoi_Ecs"
   },
   {
     "type": "link",
     "title": "Notebook LM від Google",
-    "description": "Think Smarter, Not Harder. Інструмент для швидкого розуміння важливої інформації, створений на базі Gemini.",
+    "description": "Інструмент на базі Gemini для швидкого аналізу та розуміння інформації.",
     "url": "https://notebooklm.google/"
   },
   {
     "type": "link",
     "title": "Project IDX",
-    "description": "Project IDX — це AI-підтримуваний робочий простір для повноцінної розробки мультиплатформових додатків у хмарі.",
+    "description": "AI-підтримуваний робочий простір для розробки мультиплатформових додатків у хмарі.",
     "url": "https://idx.dev/blog/article/introducing-idx-templates"
   },
   {
     "type": "link",
     "title": "Чому SAIF: структура Google для відповідального штучного інтелекту",
-    "description": "Дізнайтеся про SAIF — рамкову структуру Google для створення та використання ШІ відповідально та безпечно.",
+    "description": "Дізнайтеся про SAIF — рамкову структуру для безпечного та відповідального використання AI.",
     "url": "https://saif.google/why-saif"
   },
   {
     "type": "link",
     "title": "Google for Developers - YouTube",
+    "description": "Офіційний канал Google для розробників з навчальними матеріалами та новинами.",
     "url": "https://www.youtube.com/@GoogleDevelopers"
   },
   {
     "type": "link",
     "title": "Google Cloud - YouTube",
+    "description": "Офіційний YouTube-канал Google Cloud з оглядами, туторіалами та вебінарами.",
     "url": "https://www.youtube.com/@googlecloud"
   },
   {
     "type": "link",
     "title": "GDG Cloud Kyiv - YouTube",
+    "description": "YouTube-канал української спільноти Google Developer Group з подкастами та лекціями.",
     "url": "https://www.youtube.com/@GDGCloudKyiv"
   },
   {
     "type": "link",
     "title": "Випустіть мене з IT - YouTube",
+    "description": "Подкасти та відео про кар’єру та розвиток у IT-сфері.",
     "url": "https://www.youtube.com/@vmzit.podcast"
   },
   {
     "type": "link",
     "title": "Віктор Турський про програмування - YouTube",
+    "description": "Канал про програмування, поради та освітні матеріали від Віктора Турського.",
     "url": "https://www.youtube.com/@AboutProgramming"
   },
   {
     "type": "link",
     "title": "Shar-K-ai: AI та технології - YouTube",
+    "description": "Огляд AI та технологій, новини та демонстрації інструментів.",
     "url": "https://www.youtube.com/@Shar-K-ai"
   },
   {
     "type": "link",
     "title": "Сергій Бабіч та Дивовижний світ веброзробки - YouTube",
+    "description": "Канал з уроками та порадами по веброзробці від Сергія Бабіча.",
     "url": "https://www.youtube.com/@babichweb"
   },
   {
     "type": "link",
     "title": "Dima in Engineering Management - YouTube",
+    "description": "Канал про управління інженерними командами, кар’єрні поради та досвід.",
     "url": "https://www.youtube.com/@so_nerdy"
   },
   {
     "type": "link",
     "title": "Timur Shemsedinov - YouTube",
+    "description": "Освітній та технічний контент про програмування, AI та інновації.",
     "url": "https://www.youtube.com/@TimurShemsedinov"
   },
   {
     "type": "card",
     "title": "Спільнота Google Cloud",
-    "description": "Учасники різних когорт програми самоорганізувалися у групу в Telegram, де підтримують одне одного. Доєднуйся, щоб приєднатися до спільноти та обмінюватися знаннями й досвідом!",
+    "description": "Телеграм-група для обміну знаннями та підтримки між учасниками Google Cloud.",
     "url": "https://t.me/cloudskillsboost"
   }
-
 ]

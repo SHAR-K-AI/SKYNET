@@ -153,12 +153,11 @@ export default function LinksPage() {
                                                         className="object-cover rounded-lg w-full"
                                                     />
                                                 )}
-                                                <p className="text-gray-700 dark:text-gray-300">
-                                                    {selected.description}
-                                                </p>
                                             </div>
                                         )}
-
+                                        <p className="text-gray-700 dark:text-gray-300">
+                                            {selected.description}
+                                        </p>
                                         <a
                                             href={selected.url}
                                             target="_blank"

@@ -19,7 +19,7 @@ export default function Header() {
 
     return (
         <header className="w-full relative p-4 flex items-center z-50">
-            <div className="fixed top-10 left-10">
+            <div className="fixed top-10 left-5">
                 <Magnetic>
                     <MenuButton isOpen={isOpen} toggleMenu={toggleMenu}/>
                 </Magnetic>

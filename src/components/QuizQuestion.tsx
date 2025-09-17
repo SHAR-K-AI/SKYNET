@@ -1,8 +1,8 @@
 'use client';
 
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 import AppImage from "@/components/Image";
-import { useEffect, useMemo } from "react";
+import {useEffect, useMemo} from "react";
 
 interface Option {
     text: string;
@@ -28,15 +28,17 @@ type Decoration = {
     delay: number;
 };
 
-export default function QuizQuestion({
-                                         question,
-                                         image,
-                                         options,
-                                         handleAnswer,
-                                         keyId
-                                     }: QuizQuestionProps) {
+export default function QuizQuestion(
+    {
+        question,
+        image,
+        options,
+        handleAnswer,
+        keyId
+    }: QuizQuestionProps
+) {
     useEffect(() => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
+        window.scrollTo({top: 0, behavior: "smooth"});
     }, [keyId]);
 
     const decorations = useMemo<Decoration[]>(() => {
@@ -59,12 +61,12 @@ export default function QuizQuestion({
     return (
         <motion.div
             key={keyId}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
-            className="p-6 border rounded-3xl shadow-2xl bg-gradient-to-b from-white to-gray-50
-                 dark:from-gray-800 dark:to-gray-900 dark:border-gray-700"
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            exit={{opacity: 0}}
+            transition={{duration: 0.5}}
+            className="p-6 ov rounded-3xl bg-gradient-to-b from-white to-gray-50
+                 dark:from-gray-800 dark:to-gray-900 dark:border-gray-700 opacity-85"
         >
             <h2 className="text-xl md:text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
                 {question}
@@ -108,8 +110,8 @@ export default function QuizQuestion({
             <div className="space-y-4">
                 {options.map((opt, i) => (
                     <motion.button
-                        whileHover={{ scale: 1.02, boxShadow: "0 0 16px rgba(59,130,246,0.4)" }}
-                        whileTap={{ scale: 0.98 }}
+                        whileHover={{scale: 1.02, boxShadow: "0 0 16px rgba(59,130,246,0.4)"}}
+                        whileTap={{scale: 0.98}}
                         key={i}
                         onClick={() => handleAnswer(opt.categories)}
                         className="w-full text-left p-5 rounded-xl border-2 shadow-sm cursor-pointer
