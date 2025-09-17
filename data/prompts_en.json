@@ -14,5 +14,37 @@
   {
     "title": "Create a professional headshot",
     "text": "First ask me for a selfie. Transform my selfie into a fresh but professional image suitable for a social media profile. The lighting should be natural, flattering, and multidimensional. My head is slightly tilted so it doesn't look stiff and it should look like I'm in a modern, bright office with a blurred background."
+  },
+  {
+    "title": "Mythical Digital Fusion",
+    "text": "Design a futuristic 3D creature or artifact born from the fusion of [\uD83D\uDD25] and [\uD83D\uDCA9]. The result should look like a legendary digital being — minimalistic, elegant, and mesmerizing. It floats on a pure white background, centered and well-lit with soft studio lighting. The creature combines organic and synthetic elements: glossy surfaces, semi-transparent materials, internal glow, and subtle textures. Style: clean, Apple-product-level polish meets mythical creature design. The final render should feel like a rare, mysterious being displayed in a high-tech digital art museum."
+  },
+  {
+    "title": "Surreal Fluffy Icon",
+    "text": "Transform a simple flat vector icon of [\uD83D\uDD25] into a soft, 3D fluffy object. The shape is fully covered in fur, with hyperrealistic hair texture and soft shadows. The object is centered on a clean, light gray background and floats gently in space. The style is surreal, tactile, and modern, evoking a sense of comfort and playfulness. Studio lighting, high-resolution render."
+  },
+  {
+    "title": "Custom Action Figure",
+    "text": "Create image. Create a toy of the person in the photo. Let it be an action figure. Next to the figure, there should be the toy’s equipment, each in its individual blisters. 1) a book called “Tecnoforma”. 2) A 3-headed dog with a tag that says “Troika” and a bone at its feet with word “austerity” written on it. 3) a three-headed Hydra with with a tag called “Geringonça”. 4) a book titled “D. Sebastião”. Don’t repeat the equipment under any circumstance. The card holding the blister should be strong orange. Also, on top of the box, write ‘[person]’ and underneath it, ‘PSD action figure’. The figure and equipment must all be inside blisters. Visualize this in a realistic way."
+  },
+  {
+    "title": "Poster: African Textile Art",
+    "text": "Poster illustration of [subject] sitting in a chair with a Coca-Cola can. Style: African textile art, bold lines, rhythmic patterns, strong colors, abstract tribal motifs. Composition: Symmetrical layout, decorative borders, ethnic ornaments. Colors: Red, yellow, black, earthy tones. Mood: Energetic, cultural richness, symbolic forms. Quality: Stylized illustration, flat vector look, 8K poster design."
+  },
+  {
+    "title": "Poster: Cuban Revolutionary Style",
+    "text": "Poster illustration of [subject] in a psychedelic Cuban poster style holding a Coca-Cola can. Style: Cuban revolutionary posters, bright colors, psychedelic vibe, pop art influence. Composition: Dynamic layout, sunburst background, abstract revolutionary motifs. Colors: Pink, orange, teal, yellow. Mood: Playful, ironic, expressive."
+  },
+  {
+    "title": "Poster: Bauhaus Style",
+    "text": "Poster illustration of [subject] sitting in a Bauhaus-style geometric chair holding a Coca-Cola can. Style: Bauhaus, abstract shapes, minimalism, geometric purity. Composition: Geometric patterns, circles, rectangles behind [subject]. Colors: White, black, red, blue, yellow accents."
+  },
+  {
+    "title": "Poster: Art Deco Style",
+    "text": "Poster illustration of [subject] sitting in an elegant Art Deco chair holding a Coca-Cola can. Style: Art Deco, elegant geometry, luxury and 1920s glamour. Composition: Symmetrical layout, decorative frames, 1920s poster vibe. Colors: Gold, black, white, silver accents. Quality: Stylized illustration, high detail, 8K poster design."
+  },
+  {
+    "title": "Poster: Vaporwave Style",
+    "text": "Poster illustration of [subject] sitting in a chair holding a Coca-Cola can. Style: Vaporwave aesthetic, neon lights, retro computer graphics, glitch art, 80s nostalgia. Composition: VHS textures, Greek statues, palm trees, pixelated sun. Colors: Neon pink, cyan, purple, blue gradients."
   }
 ]
