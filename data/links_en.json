@@ -3,125 +3,140 @@
     "type": "card",
     "title": "Ukraine: The Next Chapter",
     "description": "An art project by Google Arts & Culture",
-    "url": "https://artsandculture.google.com/project/ukraine-the-next-chapter?hl=en",
+    "url": "https://artsandculture.google.com/project/ukraine-the-next-chapter?hl=uk",
     "imageUrl": "https://lh3.googleusercontent.com/ci/AL18g_Qbc6JMST4c_hz0jExDAtGHLu7kviWWNT0hzqSeeRAw_MDBXMiEMatoowWNM-1fa6kiWYsFTkU=w1847-h438-pp-rw-v1"
   },
   {
     "type": "video",
     "title": "The Software Supply Chain Song (I'm Goin' To Production)",
+    "description": "A fun song about processes and challenges in software supply chains.",
     "url": "https://www.youtube.com/embed/NaR8WlLtPw0"
   },
   {
     "type": "link",
     "title": "Discord: Google Developer Community",
+    "description": "Join the Google developer community, share knowledge and experiences on Discord.",
     "url": "https://discord.gg/googledevelopers"
   },
   {
     "type": "card",
-    "title": "Google Cloud for Students: Confident Career Start",
-    "description": "Free cloud technology training program for higher education institutions in Ukraine. Provides essential knowledge and practical skills in Google Cloud: generative AI, data analysis, cybersecurity, cloud engineering, etc. For instructors and administrators: contact gcloudeduua@gmail.com",
+    "title": "Google Cloud for Students: A Confident Career Start",
+    "description": "A free cloud technology training program for students and educators in Ukraine.",
     "url": "https://rsvp.withgoogle.com/events/google-cloud-confident-career-start/home"
   },
   {
     "type": "card",
     "title": "Google Cloud: Polish Program",
-    "description": "Rozwiń swoje kompetencje i sprostaj wyzwaniom przyszłości. Participate in the Rozwiń Karierę z Google Cloud challenge, get free 30-day access to Google Cloud Skills Boost, earn skill badges and rewards. Program for students or people with basic IT knowledge or SQL in Poland.",
+    "description": "A program for students in Poland with basic IT or SQL knowledge, providing access to the free Google Cloud Skills Boost course.",
     "url": "https://rsvp.withgoogle.com/events/rozwinkarierezgooglecloud/o-programie"
   },
   {
     "type": "video",
     "title": "Introducing Google Vids",
+    "description": "Overview of Google’s new video format for easy access to educational content.",
     "url": "https://www.youtube.com/embed/4SCjXcBeW1E"
   },
   {
     "type": "video",
     "title": "Lupe Fiasco x Large Language Models | Google Lab Sessions",
+    "description": "Google Lab session with Lupe Fiasco about large language models and their applications.",
     "url": "https://www.youtube.com/embed/yYp18JAvKkQ"
   },
   {
     "type": "video",
-    "title": "Ukraine is Here: Your Cultural Adventure Awaits",
+    "title": "Ukraine Here: Your Cultural Adventure Awaits",
+    "description": "A video adventure introducing the culture and traditions of Ukraine.",
     "url": "https://www.youtube.com/embed/dBgQLQcngxQ"
   },
   {
     "type": "card",
     "title": "Prebunking with Google",
-    "description": "Don't let anyone manipulate you or your loved ones online. Google and Jigsaw, in collaboration with Moonshot and local experts, have prepared educational videos on how to recognize and counter common online manipulation and disinformation tactics.",
+    "description": "Educational materials on how to recognize manipulation and misinformation online.",
     "url": "https://prebunkingwithgoogle.detector.media",
     "imageUrl": "https://prebunkingwithgoogle.detector.media/images/client/plugs/hero_2.jpg"
   },
   {
     "type": "video",
-    "title": "How Google's new AI can revolutionize medicine? AlphaFold 3",
+    "title": "How Can Google's New AI Revolutionize Medicine? AlphaFold 3",
+    "description": "A video about the application of Google AI for discoveries in medicine and biology.",
     "url": "https://www.youtube.com/embed/58SGGoi_Ecs"
   },
   {
     "type": "link",
     "title": "Google Notebook LM",
-    "description": "Think Smarter, Not Harder. The ultimate tool for understanding the information that matters most to you, built with Gemini.",
+    "description": "A Gemini-based tool for fast analysis and understanding of information.",
     "url": "https://notebooklm.google/"
   },
   {
     "type": "link",
     "title": "Project IDX",
-    "description": "Project IDX is an AI-assisted workspace for full-stack, multiplatform app development in the cloud.",
+    "description": "An AI-powered workspace for developing cross-platform applications in the cloud.",
     "url": "https://idx.dev/blog/article/introducing-idx-templates"
   },
   {
     "type": "link",
-    "title": "Why SAIF: Google's Framework for Responsible AI",
-    "description": "Learn about SAIF — Google's framework for developing and using AI responsibly and safely.",
+    "title": "Why SAIF: Google’s Structure for Responsible AI",
+    "description": "Learn about SAIF — a framework for the safe and responsible use of AI.",
     "url": "https://saif.google/why-saif"
   },
   {
     "type": "link",
     "title": "Google for Developers - YouTube",
+    "description": "Official Google developer channel with tutorials, news, and educational content.",
     "url": "https://www.youtube.com/@GoogleDevelopers"
   },
   {
     "type": "link",
     "title": "Google Cloud - YouTube",
+    "description": "Official Google Cloud YouTube channel with overviews, tutorials, and webinars.",
     "url": "https://www.youtube.com/@googlecloud"
   },
   {
     "type": "link",
     "title": "GDG Cloud Kyiv - YouTube",
+    "description": "YouTube channel of the Ukrainian Google Developer Group community with podcasts and lectures.",
     "url": "https://www.youtube.com/@GDGCloudKyiv"
   },
   {
     "type": "link",
-    "title": "Release Me from IT - YouTube",
+    "title": "Get Me Out of IT - YouTube",
+    "description": "Podcasts and videos about careers and growth in the IT field.",
     "url": "https://www.youtube.com/@vmzit.podcast"
   },
   {
     "type": "link",
     "title": "Victor Tursky on Programming - YouTube",
+    "description": "A channel about programming, tips, and educational materials from Victor Tursky.",
     "url": "https://www.youtube.com/@AboutProgramming"
   },
   {
     "type": "link",
-    "title": "Shar-K-ai: AI & Tech - YouTube",
+    "title": "Shar-K-ai: AI and Technology - YouTube",
+    "description": "An overview of AI and technology, news, and tool demonstrations.",
     "url": "https://www.youtube.com/@Shar-K-ai"
   },
   {
     "type": "link",
-    "title": "Serhii Babich and the Amazing World of Web Development - YouTube",
+    "title": "Serhiy Babich and the Amazing World of Web Development - YouTube",
+    "description": "A channel with lessons and tips on web development from Serhiy Babich.",
     "url": "https://www.youtube.com/@babichweb"
   },
   {
     "type": "link",
     "title": "Dima in Engineering Management - YouTube",
+    "description": "A channel about managing engineering teams, career advice, and experience.",
     "url": "https://www.youtube.com/@so_nerdy"
   },
   {
     "type": "link",
     "title": "Timur Shemsedinov - YouTube",
+    "description": "Educational and technical content on programming, AI, and innovations.",
     "url": "https://www.youtube.com/@TimurShemsedinov"
   },
   {
     "type": "card",
     "title": "Google Cloud Community",
-    "description": "Participants from different program cohorts have organized a Telegram group to support each other. Join to become part of the community and share knowledge and experiences!",
+    "description": "A Telegram group for knowledge sharing and support among Google Cloud participants.",
     "url": "https://t.me/cloudskillsboost"
   }
 ]
