@@ -113,6 +113,7 @@ export default async function LocaleLayout(
             `,
                 }}
             />
+            <meta name="apple-mobile-web-app-title" content="SkyNet" />
         </head>
         <body className={`${roboto.variable} ${robotoMono.variable} antialiased`}>
         <NextIntlClientProvider locale={locale}>
