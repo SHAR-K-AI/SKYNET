@@ -22,66 +22,66 @@ const robotoMono = Roboto_Mono({
     weight: ["400", "700"],
 });
 
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 
-export async function generateMetadata(
-    { params }: { params: { locale: string } }
-): Promise<Metadata> {
-    const { locale } = params;
-
-    const siteMetadata: Record<string, Metadata> = {
-        en: {
-            title: "SkyNet",
-            description: "Fan site for learning GCP, AI, and cloud technologies",
-            openGraph: {
-                title: "SkyNet",
-                description: "Fan site for learning GCP, AI, and cloud technologies",
-                url: "https://s-k-y-n-e-t.vercel.app/en",
-                images: [
-                    {
-                        url: "https://s-k-y-n-e-t.vercel.app/images/about.png",
-                        width: 1200,
-                        height: 630,
-                        alt: "SkyNet Preview",
-                    },
-                ],
-                type: "website",
-            },
-            twitter: {
-                card: "summary_large_image",
-                title: "SkyNet",
-                description: "Fan site for learning GCP, AI, and cloud technologies",
-                images: ["https://s-k-y-n-e-t.vercel.app/images/about.png"],
-            },
-        },
-        ua: {
-            title: "SkyNet",
-            description: "Фан-сайт SkyNet для навчання GCP, AI та хмарних технологій",
-            openGraph: {
-                title: "SkyNet",
-                description: "Фан-сайт SkyNet для навчання GCP, AI та хмарних технологій",
-                url: "https://s-k-y-n-e-t.vercel.app/uk",
-                images: [
-                    {
-                        url: "https://s-k-y-n-e-t.vercel.app/images/about.png",
-                        width: 1200,
-                        height: 630,
-                        alt: "SkyNet Preview",
-                    },
-                ],
-                type: "website",
-            },
-            twitter: {
-                card: "summary_large_image",
-                title: "SkyNet",
-                description: "Фан-сайт SkyNet для навчання GCP, AI та хмарних технологій",
-                images: ["https://s-k-y-n-e-t.vercel.app/images/about.png"],
-            },
-        },
-    };
-
-    return siteMetadata[locale] || siteMetadata.en;
-}
+// export async function generateMetadata(
+//     { params }: { params: { locale: string } }
+// ): Promise<Metadata> {
+//     const { locale } = params;
+//
+//     const siteMetadata: Record<string, Metadata> = {
+//         en: {
+//             title: "SkyNet",
+//             description: "Fan site for learning GCP, AI, and cloud technologies",
+//             openGraph: {
+//                 title: "SkyNet",
+//                 description: "Fan site for learning GCP, AI, and cloud technologies",
+//                 url: "https://s-k-y-n-e-t.vercel.app/en",
+//                 images: [
+//                     {
+//                         url: "https://s-k-y-n-e-t.vercel.app/images/about.png",
+//                         width: 1200,
+//                         height: 630,
+//                         alt: "SkyNet Preview",
+//                     },
+//                 ],
+//                 type: "website",
+//             },
+//             twitter: {
+//                 card: "summary_large_image",
+//                 title: "SkyNet",
+//                 description: "Fan site for learning GCP, AI, and cloud technologies",
+//                 images: ["https://s-k-y-n-e-t.vercel.app/images/about.png"],
+//             },
+//         },
+//         ua: {
+//             title: "SkyNet",
+//             description: "Фан-сайт SkyNet для навчання GCP, AI та хмарних технологій",
+//             openGraph: {
+//                 title: "SkyNet",
+//                 description: "Фан-сайт SkyNet для навчання GCP, AI та хмарних технологій",
+//                 url: "https://s-k-y-n-e-t.vercel.app/uk",
+//                 images: [
+//                     {
+//                         url: "https://s-k-y-n-e-t.vercel.app/images/about.png",
+//                         width: 1200,
+//                         height: 630,
+//                         alt: "SkyNet Preview",
+//                     },
+//                 ],
+//                 type: "website",
+//             },
+//             twitter: {
+//                 card: "summary_large_image",
+//                 title: "SkyNet",
+//                 description: "Фан-сайт SkyNet для навчання GCP, AI та хмарних технологій",
+//                 images: ["https://s-k-y-n-e-t.vercel.app/images/about.png"],
+//             },
+//         },
+//     };
+//
+//     return siteMetadata[locale] || siteMetadata.en;
+// }
 
 export default async function LocaleLayout(
     {

@@ -1,9 +1,9 @@
 'use client';
 
+import AppImage from "@/components/Image";
 import { Dialog, Transition } from '@headlessui/react';
 import React, { Fragment, useState, useMemo, useCallback } from 'react';
 import { DocumentDuplicateIcon, XMarkIcon } from '@heroicons/react/24/outline';
-import AppImage from "@/components/Image";
 
 export interface CardProps {
     title: string;
