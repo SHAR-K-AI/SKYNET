@@ -26,6 +26,7 @@ export default function LocaleSwitcherSelect({ children, defaultValue }: Props) 
 
     return (
         <label className="relative inline-block">
+            <span className="sr-only">Select language</span>
             <select
                 className={clsx(
                     'appearance-none bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 font-bold uppercase py-2 px-2 pr-8 rounded-lg shadow-md transition-all duration-200 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 disabled:opacity-50 cursor-pointer',
