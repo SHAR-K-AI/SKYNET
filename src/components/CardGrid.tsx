@@ -8,6 +8,7 @@ export interface CardData {
     content: string;
     imageUrl: string;
     link: string;
+    id: string;
 }
 
 interface CardGridProps {
@@ -25,8 +26,8 @@ const CardGrid: React.FC<CardGridProps> = ({cards}) => {
                     sm:grid-cols-[repeat(auto-fit,minmax(250px,1fr))]
                 "
         >
-            {cards.map((card, index) => (
-                <Magnetic key={index}>
+            {cards.map((card) => (
+                <Magnetic key={card.id}>
                     <Card {...card} />
                 </Magnetic>
             ))}

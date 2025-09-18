@@ -1,16 +1,21 @@
 import {getTranslations} from 'next-intl/server';
 import CardGrid, {CardData} from '@/components/CardGrid';
 
-export default async function MainPage({params}: { params: { locale: string } }) {
-    const {locale} = params;
+export default async function MainPage({params}: {
+    params: Promise<{ locale: string }>;
+}) {
+    const {locale} = await params;
     const t = await getTranslations({locale, namespace: 'MainPage'});
     const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/resources?lang=${locale}`, {
         next: {revalidate: 60},
     });
 
+    console.log(locale, "locale")
+
     let cards: CardData[] = [];
 
     if (!res.ok) {
+        cards = [];
         const errorText = await res.text();
         console.error("API error:", res.status, res.statusText, errorText);
     } else {
@@ -26,7 +31,7 @@ export default async function MainPage({params}: { params: { locale: string } })
                 <p className="md:text-xl mb-12">
                     {t('description')}
                 </p>
-                <CardGrid cards={cards}/>
+                <CardGrid cards={cards} key={locale}/>
             </section>
         </div>
     );

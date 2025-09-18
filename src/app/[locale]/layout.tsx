@@ -1,14 +1,16 @@
 import "../globals.css";
 
+import Script from "next/script";
 import {ThemeProvider} from "next-themes";
+import {NextIntlClientProvider} from "next-intl";
+
+import {PlayerProvider} from "@/components/PlayerProvider";
+
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ThemeBackground from "@/components/ThemeBackground";
-import {NextIntlClientProvider} from "next-intl";
-import Footer from "@/components/Footer";
-import ScrollToTopButton from "@/components/ScrollToTopButton";
-import Script from "next/script";
-import {PlayerProvider} from "@/components/PlayerProvider";
 import WelcomeModalWrapper from "@/components/WelcomeModal";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 // import type { Metadata } from "next";
 
@@ -85,6 +87,7 @@ export default async function LocaleLayout(
     return (
         <html lang={locale} className="scroll-smooth">
         <head>
+            <title>SkyNet</title>
             <Script
                 id="hotjar-tracking"
                 strategy="afterInteractive"
@@ -101,7 +104,7 @@ export default async function LocaleLayout(
             `,
                 }}
             />
-            <meta name="apple-mobile-web-app-title" content="SkyNet" />
+            <meta name="apple-mobile-web-app-title" content="SkyNet"/>
         </head>
         <body className="antialiased">
         <NextIntlClientProvider locale={locale}>
@@ -113,7 +116,7 @@ export default async function LocaleLayout(
                         <main className="flex-1 p-8 transition-colors">{children}</main>
                         <ScrollToTopButton/>
                         <Footer/>
-                        <WelcomeModalWrapper />
+                        <WelcomeModalWrapper/>
                     </div>
                 </PlayerProvider>
             </ThemeProvider>
