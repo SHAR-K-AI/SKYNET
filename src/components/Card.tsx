@@ -67,7 +67,7 @@ const Card: React.FC<CardProps> = ({ title, description, imageUrl, content, link
                     <AppImage src={imageUrl} alt={title} fill style={{ objectFit: 'contain' }} />
                 </div>
 
-                <h3 className="font-bold text-lg mb-2">{title}</h3>
+                <div className="font-bold text-lg mb-2">{title}</div>
                 <p className="text-sm mb-2">{description}</p>
 
                 <div className="mt-auto pt-2">

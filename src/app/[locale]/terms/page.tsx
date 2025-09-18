@@ -1,19 +1,14 @@
-'use client';
+import { getTranslations } from "next-intl/server";
 
-import { useTranslations } from 'next-intl';
-import { motion } from 'framer-motion';
-
-export default function TermsPage() {
-    const t = useTranslations('Terms');
+export default async function TermsPage({ params }: {
+    params: Promise<{ locale: string }>;
+}) {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'Terms' });
 
     return (
         <div className="min-h-screen text-gray-800 dark:text-gray-200 px-6 py-12">
-            <motion.div
-                className="max-w-3xl mx-auto space-y-8"
-                initial={{ opacity: 0, y: 16 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-            >
+            <div className="max-w-3xl mx-auto space-y-8">
                 <h1 className="text-3xl font-bold text-center">{t('title')}</h1>
 
                 <p className="leading-relaxed">
@@ -56,7 +51,7 @@ export default function TermsPage() {
                 <p className="text-center text-sm text-gray-500 dark:text-gray-400 mt-4">
                     {t('lastUpdated', { date: new Date().toLocaleDateString('uk-UA') })}
                 </p>
-            </motion.div>
+            </div>
         </div>
     );
 }

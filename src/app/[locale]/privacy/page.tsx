@@ -1,19 +1,14 @@
-'use client';
+import { getTranslations } from "next-intl/server";
 
-import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
-
-export default function PrivacyPage() {
-    const t = useTranslations("Privacy");
+export default async function PrivacyPage({ params }: {
+    params: Promise<{ locale: string }>;
+}) {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: 'Privacy' });
 
     return (
         <div className="min-h-screen text-gray-800 dark:text-gray-200 px-6 py-12">
-            <motion.div
-                className="max-w-3xl mx-auto space-y-8"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-            >
+            <div className="max-w-3xl mx-auto space-y-8">
                 <h1 className="text-3xl font-bold text-center">{t("title")}</h1>
                 <p>{t("intro", { site: "SkyNet" })}</p>
 
@@ -53,7 +48,7 @@ export default function PrivacyPage() {
                 <p className="text-center text-sm text-gray-500 dark:text-gray-400 mt-12">
                     {t("lastUpdated", { date: new Date().toLocaleDateString() })}
                 </p>
-            </motion.div>
+            </div>
         </div>
     );
 }

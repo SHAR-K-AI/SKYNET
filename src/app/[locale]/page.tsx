@@ -10,8 +10,6 @@ export default async function MainPage({params}: {
         next: {revalidate: 60},
     });
 
-    console.log(locale, "locale")
-
     let cards: CardData[] = [];
 
     if (!res.ok) {

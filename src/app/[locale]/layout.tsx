@@ -1,77 +1,16 @@
 import "../globals.css";
 
 import Script from "next/script";
-import {ThemeProvider} from "next-themes";
-import {NextIntlClientProvider} from "next-intl";
+import { ThemeProvider } from "next-themes";
+import { NextIntlClientProvider } from "next-intl";
 
-import {PlayerProvider} from "@/components/PlayerProvider";
+import { PlayerProvider } from "@/components/PlayerProvider";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ThemeBackground from "@/components/ThemeBackground";
 import WelcomeModalWrapper from "@/components/WelcomeModal";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
-
-// import type { Metadata } from "next";
-
-// export async function generateMetadata(
-//     { params }: { params: { locale: string } }
-// ): Promise<Metadata> {
-//     const { locale } = params;
-//
-//     const siteMetadata: Record<string, Metadata> = {
-//         en: {
-//             title: "SkyNet",
-//             description: "Fan site for learning GCP, AI, and cloud technologies",
-//             openGraph: {
-//                 title: "SkyNet",
-//                 description: "Fan site for learning GCP, AI, and cloud technologies",
-//                 url: "https://s-k-y-n-e-t.vercel.app/en",
-//                 images: [
-//                     {
-//                         url: "https://s-k-y-n-e-t.vercel.app/images/about.png",
-//                         width: 1200,
-//                         height: 630,
-//                         alt: "SkyNet Preview",
-//                     },
-//                 ],
-//                 type: "website",
-//             },
-//             twitter: {
-//                 card: "summary_large_image",
-//                 title: "SkyNet",
-//                 description: "Fan site for learning GCP, AI, and cloud technologies",
-//                 images: ["https://s-k-y-n-e-t.vercel.app/images/about.png"],
-//             },
-//         },
-//         ua: {
-//             title: "SkyNet",
-//             description: "Фан-сайт SkyNet для навчання GCP, AI та хмарних технологій",
-//             openGraph: {
-//                 title: "SkyNet",
-//                 description: "Фан-сайт SkyNet для навчання GCP, AI та хмарних технологій",
-//                 url: "https://s-k-y-n-e-t.vercel.app/uk",
-//                 images: [
-//                     {
-//                         url: "https://s-k-y-n-e-t.vercel.app/images/about.png",
-//                         width: 1200,
-//                         height: 630,
-//                         alt: "SkyNet Preview",
-//                     },
-//                 ],
-//                 type: "website",
-//             },
-//             twitter: {
-//                 card: "summary_large_image",
-//                 title: "SkyNet",
-//                 description: "Фан-сайт SkyNet для навчання GCP, AI та хмарних технологій",
-//                 images: ["https://s-k-y-n-e-t.vercel.app/images/about.png"],
-//             },
-//         },
-//     };
-//
-//     return siteMetadata[locale] || siteMetadata.en;
-// }
 
 export default async function LocaleLayout(
     {
@@ -82,12 +21,44 @@ export default async function LocaleLayout(
         params: Promise<{ locale: string }>;
     }
 ) {
-    const {locale} = await params;
+    const { locale } = await params as { locale: "en" | "ua" };
+
+    const metaData = {
+        en: {
+            title: "SkyNet",
+            description: "Fan site for learning GCP, AI, and cloud technologies",
+            url: "https://s-k-y-n-e-t.vercel.app/en",
+            image: "https://s-k-y-n-e-t.vercel.app/images/about.png",
+        },
+        ua: {
+            title: "SkyNet",
+            description: "Фан-сайт SkyNet для навчання GCP, AI та хмарних технологій",
+            url: "https://s-k-y-n-e-t.vercel.app/uk",
+            image: "https://s-k-y-n-e-t.vercel.app/images/about.png",
+        },
+    };
+
+    const { title, description, url, image } = metaData[locale] || metaData.en;
 
     return (
         <html lang={locale} className="scroll-smooth">
         <head>
-            <title>SkyNet</title>
+            <title>{title}</title>
+            <meta name="description" content={description} />
+            <meta property="og:title" content={title} />
+            <meta property="og:description" content={description} />
+            <meta property="og:url" content={url} />
+            <meta property="og:type" content="website" />
+            <meta property="og:image" content={image} />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:image:alt" content="SkyNet Preview" />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content={title} />
+            <meta name="twitter:description" content={description} />
+            <meta name="twitter:image" content={image} />
+            <meta name="apple-mobile-web-app-title" content="SkyNet" />
+
             <Script
                 id="hotjar-tracking"
                 strategy="afterInteractive"
@@ -104,19 +75,18 @@ export default async function LocaleLayout(
             `,
                 }}
             />
-            <meta name="apple-mobile-web-app-title" content="SkyNet"/>
         </head>
         <body className="antialiased">
         <NextIntlClientProvider locale={locale}>
             <ThemeProvider attribute="class" defaultTheme="dark">
-                <ThemeBackground/>
+                <ThemeBackground />
                 <PlayerProvider>
                     <div className="min-h-screen flex flex-col transition-colors">
-                        <Header/>
+                        <Header />
                         <main className="flex-1 p-8 transition-colors">{children}</main>
-                        <ScrollToTopButton/>
-                        <Footer/>
-                        <WelcomeModalWrapper/>
+                        <ScrollToTopButton />
+                        <Footer />
+                        <WelcomeModalWrapper />
                     </div>
                 </PlayerProvider>
             </ThemeProvider>
