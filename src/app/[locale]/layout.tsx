@@ -30,7 +30,7 @@ export default async function LocaleLayout(
             url: "https://s-k-y-n-e-t.vercel.app/en",
             image: "https://s-k-y-n-e-t.vercel.app/images/about.png",
         },
-        ua: {
+        uk: {
             title: "SkyNet",
             description: "Фан-сайт SkyNet для навчання GCP, AI та хмарних технологій",
             url: "https://s-k-y-n-e-t.vercel.app/uk",
