@@ -18,6 +18,126 @@
     "answer": "Google Compute Engine (GCE) is an Infrastructure as a Service (IaaS) offering that provides scalable, virtual machines (VMs) running on Google’s global infrastructure. It allows users to create and manage VMs with customizable configurations, including the choice of CPU, memory, storage, and networking options. Compute Engine supports a variety of operating systems (Linux, Windows), offers both preemptible and regular VMs, and integrates with other GCP services such as Cloud Storage and BigQuery. It is ideal for running compute-intensive workloads, web applications, databases, and other cloud-native applications. GCE also provides advanced features like load balancing, auto-scaling, and security via firewalls and identity management, making it a flexible solution for deploying applications in the cloud."
   },
   {
+    "id": "7f8a1c42-3b2e-4e6f-9b13-0d72f1a9e3b5",
+    "level": "Beginner",
+    "question": "What is Firebase?",
+    "answer": "Firebase is an application development platform that helps build and grow apps and games that users love. It provides tools and infrastructure necessary for development, growth, and monetization of your app."
+  },
+  {
+    "id": "a6f2c1d9-3e7b-4b28-92a4-5f6d1c3e8b41",
+    "level": "Intermediate",
+    "question": "What is BigQuery?",
+    "answer": "BigQuery is a fully managed, serverless enterprise data warehouse that helps you manage and analyze data with built-in features such as machine learning, geospatial analysis, and business intelligence. It allows organizations to run fast SQL queries on large datasets without the need to manage infrastructure."
+  },
+  {
+    "id": "f2a7c1e4-9d3b-4c8e-92f7-1a2b3c4d5e6f",
+    "level": "Intermediate",
+    "question": "How to download from Google Cloud Storage?",
+    "answer": "There are several ways to download files from Google Cloud Storage. \n\n1. **Using the Console**: Go to 'Cloud Storage' > 'Buckets' > click the bucket you want to download from > click the file > click the **Download** button at the top. \n\n2. **Using the Command Line**: Assuming you have the gcloud CLI configured, you can run the following command:\n\n```\ngcloud storage cp gs://BUCKET_NAME/OBJECT_NAME SAVE_TO_LOCATION\n```"
+  },
+  {
+    "id": "b7c9e3f2-4a1d-47d2-9c8e-5e6f7a8b9c0d",
+    "level": "Advanced",
+    "question": "How do AWS, Azure, and Google Cloud services compare?",
+    "answer": "AWS, Azure, and Google Cloud offer a wide range of cloud services that often serve similar purposes but differ in naming, features, and implementation. To make it easier to compare, Google provides a service comparison table that maps equivalent offerings across the three providers. You can filter the table by keywords such as service type, capability, or product name to quickly find the closest matches. \n\n🔗 Service comparison table: https://cloud.google.com/free/docs/aws-azure-gcp-service-comparison"
+  },
+  {
+    "id": "e4b9a7c2-1d3f-48a5-9c2e-7f1d6b3a9c4e",
+    "level": "Beginner",
+    "question": "What kind of data can be stored in Google Cloud Storage?",
+    "answer": "You can use Google Cloud Storage to store data in Google’s cloud. Cloud Storage is commonly used for unstructured data. You can upload files of any type and size, up to 5 TB each. To access it, go to the Google Cloud Platform console, open the left-hand menu, and select 'Storage'."
+  },
+  {
+    "id": "a9d4c2f1-6b3e-4d8a-8c2f-5e7b1c3d4f6a",
+    "level": "Intermediate",
+    "question": "How to transfer a Firebase project to another account?",
+    "answer": "To transfer a Firebase project to another account, follow these steps:\n\n1. Select your project in the Firebase console.\n2. Click the gear icon at the top-right corner next to 'Project Overview'.\n3. Go to 'Users and Permissions' > 'Add Member'.\n4. Add the new account as an 'Owner'."
+  },
+  {
+    "id": "d2f7b1c4-5e9a-4c8d-8b3e-1f6a2d4c9b5f",
+    "level": "Intermediate",
+    "question": "How to fix 'ImportError: No module named google.cloud'?",
+    "answer": "This error occurs when Python cannot find the specified library. The most common cause is that the Google Cloud library has not been installed. You can fix this by installing the required library using pip. If you have multiple versions of Python installed on your computer, make sure to install the library for the version you are using, for example:\n\n```\npip install google-cloud\n```"
+  },
+  {
+    "id": "c8d1e3f5-2b7a-4f9e-8c6d-1a3b5f7e9d2a",
+    "level": "Advanced",
+    "question": "How to configure gcloud actions in GitHub for GCP?",
+    "answer": "GitHub Actions is a SaaS CI/CD solution provided by GitHub. Google has released the setup-gcloud action, which allows users to use gcloud and gsutil tools within their GitHub Actions workflows. This enables automation of deployments, cloud resource management, and other tasks directly from GitHub pipelines."
+  },
+  {
+    "id": "b4e1c7f2-3d9a-4c6e-8b1f-2a7d3c5e9f8b",
+    "level": "Intermediate",
+    "question": "How to delete a Google Cloud account?",
+    "answer": "To completely delete your Google Cloud account, go to the Account Management page under 'Billing'. Select the Cloud Billing account you want to close. The account management page for the selected Cloud Billing account will open. At the top of the page, click 'Close billing account'."
+  },
+  {
+    "id": "f9a3c2d7-6b1e-4c8a-9d3f-2e5b7a1c4d6e",
+    "level": "Intermediate",
+    "question": "How to create an account in Google Cloud?",
+    "answer": "You can create service accounts in various ways, such as via the console, gcloud command-line interface, REST API, etc. By default, each project can have up to 100 service accounts controlling access to your resources.\n\nTo quickly create a service account using the command line:\n\n```\ngcloud iam service-accounts create SA_NAME \\\n     --description=\"DESCRIPTION\" \\\n     --display-name=\"DISPLAY_NAME\"\n```\n\nTo grant IAM policies to the newly created account:\n\n```\ngcloud projects add-iam-policy-binding PROJECT_ID \\\n     --member=\"serviceAccount:SA_NAME@PROJECT_ID.iam.gserviceaccount.com\" \\\n     --role=\"ROLE_NAME\"\n```"
+  },
+  {
+    "id": "a1f3c7d2-5b4e-4c8f-9d3a-2e5b7f1c4a6b",
+    "level": "Advanced",
+    "question": "How to list all resources associated with a project in Google Cloud?",
+    "answer": "After enabling the Cloud Asset API, you can use the following command to list all resources associated with your project:\n\n```\ngcloud asset search-all-resources --scope=projects/PROJECT_ID\n```\nThis command helps you get an inventory of all assets in the project for auditing, management, or compliance purposes."
+  },
+  {
+    "id": "b8c2f1d7-4a3e-4c9b-9d5f-1a2e3c4f7b8a",
+    "level": "Intermediate",
+    "question": "What is the difference between App Engine and Cloud Run in Google Cloud?",
+    "answer": "App Engine and Cloud Run share many similarities: they are both Platform as a Service (PaaS) offerings that allow you to run code and containers without managing servers. App Engine has been around since 2008, while Cloud Run was launched in 2019 and has seen many new feature announcements. Some advantages of Cloud Run include a container-focused approach, tighter integration with EventArc, a more detailed billing model that can save costs, and more powerful auto-scaling capabilities."
+  },
+  {
+    "id": "e7b2c3d4-1a5f-4c8e-9d3b-2f6a1c5e7b8d",
+    "level": "Beginner",
+    "question": "Which service can be used to run the backend of a website in Google Cloud?",
+    "answer": "There are many ways to host websites in Google Cloud. If you are new to Google Cloud, it is sensible to start with a technology you are already familiar with:\n\n- Compute Engine: customizable virtual machines running on Google infrastructure\n- Cloud Run: managed serverless container platform\n- Google Kubernetes Engine: Kubernetes managed by Google\n- Cloud Functions: Functions as a Service (FaaS)"
+  },
+  {
+    "id": "f3a7c2d1-6b4e-4c9f-8d2b-1e5a7c3f9b4d",
+    "level": "Intermediate",
+    "question": "How to open ports in Google Cloud?",
+    "answer": "You can use VPC firewall rules to open ports in Google Cloud.\n\nFor example, to open port 22 for any source in your VPC by default, you can run:\n\n```\ngcloud compute firewall-rules create allow-ssh \\\n      --action=ALLOW \\\n      --direction=INGRESS \\\n      --network=default \\\n      --priority=1000 \\\n      --rules=tcp:22 \\\n      --source-ranges=0.0.0.0/0\n```"
+  },
+  {
+    "id": "c5d7a2f1-4b8e-4c9d-9f3a-2e5b7c1d4f6a",
+    "level": "Intermediate",
+    "question": "Does Google Cloud charge for stopped instances?",
+    "answer": "Virtual machines in the TERMINATED state are not charged for per-second usage and do not count toward your regional CPU quota. However, any resources attached to the VM, such as persistent disks and external IP addresses, continue to incur charges until they are deleted. To stop paying for attached resources, you can reconfigure the stopped VM to detach these resources and then delete them.\n\nYou can stop unused VMs to avoid charges for inactive instances. When ready, you can restart the VMs with the same properties, metadata, and resources."
+  },
+  {
+    "id": "a2c3f1d4-5b6e-4c8f-9d1a-2e5b7c3f4d6b",
+    "level": "Beginner",
+    "question": "How to create a bucket in Google Cloud Storage?",
+    "answer": "To create a bucket in Google Cloud Storage using the command line, simply run:\n\n```\ngcloud storage buckets create gs://BUCKET_NAME\n```"
+  },
+  {
+    "id": "c1d2f3b4-5e6a-4c8f-9d2b-1a3e5f7c9d4b",
+    "level": "Beginner",
+    "question": "How to open Cloud Shell in Google Cloud?",
+    "answer": "To start a new session, click the 'Activate Cloud Shell' button at the top-right corner of the Google Cloud console. The Cloud Shell session opens inside a new frame at the bottom of the console and displays a command-line prompt. Initialization may take a few seconds."
+  },
+  {
+    "id": "f1c3d2a4-5b6e-4c8f-9d3a-2e5b7f1c4d6e",
+    "level": "Intermediate",
+    "question": "How to rename a Google Cloud project?",
+    "answer": "To change the name of a Google Cloud project, go to IAM Admin > 'Manage Resources', click the three dots next to your project name, select 'Settings', and you can rename it from there.\n\nUsing the command line, you can run:\n\n```\ngcloud projects update PROJECT_ID --name=NAME\n```\n\nNote: Changing the project ID is currently not possible."
+  },
+  {
+    "id": "c3f2b1d4-5e6a-4c8f-9d2b-1a5e7c3f4b6d",
+    "level": "Intermediate",
+    "question": "How to reduce the size of a disk in Google Cloud?",
+    "answer": "Currently, reducing the size of a persistent disk is not directly supported. You can do this indirectly by creating a new, smaller disk and copying the contents from the original disk.\n\nTo increase the disk size, use the command:\n\n```\ngcloud compute disks resize DISK_NAME --size=DISK_SIZE\n```"
+  },
+  {
+    "id": "a4c3d2f1-5b6e-4c8f-9d2b-1e5a7c3f4d6b",
+    "level": "Intermediate",
+    "question": "How to authenticate Terraform in Google Cloud?",
+    "answer": "The simplest way to authenticate Terraform with Google Cloud is to run:\n\n```\ngcloud auth application-default login\n```\nThis sets up the application default credentials so Terraform can access your Google Cloud resources."
+  },
+  {
     "id": "e2b8f4c3-9d7e-4c6f-bf8d-2g8h4b3d7f9a",
     "level": "Beginner",
     "question": "What is Google Cloud Storage?",

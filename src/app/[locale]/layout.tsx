@@ -21,7 +21,7 @@ export default async function LocaleLayout(
         params: Promise<{ locale: string }>;
     }
 ) {
-    const { locale } = await params as { locale: "en" | "ua" };
+    const { locale } = await params as { locale: "en" | "uk" };
 
     const metaData = {
         en: {
