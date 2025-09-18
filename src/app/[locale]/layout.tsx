@@ -1,6 +1,5 @@
 import "../globals.css";
 
-import {Roboto, Roboto_Mono} from "next/font/google";
 import {ThemeProvider} from "next-themes";
 import Header from "@/components/Header";
 import ThemeBackground from "@/components/ThemeBackground";
@@ -10,17 +9,6 @@ import ScrollToTopButton from "@/components/ScrollToTopButton";
 import Script from "next/script";
 import {PlayerProvider} from "@/components/PlayerProvider";
 import WelcomeModalWrapper from "@/components/WelcomeModal";
-
-const roboto = Roboto({
-    variable: "--font-roboto",
-    subsets: ["latin"],
-    weight: ["400", "700"],
-});
-const robotoMono = Roboto_Mono({
-    variable: "--font-roboto-mono",
-    subsets: ["latin"],
-    weight: ["400", "700"],
-});
 
 // import type { Metadata } from "next";
 
@@ -115,7 +103,7 @@ export default async function LocaleLayout(
             />
             <meta name="apple-mobile-web-app-title" content="SkyNet" />
         </head>
-        <body className={`${roboto.variable} ${robotoMono.variable} antialiased`}>
+        <body className="antialiased">
         <NextIntlClientProvider locale={locale}>
             <ThemeProvider attribute="class" defaultTheme="dark">
                 <ThemeBackground/>
