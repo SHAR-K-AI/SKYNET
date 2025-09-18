@@ -4,7 +4,7 @@ import CardGrid, {CardData} from '@/components/CardGrid';
 export default async function MainPage({params}: { params: { locale: string } }) {
     const {locale} = params;
     const t = await getTranslations({locale, namespace: 'MainPage'});
-    const res = await fetch(`${process.env.API_URL}/resources?lang=${locale}`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/resources?lang=${locale}`, {
         next: {revalidate: 60},
     });
 
