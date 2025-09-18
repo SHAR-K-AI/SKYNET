@@ -194,6 +194,9 @@ export default function QuizResult({result, restartQuiz}: QuizResultProps) {
                 ticks: {
                     font: {weight: 'bold' as const},
                     color: barColors,
+                    maxRotation: 90,
+                    minRotation: 45,
+                    autoSkip: false,
                 },
             },
             y: {
