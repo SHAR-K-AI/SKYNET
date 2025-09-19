@@ -52,7 +52,7 @@ const Badge = ({role, imageSrc, size = "w-56 h-56"}: BadgeProps) => {
                         draggable={false}
                     />
 
-                    <svg className="absolute w-full h-full z-30" viewBox="0 0 100 100" aria-hidden>
+                    <svg className="absolute w-full h-full z-10" viewBox="0 0 100 100" aria-hidden>
                         <defs>
                             <path id={id} d="M 50,50 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0"/>
                         </defs>

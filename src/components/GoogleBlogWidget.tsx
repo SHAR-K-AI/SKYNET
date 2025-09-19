@@ -129,25 +129,25 @@ export default function GoogleBlogWidget({ posts, loading = false }: WidgetProps
 
     return (
         <div className="space-y-10 p-6 rounded-2xl mx-auto max-w-4xl border-2 border-dashed border-white">
-            <h1 className="text-4xl font-extrabold mb-4 text-center text-blue-700 dark:text-blue-400 drop-shadow-md">
+            <h1 className="md:text-6xl text-xl font-extrabold mb-6 text-gray-900 dark:text-white tracking-tight leading-tight text-center">
                 {t("title")}
             </h1>
 
-            <p className="text-lg text-gray-700 dark:text-gray-300 text-center mb-6">
+            <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
                 {t("description")}
             </p>
 
-            {/* Google UA button */}
             <div className="mb-6 text-center">
-                <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
+                <p className="text-lg text-gray-700 dark:text-gray-300 mb-4 text-left">
                     {t("uaBlog")}
+                    <div className="inline-block rotate-295 h-10 w-10 text-2xl animate-bounce mx-4">👇</div>
                 </p>
                 <a
                     href="https://ukraine.googleblog.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center space-x-2 p-3 bg-white dark:bg-gray-800 rounded-full shadow-md hover:shadow-lg
-                     transform hover:-translate-y-1 transition-all duration-300 ease-in-out
+                     transform hover:-translate-y-1 transition-all duration-300 ease-in-out animate-bounce
                      dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
                 >
                     <span className="text-xl font-bold tracking-tight text-blue-600 dark:text-blue-400">G</span>

@@ -76,8 +76,8 @@ export default function QuizQuestion(
                 <AppImage
                     src={image}
                     alt="quiz"
-                    width={400}
-                    height={200}
+                    width={848}
+                    height={848}
                     className="w-full object-cover rounded-2xl"
                 />
 

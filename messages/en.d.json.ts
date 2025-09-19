@@ -40,7 +40,7 @@ declare const messages: {
     "about": "About",
     "test": "GCP Test",
     "questions": "GCP Questions",
-    "zodiac-roles": "GCP Zodiac",
+    "roles-constellation": "GCP Roles Constellation",
     "blog": "News",
     "trending": "Google Trends",
     "links": "Useful Links",
@@ -62,7 +62,9 @@ declare const messages: {
     "termsOfUse": "Terms of Use"
   },
   "RolePage": {
-    "instruction": "👉 Click on a dot or name to learn more about the GCP role",
+    "title": "Roles Constellation GCP",
+    "description": "Explore all roles in the organization in an interactive 3D constellation.",
+    "instruction": "Click on a dot or name to learn more about the GCP role",
     "category": "Category",
     "requirements": "Requirements",
     "services": "Services",

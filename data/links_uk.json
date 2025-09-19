@@ -1,11 +1,5 @@
 [
-  {
-    "type": "card",
-    "title": "Ukraine: The Next Chapter",
-    "description": "Мистецький проєкт від Google Arts & Culture",
-    "url": "https://artsandculture.google.com/project/ukraine-the-next-chapter?hl=uk",
-    "imageUrl": "https://lh3.googleusercontent.com/ci/AL18g_Qbc6JMST4c_hz0jExDAtGHLu7kviWWNT0hzqSeeRAw_MDBXMiEMatoowWNM-1fa6kiWYsFTkU=w1847-h438-pp-rw-v1"
-  },
+
   {
     "type": "video",
     "title": "The Software Supply Chain Song (I'm Goin' To Production)",
@@ -13,22 +7,35 @@
     "url": "https://www.youtube.com/embed/NaR8WlLtPw0"
   },
   {
-    "type": "link",
+    "type": "google",
     "title": "Discord: Google Developer Community",
     "description": "Приєднуйтеся до спільноти розробників Google, обмінюйтеся знаннями та досвідом у Discord.",
     "url": "https://discord.gg/googledevelopers"
   },
   {
-    "type": "card",
+    "type": "google",
     "title": "Google Cloud для студентів: впевнений старт кар'єри",
     "description": "Безоплатна програма навчання з хмарних технологій для студентів та викладачів України.",
     "url": "https://rsvp.withgoogle.com/events/google-cloud-confident-career-start/home"
   },
   {
-    "type": "card",
+    "type": "google",
+    "title": "Операція Аврора | ХАКІНГ GOOGLE | Документальний фільм EP000",
+    "description": "Документальний фільм, що розкриває подробиці кібератаки на Google, відому як 'Операція Аврора'.",
+    "url": "https://www.youtube.com/watch?v=przDcQe6n5o"
+  },
+  {
+    "type": "google",
     "title": "Google Cloud: польська програма",
     "description": "Програма для студентів Польщі з базовими знаннями IT або SQL, що дає доступ до безкоштовного курсу Google Cloud Skills Boost.",
     "url": "https://rsvp.withgoogle.com/events/rozwinkarierezgooglecloud/o-programie"
+  },
+  {
+    "type": "google",
+    "title": "Ukraine: The Next Chapter",
+    "description": "Мистецький проєкт від Google Arts & Culture",
+    "url": "https://artsandculture.google.com/project/ukraine-the-next-chapter?hl=uk",
+    "imageUrl": "https://lh3.googleusercontent.com/ci/AL18g_Qbc6JMST4c_hz0jExDAtGHLu7kviWWNT0hzqSeeRAw_MDBXMiEMatoowWNM-1fa6kiWYsFTkU=w1847-h438-pp-rw-v1"
   },
   {
     "type": "video",
@@ -62,31 +69,31 @@
     "url": "https://www.youtube.com/embed/58SGGoi_Ecs"
   },
   {
-    "type": "link",
+    "type": "google",
     "title": "Notebook LM від Google",
     "description": "Інструмент на базі Gemini для швидкого аналізу та розуміння інформації.",
     "url": "https://notebooklm.google/"
   },
   {
-    "type": "link",
+    "type": "google",
     "title": "Project IDX",
     "description": "AI-підтримуваний робочий простір для розробки мультиплатформових додатків у хмарі.",
     "url": "https://idx.dev/blog/article/introducing-idx-templates"
   },
   {
-    "type": "link",
+    "type": "google",
     "title": "Чому SAIF: структура Google для відповідального штучного інтелекту",
     "description": "Дізнайтеся про SAIF — рамкову структуру для безпечного та відповідального використання AI.",
     "url": "https://saif.google/why-saif"
   },
   {
-    "type": "link",
+    "type": "google",
     "title": "Google for Developers - YouTube",
     "description": "Офіційний канал Google для розробників з навчальними матеріалами та новинами.",
     "url": "https://www.youtube.com/@GoogleDevelopers"
   },
   {
-    "type": "link",
+    "type": "google",
     "title": "Google Cloud - YouTube",
     "description": "Офіційний YouTube-канал Google Cloud з оглядами, туторіалами та вебінарами.",
     "url": "https://www.youtube.com/@googlecloud"
@@ -134,7 +141,7 @@
     "url": "https://www.youtube.com/@TimurShemsedinov"
   },
   {
-    "type": "card",
+    "type": "google",
     "title": "Спільнота Google Cloud",
     "description": "Телеграм-група для обміну знаннями та підтримки між учасниками Google Cloud.",
     "url": "https://t.me/cloudskillsboost"

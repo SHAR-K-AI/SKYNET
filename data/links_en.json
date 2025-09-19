@@ -1,34 +1,41 @@
 [
   {
-    "type": "card",
-    "title": "Ukraine: The Next Chapter",
-    "description": "An art project by Google Arts & Culture",
-    "url": "https://artsandculture.google.com/project/ukraine-the-next-chapter?hl=uk",
-    "imageUrl": "https://lh3.googleusercontent.com/ci/AL18g_Qbc6JMST4c_hz0jExDAtGHLu7kviWWNT0hzqSeeRAw_MDBXMiEMatoowWNM-1fa6kiWYsFTkU=w1847-h438-pp-rw-v1"
-  },
-  {
     "type": "video",
     "title": "The Software Supply Chain Song (I'm Goin' To Production)",
     "description": "A fun song about processes and challenges in software supply chains.",
     "url": "https://www.youtube.com/embed/NaR8WlLtPw0"
   },
   {
-    "type": "link",
+    "type": "google",
     "title": "Discord: Google Developer Community",
     "description": "Join the Google developer community, share knowledge and experiences on Discord.",
     "url": "https://discord.gg/googledevelopers"
   },
+
   {
-    "type": "card",
+    "type": "google",
     "title": "Google Cloud for Students: A Confident Career Start",
     "description": "A free cloud technology training program for students and educators in Ukraine.",
     "url": "https://rsvp.withgoogle.com/events/google-cloud-confident-career-start/home"
   },
   {
-    "type": "card",
+    "type": "documentary",
+    "title": "Operation Aurora | HACKING GOOGLE | Documentary EP000",
+    "description": "A documentary revealing the details of the cyberattack on Google known as 'Operation Aurora'.",
+    "url": "https://www.youtube.com/watch?v=przDcQe6n5o"
+  },
+  {
+    "type": "google",
     "title": "Google Cloud: Polish Program",
     "description": "A program for students in Poland with basic IT or SQL knowledge, providing access to the free Google Cloud Skills Boost course.",
     "url": "https://rsvp.withgoogle.com/events/rozwinkarierezgooglecloud/o-programie"
+  },
+  {
+    "type": "google",
+    "title": "Ukraine: The Next Chapter",
+    "description": "An art project by Google Arts & Culture",
+    "url": "https://artsandculture.google.com/project/ukraine-the-next-chapter?hl=uk",
+    "imageUrl": "https://lh3.googleusercontent.com/ci/AL18g_Qbc6JMST4c_hz0jExDAtGHLu7kviWWNT0hzqSeeRAw_MDBXMiEMatoowWNM-1fa6kiWYsFTkU=w1847-h438-pp-rw-v1"
   },
   {
     "type": "video",
@@ -49,7 +56,7 @@
     "url": "https://www.youtube.com/embed/dBgQLQcngxQ"
   },
   {
-    "type": "card",
+    "type": "google",
     "title": "Prebunking with Google",
     "description": "Educational materials on how to recognize manipulation and misinformation online.",
     "url": "https://prebunkingwithgoogle.detector.media",
@@ -62,31 +69,31 @@
     "url": "https://www.youtube.com/embed/58SGGoi_Ecs"
   },
   {
-    "type": "link",
+    "type": "google",
     "title": "Google Notebook LM",
     "description": "A Gemini-based tool for fast analysis and understanding of information.",
     "url": "https://notebooklm.google/"
   },
   {
-    "type": "link",
+    "type": "google",
     "title": "Project IDX",
     "description": "An AI-powered workspace for developing cross-platform applications in the cloud.",
     "url": "https://idx.dev/blog/article/introducing-idx-templates"
   },
   {
-    "type": "link",
+    "type": "google",
     "title": "Why SAIF: Google’s Structure for Responsible AI",
     "description": "Learn about SAIF — a framework for the safe and responsible use of AI.",
     "url": "https://saif.google/why-saif"
   },
   {
-    "type": "link",
+    "type": "google",
     "title": "Google for Developers - YouTube",
     "description": "Official Google developer channel with tutorials, news, and educational content.",
     "url": "https://www.youtube.com/@GoogleDevelopers"
   },
   {
-    "type": "link",
+    "type": "google",
     "title": "Google Cloud - YouTube",
     "description": "Official Google Cloud YouTube channel with overviews, tutorials, and webinars.",
     "url": "https://www.youtube.com/@googlecloud"
@@ -134,7 +141,7 @@
     "url": "https://www.youtube.com/@TimurShemsedinov"
   },
   {
-    "type": "card",
+    "type": "google",
     "title": "Google Cloud Community",
     "description": "A Telegram group for knowledge sharing and support among Google Cloud participants.",
     "url": "https://t.me/cloudskillsboost"

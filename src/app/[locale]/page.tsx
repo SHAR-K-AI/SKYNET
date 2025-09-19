@@ -24,7 +24,7 @@ export default async function MainPage({params}: {
         <div className="min-h-screen text-gray-900 dark:text-gray-100 transition-colors duration-500">
             <section className="md:p-6 mt-6">
                 <h1 className="md:text-6xl text-xl font-extrabold mb-6">
-                    {t('title')}
+                    {t('title')} ✨
                 </h1>
                 <p className="md:text-xl mb-12">
                     {t('description')}

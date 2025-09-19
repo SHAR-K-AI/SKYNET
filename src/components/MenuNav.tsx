@@ -8,7 +8,7 @@ import { useTheme } from "next-themes";
 const menuItems = [
     "home",
     "about",
-    "zodiac-roles",
+    "roles-constellation",
     "test",
     "questions",
     "blog",
