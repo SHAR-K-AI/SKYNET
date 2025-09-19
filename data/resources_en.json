@@ -150,5 +150,21 @@
     "imageUrl": "/images/gcd.png",
     "description": "A free AI-powered tool from Google to help you explore career options and discover new opportunities.",
     "content": "“Google Career Dreamer” is a free tool that uses AI to help you explore career paths, discover new opportunities, and create a personalized statement about your strengths.\n\nWhether you’re just starting your journey, shifting careers, or looking for fresh inspiration, Career Dreamer can guide you toward roles that match your skills and background. You don’t even need a resume — just a list of your past experience and education.\n\nHow it works:\n1. Answer a few simple questions about your work and education history. The tool will suggest skills you may have developed.\n2. Receive a personalized strengths statement that can be adapted for job applications, such as cover letters.\n3. Explore suggested career paths, complete with real job listings, tips, and resources.\n\nWhy try it? Career Dreamer is quick, free, and a great way to learn about new opportunities. It helps you see how your unique experiences connect to potential careers you may not have considered.\n\nKey features:\n- Free, AI-powered career exploration tool\n- Personalized strengths statement for job applications\n- Suggested career paths and real job listings\n- Easy to use, no resume required\n- Helpful for students, career changers, and job seekers"
+  },
+  {
+    "id": "f1d2c3b4-5a6b-7c8d-9e0f-123456789abc",
+    "title": "Google I/O 2025 Puzzle",
+    "link": "https://io.google/2025/puzzle",
+    "imageUrl": "https://io.google/2025/puzzle/media/images/social/site-image.png",
+    "description": "An interactive puzzle from Google I/O 2025 designed to enhance logic and creative thinking. Solve challenges and earn unique digital rewards.",
+    "content": "Google I/O 2025 Puzzle is an interactive platform where users can participate in a variety of logical and creative challenges. The platform combines education, entertainment, and gamification, offering a unique experience for all conference participants.\n\nKey features:\n- Diverse puzzles and challenges\n- Digital rewards and badges\n- Motivation through progress and competition\n- Interactive experience\n- Development of logic and creative thinking\n- Available online for all users\n- Participation in the global Google I/O community"
+  },
+  {
+    "id": "a9b8c7d6-5e4f-3a2b-1c0d-987654321abc",
+    "title": "Google Agent Development Kit (ADK)",
+    "link": "https://google.github.io/adk-docs/",
+    "imageUrl": "/images/ADK2.png",
+    "description": "The Google Agent Development Kit (ADK) is a flexible framework for building, deploying, and orchestrating AI agents. It supports multiple agent types, tool integrations, and deployment environments.",
+    "content": "Google ADK is a modular platform for creating AI agents that can reason, interact, and execute complex workflows. Optimized for integration with Google’s ecosystem but model-agnostic, it allows developers to build agents for various applications.\n\nKey features:\n- Modular agent types including LLM agents, workflow agents, custom agents, and multi-agent systems\n- Tool integrations for code execution, database queries, and API interactions\n- Deployment flexibility across local machines, Vertex AI Agent Engine, Cloud Run, and GKE\n- Sample agents and tutorials for practical learning\n- API references for Python, Java, CLI, and REST interfaces\n- Supports collaboration and participation in global AI agent workflows\n\nGet started by installing via Python or Java, exploring sample agents, and following the Quickstart guide in the official documentation."
   }
 ]

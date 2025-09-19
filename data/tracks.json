@@ -5,6 +5,16 @@
     "genre": "dreampop / інді"
   },
   {
+    "title": "Kula Shaker - Govinda ",
+    "url": "https://www.youtube.com/watch?v=9QZOHzWLF9w",
+    "genre": "інді-рок"
+  },
+  {
+    "title": "Still Corners - The Trip - 2023 Remaster",
+    "url": "https://www.youtube.com/watch?v=XTInzFL67hE",
+    "genre": "інді"
+  },
+  {
     "title": "Contra spem spero! - Леся Українка",
     "url": "https://www.youtube.com/watch?v=E9Rg09GBJ7k&list=RDIx6U6Q8L1Oo",
     "genre": "хард рок"
@@ -28,6 +38,11 @@
     "title": "І мертвим, і живим - Тарас Шевченко",
     "url": "https://www.youtube.com/watch?v=lYhT4md8RQk",
     "genre": "рок"
+  },
+  {
+    "title": "Chill Japanese Songs - A Mysterious Japanese Songs Playlist with an Enigmatic Vibe",
+    "url": "https://www.youtube.com/watch?v=6CQWklzrUZQ",
+    "genre": "поп / інді"
   },
   {
     "title": "TEYA DORA - DŽANUM",
@@ -83,7 +98,8 @@
     "title": "Stranger Things Season 4: Running Up That Hill",
     "url": "https://www.youtube.com/watch?v=FPYgJks1Zy0&t=774s",
     "genre": "неокласика / інструментал"
-  },{
+  },
+  {
     "title": "D.WORSHIP - Неймовірна Любов",
     "url": "https://www.youtube.com/watch?v=52go0WneneY",
     "genre": "worship"
@@ -112,6 +128,16 @@
     "title": "Kodaline - Everything Works Out in the End",
     "url": "https://www.youtube.com/watch?v=9IVTOh0TkkQ",
     "genre": "інді-рок"
+  },
+  {
+    "title": "лампабикт - немерено",
+    "url": "https://www.youtube.com/watch?v=sPw-_Of_LgQ",
+    "genre": "фолк-рок"
+  },
+  {
+    "title": "CHOICE – В тишині",
+    "url": "https://www.youtube.com/watch?v=mG57iitwde8",
+    "genre": "worship"
   },
   {
     "title": "ROSÉ & Bruno Mars - APT.",
@@ -282,5 +308,15 @@
     "title": "ТІНА КАРОЛЬ & SADSVIT — МИ",
     "url": "https://www.youtube.com/watch?v=4LRVoGyRIqk",
     "genre": "поп / інді"
+  },
+  {
+    "title": "MARSHROOT - ДАЛІ НЕ БУДЕ",
+    "url": "https://www.youtube.com/watch?v=nQhFadTGmqw",
+    "genre": "рок"
+  },
+  {
+    "title": "Руся - Зачароване Коло (1989)",
+    "url": "https://www.youtube.com/watch?v=RjE0PG_yEM8",
+    "genre": "поп"
   }
 ]

@@ -24,8 +24,8 @@ export default function RolesConstellation() {
     return (
         <div className="relative w-full h-[450px] overflow-hidden">
             <div
-                className="absolute bottom-2 left-2 text-xs text-gray-300 bg-gray-900/70 px-2 py-1 rounded-md pointer-events-none">
-                {t("instruction")} <span className="inline-block -rotate-25 h-5 w-5 text-xl animate-bounce mx-4">👉</span>
+                className="absolute flex bottom-2 left-2 text-xs text-gray-300 bg-gray-900/70 px-2 py-1 rounded-md pointer-events-none">
+                <span className="my-auto">{t("instruction")}</span> <span className="inline-block -rotate-25 h-5 w-5 text-xl animate-bounce mx-4">👉</span>
             </div>
 
             <CanvasScene roles={roles} onSelectRole={setSelectedRole}/>

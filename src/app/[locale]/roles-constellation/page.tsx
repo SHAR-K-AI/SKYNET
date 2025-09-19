@@ -10,7 +10,7 @@ export default async function RolePage({params}: {
     return (
         <main className="p-6">
             <h1 className="text-2xl font-bold mb-4">{t("title")}</h1>
-            <p className="mb-6 text-gray-700">{t("description")}</p>
+            <p className="mb-6">{t("description")}</p>
             <RolesConstellation/>
         </main>
     );

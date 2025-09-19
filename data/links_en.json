@@ -11,7 +11,6 @@
     "description": "Join the Google developer community, share knowledge and experiences on Discord.",
     "url": "https://discord.gg/googledevelopers"
   },
-
   {
     "type": "google",
     "title": "Google Cloud for Students: A Confident Career Start",
@@ -145,5 +144,11 @@
     "title": "Google Cloud Community",
     "description": "A Telegram group for knowledge sharing and support among Google Cloud participants.",
     "url": "https://t.me/cloudskillsboost"
+  },
+  {
+    "type": "video",
+    "title": "Build with Jules: Your Asynchronous Coding Agent, Now in Public Beta",
+    "description": "An overview of the new coding tool Jules from Google, an asynchronous coding agent now available to all developers.",
+    "url": "https://www.youtube.com/embed/cWvwpUw0vFA"
   }
 ]

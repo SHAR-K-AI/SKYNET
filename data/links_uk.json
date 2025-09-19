@@ -1,5 +1,4 @@
 [
-
   {
     "type": "video",
     "title": "The Software Supply Chain Song (I'm Goin' To Production)",
@@ -145,5 +144,11 @@
     "title": "Спільнота Google Cloud",
     "description": "Телеграм-група для обміну знаннями та підтримки між учасниками Google Cloud.",
     "url": "https://t.me/cloudskillsboost"
+  },
+  {
+    "type": "video",
+    "title": "Build with Jules: ваш асинхронний агент кодування, тепер у публічній бета-версії",
+    "description": "Огляд можливостей нового інструменту від Google — асинхронного агента кодування Jules, доступного для всіх розробників.",
+    "url": "https://www.youtube.com/embed/cWvwpUw0vFA"
   }
 ]
