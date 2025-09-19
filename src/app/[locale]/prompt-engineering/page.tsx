@@ -64,14 +64,14 @@ export default function PromptEngineeringPage() {
                     {t("subtitle")}
                 </motion.h2>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-fr">
+                <div className="columns-1 md:columns-2 lg:columns-3 gap-6">
                     {prompts.map((prompt, i) => (
                         <motion.div
                             key={i}
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: i * 0.1, duration: 0.5 }}
-                            className="relative group transform transition-transform duration-300 hover:scale-[1.03]"
+                            className="mb-6 break-inside-avoid relative group transform transition-transform duration-300 hover:scale-[1.03]"
                         >
                             <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition duration-500 z-0 scale-101">
                                 <div className="h-full w-full rounded-3xl
@@ -81,7 +81,7 @@ export default function PromptEngineeringPage() {
                                     blur-[4px]" />
                             </div>
 
-                            <div className="relative z-10 bg-white/70 dark:bg-gray-900/70 backdrop-blur-md border border-white/20 dark:border-gray-700 rounded-3xl p-6 shadow-xl flex flex-col h-full">
+                            <div className="relative z-10 bg-white/70 dark:bg-gray-900/70 backdrop-blur-md border border-white/20 dark:border-gray-700 rounded-3xl p-6 shadow-xl flex flex-col">
                                 <div className="flex justify-between items-start mb-3">
                                     <h3 className="text-xl font-bold text-gray-900 dark:text-white">
                                         {prompt.title}
@@ -97,7 +97,7 @@ export default function PromptEngineeringPage() {
                                         )}
                                     </button>
                                 </div>
-                                <p className="text-gray-700 dark:text-gray-300 leading-relaxed flex-grow">
+                                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                                     {prompt.text}
                                 </p>
                             </div>
