@@ -55,7 +55,7 @@ export default function QuizIntro({ startQuiz }: QuizIntroProps) {
     const RIASEC_KEYS = ["R", "I", "A", "S", "E", "C"];
 
     return (
-        <section className="max-w-4xl mx-auto p-6 text-center bg-white dark:bg-gray-800 rounded-2xl shadow-xl mt-10">
+        <section className="max-w-4xl mx-auto p-6 text-center bg-white/85 dark:bg-gray-800/85 rounded-2xl shadow-xl mt-10">
             <motion.h1
                 className="text-3xl md:text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-red-500 to-green-500"
                 initial={{ opacity: 0, y: -20 }}

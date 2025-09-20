@@ -66,7 +66,7 @@ export default function QuizQuestion(
             exit={{opacity: 0}}
             transition={{duration: 0.5}}
             className="p-6 ov rounded-3xl bg-gradient-to-b from-white to-gray-50
-                 dark:from-gray-800 dark:to-gray-900 dark:border-gray-700 opacity-85"
+                 dark:from-gray-800 dark:to-gray-900 dark:border-gray-700"
         >
             <h2 className="text-xl md:text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
                 {question}

@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
-import { MagnifyingGlassIcon, TagIcon } from "@heroicons/react/24/outline";
+import { useState, useEffect, useMemo } from "react";
 import { useLocale, useTranslations } from "next-intl";
+import { MagnifyingGlassIcon, TagIcon } from "@heroicons/react/24/outline";
 
 interface FAQItem {
     id: string;
@@ -94,7 +94,7 @@ export default function FAQPage() {
 
     return (
         <div className="min-h-screen text-gray-900 dark:text-gray-100 transition-colors duration-500">
-            <div className="space-y-10 p-6 rounded-2xl mx-auto max-w-4xl transition-all duration-500 ease-in-out border-2 border-dashed border-white">
+            <div className="space-y-10 p-4 md:p-6 rounded-2xl mx-auto max-w-4xl transition-all duration-500 ease-in-out border-2 border-dashed border-white">
                 <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} className="space-y-3 text-center">
                     <h1 className="md:text-6xl text-xl font-extrabold mb-6 text-gray-900 dark:text-white tracking-tight leading-tight">
                         ✨ {t("Title")} ✨
@@ -145,7 +145,7 @@ export default function FAQPage() {
                     ))}
                 </motion.div>
 
-                <motion.div className="space-y-4 pr-2">
+                <motion.div className="space-y-4">
                     {loading && <p className="animate-pulse text-center">{t("Loading")}</p>}
 
                     {!loading && filteredAndSortedFaqs.map(f => (

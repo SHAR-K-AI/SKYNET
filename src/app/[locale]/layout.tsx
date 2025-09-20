@@ -83,7 +83,7 @@ export default async function LocaleLayout(
                 <PlayerProvider>
                     <div className="min-h-screen flex flex-col transition-colors">
                         <Header />
-                        <main className="flex-1 p-8 transition-colors">{children}</main>
+                        <main className="flex-1 md:p-8 p-4 transition-colors">{children}</main>
                         <ScrollToTopButton />
                         <Footer />
                         <WelcomeModalWrapper />
