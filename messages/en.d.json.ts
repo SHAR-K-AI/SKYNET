@@ -63,7 +63,7 @@ declare const messages: {
   },
   "RolePage": {
     "title": "Roles Constellation GCP",
-    "description": "Explore all roles in the organization in an interactive 3D constellation.",
+    "description": "Explore all roles in the GCP in an interactive 3D constellation.",
     "instruction": "Click on a dot or name to learn more about the GCP role",
     "category": "Category",
     "requirements": "Requirements",
