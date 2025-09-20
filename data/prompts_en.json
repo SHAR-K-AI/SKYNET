@@ -17,7 +17,7 @@
   },
   {
     "title": "Mythical Digital Fusion",
-    "text": "Design a futuristic 3D creature or artifact born from the fusion of [\uD83D\uDD25] and [\uD83D\uDCA9]. The result should look like a legendary digital being — minimalistic, elegant, and mesmerizing. It floats on a pure white background, centered and well-lit with soft studio lighting. The creature combines organic and synthetic elements: glossy surfaces, semi-transparent materials, internal glow, and subtle textures. Style: clean, Apple-product-level polish meets mythical creature design. The final render should feel like a rare, mysterious being displayed in a high-tech digital art museum."
+    "text": "Draw a futuristic 3D creature or artifact born from the fusion of [\uD83D\uDD25] and [\uD83D\uDCA9]. The result should look like a legendary digital being — minimalistic, elegant, and mesmerizing. It floats on a pure white background, centered and well-lit with soft studio lighting. The creature combines organic and synthetic elements: glossy surfaces, semi-transparent materials, internal glow, and subtle textures. Style: clean, Apple-product-level polish meets mythical creature design. The final render should feel like a rare, mysterious being displayed in a high-tech digital art museum."
   },
   {
     "title": "Surreal Fluffy Icon",
@@ -25,7 +25,7 @@
   },
   {
     "title": "Custom Action Figure",
-    "text": "Create image. Create a toy of the person in the photo. Let it be an action figure. Next to the figure, there should be the toy’s equipment, each in its individual blisters. 1) a book called “Tecnoforma”. 2) A 3-headed dog with a tag that says “Troika” and a bone at its feet with word “austerity” written on it. 3) a three-headed Hydra with with a tag called “Geringonça”. 4) a book titled “D. Sebastião”. Don’t repeat the equipment under any circumstance. The card holding the blister should be strong orange. Also, on top of the box, write ‘[person]’ and underneath it, ‘PSD action figure’. The figure and equipment must all be inside blisters. Visualize this in a realistic way."
+    "text": "Draw a realistic image of an action figure of a person from a photo. Place equipment/items for the figure next to it, each inside its own blister pack.\n\nItem parameters:\n1) [item1_description]\n2) [item2_description]\n3) [item3_description]\n...\nn) [itemN_description]\n\nDo not repeat any items.\nThe figure and all equipment must be inside the blister packs.\nThe cardboard base holding the blisters should be [base_color].\nOn the top of the box, write “[person_name]”, and at the bottom, “[figure_label]”.\nVisualize in a realistic style.\n"
   },
   {
     "title": "Poster: African Textile Art",

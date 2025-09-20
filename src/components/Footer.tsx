@@ -54,7 +54,7 @@ export default function DinoGameFooter() {
                     alt="ILG"
                     width={250}
                     src="/images/footer-img.png"
-                    className="object-cover rounded-lg absolute md:-top-25 hidden md:block md:left-30 opacity-85 cursor-pointer hover:scale-110 hover:animate-spin"
+                    className="object-cover rounded-lg absolute md:-top-25 hidden md:block md:left-30 opacity-85 cursor-pointer hover:scale-110 hover:animate-bounce"
                     onClick={() => setIsVideoOpen(true)}
                 />
 

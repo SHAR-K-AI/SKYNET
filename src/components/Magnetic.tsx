@@ -56,7 +56,7 @@ export default function Magnetic({ children }: FramerProps) {
     return (
         <motion.div
             ref={ref}
-            onClick={resetPos}
+            onMouseUp={resetPos}
             onTouchEnd={resetPos}
             className="inline-flex"
             onMouseLeave={resetPos}

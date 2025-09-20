@@ -19,6 +19,13 @@ const levelColors: Record<string, string> = {
     Expert: "text-green-500",
 };
 
+const levelOrder: Record<string, number> = {
+    Beginner: 1,
+    Intermediate: 2,
+    Advanced: 3,
+    Expert: 4,
+};
+
 export default function FAQPage() {
     const locale = useLocale();
     const t = useTranslations("FAQ");
@@ -39,17 +46,17 @@ export default function FAQPage() {
 
     const categories = useMemo(() => Array.from(new Set(faqs.map(f => f.level))), [faqs]);
 
-    const filteredFaqs = useMemo(
-        () =>
-            faqs
-                .filter(
-                    f =>
-                        f.question.toLowerCase().includes(search.toLowerCase()) ||
-                        f.answer.toLowerCase().includes(search.toLowerCase())
-                )
-                .filter(f => !selectedCategory || f.level === selectedCategory),
-        [faqs, search, selectedCategory]
-    );
+    const filteredAndSortedFaqs = useMemo(() => {
+        const filtered = faqs
+            .filter(
+                f =>
+                    f.question.toLowerCase().includes(search.toLowerCase()) ||
+                    f.answer.toLowerCase().includes(search.toLowerCase())
+            )
+            .filter(f => !selectedCategory || f.level === selectedCategory);
+
+        return filtered.sort((a, b) => (levelOrder[a.level] || 0) - (levelOrder[b.level] || 0));
+    }, [faqs, search, selectedCategory]);
 
     const CategoryButton = ({
                                 category,
@@ -97,12 +104,12 @@ export default function FAQPage() {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="leading-relaxed  mx-auto text-gray-600 dark:text-gray-300"
+                    className="leading-relaxed mx-auto text-gray-600 dark:text-gray-300"
                 >
                     {t("Description")}
                 </motion.p>
-                <div
-                    className="mt-4 p-4 rounded-xl text-sm text-right text-gray-700 dark:text-gray-300 ">
+
+                <div className="mt-4 p-4 rounded-xl text-sm text-right text-gray-700 dark:text-gray-300">
                     <strong>{t("OriginalArticle")}</strong>
                     <br/>
                     <a
@@ -116,6 +123,7 @@ export default function FAQPage() {
                         A List of Questions to Consider for Beginners, Intermediates, and Experts
                     </a>
                 </div>
+
                 <motion.div className="relative" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
                     <MagnifyingGlassIcon className="absolute left-3 top-3 h-5 w-5 text-gray-400 dark:text-gray-300" />
                     <input
@@ -139,11 +147,12 @@ export default function FAQPage() {
 
                 <motion.div className="space-y-4 pr-2">
                     {loading && <p className="animate-pulse text-center">{t("Loading")}</p>}
-                    {!loading && filteredFaqs.map(f => (
+
+                    {!loading && filteredAndSortedFaqs.map(f => (
                         <motion.div
                             key={f.id}
                             layout
-                            initial={{ opacity: 0,  scale: 0.95 }}
+                            initial={{ opacity: 0, scale: 0.95 }}
                             animate={{ opacity: 1, scale: 1 }}
                             exit={{ opacity: 0, scale: 0.95 }}
                             transition={{ duration: 0.5 }}
@@ -158,7 +167,7 @@ export default function FAQPage() {
                         </motion.div>
                     ))}
 
-                    {!loading && filteredFaqs.length === 0 && (
+                    {!loading && filteredAndSortedFaqs.length === 0 && (
                         <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center mt-4 text-gray-500 dark:text-gray-400">
                             {t("NothingFound")}
                         </motion.p>

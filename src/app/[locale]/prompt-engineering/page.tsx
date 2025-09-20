@@ -75,10 +75,10 @@ export default function PromptEngineeringPage() {
                         >
                             <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition duration-500 z-0 scale-101">
                                 <div className="h-full w-full rounded-3xl
-                                    bg-gradient-to-tr
-                                    from-blue-400 to-indigo-500
-                                    dark:from-blue-600 dark:to-indigo-700
-                                    blur-[4px]" />
+        bg-gradient-to-tr
+        from-yellow-300 to-yellow-400
+        dark:from-blue-600 dark:to-indigo-700
+        blur-[4px]" />
                             </div>
 
                             <div className="relative z-10 bg-white/70 dark:bg-gray-900/70 backdrop-blur-md border border-white/20 dark:border-gray-700 rounded-3xl p-6 shadow-xl flex flex-col">

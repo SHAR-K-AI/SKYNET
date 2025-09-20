@@ -197,8 +197,7 @@ declare const messages: {
     "whyList": {
       "one": "A fan project that makes learning easy and fun.",
       "two": "A collection of resources, guides, and tools for users of all levels.",
-      "three": "A place to answer common questions and share helpful tips.",
-      "four": "An unofficial website that creates a friendly atmosphere for learning 😉"
+      "three": "A place to answer common questions and share helpful tips. \uD83D\uDE09"
     }
   },
   "GoogleBlogWidget": {
@@ -281,6 +280,10 @@ declare const messages: {
     "title": "Prompt Engineering",
     "description": "Prompt Engineering is the art and science of crafting prompts that help obtain the best results from AI models. A well-formulated prompt can dramatically improve the quality of the response.",
     "subtitle": "Interesting Prompt Examples"
+  },
+  "Card": {
+    "copied": "Copied!",
+    "close": "Close"
   }
 };
 export default messages;

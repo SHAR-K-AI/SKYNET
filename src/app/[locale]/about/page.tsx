@@ -40,7 +40,6 @@ export default async function AboutPage({ params }: {
                     <li>{t('whyList.one')}</li>
                     <li>{t('whyList.two')}</li>
                     <li>{t('whyList.three')}</li>
-                    <li>{t('whyList.four')}</li>
                 </ul>
             </div>
         </div>
