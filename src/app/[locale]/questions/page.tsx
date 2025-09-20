@@ -163,7 +163,7 @@ export default function FAQPage() {
                                 <span className={levelColors[f.level] || "text-gray-700 dark:text-gray-300"}>[{f.level}]</span>{" "}
                                 {highlightText(f.question, search)}
                             </h2>
-                            <p className="mt-2 leading-relaxed">{highlightText(f.answer, search)}</p>
+                            <p className="mt-2 leading-relaxed break-words">{highlightText(f.answer, search)}</p>
                         </motion.div>
                     ))}
 
